@@ -124,6 +124,7 @@ $(function(){
         $('.login').removeClass('display');
         $('.filter').removeClass('on');
 
+        $('.middle table').removeClass('turn');
         $('.li_hot').addClass('active');
         $('.li_hot').siblings().removeClass('active');
         $('.li_soc').children('a').attr('href','./html/balls/soccer.html');
@@ -148,6 +149,7 @@ $(function(){
     $('.left li').click(function(){
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
+        $(this).siblings().children('a').removeClass('active');
     })
 
     $('.li_soc').click(function(){

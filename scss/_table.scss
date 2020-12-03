@@ -65,6 +65,20 @@ table {
 				text-align: left;
 				padding: 5px 10px;
 			}
+			//小紅點
+			&.redpoint {
+				position: relative;
+				padding-right: 10px;
+				&::after {
+					content: "";
+					position: absolute;
+					width: 8px;
+					height: 8px;
+					margin: 4px 0px 0px 3px;
+					background: #e60012;
+					border-radius: 10px;
+				}
+			}
 			//上段字前小圖
 			span {
 				display: block;
@@ -388,7 +402,13 @@ table {
 				}
 			}
       	}
-    }
+	}
+	//賽馬版首頁
+	&.trace {
+		tr {
+			
+		}
+	}
     //足球版內頁
     &.tsocin {
       tr {

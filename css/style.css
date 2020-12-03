@@ -992,6 +992,17 @@ html body {
         html body table tr th.tleft {
           text-align: left;
           padding: 5px 10px; }
+        html body table tr th.redpoint {
+          position: relative;
+          padding-right: 10px; }
+          html body table tr th.redpoint::after {
+            content: "";
+            position: absolute;
+            width: 8px;
+            height: 8px;
+            margin: 4px 0px 0px 3px;
+            background: #e60012;
+            border-radius: 10px; }
         html body table tr th span {
           display: block;
           height: 14px;
@@ -5855,6 +5866,9 @@ html body {
 
 .bg_purple {
   background: #b67bff; }
+
+.bg_white {
+  background: #ffffff; }
 
 .bg_darkblue {
   background: #404b87; }
