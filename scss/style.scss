@@ -1,0 +1,756 @@
+@import "_reset";
+html {
+    body {
+        width: 100%;
+        height: auto;
+        @import "./header";
+        @import "./main";
+		overflow: hidden;
+		//左列樣式
+        @import "./leftside";
+        //右列樣式
+        @import "./rightside";
+        //table樣式
+        @import "./table";
+        //市場版面樣式
+        @import "./type";
+        //右側懸浮按鈕
+        @import "./fixside";
+        //優惠版面樣式
+        @import "./discount";
+        //我的頁面樣式
+        @import "./myself";
+        //動畫
+        @import "./anime";
+        //黑幕
+        .on {
+            background: rgba(0,0,0,.5);
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0px;
+            z-index: 15;
+        }
+        //登入窗
+        .login {
+            display: none;
+            position: absolute;
+            width: 400px;
+            height: 300px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 200px;
+            z-index: 20;
+            //上字
+            .loginbar {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+                border-radius: 12px 12px 0px 0px;
+                position: relative;
+                span {
+                    font-size: 17px;
+                    line-height: 50px;
+                    padding-left: 20px;
+                    color: #fff;
+                }
+                //上XX
+                button {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    right: 20px;
+                    top: 16px;
+                    background: transparent;
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+            //主內容
+            .loginbox {
+                width: 100%;
+                height: 210px;
+                background: #fff;
+                border-radius: 0px 0px 12px 12px;
+                padding: 20px 0px;
+                div {
+                    width: 330px;
+                    height: 50px;
+                    margin: 0px auto;
+                    position: relative;
+                    input {
+                        width: 225px;
+                        height: 32px;
+                        font-size: 17px;
+                        padding: 3px 0px 3px 10px;
+                        float: right;
+                        margin: 4px 0px;
+                        border: 1px solid #b9bfdc;
+                        border-radius: 4px;
+                    }
+                    span {
+                        font-size: 17px;
+                        color: #4d515d;
+                        line-height: 50px;
+                        &.rem {
+                            float: left;
+                            margin-left: 30px;
+                        }
+                        &.fog {
+                            float: right;
+                            cursor: pointer;
+                        }
+                        &.cube {
+                            top: 16px;
+                            left: 10px;
+                        }
+                    }
+                    button {
+                        width: 160px;
+                        height: 36px;
+                        float: left;
+                        margin-right: 10px;
+                        background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+                        border: 1px solid #495cc5;
+                        color: #4d515d;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #4d515d;
+                        &:hover,&:active {
+                            background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+                        }
+                        &:last-child {
+                            margin: 0px;
+                            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                            color: #fff;
+                            &:hover,&:active {
+                                background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            &.display {
+                display: block;
+            }
+        }
+        //註冊窗
+        .signup {
+            display: none;
+            position: absolute;
+            width: 800px;
+            height: 360px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 200px;
+            z-index: 20;
+            //上字
+            .signupbar {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+                border-radius: 12px 12px 0px 0px;
+                position: relative;
+                span {
+                    font-size: 17px;
+                    color: #fff;
+                    line-height: 50px;
+                    padding-left: 20px;
+                }
+                //上XX
+                button {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    right: 20px;
+                    top: 16px;
+                    background: transparent;
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+            //主內容
+            .signupbox {
+                width: 100%;
+                height: 270px;
+                background: #fff;
+                border-radius: 0px 0px 12px 12px;
+                padding: 20px 0px;
+                div {
+                    width: 50%;
+                    height: 50px;
+                    float: left;
+                    position: relative;
+                    &:last-child {
+                        width: 500px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    input {
+                        width: 235px;
+                        height: 28px;
+                        font-size: 17px;
+                        padding: 3px 0px 3px 10px;
+                        float: right;
+                        margin: 7px 50px 0px 0px;
+                        border: 1px solid #b9bfdc;
+                        border-radius: 4px;
+                    }
+                    span {
+                        line-height: 50px;
+                        color: #4d515d;
+                        padding-left: 15px;
+                    }
+                    button {
+                        width: 180px;
+                        height: 36px;
+                        margin-right: 10px;
+                        background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+                        border: 1px solid #495cc5;
+                        color: #4d515d;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #4d515d;
+                        &:hover,&:active {
+                            background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+                        }
+                        &:last-child {
+                            margin: 0px;
+                            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                            color: #fff;
+                            &:hover,&:active {
+                                background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            //顯示
+            &.display {
+                display: block;
+            }
+        }
+        //無註冊信用卡提醒
+        .cardremind {
+            display: none;
+            position: absolute;
+            width: 500px;
+            height: 200px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 200px;
+            z-index: 20;
+            //上字
+            .remindbar {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+                border-radius: 12px 12px 0px 0px;
+                position: relative;
+                span {
+                    font-size: 17px;
+                    line-height: 50px;
+                    padding-left: 20px;
+                    color: #fff;
+                }
+                //上XX
+                button {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    right: 20px;
+                    top: 16px;
+                    background: transparent;
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+            //主內容
+            .remindbox {
+                width: 100%;
+                height: 110px;
+                background: #fff;
+                border-radius: 0px 0px 12px 12px;
+                padding: 20px 0px;
+                text-align: center;
+                p {
+                    font-size: 14px;
+                    padding-bottom: 20px;
+                }
+                button {
+                    width: 160px;
+                    height: 36px;
+                    background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+                    border: 1px solid #495cc5;
+                    color: #4d515d;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    font-weight: bold;
+                    color: #4d515d;
+                    &:hover,&:active {
+                        background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+                    }
+                    &:last-child {
+                        margin: 0px;
+                        background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                        color: #fff;
+                        &:hover,&:active {
+                            background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                        }
+                    }
+                }
+            }
+            &.display {
+                display: block;
+            }
+        }
+        //修改密碼
+        .passwordchange {
+            display: none;
+            position: absolute;
+            width: 350px;
+            height: 360px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 100px;
+            z-index: 20;
+            //上字
+            .changebar {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+                border-radius: 12px 12px 0px 0px;
+                position: relative;
+                span {
+                    font-size: 17px;
+                    color: #fff;
+                    line-height: 50px;
+                    padding-left: 20px;
+                }
+                //上XX
+                button {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    right: 20px;
+                    top: 16px;
+                    background: transparent;
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+            //主內容
+            .changebox {
+                width: 100%;
+                height: 160px;
+                background: #fff;
+                border-radius: 0px 0px 12px 12px;
+                padding: 20px 0px;
+                div {
+                    width: 95%;
+                    height: 50px;
+                    float: left;
+                    position: relative;
+                    &:last-child {
+                        width: 500px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    input {
+                        width: 205px;
+                        height: 28px;
+                        font-size: 17px;
+                        padding: 3px 0px 3px 10px;
+                        float: right;
+                        border: 1px solid #b9bfdc;
+                        border-radius: 4px;
+                    }
+                    span {
+                        line-height: 40px;
+                        color: #4d515d;
+                        padding-left: 15px;
+                    }
+                    button {
+                        width: 152px;
+                        height: 36px;
+                        margin-right: 10px;
+                        background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+                        border: 1px solid #495cc5;
+                        color: #4d515d;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        color: #4d515d;
+                        &:hover,&:active {
+                            background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
+                        }
+                        &:last-child {
+                            margin: 0px;
+                            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                            color: #fff;
+                            &:hover,&:active {
+                                background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            //顯示
+            &.display {
+                display: block;
+            }
+        }
+        //添加銀行卡
+        .cardadd  {
+            display: none;
+            position: absolute;
+            width: 800px;
+            height: 360px;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 110px;
+            z-index: 20;
+            //上字
+            .cardaddbar {
+                width: 100%;
+                height: 50px;
+                background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+                border-radius: 12px 12px 0px 0px;
+                position: relative;
+                span {
+                    font-size: 17px;
+                    color: #fff;
+                    line-height: 50px;
+                    padding-left: 20px;
+                }
+                //上XX
+                button {
+                    width: 18px;
+                    height: 18px;
+                    position: absolute;
+                    right: 20px;
+                    top: 16px;
+                    background: transparent;
+                    &::before {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(45deg);
+                    }
+                    &::after {
+                        content: "";
+                        width: 1px;
+                        height: 18px;
+                        background: #fff;
+                        position: absolute;
+                        left: 8px;
+                        top: 0px;
+                        transform: rotate(135deg);
+                    }
+                }
+            }
+            //主內容
+            .cardaddbox {
+                width: 100%;
+                height: 300px;
+                background: #fff;
+                border-radius: 0px 0px 12px 12px;
+                padding: 20px 0px;
+                div {
+                    width: 50%;
+                    height: 50px;
+                    float: left;
+                    position: relative;
+                    &:last-child {
+                        width: 500px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        margin-top: 20px;
+                        text-align: center;
+                    }
+                    input {
+                        width: 235px;
+                        height: 28px;
+                        font-size: 17px;
+                        padding: 3px 0px 3px 10px;
+                        float: right;
+                        margin: 7px 50px 0px 0px;
+                        border: 1px solid #b9bfdc;
+                        border-radius: 4px;
+                    }
+                    ul {
+                        width: 245px;
+                        height: 34px;
+                        float: right;
+                        margin: 7px 50px 0px 0px;
+                        border: 1px solid #b9bfdc;
+                        border-radius: 4px;
+                        background: #fff;
+                        overflow: hidden;
+                        position: relative;
+                        z-index: 1;
+                        &.open {
+                            height: auto;
+                        }
+                        &.county {
+                            width: 105px;
+                            margin-right: 20px;
+                        }
+                        &.city {
+                            width: 105px;
+                        }
+                        li {
+                            line-height: 34px;
+                            padding-left: 10px;
+                            font-size: 14px;
+                            color: #4d515d;
+                            cursor: pointer;
+                            &:hover,&:active {
+                                background: #b9bfdc;
+                            }
+                            &:nth-of-type(1) {
+                                &:hover,&:active {
+                                    background: transparent;
+                                    cursor: default;
+                                }
+                            }
+                        }
+                        button {
+                            width: 34px;
+                            height: 34px;
+                            border: none;
+                            background: transparent;
+                            float: right;
+                            position: relative;
+                            &::before {
+                                content: "";
+                                position: absolute;
+                                width: 6px;
+                                height: 8px;
+                                background: url('../images/arrow_b.png') no-repeat center;
+                                transform: rotate(90deg);
+                                left: 13px;
+                                top: 12px;
+                            }
+                            &:hover,&:active {
+                                background: transparent;
+                            }
+                        }
+                    }
+                    span {
+                        line-height: 50px;
+                        color: #4d515d;
+                        padding-left: 15px;
+                    }
+                    button {
+                        width: 220px;
+                        height: 36px;
+                        background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+                        border: 1px solid #495cc5;
+                        color: #fff;
+                        border-radius: 5px;
+                        font-size: 16px;
+                        font-weight: bold;
+                        &:hover,&:active {
+                            background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+                        }
+                    }
+                }
+            }
+            //顯示
+            &.display {
+                display: block;
+            }
+        }
+    }
+}
+//漸層背景色+字
+.bg_gold {
+    background-color: #fedab8;
+    background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
+    color: #6c2600;
+    font-size: 14px;
+}
+.bg_gray {
+    background-color: #f0f0f0;
+    background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
+    color: #4d515d;
+    font-size: 14px;
+}
+.bg_darkpurple {
+    background-color: #414c88;
+    background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
+    color: #ffffff;
+    font-size: 14px;
+}
+//一般背景色
+.bg_title {
+    background: #fff0e2;
+}
+.bg_title_un {
+    background: #f3f3f3;
+}
+.bg_wdgray {
+    background: #f8f8f8;
+}
+.bg_red {
+    background: #ff6767;
+}
+.bg_purple {
+    background: #b67bff;
+}
+.bg_darkblue {
+    background: #404b87;
+}
+.bg_brown {
+    background: #bf652e;
+}
+.bg_darkgreen {
+    background: #50a1a2;
+}
+.bg_darkpurple2 {
+    background: #5b6498;
+}
+.bg_lightpurple {
+    background: #eef0f7;
+}
+//一般字顏色
+.wd_blue {
+    color: #005aff;
+}
+.wd_red {
+    color: #ff0000;
+}
+.wd_white {
+    color: #ffffff;
+}
+.wd_darkblue {
+    color: #061d93;
+}
+.wd_gold {
+    color: #b98353;
+}
+.wd_lightpurple {
+    color: #7486ea;
+}
+.wd_pink {
+    color: #c75665;
+}
+.wd_brown {
+    color: #dec2a9;
+}
+//粗體字
+.wd_b {
+    font-weight: bold;
+}
+//cube
+.cube {
+    display: block;
+    width: 12px;
+    height: 12px;
+    background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
+    border: 1px solid #b2afcf;
+    border-radius: 5px;
+    overflow: hidden;
+    position: absolute;
+    cursor: pointer;
+    &.active {
+        width: 12px;
+        height: 12px;
+        background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
+        position: absolute;
+        &::before {
+            content: "";
+            position: absolute;
+            top: 0px;
+            left: 3px;
+            width: 3px;
+            height: 8px;
+            border: solid 1px #fff;
+            transform: rotate(45deg);
+            border-width: 0px 2px 2px 0px;
+        }
+    }
+}

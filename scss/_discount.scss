@@ -1,0 +1,137 @@
+//優惠
+.discount {
+    width: 880px;
+    height: 850px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+    //分隔視窗
+    .window {
+        width: 93%;
+        height: 180px;
+        background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+        margin: 15px 0px 0px 5%;
+        border-radius: 20px;
+        border: 1px solid #8581b4;
+        box-shadow: 0 0 4px 2px #bac0db;
+        position: relative;
+        //左上字
+        p {
+            width: 324px;
+            height: 34px;
+            text-align: left;
+            line-height: 34px;
+            float: left;
+            background: url('../images/discounttitle_bg.png');
+            color: #fff;
+            &.blue {
+                background-position-y: 0px;
+            }
+            &.aqua {
+                background-position-y: -34px;
+            }
+            &.orange {
+                background-position-y: -68px;
+            }
+            &.green {
+                background-position-y: -102px;
+            }
+            //前小圖
+            span {
+                display: inline-block;
+                width: 20px;
+                height: 20px;
+                margin: 0px 10px 0px 10px;
+                background: url('../images/discountleft_ic.png');
+                background-size: 500%;
+                background-position-y: -20px;
+                transform: translateY(4px);
+                &.limit {
+                    background-position-x: -20px;
+                }
+                &.new {
+                    background-position-x: -40px;
+                }
+                &.active {
+                    background-position-x: -60px;
+                }
+                &.dividend {
+                    background-position-x: -80px;
+                }
+            }
+        }
+        //後大圖
+        div {
+            width: 465px;
+            height: 180px;
+            background-position: cover;
+            background: url('../images/disimg_1.png') no-repeat;
+            float: left;
+            //大圖左側字
+            &.word {
+                width: 280px;
+                height: 100px;
+                background: none;
+                float: none;
+                position: absolute;
+                top: 55px;
+                left: 5%;
+                text-align: left;
+                .time {
+                    display: block;
+                    color: #4d515d;
+                    width: 100%;
+                    margin-bottom: 15px;
+                    float: left;
+                }
+                .mainword {
+                    color: #b98353;
+                    margin-bottom: 15px;
+                    float: left;
+                    font-size: 30px;
+                }
+                .norword {
+                    color: #4d515d;
+                    float: left;
+                    font-size: 18px;
+                }
+            }
+            &.disimg2 {
+                background: url('../images/disimg_2.png') no-repeat;
+            }
+            &.disimg3 {
+                background: url('../images/disimg_3.png') no-repeat;
+            }
+        }
+        //查看詳情
+        button {
+            background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
+            border: solid 1px #1e2f8e;
+            width: 110px;
+            height: 30px;
+            position: absolute;
+            right: 20px;
+            bottom: 20px;
+            font-weight: bold;
+            color: #fff;
+            border-radius: 5px;
+            &:hover,&:active {
+                background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
+            }
+        }
+    }
+}

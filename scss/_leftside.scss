@@ -1,0 +1,357 @@
+.left {
+    width: 190px;
+    height: 850px;
+    background: #f6f9ff;
+    border-radius: 0px 0px 10px 10px;
+    box-shadow: 0 0 5px 3px #d3d8ea;
+    margin: 0px 0px 0px 5px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    z-index: 6;
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+    //優惠
+    &.dis {
+        width: 260px;
+        height: 275px;
+        background: #fff;
+        ul {
+            li {
+                a {
+                    &.un {
+                        span {
+                            background-position-y: -20px;
+                        }
+                    }
+                    &.active {
+                        span {
+                            background-position-y: -20px;
+                        }
+                    }
+                }
+            }
+        }
+        span {
+            width: 20px;
+            height: 20px;
+            margin: 15px 20px 0px 20px;
+            background: url('../images/discountleft_ic.png');
+            background-size: 500%;
+            &.lf_ic2 {
+                background-position-x: -20px;
+            }
+            &.lf_ic3 {
+                background-position-x: -40px;
+            }
+            &.lf_ic4 {
+                background-position-x: -60px;
+            }
+            &.lf_ic5 {
+                background-position-x: -80px;
+            }
+        }
+    }
+    //我的頁面
+    &.mine {
+        width: 240px;
+        //上視窗
+        .minewindow {
+            width: 100%;
+            height: 270px;
+            //視窗上段
+            .avater {
+                width: 100%;
+                height: 165px;
+                padding-top: 25px;
+                text-align: center;
+                //大頭貼
+                .sticker {
+                    width: 79px;
+                    height: 81px;
+                    margin: 0px auto 20px;
+                    background: url('../images/avatar_big.png');
+                }
+                //字樣
+                p {
+                    &.joinday {
+                        color: #838ba0;
+                        font-size: 15px;
+                        padding-top: 5px;
+                    }
+                    span {
+                        display: inline-block;
+                        width: 40px;
+                        height: 17px;
+                        background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+                        position: relative;
+                        text-align: right;
+                        color: #fff;
+                        font-weight: bold;
+                        border-radius: 5px;
+                        margin: -3px 0px 0px 5px;
+                        padding: 3px 5px 0px 0px;
+                        font-size: 15px;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 23px;
+                            height: 9px;
+                            background: url('../images/vip.png') no-repeat;
+                            top: 5px;
+                            left: 5px;
+                        }
+                    }
+                }
+            }
+            //三按鈕
+            .threebut {
+                width: 100%;
+                height: 80px;
+                a {
+                    display: inline-block;
+                    width: 60px;
+                    height: 65px;
+                    margin: 0px 5px;
+                    border-radius: 5px;
+                    font-size: 16px;
+                    text-align: center;
+                    background: transparent;
+                    color: #000;
+                    padding-top: 10px;
+                    &:hover,&:active {
+                        background: #3654ff;
+                        color: #fff;
+                        span {
+                            background-position-y: -30px;
+                        }
+                    }
+                    &.active {
+                        background: #3654ff;
+                        color: #fff;
+                        span {
+                            background-position-y: -30px;
+                        }
+                    }
+                    &:first-child {
+                        margin-left: 18px;
+                    }
+                    //按鈕圖
+                    span {
+                        display: block;
+                        width: 30px;
+                        height: 30px;
+                        background: url('../images/threebut.png') no-repeat;
+                        background-size: 300%;
+                        margin: 0px auto 10px;
+                        &.trans {
+                            background-position-x: -30px;
+                        }
+                        &.take {
+                            background-position-x: -60px;
+                        }
+                    }
+                }
+            }
+        }
+        //下半選單
+        ul {
+            li {
+                &:nth-child(1),&:nth-child(5),&:nth-child(9) {
+                    border-bottom: solid 1px #e6e9f3;
+                }
+                a {
+                    padding-left: 10px;
+                    font-size: 15px;
+                    color: #4d515d;
+                    //前圖
+                    span {
+                        background: url('../images/mine_ic.png') no-repeat;
+                        background-size: 1400%;
+                        &.lf_wallet {
+                            background-position-x: -44px;
+                        }
+                        &.lf_dealre {
+                            background-position-x: -66px;
+                        }
+                        &.lf_betting {
+                            background-position-x: -88px;
+                        }
+                        &.lf_betre {
+                            background-position-x: -110px;
+                        }
+                        &.lf_help {
+                            background-position-x: -154px;
+                        }
+                        &.lf_call {
+                            background-position-x: -176px;
+                        }
+                        &.lf_mess {
+                            background-position-x: -198px;
+                        }
+                        &.lf_ctrl {
+                            background-position-x: -220px;
+                        }
+                        &.lf_about {
+                            background-position-x: -242px;
+                        }
+                        &.lf_join {
+                            background-position-x: -264px;
+                        }
+                        &.lf_app {
+                            background-position-x: -286px;
+                        }
+                    }
+                    div {
+                        right: 30px;
+                    }
+                }
+            }
+        }
+    }
+    //選項
+    ul {
+        li {
+            &.active {
+                a {
+                    background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+                    color: #ffffff;
+                    span {
+                        background-position-y: -22px;
+                    }
+                    div {
+                        color: #6272cc;
+                        background: #ffffff;
+                    }
+                }
+            }
+            a {
+                display: block;
+                color: #000;
+                width: 100%;
+                height: 55px;
+                line-height: 55px;
+                font-size: 16px;
+                position: relative;
+                &:hover,&:active {
+                    background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+                    color: #ffffff;
+                }
+                //圖切換
+                &.un {  
+                    span {
+                        background-position-y: -22px;
+                    }
+                    div {
+                        color: #6272cc;
+                        background: #ffffff;
+                    }
+                }
+                //選定效果
+                &.active {
+                    background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+                    color: #ffffff;
+                    &::before{
+                        color: #6272cc;
+                        background: #ffffff;
+                    }
+                    span {
+                        background-position-y: -22px;
+                    }
+                    div {
+                        color: #6272cc;
+                        background: #ffffff;
+                    }
+                }
+                //字前小圖
+                span {
+                    display: block;
+                    width: 22px;
+                    height: 22px;
+                    float: left;
+                    margin: 15px 10px 0px 15px;
+                    position: relative;
+                    background: url('../images/ball_ic.png');
+                    background-size: 1800%;
+                    &.lf_hot {
+                        background-position-x: -22px;
+                    }
+                    &.lf_soc {
+                        background-position-x: -44px;
+                    }
+                    &.lf_base {
+                        background-position-x: -66px;
+                    }
+                    &.lf_bsk {
+                        background-position-x: -88px;
+                    }
+                    &.lf_rh {
+                        background-position-x: -110px;
+                    }
+                    &.lf_esp {
+                        background-position-x: -132px;
+                    }
+                    &.lf_temp {
+                        background-position-x: -154px;
+                    }
+                    &.lf_lot {
+                        background-position-x: -176px;
+                    }
+                    &.lf_iceb {
+                        background-position-x: -198px;
+                    }
+                    &.lf_ten {
+                        background-position-x: -220px;
+                    }
+                    &.lf_sno {
+                        background-position-x: -242px;
+                    }
+                    &.lf_vball {
+                        background-position-x: -264px;
+                    }
+                    &.lf_rc {
+                        background-position-x: -286px;
+                    }
+                    &.lf_bad {
+                        background-position-x: -308px;
+                    }
+                    &.lf_bsoc {
+                        background-position-x: -330px;
+                    }
+                    &.lf_fob {
+                        background-position-x: -352px;
+                    }
+                    &.lf_pp {
+                        background-position-x: -374px;
+                    }
+                }
+                //字後小框
+                div {
+                    position: absolute;
+                    width: 32px;
+                    height: 18px;
+                    background: #6272cc;
+                    right: 10px;
+                    top: 17px;
+                    line-height: 20px;
+                    text-align: center;
+                    font-size: 13px;
+                    font-weight: bold;
+                    color: #fff;
+                    border-radius: 5px;
+                }
+            }
+        }
+    }
+}

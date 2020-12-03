@@ -1,0 +1,452 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>取款</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../../js/javascript.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!--filter-->
+    <div class="filter on"></div>
+    <!--header-->
+    <header class="index">
+        <!--上時間列-->
+        <div class="time">
+            <div>
+                <span>
+                    <script language="javascript" class="clock">
+                        var dt = new Date();
+                        document.write(dt);
+                    </script>
+                </span>
+            </div>
+        </div>
+        <!--置中外包-->
+        <article>
+            <!--LOGO-->
+            <div class="logo">LOGO</div>
+            <!--上列表-->
+            <ul class="headerlist">
+                <li><a href="../../index.html">市場列表</a></li>
+                <li><a href="../discount/discount.html"><span></span>優惠</a></li>
+                <li><a href="./mine.html" class="active"><span class="head_ic3"></span>我的</a></li>
+            </ul>
+            <!--登入後樣式-->
+            <div class="lobbyact">
+				<p>user545<span>0</span></p>
+				<p class="dollar">NT$ 0.00<button>登出</button><button class="ques"></button></p>
+            </div>
+        </article>
+    </header>
+    <!--main-->
+    <main class="index">
+        <!--置中外包-->
+        <article class="mineboard">
+            <!--左列-->
+            <section class="left mine">
+                <!--上視窗-->
+                <div class="minewindow">
+                    <!--頭像區-->
+                    <div class="avater">
+                        <div class="sticker"></div>
+                        <p>user545<span>0</span></p>
+                        <p class="joinday">加入第6天</p>
+                    </div>
+                    <!--三按鈕-->
+                    <div class="threebut">
+                        <a href="./deposit.html"><span></span>存款</a>
+                        <a href="./transpoint.html"><span class="trans"></span>轉點</a>
+                        <a href="./withdrawl.html" class="active"><span class="take"></span>取款</a>
+                    </div>
+                </div>
+                <!--選單-->
+                <ul>
+                    <li><a href="../myself/mine.html"><span></span>個人資料</a></li>
+                    <li><a href="../myself/wallet.html"><span class="lf_wallet"></span>我的錢包</a></li>
+                    <li><a href="../myself/deal_record.html"><span class="lf_dealre"></span>交易紀錄<div class="num">6</div></a></li>
+                    <li><a href="../myself/betting_now.html"><span class="lf_betting"></span>即時注單<div class="num">2</div></a></li>
+                    <li><a href="../myself/betting_record.html"><span class="lf_betre"></span>投注紀錄<div class="num">3</div></a></li>
+                    <li><a href="../myself/help.html"><span class="lf_help"></span>幫助中心</a></li>
+                    <li><a href="../myself/contact.html"><span class="lf_call"></span>聯繫我們</a></li>
+                    <li><a href="../myself/message.html"><span class="lf_mess"></span>消息中心<div class="num">6</div></a></li>
+                    <li><a href="../myself/control.html"><span class="lf_ctrl"></span>設定</a></li>
+                    <li><a href="../myself/abuot.html"><span class="lf_about"></span>關於</a></li>
+                    <li><a href="../myself/joinus.html"><span class="lf_join"></span>加入我們</a></li>
+                    <li><a href="../myself/app.html"><span class="lf_app"></span>下載APP</a></li>
+                </ul>
+            </section>
+            <!--取款-->
+            <section class="myself">
+                <!--懸浮列-->
+                <div class="minetopfix">
+                    <!--左段字-->
+                    <p class="leftword">取款</p>
+                    <!--中段字-->
+                    <div class="midword"></div>
+                    <!--懸浮假bar-->
+                    <div class="fixbar">
+                        <p>帳戶名稱：<span class="wd_blue">user545</span></p>
+                        <div class="topline"></div>
+                        <p>會員名稱：<span class="wd_blue">user545</span></p>
+                        <div class="topline"></div>
+                        <p>結帳方式：<span class="wd_blue">週結</span></p>
+                        <button class="changebut">修改密碼</button>
+                    </div>
+                </div>
+                <!--隱藏版-->
+                <div class="hideboard index mineboard"></div>
+                <!--錢包金額-->
+                <table class="tperson money">
+                    <tr>
+                        <th class="tleft bg_gray">錢包金額<button class="re" onclick="window.location.reload();">重新整理</button></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="tbox">
+                                <div class="half">
+                                    <div class="wallet_ic"></div>
+                                    <button class="charge">一鍵回收</button>
+                                    <p>中心錢包</p>
+                                    <p class="dollar">NT$<span>152,196,589,448</span></p>
+                                </div>
+                                <div class="line"></div>
+                                <div class="half">
+                                    <div class="wallet_ic un"></div>
+                                    <p>鎖定錢包</p>
+                                    <p class="dollar wd_pink">NT$<span>152,196</span></p>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+                <!--銀行卡-->
+                <table class="tperson add money">
+                    <tr>
+                        <th class="tleft bg_gray">銀行卡<button class="re notbut">卡片數量：0/3</button></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="creditcard">
+                                <div class="card_ic"></div>
+                                <p>添加銀行卡</p>
+                            </button>
+                            <button class="creditcard">
+                                <div class="card_ic"></div>
+                                <p>添加銀行卡</p>
+                            </button>
+                            <button class="creditcard">
+                                <div class="card_ic"></div>
+                                <p>添加銀行卡</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="npad"><p class="remind">最多支援三張銀行卡</p></td>
+                    </tr>
+                </table>
+                <!--銀行卡已申請-->
+                <table class="tperson money">
+                    <tr>
+                        <th class="tleft bg_gray">銀行卡<button class="re notbut">卡片數量：3/3</button></th>
+                    </tr>
+                    <tr>
+                        <td>
+                            <button class="creditcard c1">
+                                <div class="bank_ic1"></div>
+                                <p>建設銀行</p>
+                                <p class="race">儲蓄卡</p>
+                                <p class="cardnum">◆◆◆◆&emsp;◆◆◆◆&emsp;◆◆◆◆&emsp;9572</p>
+                            </button>
+                            <button class="creditcard c2">
+                                <div class="bank_ic1"></div>
+                                <p>農業銀行</p>
+                                <p class="race">儲蓄卡</p>
+                                <p class="cardnum">◆◆◆◆&emsp;◆◆◆◆&emsp;◆◆◆◆&emsp;1578</p>
+                            </button>
+                            <button class="creditcard c3">
+                                <div class="bank_ic1"></div>
+                                <p>中國銀行</p>
+                                <p class="race">儲蓄卡</p>
+                                <p class="cardnum">◆◆◆◆&emsp;◆◆◆◆&emsp;◆◆◆◆&emsp;3682</p>
+                            </button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="npad"><p class="remind">您的銀行卡已綁定,如需修改提領銀行卡請<a href="#">洽詢客服</a></p></td>
+                    </tr>
+                </table>
+                <!--取款金額-->
+                <table class="tperson withdrawl">
+                    <tr>
+                        <th class="tleft bg_gray">取款金額</th>
+                    </tr>
+                    <tr>
+                        <td class="tleft">
+                            為了方便您快速取款，請先將所有場館錢包金額回收中心錢包
+                            <br>
+                            <input type="text" placeholder="請輸入取款金額">
+                            <span class="range">單筆收款範圍：100.00元-10000.00元</span>
+                            <br>
+                            <button class="withbut">立即取款</button>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="timebox">
+                                <div class="boxtitle"><p>取款次數</p></div>
+                                <div class="content">
+                                    <p>10</p>
+                                    <span>今日可用次數</span>
+                                </div>
+                            </div>
+                            <div class="timebox">
+                                <div class="boxtitle"><p>取款額度</p></div>
+                                <div class="content">
+                                    <p>10</p>
+                                    <span>今日可用額數</span>
+                                </div>
+                            </div>
+                            <div class="timebox">
+                                <div class="boxtitle"><p>單筆額度</p></div>
+                                <div class="content">
+                                    <p>10</p>
+                                    <span>今日可用次數</span>
+                                </div>
+                            </div>
+                        </td>
+                    </tr>
+                </table>
+            </section>
+        </article>
+        <!--懸浮側鍵-->
+        <section class="fixside">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                    <span>搜尋</span>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                </a>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--懸浮側鍵RWD-->
+        <section class="fixside_rwd">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--背景-->
+        <div class="bg index"></div>
+    </main>
+    <!--彈出窗-->
+    <div>
+        <!--無註冊信用卡提醒-->
+        <div class="cardremind display">
+            <!--上字-->
+            <div class="remindbar">
+                <span>注意</span>
+                <button></button>
+            </div>
+            <!--主內容-->
+            <div class="remindbox">
+                <p>您尚未綁定銀行卡，無法使用取款功能，請依循下列步驟綁定銀行卡：</p>
+                <p class="wd_darkblue">1.點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;2.點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;3.添加銀行卡</p>
+                <button>確認</button>
+            </div>
+        </div>
+        <!--修改密碼窗-->
+        <div class="passwordchange">
+            <!--上字-->
+            <div class="changebar">
+                <span>修改密碼</span>
+                <button></button>
+            </div>
+            <!--主內容-->
+            <div class="changebox">
+                <div><span>新密碼</span><input type="password"></div>
+                <div><span>確認密碼</span><input type="password"></div>
+                <div>
+                    <button>取消</button>
+                    <button>確認</button>
+                </div>
+            </div>
+        </div>
+        <!--添加銀行卡窗-->
+        <div class="cardadd">
+            <!--上字-->
+            <div class="cardaddbar">
+                <span>添加銀行卡</span>
+                <button></button>
+            </div>
+            <!--主內容-->
+            <div class="cardaddbox">
+                <div>
+                    <span>開戶銀行</span>
+                    <ul class="cardbank">
+                        <button></button>
+                        <li>選擇銀行</li>
+                        <li>88銀行</li>
+                        <li></li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div>
+                    <span>開戶城市</span>
+                    <ul class="city">
+                        <button></button>
+                        <li>選擇城市</li>
+                        <li>88市</li>
+                        <li></li>
+                    </ul>
+                    <ul class="county">
+                        <button></button>
+                        <li>選擇省份</li>
+                        <li>88縣</li>
+                        <li></li>
+                    </ul>
+                </div>
+                <div><span>支行名稱</span><input type="text"></div>
+                <div><span>銀行帳號</span><input type="text"></div>
+                <div><span>戶名</span><input type="password"></div>
+                <div><span>確認帳號</span><input type="text"></div>
+                <div><span>手機號碼</span><input type="password"></div>
+                <div><span>QQ帳號</span><input type="text"></div>
+                <div><span>Wechat</span><input type="text"></div>
+                <div>
+                    <button>添加銀行卡</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

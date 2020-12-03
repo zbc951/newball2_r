@@ -1,0 +1,1011 @@
+//市場列表用
+.middle {
+    width: 880px;
+    height: 850px;
+    float: left;
+    overflow-x: hidden;
+    overflow-y: auto;
+    position: relative;
+    text-align: center;
+    &::-webkit-scrollbar {
+        width: 5px;
+        background-color: transparent;
+    }
+    &::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 10px;
+    }
+    &::-webkit-scrollbar-thumb {
+        background: #b9becf;
+        border-radius: 10px;
+    }
+    //懸浮列
+    .topfix {
+        display: none;
+        width: 850px;
+        height: 50px;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 1px #bcc2dc;
+        background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        position: fixed;
+        margin: 10px 0px 0px 13px;
+        z-index: 10;
+        //市場列表以外所有介面
+        &.other {
+            margin-left: 13px;
+        }
+        &.display {
+            display: block;
+        }
+        //日期輪替按鈕
+        .turnbut {
+            width: 115px;
+            height: 30px;
+            float: left;
+            margin-top: 10px;
+            //左右箭頭
+            button {
+                display: block;
+                float: left;
+                width: 12px;
+                height: 12px;
+                background: transparent;
+                position: relative;
+                margin: 9px 10px;
+                &::before {
+                    content: "";
+                    position: absolute;
+                    width: 0px;
+                    height: 0px;
+                    border-style: solid;
+                    border-width: 6px;
+                    border-color: transparent #cda37d transparent transparent;
+                    cursor: pointer;
+                    left: 0px;
+                    top: 0px;
+                }
+                &.turnright {
+                    &::before {
+                        border-color: transparent transparent transparent #cda37d;
+                    }
+                }
+                &:hover:before,&:active:after {
+                    transform: scale(1.3);
+                }
+            }
+            //字區
+            .turn {
+                width: 50px;
+                height: 24px;
+                background: #6272cc;
+                border-radius: 5px;
+                position: relative;
+                float: left;
+                margin-top: 3px;
+                span {
+                    font-size: 15px;
+                    line-height: 24px;
+                    color: #fff;
+                }
+            }
+        }
+        //線
+        .topline {
+            width: 1px;
+            height: 30px;
+            background: #bcbcbc;
+            float: left;
+            margin: 10px 10px 0px 10px;
+        }
+        //選日按鈕
+        ul {
+            float: left;
+            margin: 11px 5px 0px 0px;
+            li {
+                display: none;
+                &:first-child {
+                    margin-left: 15px;
+                }
+                a {
+                    display: block;
+                    border: solid 1px #3145b2;
+                    font-size: 15px;
+                    padding: 5px;
+                    border-radius: 5px;
+                    color: #3145b2;
+                    &:hover,&:active {
+                        background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
+                        color: #fff;
+                    }
+                }
+                &.display {
+                    display: inline-block;
+                }
+            }
+            //市場列表以外所有介面
+            &.other {
+                margin: 0px;
+                li {
+                    float: left;
+                    height: 47px;
+                    font-size: 15px;
+                    line-height: 50px;
+                    border-bottom: solid 3px transparent;
+                    color: #4d515d;
+                    cursor: pointer;
+                    &:hover,&:active {
+                    color: #293eb0;
+                    border-color: #293eb0;
+                    }
+                    &.active {
+                        color: #293eb0;
+                        border-color: #293eb0;
+                    }
+                }
+            }
+        }
+        //排序
+        .sort,.resultsearch {
+            display: none;
+            width: auto;
+            height: 50px;
+            float: right;
+            text-align: left;
+            &.display {
+                display: block;
+            }
+            button {
+                height: 50px;
+                font-size: 15px;
+                background: transparent;
+                border-bottom: solid 3px transparent;
+                float: left;
+                color: #4d515d;
+                position: relative;
+                &:hover,&:active {
+                    color: #293eb0;
+                    border-color: #293eb0;
+                }
+                &.arrow {
+                    margin-right: 20px;
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 6px;
+                        height: 8px;
+                        background: url('../images/arrow_b.png');
+                        right: -10px;
+                        top: 21px;
+                        transform: rotate(90deg);
+                    }
+                }
+                &.un {
+                    display: none;
+                }
+                &.active {
+                    color: #293eb0;
+                    border-color: #293eb0;
+                }
+            }
+            .timesearch {
+                width: 475px;
+                height: 50px;
+                .date {
+                    width: 19px;
+                    height: 19px;
+                    background: url('../images/date_icon.png');
+                    float: left;
+                    margin-top: 15px;
+                    border: none;
+                }
+                span {
+                    float: left;
+                    line-height: 50px;
+                    font-weight: bold;
+                    padding: 0px 10px;
+                }
+                select {
+                    float: left;
+                    margin: 15px 0px 0px 10px;
+                    border: 1px solid #3145b2;
+                    outline: none;
+                    border-radius: 5px;
+                    width: 100px;
+                    height: 20px;
+                    font-family: "my_font";
+                }
+                .timesearchbut {
+                    margin: 12px 0px 0px 15px;
+                    border-radius: 5px;
+                    border: 1px solid #3145b2;
+                    height: auto;
+                    color: #3145b2;
+                    &:hover,&:active {
+                        background: linear-gradient(to left, #8e9bdc 0%, #2e44b6 100%);
+                        color: #fff;
+                    }
+                }
+            }
+        }
+    }
+    .innertopfix {
+        display: none;
+        width: 855px;
+        height: 50px;
+        border-radius: 5px;
+        box-shadow: 0 0 6px 1px #bcc2dc;
+        background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        position: fixed;
+        margin: 100px 0px 0px 10px;
+        z-index: 10;
+        &.display {
+            display: block;
+        }
+        .back {
+            width: 60px;
+            height: 20px;
+            float: left;
+            margin: 14px 0px 0px 15px;
+            padding-left: 20px;
+            background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+            border-radius: 5px;
+            color: #fff;
+            font-size: 15px;
+            line-height: 20px;
+            position: relative;
+            &:hover,&:active {
+                background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
+            }
+            &::before {
+                content: "";
+                position: absolute;
+                width: 8px;
+                height: 11px;
+                background: url('../images/arrow_w.png') no-repeat;
+                left: 5px;
+                top: 4px;
+
+            }
+        }
+        //線
+        .topline {
+            width: 1px;
+            height: 30px;
+            background: #bcbcbc;
+            float: left;
+            margin: 10px 0px 0px 0px;
+        }
+        ul {
+            li {
+                float: left;
+                height: 47px;
+                border-bottom: solid 3px transparent;
+                margin: 0px 10px;
+                cursor: pointer;
+                line-height: 50px;
+                color: #4d515d;
+                font-size: 15px;
+                &:hover,&:active {
+                    border-color: #6272cc;
+                    color: #6272cc;
+                }
+                &.active {
+                    border-color: #6272cc;
+                    color: #6272cc;
+                }
+            }
+        }
+    }
+    //隱藏版
+    .hideboard {
+        width: 100%;
+        min-width: 1460px;
+        height: 70px;
+        background: url('../images/bg.jpg') no-repeat top center;
+        position: fixed;
+        z-index: 5;
+        left: 0px;
+        //首頁縮拉
+        &.index {
+            min-width: 1160px;
+        }
+        &.innerboard {
+            height: 155px;
+        }
+    }
+    //比賽狀態字樣
+    .title {
+        margin: 25px auto;
+        position: relative;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 15px;
+            height: 15px;
+            background: url('../images/statust.png');
+            top: 0px;
+            transform: translateX(-20px);
+        }
+        //進行中比賽
+        &.ing {
+            color: #cf813a;
+            margin-top: 85px;
+        }
+        //未開始比賽
+        &.ready {
+            color: #005aff;
+            &::before {
+                background-position-x: -15px;
+            }
+        }
+        //已結束比賽
+        &.over {
+            color: #858585;
+            &::before {
+                background-position-x: -30px;
+            }
+        }
+    }
+    //串關投注
+    .bettingbar {
+        display: none;
+        width: 580px;
+        height: 50px;
+        position: fixed;
+        margin: 0px 0px 0px 250px;
+        bottom: 2px;
+        background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+        border-radius: 15px 15px 0px 0px;
+        z-index: 10;
+        cursor: pointer;
+        transition: 0.5s all;
+        &::before {
+            content: "";
+            width: 8px;
+            height: 11px;
+            position: absolute;
+            background: url('../images/arrow_w.png');
+            right: 50px;
+            top: 20px;
+            transform: rotate(90deg);
+        }
+        &.display {
+            display: block;
+        }
+        &.open {
+            bottom: 502px;
+            &::before {
+                transform: rotate(270deg);
+            }
+        }
+        //總投注額
+        .barnum {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 5px;
+            margin: 13px 0px 0px 15px;
+            line-height: 28px;
+            font-size: 17px;
+            color: #850004;
+            position: relative;
+        }
+        //觸發按鈕
+        .opbut {
+            width: 100%;
+            height: 50px;
+            span {
+                float: left;
+                margin: 18px 0px 0px 10px;
+                color: #fff;
+            }
+        }
+        //投注內容
+        .bettingbox {
+            width: 576px;
+            height: 0px;
+            background: #fff;
+            border: solid 2px #e01821;
+            border-top-width: 0px;
+            border-radius: 0px 0px 15px 15px;
+            overflow: hidden;
+            cursor: default;
+            transition: 0.5s all;
+            //table視窗
+            .bettingwindow {
+                width: 100%;
+                height: 260px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #b9becf;
+                    border-radius: 10px;
+                }
+                table {
+                    margin: 0px;
+                }
+            }
+            //總額顯示
+            .bettingtotal {
+                width: 100%;
+                height: 45px;
+                box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+                background: #e2e4ed;
+                div {
+                    display: block;
+                    width: 180px;
+                    height: 100%;
+                    border-right: solid 1px #c7c7c7;
+                    float: left;
+                    line-height: 45px;
+                    font-size: 14px;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+            //決定金額
+            .bettingend {
+                width: 100%;
+                height: 195px;
+                background: #f8f8f8;
+                p {
+                    margin: 20px 200px 25px 15px;
+                    float: left;
+                    font-size: 14px;
+                    font-weight: bold;
+                }
+                .endbox {
+                    width: 50%;
+                    text-align: right;
+                    float: left;
+                    input {
+                        width: 150px;
+                        height: 31px;
+                        margin: 0px 5px 10px 0px;
+                        border-radius: 5px;
+                        border: solid 1px #8593d8;
+                        font-size: 16px;
+                        padding-left: 5px;
+                        &::placeholder {
+                            font-weight: bold;
+                            color: #c7c7c7;
+                            font-size: 15px;
+                        }
+                        &:last-child {
+                            color: #ff0000;
+                        }
+                    }
+                    div {
+                        position: relative;
+                        .inputname {
+                            float: left;
+                            margin: 10px 0px 0px 15px;
+                        }
+                        .dollar {
+                            position: absolute;
+                            top: 10px;
+                            right: 20px;
+                        }
+                    }
+                    button {
+                        width: 85px;
+                        height: 35px;
+                        float: left;
+                        margin: 0px 3px 10px 3px;
+                        border: solid 1px #eb0004;
+                        border-radius: 5px;
+                        font-size: 17px;
+                        color: #4d515d;
+                        font-weight: bold;
+                        line-height: 35px;
+                        background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+                        &:hover {
+                            background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
+                        }
+                        &:active {
+                            background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            color: #fff;
+                        }
+                        &.cur {
+                            width: 176px;
+                            color: #fff;
+                            background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
+                            &:hover {
+                                background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            }
+                        }
+                    }
+                }
+            }
+            &.open {
+                height: 500px;
+            }
+        }
+    }
+    //串關投注確認窗
+    .bettingch {
+        display: none;
+        width: 580px;
+        height: 50px;
+        position: fixed;
+        z-index: 20;
+        left: 35%;
+        top: 150px;
+        background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+        border-radius: 15px 15px 0px 0px;
+        //總投注額
+        .barnum {
+            display: block;
+            float: left;
+            width: 24px;
+            height: 24px;
+            background: #fff;
+            border-radius: 5px;
+            margin: 13px 0px 0px 15px;
+            line-height: 28px;
+            font-size: 17px;
+            color: #850004;
+            position: relative;
+        }
+        .barword {
+            color: #fff;
+            float: left;
+            margin: 18px 0px 0px 10px;
+        }
+        .chbut {
+            width: 22px;
+            height: 22px;
+            position: absolute;
+            background: transparent;
+            right: 30px;
+            top: 13px;
+            &::before {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                background: #fff;
+                top: 0px;
+                left: 11px;
+                transform: rotate(45deg);
+            }
+            &::after {
+                content: "";
+                position: absolute;
+                width: 1px;
+                height: 20px;
+                background: #fff;
+                top: 0px;
+                left: 11px;
+                transform: rotate(135deg);
+            }
+        }
+        //投注內容
+        .bettingbox {
+            width: 576px;
+            height: 430px;
+            margin-top: 50px;
+            background: #fff;
+            border: solid 2px #e01821;
+            border-top-width: 0px;
+            border-radius: 0px 0px 15px 15px;
+            overflow: hidden;
+            cursor: default;
+            //table視窗
+            .bettingwindow {
+                width: 100%;
+                height: 260px;
+                overflow-y: auto;
+                overflow-x: hidden;
+                &::-webkit-scrollbar {
+                    width: 5px;
+                    background-color: transparent;
+                }
+                &::-webkit-scrollbar-track {
+                    background: #f1f1f1;
+                    border-radius: 10px;
+                }
+                &::-webkit-scrollbar-thumb {
+                    background: #b9becf;
+                    border-radius: 10px;
+                }
+                table {
+                    margin: 0px;
+                }
+            }
+            //總額顯示
+            .bettingtotal {
+                width: 100%;
+                height: 45px;
+                box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+                background: #e2e4ed;
+                div {
+                    display: block;
+                    width: 180px;
+                    height: 100%;
+                    border-right: solid 1px #8a8a8a;
+                    float: left;
+                    line-height: 45px;
+                    font-size: 14px;
+                    text-align: left;
+                    padding-left: 10px;
+                    &:last-child {
+                        border: none;
+                    }
+                }
+            }
+            //決定金額
+            .bettingend {
+                width: 100%;
+                height: 200px;
+                background: #f8f8f8;
+                .endbox {
+                    width: 287px;
+                    height: 75px;
+                    text-align: left;
+                    float: left;
+                    margin-top: 25px;
+                    &:last-child {
+                        border-left: solid 1px #c7c7c7;
+                    }
+                    p {
+                        margin: 0px 0px 0px 40px;
+                        line-height: 75px;
+                        color: #f31d1d;
+                        font-size: 14px;
+                        position: relative;
+                        &::before {
+                            content: "";
+                            position: absolute;
+                            width: 20px;
+                            height: 20px;
+                            background: #f31d1d;
+                            border-radius: 12px;
+                            left: -25px;
+                            top: 26px;
+                        }
+                        &::after {
+                            content: "";
+                            position: absolute;
+                            width: 4px;
+                            height: 8px;
+                            border: solid 3px #fff;
+                            border-width: 0px 2px 2px 0px;
+                            transform: rotate(45deg);
+                            top: 30px;
+                            left: -18px;
+                        }
+                    }
+                    span {
+                        font-size: 13px;
+                        line-height: 24px;
+                        margin-left: 10px;
+                    }
+                }
+            }
+        }
+        //顯示
+        &.display {
+            display: block;
+        }
+    }
+    //選擇聯盟
+    .chleague {
+        display: none;
+        width: 850px;
+        height: 0px;
+        margin: 60px 0px 0px 13px;
+        overflow: hidden;
+        box-shadow: 0 0 6px 1px #bcc2dc;
+        border-radius: 0px 0px 5px 5px;
+        overflow-y: auto;
+        position: fixed;
+        z-index: 6;
+        background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #b9becf;
+            border-radius: 10px;
+        }
+        span {
+            &.cube {
+                left: 10px;
+                top: 12px;
+            }
+        }
+        //選擇球種/聯盟
+        &.open {
+            height: 400px;
+        }
+        &.display {
+            display: block;
+        }
+    }
+    //選擇球種
+    .chballs {
+        width: 850px;
+        height: 0px;
+        margin: 60px 0px 0px 13px;
+        position: fixed;
+        z-index: 6;
+        overflow: hidden;
+        overflow-y: auto;
+        border-radius: 0px 0px 5px 5px;
+        box-shadow: 0 0 6px 1px #bcc2dc;
+        background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        &::-webkit-scrollbar {
+            width: 5px;
+            background-color: transparent;
+        }
+        &::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 10px;
+        }
+        &::-webkit-scrollbar-thumb {
+            background: #b9becf;
+            border-radius: 10px;
+        }
+        span {
+            &.cube {
+                left: 10px;
+                top: 12px;
+            }
+        }
+        //選擇球種/聯盟
+        &.open {
+            height: 120px;
+        }
+    }
+    //盤口教程
+    .teach {
+        display: none;
+        width: 96%;
+        height: auto;
+        margin: 80px auto 0px;
+        &.display {
+            display: block;
+        }
+        button {
+            width: 85px;
+            height: 35px;
+            border-radius: 5px;
+            color: white;
+            float: left;
+            margin: 0px 5px 20px 0px;
+            background: linear-gradient(to bottom, #dfb995, #b6885f);
+            border: 1px solid #b78960;
+            font-size: 15px;
+            &:hover,&:active {
+                background: linear-gradient(to bottom, #444f8b, #6a75b2);
+                border: 1px solid #444f8b;
+            }
+            &.active {
+                background: linear-gradient(to bottom, #444f8b, #6a75b2);
+                border: 1px solid #444f8b;
+            }
+        }
+    }
+    //內頁
+    .inner {
+        display: none;
+        &.display {
+            display: block;
+        }
+        //上頂圖
+        .topimg {
+            width: 855px;
+            height: 130px;
+            background: url('../images/inn_soc.png') no-repeat;
+            background-size: 100%;
+            position: fixed;
+            margin: -160px 0px 0px 10px;
+            z-index: 6;
+            &.base {
+                background: url('../images/inn_base.png') no-repeat;
+                background-size: 100%;
+            }
+            &.bask {
+                background: url('../images/inn_bask.png') no-repeat;
+                background-size: 100%;
+            }
+            &.race {
+                background: url('../images/inn_race.png') no-repeat;
+                background-size: 100%;
+            }
+            &.esp {
+                background: url('../images/inn_esp.png') no-repeat;
+                background-size: 100%;
+            }
+            &.stock {
+                background: url('../images/inn_stock.png') no-repeat;
+                background-size: 100%;
+            }
+            &.lot {
+                background: url('../images/inn_lot.png') no-repeat;
+                background-size: 100%;
+            }
+            &.ice {
+                background: url('../images/inn_ice.png') no-repeat;
+                background-size: 100%;
+            }
+            &.football {
+                background: url('../images/inn_football.png') no-repeat;
+                background-size: 100%;
+            }
+            &.ten {
+                background: url('../images/inn_ten.png') no-repeat;
+                background-size: 100%;
+            }
+            &.snooker {
+                background: url('../images/inn_sno.png') no-repeat;
+                background-size: 100%;
+            }
+            &.vball {
+                background: url('../images/inn_vba.png') no-repeat;
+                background-size: 100%;
+            }
+            &.racecar {
+                background: url('../images/inn_mot.png') no-repeat;
+                background-size: 100%;
+            }
+            &.bad {
+                background: url('../images/inn_bad.png') no-repeat;
+                background-size: 100%;
+            }
+            &.bso {
+                background: url('../images/inn_bso.png') no-repeat;
+                background-size: 100%;
+            }
+            &.pp {
+                background: url('../images/inn_tab.png') no-repeat;
+                background-size: 100%;
+            }
+            //左字+右雙IC
+            .topword,.toplink {
+                width: 20%;
+                height: 100%;
+                float: left;
+                text-align: left;
+                p {
+                    color: #fff;
+                    width: 100%;
+                    margin: 30px 0px 0px 20px;
+                    font-size: 15px;
+                    &:last-child {
+                        margin-top: 10px;
+                    }
+                }
+                button {
+                    float: right;
+                    width: 33px;
+                    height: 30px;
+                    margin: 30px 20px 0px 0px;
+                    background: url('../images/topfix_ic.png');
+                    background-size: 200%;
+                    position: relative;
+                    overflow: hidden;
+                    &:last-child {
+                        margin-right: 10px;
+                        background-position-x: -33px;
+                    }
+                    &::before {
+                        content: "";
+                        position: absolute;
+                        width: 20px;
+                        height: 60px;
+                        background: linear-gradient(to right,transparent,#fff,transparent);
+                        transform: rotate(135deg);
+                        top: -15px;
+                        left: -40px;
+                    }
+                    &:hover:before {
+                        left: 50px;
+                        transition: 0.3s left;
+                    }
+                }
+            }
+            //中間隊伍
+            .topteam {
+                width: 60%;
+                height: 100%;
+                float: left;
+                div {
+                    width: 33%;
+                    height: 100%;
+                    float: left;
+                    line-height: 10px;
+                    word-break: break-all;
+                    &:first-child {
+                        text-align: right;
+                    }
+                    &.team2 {
+                        text-align: left;
+                        span {
+                            float: left;
+                        }
+                        p {
+                            float: left;
+                            margin: 43px 0px 0px 10px;
+                        }
+                    }
+                    &.teammid {
+                        p {
+                            display: block;
+                            width: 100%;
+                            margin: 10px 0px;
+                            font-size: 18px;
+                            &:first-child {
+                                margin: 13px 0px 0px 0px;
+                                font-size: 15px;
+                            }
+                            &:last-child {
+                                margin-top: 5px;
+                                font-size: 15px;
+                            }
+                        }
+                    }
+                    p {
+                        // display: inline;
+                        width: 64%;
+                        height: auto;
+                        color: #fff;
+                        font-size: 17px;
+                        float: right;
+                        margin: 43px 10px 0px 0px;
+                        line-height: 18px;
+                    }
+                    span {
+                        display: block;
+                        width: 50px;
+                        height: 35px;
+                        margin-top: 31px;
+                        background: url('../images/team_icon.png') no-repeat;
+                        background-size: 600%;
+                        float: right;
+                        &.team2 {
+                            background-position-x: -50px;
+                        }
+                        &.team3 {
+                            background-position-x: -100px;
+                        }
+                        &.team4 {
+                            background-position-x: -150px;
+                        }
+                        &.team5 {
+                            background-position-x: -200px;
+                        }
+                        &.team6 {
+                            background-position-x: -250px;
+                        }
+                    }
+                }
+            }
+        }
+        //table
+        table {
+            &:nth-of-type(1) {
+                margin-top: 160px;
+            }
+        }
+    }
+}

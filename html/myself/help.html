@@ -1,0 +1,888 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>幫助中心</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../../js/javascript.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!--filter-->
+    <div class="filter"></div>
+    <!--header-->
+    <header class="index">
+        <!--上時間列-->
+        <div class="time">
+            <div>
+                <span>
+                    <script language="javascript" class="clock">
+                        var dt = new Date();
+                        document.write(dt);
+                    </script>
+                </span>
+            </div>
+        </div>
+        <!--置中外包-->
+        <article>
+            <!--LOGO-->
+            <div class="logo">LOGO</div>
+            <!--上列表-->
+            <ul class="headerlist">
+                <li><a href="../../index.html">市場列表</a></li>
+                <li><a href="../discount/discount.html"><span></span>優惠</a></li>
+                <li><a href="./mine.html" class="active"><span class="head_ic3"></span>我的</a></li>
+            </ul>
+            <!--登入後樣式-->
+            <div class="lobbyact">
+				<p>user545<span>0</span></p>
+				<p class="dollar">NT$ 0.00<button>登出</button><button class="ques"></button></p>
+            </div>
+        </article>
+    </header>
+    <!--main-->
+    <main class="index">
+        <!--置中外包-->
+        <article class="mineboard">
+            <!--左列-->
+            <section class="left mine">
+                <!--上視窗-->
+                <div class="minewindow">
+                    <!--頭像區-->
+                    <div class="avater">
+                        <div class="sticker"></div>
+                        <p>user545<span>0</span></p>
+                        <p class="joinday">加入第6天</p>
+                    </div>
+                    <!--三按鈕-->
+                    <div class="threebut">
+                        <a href="../leftbtn/deposit.html"><span></span>存款</a>
+                        <a href="../leftbtn/transpoint.html"><span class="trans"></span>轉點</a>
+                        <a href="../leftbtn/withdrawl.html"><span class="take"></span>取款</a>
+                    </div>
+                </div>
+                <!--選單-->
+                <ul>
+                    <li><a href="./mine.html"><span></span>個人資料</a></li>
+                    <li><a href="./wallet.html"><span class="lf_wallet"></span>我的錢包</a></li>
+                    <li><a href="./deal_record.html"><span class="lf_dealre"></span>交易紀錄<div class="num">6</div></a></li>
+                    <li><a href="./betting_now.html"><span class="lf_betting"></span>即時注單<div class="num">2</div></a></li>
+                    <li><a href="./betting_record.html"><span class="lf_betre"></span>投注紀錄<div class="num">3</div></a></li>
+                    <li><a href="./help.html" class="active"><span class="lf_help"></span>幫助中心</a></li>
+                    <li><a href="./contact.html"><span class="lf_call"></span>聯繫我們</a></li>
+                    <li><a href="./message.html"><span class="lf_mess"></span>消息中心<div class="num">6</div></a></li>
+                    <li><a href="./control.html"><span class="lf_ctrl"></span>設定</a></li>
+                    <li><a href="./abuot.html"><span class="lf_about"></span>關於</a></li>
+                    <li><a href="./joinus.html"><span class="lf_join"></span>加入我們</a></li>
+                    <li><a href="./app.html"><span class="lf_app"></span>下載APP</a></li>
+                </ul>
+            </section>
+            <!--幫助中心-->
+            <section class="myself">
+                <!--懸浮列-->
+                <div class="minetopfix">
+                    <!--左段字-->
+                    <p class="leftword">幫助中心</p>
+                    <!--中段字-->
+                    <div class="midword"></div>
+                    <!--懸浮假bar-->
+                    <div class="fixbar help">
+                        <ul>
+                            <li class="active">幫助中心</li>
+                            <div class="topline"></div>
+                            <li>轉點問題</li>
+                            <div class="topline"></div>
+                            <li>取款問題</li>
+                            <div class="topline"></div>
+                            <li>投注相關</li>
+                            <div class="topline"></div>
+                            <li>體育規則</li>
+                            <div class="topline"></div>
+                            <li>技術支持</li>
+                        </ul>
+                    </div>
+                </div>
+                <!--隱藏版-->
+                <div class="hideboard index mineboard"></div>
+                <!--存款問題-->
+                <div class="depositP display">
+                    <div>
+                        <div class="helpbar">
+                            <p>如何存款?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;進入存款頁面</p>
+                            <p>1.第一次存款先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站頁面「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後選取存款方式：</p>
+                            <p>選取或輸入存款金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「立即存款」&nbsp;&nbsp;→&nbsp;&nbsp;完成存款動作</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如何綁定信用卡?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;進入存款頁面</p>
+                            <p>1.第一次存款先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站頁面「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後選取存款方式：</p>
+                            <p>選取或輸入存款金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「立即存款」&nbsp;&nbsp;→&nbsp;&nbsp;完成存款動作</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>存款金額限制?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;進入存款頁面</p>
+                            <p>1.第一次存款先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站頁面「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後選取存款方式：</p>
+                            <p>選取或輸入存款金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「立即存款」&nbsp;&nbsp;→&nbsp;&nbsp;完成存款動作</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>銀行卡忘記密碼應如何處理?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;進入存款頁面</p>
+                            <p>1.第一次存款先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站頁面「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後選取存款方式：</p>
+                            <p>選取或輸入存款金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「立即存款」&nbsp;&nbsp;→&nbsp;&nbsp;完成存款動作</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>綁定銀行卡的申請資格?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;進入存款頁面</p>
+                            <p>1.第一次存款先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站頁面「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後選取存款方式：</p>
+                            <p>選取或輸入存款金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「立即存款」&nbsp;&nbsp;→&nbsp;&nbsp;完成存款動作</p>
+                        </div>
+                    </div>
+                </div>
+                <!--轉點問題-->
+                <div class="transP">
+                    <div>
+                        <div class="helpbar">
+                            <p>如何轉點?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「轉點」按鈕</p>
+                            <p>轉點頁面&nbsp;&nbsp;→&nbsp;&nbsp;選擇轉出轉入位置&nbsp;&nbsp;→&nbsp;&nbsp;輸入金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊立即轉點</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>開啟自動轉點後怎麼取款?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「轉點」按鈕</p>
+                            <p>轉點頁面&nbsp;&nbsp;→&nbsp;&nbsp;選擇轉出轉入位置&nbsp;&nbsp;→&nbsp;&nbsp;輸入金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊立即轉點</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>轉點到場館金額減少?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「轉點」按鈕</p>
+                            <p>轉點頁面&nbsp;&nbsp;→&nbsp;&nbsp;選擇轉出轉入位置&nbsp;&nbsp;→&nbsp;&nbsp;輸入金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊立即轉點</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>轉點沒有成功，但錢卻沒了怎麼辦?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「轉點」按鈕</p>
+                            <p>轉點頁面&nbsp;&nbsp;→&nbsp;&nbsp;選擇轉出轉入位置&nbsp;&nbsp;→&nbsp;&nbsp;輸入金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊立即轉點</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>主帳戶轉點至場館或場館轉點至主帳戶失敗?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「轉點」按鈕</p>
+                            <p>轉點頁面&nbsp;&nbsp;→&nbsp;&nbsp;選擇轉出轉入位置&nbsp;&nbsp;→&nbsp;&nbsp;輸入金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊立即轉點</p>
+                        </div>
+                    </div>
+                </div>
+                <!--取款問題-->
+                <div class="withP">
+                    <div>
+                        <div class="helpbar">
+                            <p>如何取款?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>可以使用別人的銀行卡進行取款嗎?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>申請取款需要注意什麼?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>遊戲帳戶裡有錢為什麼無法取款?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>可以綁定多少張信用卡?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>取款為什麼還要審核?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>取款要求(例如:流水)?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>取款到帳時間?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>取款支持的銀行?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如何計算流水還差多少?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>取款輸入金額無法提交申請?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>取款金額未到帳戶?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「取款」按鈕&nbsp;&nbsp;→&nbsp;&nbsp;取款頁面</p>
+                            <p>1.第一次取款前先綁定銀行卡，綁定銀行卡步驟：</p>
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「我的」&nbsp;&nbsp;→&nbsp;&nbsp;點擊「我的錢包」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.綁定完成後在取款金額輸入框輸入金額，點擊立即取款</p>
+                        </div>
+                    </div>
+                </div>
+                <!--投注相關-->
+                <div class="betP">
+                    <div>
+                        <div class="helpbar">
+                            <p>如何單關投注?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「今日賽事」&nbsp;&nbsp;→&nbsp;&nbsp;點擊球種&nbsp;&nbsp;→&nbsp;&nbsp;選擇點擊賽事及投注項目</p>
+                            <p>1.點擊投注項目後跳出單關投注視窗：</p>
+                            <p>確認注單內容是否正確&nbsp;&nbsp;→&nbsp;&nbsp;輸入投注金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「投注」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.點擊投注後跳出注單確認視窗：</p>
+                            <p>顯示注單已確認&nbsp;&nbsp;→&nbsp;&nbsp;完成單關投注</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如何串關投注?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「今日賽事」&nbsp;&nbsp;→&nbsp;&nbsp;點擊球種&nbsp;&nbsp;→&nbsp;&nbsp;選擇點擊賽事及投注項目</p>
+                            <p>1.點擊投注項目後跳出單關投注視窗：</p>
+                            <p>確認注單內容是否正確&nbsp;&nbsp;→&nbsp;&nbsp;輸入投注金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「投注」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.點擊投注後跳出注單確認視窗：</p>
+                            <p>顯示注單已確認&nbsp;&nbsp;→&nbsp;&nbsp;完成單關投注</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>讓球以及大小球攻略</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>登入帳號&nbsp;&nbsp;→&nbsp;&nbsp;點擊網站首頁「今日賽事」&nbsp;&nbsp;→&nbsp;&nbsp;點擊球種&nbsp;&nbsp;→&nbsp;&nbsp;選擇點擊賽事及投注項目</p>
+                            <p>1.點擊投注項目後跳出單關投注視窗：</p>
+                            <p>確認注單內容是否正確&nbsp;&nbsp;→&nbsp;&nbsp;輸入投注金額&nbsp;&nbsp;→&nbsp;&nbsp;點擊「投注」&nbsp;&nbsp;→&nbsp;&nbsp;添加銀行卡</p>
+                            <p>2.點擊投注後跳出注單確認視窗：</p>
+                            <p>顯示注單已確認&nbsp;&nbsp;→&nbsp;&nbsp;完成單關投注</p>
+                        </div>
+                    </div>
+                </div>
+                <!--體育規則-->
+                <div class="sportP">
+                    <div class="sportbar">
+                        <button class="active">遊戲說明</button>
+                        <button>球頭換算法</button>
+                        <button>足球</button>
+                        <button>棒球</button>
+                        <button>籃球</button>
+                        <button>賽馬賽狗</button>
+                        <button>電競</button>
+                        <button>指數</button>
+                        <button class="nmar">彩球</button>
+                        <button>冰球</button>
+                        <button>網球</button>
+                        <button>斯諾克</button>
+                        <button>排球</button>
+                        <button>賽車</button>
+                        <button>羽毛球</button>
+                        <button>美式足球</button>
+                        <button>沙灘足球</button>
+                        <button class="nmar">乒乓球</button>
+                    </div>
+                    <table class="tsportP display">
+                        <tr>
+                            <th class="bg_darkpurple">遊戲規則說明-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                        <tr>
+                            <td>3.各位會員有責任在下單後，等待"投注成功"的視窗顯示與確定，並到「投注明細」中確認該筆注單是否"投注成功"且應仔細核對該筆注單之投注內容與投注金額，本公司僅以會員「投注明細」的內容計算結果之依據。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>4.本網站所有比賽的"賠率"或"分盤"會隨時變動，您所投注的賠率及分盤，將以最後顯示在"投注成功"後的注單為計算之依據。</td>
+                        </tr>
+                        <tr>
+                            <td>5.除<span class="wd_red">"走地盤外"</span>，在開賽後所接受之注單均視為<span class="wd_red">"無效"</span>，任何比賽如提前舉行，在開賽前所接受之注單均視為<span class="wd_red">"有效"</span></td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>6.本公司因會員人數龐大，於走地時系統非常繁忙，如因軟體或線路的問題而導致比分或盤口無法更新，所有相關注單一律視為<span class="wd_red">"無效"</span></td>
+                        </tr>
+                        <tr>
+                            <td>7.本網站在公布各種比賽分盤及賠率時，若出現任何的打字錯誤或非故意之人為疏失，本公司將保留刪除任何錯誤分盤或錯誤賠率注單的權力，並以"跑馬燈"公布之，不個別另行通知各位會員。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>8.客戶有責任確保自己的帳戶及登入資料的保密性，以會員帳號及密碼進行任何網上投注，將被視為<span class="wd_red">"有效"</span>，如果客戶發現自或懷疑自己的資料被盜用，請告知本公司或代理商，立即做密碼變更之動作(未變更原始密碼前所投注的注單，亦視為有效)。</td>
+                        </tr>
+                        <tr>
+                            <td>9.倘若遭駭客速親破壞或發生不可抗拒之災害導致網站故障或資料遺失等情況，本公司將以備份資料為最後處理依據。為確保各方真實利益，請會員投注後列印注單資料，本公司才接受投訴及處理。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">球頭換算法-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">足球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">棒球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">籃球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">賽馬賽狗-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">電競-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">指數-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">彩球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">冰球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">網球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">斯諾克-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">排球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">賽車-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">羽毛球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">美式足球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">沙灘足球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                    <table class="tsportP">
+                        <tr>
+                            <th class="bg_darkpurple">乒乓球-請詳細閱讀此說明</th>
+                        </tr>
+                        <tr>
+                            <td>1.為避免於本網站投注時之爭議，請會員務必進入網站前，詳細閱讀本公司所定之各項規則，客戶一經<span class="wd_red">｢同意｣</span>進入本網站進行投注時，即被視為已接受所有之規定。</td>
+                        </tr>
+                        <tr class="bg_wdgray">
+                            <td>2.所有比賽都必須"預定日期"或"法定時間"內進行，否則投注無效，若該場比賽因故取消或中止，則該場比賽將為無效，本公司將退回該比賽的所有注單，該場比賽各種關注單賠率以" 1 "降星計算。</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--技術支持-->
+                <div class="skillP">
+                    <div>
+                        <div class="helpbar">
+                            <p>如何避免帳戶被盜用?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如何保護個人帳戶資料?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如何備用平台網址?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如何透過其他方式聯繫我們?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>為什麼使用版本較低的瀏覽器會導致投注體驗下降和帳號不安全?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>選擇什麼樣的瀏覽器才能獲得平台最佳投注體驗?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>我是否需要更改任何瀏覽器配置?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>什麼是推薦的顯示分辨率?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>我是否需要任何程式或瀏覽器插件來運作網站?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <p>如果我已經使用網站更新和正確配置網站瀏覽器，仍遇到問題，我該怎麼做?</p>
+                        </div>
+                        <div class="helpbox">
+                            <p>1.盜用者通常以一些緊急的電子郵件作為吸引客戶的手法來騙取帳戶資料。本平台不會要求客戶在電郵上提供您的私人密碼以及帳戶資料，即使您認為是真的，請不要立即回覆，而是立即連絡我們網站上的在線客服進行確認。</p>
+                            <p>2.直接以網址登入網站</p>
+                            <p>登入平台時，請盡量在瀏覽器上直接輸入網址方式登入，請盡量不要使用其他網站上的超連結登入，以防止登入盜用者的木馬站點，造成個人資料或資金財產等不必要的損失。</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--懸浮側鍵-->
+        <section class="fixside">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                    <span>搜尋</span>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                </a>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--懸浮側鍵RWD-->
+        <section class="fixside_rwd">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--背景-->
+        <div class="bg index"></div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,2716 @@
+table {
+    width: 98%;
+    height: auto;
+    border-collapse: collapse;
+    background: #ffffff;
+    overflow: hidden;
+    border-radius: 18px;
+    box-shadow: 0 0 4px 2px #bac0db;
+	margin: 0px auto 25px;
+	&.turn {
+		display: none;
+	}
+    tr {
+		text-align: center;
+		//無效果button
+		&.graybut {
+			td {
+				button {
+					background: #eeeded;
+					border: none;
+					cursor: unset;
+					&:hover {
+						background: #eeeded;
+						color: #000;
+						span {
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+		&.bluebut {
+			td {
+				button {
+					color: #005aff;
+					background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+					&:hover {
+						color: #fff;
+						background: #3654ff;
+					}
+				}
+			}
+		}
+		&.redbut {
+			td {
+				button {
+					color: #ff0000;
+				}
+			}
+		}
+      	th {
+			color: #4d515d;
+			font-size: 16px;
+			font-weight: normal;
+			border-style: solid;
+			border-width: 0px 1px 1px 0px;
+			border-color: #e0e1e3;
+			padding: 5px 0px;
+			vertical-align: middle;
+			&:last-child {
+				border-right: none;
+			}
+			//字靠左
+			&.tleft {
+				text-align: left;
+				padding: 5px 10px;
+			}
+			//上段字前小圖
+			span {
+				display: block;
+				height: 14px;
+				width: 14px;
+				overflow: hidden;
+				position: relative;
+				float: left;
+				margin: 0px 5px 0px 10px;
+				background: url('../images/ball_ic.png') no-repeat;
+				background-size: 1800%;
+				//足球小圖
+				&.soccer {
+					background-position: (-28px -14px);
+				}
+				//棒球小圖
+				&.baseball {
+					background-position: (-42px -14px);
+				}
+				//籃球小圖
+				&.basketball {
+					background-position: (-56px -14px);
+				}
+				//賽馬小圖
+				&.racing_horse {
+					background-position: (-70px -14px);
+				}
+				//電競小圖
+				&.esport {
+					background-position: (-84px -14px);
+				}
+				//股票指數小圖
+				&.stock {
+					background-position: (-98px -14px);
+				}
+				//彩球小圖
+				&.lottery {
+					background-position: (-112px -14px);
+				}
+				//冰球小圖
+				&.iceball {
+					background-position: (-126px -14px);
+				}
+				//網球小圖
+				&.tennis {
+					background-position: (-140px -14px);
+				}
+				//斯諾克小圖
+				&.snooker {
+					background-position: (-154px -14px);
+				}
+				//排球小圖
+				&.v_ball {
+					background-position: (-168px -14px);
+				}
+				//賽車小圖
+				&.racecar {
+					background-position: (-182px -14px);
+				}
+				//羽毛球小圖
+				&.badminton {
+					background-position: (-196px -14px);
+				}
+				//沙灘足球小圖
+				&.bso {
+					background-position: (-210px -14px);
+				}
+				//美式足球小圖
+				&.football {
+					background-position: (-224px -14px);
+				}
+				//乒乓球小圖
+				&.pp {
+					background-position: (-238px -14px);
+				}
+				&.un {
+					background-position-y: -28px;
+				}
+			}
+      	}
+		td {
+			font-size: 16px;
+			border: 1px solid #e0e1e3;
+			border-bottom-width: 0px;
+			padding: 5px;
+			vertical-align: middle;
+			word-break: break-all;
+			&:last-child {
+				border-right: none;
+			}
+			//字靠左
+			&.tleft {
+				text-align: left;
+				padding: 5px 10px;
+			}
+			//字靠右
+			&.tright {
+				text-align: right;
+				padding: 5px 10px;
+			}
+			//小紅點
+			&.redpoint {
+				position: relative;
+				padding-right: 10px;
+				&::after {
+					content: "";
+					position: absolute;
+					width: 8px;
+					height: 8px;
+					margin: 4px 0px 0px 3px;
+					background: #e60012;
+					border-radius: 10px;
+				}
+			}
+			//小電視+愛心圖
+			a {
+				display: inline-block;
+				position: relative;
+				width: 25px;
+				height: 25px;
+				overflow: hidden;
+				margin: 3px 5px 0px 0px;
+				&:last-child {
+					margin: 0px;
+				}
+				//小電視
+				&.tbimg1 {
+					width: 20px;
+					height: 20px;
+					background: url('../images/tv.png') no-repeat;
+					background-size: 100%;
+					&::before {
+						content: "";
+						position: absolute;
+						width: 20px;
+						height: 60px;
+						background: linear-gradient(to right,transparent,#ffffff,transparent);
+						transform: rotate(135deg);
+						left: -25px;
+						top: -10px;
+					}
+					&:hover:before {
+						left: 50px;
+						transition: 0.5s all;
+					}
+				}
+				//愛心圖
+				&.tbimg2 {
+					width: 20px;
+					height: 20px;
+					background: url('../images/heart.png') no-repeat;
+					background-size: 200%;
+					&:hover {
+						background-position: (-20px 0px);
+					}
+				}
+				//+99
+				&.tbimg3 {
+					width: 35px;
+					height: 20px;
+					line-height: 20px;
+					color: #4d515d;
+				}
+        	}
+			//內頁td內按鈕
+			button {
+				font-size: 13px;
+				border: 1px solid #b9bfdc;
+				border-radius: 5px;
+				padding: 3px 0px 0px 0px;
+        		background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+				&:hover {
+					background: #3654ff;
+					color: white;
+					span {
+						color: white;
+					}
+				}
+				&:first-child {
+					margin: 0px;
+				}
+				span {
+					font-weight: bold;
+          			font-size: 17px;
+				}
+			}
+      	}
+    }
+    //足球版首頁
+    &.tsoc {
+		tr {
+			td {
+				&:nth-child(1) {
+					width: 10%;
+					color: white;
+				}
+				&:nth-child(2) {
+					width: 8%;
+				}
+				&:nth-child(3) {
+					width: 8%;
+				}
+				&:nth-child(4) {
+					width: 25%;
+				}
+				&:nth-child(5) {
+					width: 8%;
+				}
+				&:nth-child(6) {
+					width: 25%;
+				}
+				&:nth-child(7) {
+					width: 8%;
+				}
+				&:nth-child(8) {
+					width: 8%;
+				}
+			}
+		}
+    }
+    //籃球版首頁
+    &.tbsk {
+		.rowup {
+			a {
+				margin: 3px;
+			}
+			td {
+				&:nth-child(1) {
+					width: 10%;
+				}
+				&:nth-child(2) {
+					width: 10%;
+				}
+				&:nth-child(3) {
+					width: 38%;
+				}
+				&:nth-child(4) {
+					width: 6%;
+				}
+				&:nth-child(5) {
+					width: 6%;
+				}
+				&:nth-child(6) {
+					width: 6%;
+				}
+				&:nth-child(7) {
+					width: 6%;
+				}
+				&:nth-child(8) {
+					width: 6%;
+				}
+				&:nth-child(9) {
+					width: 6%;
+				}
+				&:nth-child(10) {
+					width: 6%;
+				}
+			}
+		}
+    }
+    //棒球版首頁
+    &.tbase {
+      	.rowup {
+			a {
+				margin: 3px;
+			}
+			td {
+				&:nth-child(1) {
+					width: 10%;
+				}
+				&:nth-child(2) {
+					width: 10%;
+				}
+				&:nth-child(3) {
+					width: 18%;
+				}
+				&:nth-child(4) {
+					width: 17%;
+				}
+				&:nth-child(5) {
+					width: 3%;
+				}
+				&:nth-child(6) {
+					width: 3%;
+				}
+				&:nth-child(7) {
+					width: 3%;
+				}
+				&:nth-child(8) {
+					width: 3%;
+				}
+				&:nth-child(9) {
+					width: 3%;
+				}
+				&:nth-child(10) {
+					width: 3%;
+				}
+				&:nth-child(11) {
+					width: 3%;
+				}
+				&:nth-child(12) {
+					width: 3%;
+				}
+				&:nth-child(13) {
+					width: 3%;
+				}
+				&:nth-child(14) {
+					width: 3%;
+				}
+				&:nth-child(15) {
+					width: 3%;
+				}
+				&:nth-child(16) {
+					width: 3%;
+				}
+				&:nth-child(17) {
+					width: 3%;
+				}
+				&:nth-child(18) {
+					width: 6%;
+				}
+			}
+      	}
+    }
+    //足球版內頁
+    &.tsocin {
+      tr {
+        td {
+          &:nth-child(1) {
+            width: 8%;
+          }
+          &:nth-child(2) {
+            width: 35%;
+          }
+          &:nth-child(3) {
+            width: 8%;
+          }
+          &:nth-child(4) {
+            width: 35%;
+          }
+          &:nth-child(5) {
+            width: 13.5%;
+          }
+        }
+        button {
+          width: 90px;
+          height: 28px;
+          margin-left: 3px;
+        }
+      }
+    }
+    &.tsocin2 {
+      tr {
+        td {
+          &:nth-child(1) {
+            width: 8%;
+          }
+          &:nth-child(2) {
+            width: 43%;
+          }
+          &:nth-child(3) {
+            width: 35%;
+          }
+          &:nth-child(4) {
+            width: 13.5%;
+          }
+        }
+        button {
+          width: 90px;
+          height: 28px;
+          margin-left: 3px;
+          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+        }
+      }
+    }
+    //棒/籃球/電競版內頁
+    &.tpub {
+      tr {
+        td {
+          &:nth-child(1) {
+            width: 8%;
+          }
+          &:nth-child(2) {
+            width: 36%;
+          }
+          &:nth-child(3) {
+            width: 8%;
+          }
+          &:nth-child(4) {
+            width: 35%;
+          }
+          &:nth-child(5) {
+            width: 12.5%;
+          }
+        }
+        button {
+          width: 140px;
+          height: 28px;
+		  margin-left: 3px;
+		  font-size: 15px;
+        }
+      }
+    }
+    &.tpub2 {
+      tr {
+        td {
+          font-size: 17px;
+          &:nth-child(1) {
+            width: 8%;
+          }
+          &:nth-child(2) {
+            width: 44%;
+          }
+          &:nth-child(3) {
+            width: 35%;
+          }
+          &:nth-child(4) {
+            width: 12.5%;
+          }
+        }
+        button {
+          width: 140px;
+          height: 28px;
+          margin-left: 3px;
+		  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+		  font-size: 15px;
+        }
+      }
+    }
+    //賽馬/股票/彩球內頁
+    &.trh {
+      tr {
+        td {
+          &:nth-child(1) {
+            width: 10%;
+          }
+          &:nth-child(2) {
+            width: 55%;
+          }
+          &:nth-child(3) {
+            width: 15%;
+          }
+          &:nth-child(4) {
+            width: 15%;
+          }
+          &:nth-child(5) {
+			width: 5%;
+			a {
+				margin-right: 0px;
+			}
+          }
+          &.smallbut_rh {
+            position: relative;
+            .smallsp {
+              position: absolute;
+              top: 50%;
+              transform: translateY(-50%);
+              left: 15px;
+            }
+            button {
+              width: 65px;
+              float: right;
+			  margin-top: 0px;
+			  padding: 0px;
+            }
+          }
+        }
+        button {
+          width: 110px;
+          height: 34px;
+          margin: 5px 3px;
+          span {
+            font-size: 14px;
+          }
+        }
+      }
+	}
+	&.trh2 {
+		tr {
+			td {
+				&:nth-child(1) {
+					width: 10%;
+				}
+				&:nth-child(2) {
+					width: 55%;
+				}
+				&:nth-child(3) {
+					width: 15%;
+				}
+				&:nth-child(4) {
+					width: 15%;
+				}
+				&:nth-child(5) {
+					width: 5%;
+					a {
+						margin-right: 0px;
+					}
+				}
+				&.smallbut_rh {
+					position: relative;
+					.smallsp {
+						position: absolute;
+						top: 50%;
+						transform: translateY(-50%);
+						left: 15px;
+					}
+					button {
+						width: 65px;
+						float: right;
+						margin-top: 0px;
+						padding: 0px;
+					}
+				}
+			}
+			button {
+				width: 110px;
+				height: 34px;
+				margin: 5px 3px;
+				background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+				span {
+				font-size: 14px;
+				}
+			}
+		}
+	}
+    //專業版
+    &.tsp {
+		&.un {
+			.rowup {
+				td {
+					&:nth-child(1) {
+						width: 7%;
+					}
+					&:nth-child(2) {
+						width: 20%;
+					}
+					&:nth-child(3) {
+						width: 8%;
+					}
+					&:nth-child(4) {
+						width: 15%;
+					}
+					&:nth-child(5) {
+						width: 15%;
+					}
+					&:nth-child(6) {
+						width: 15%;
+					}
+					&:nth-child(7) {
+						width: 15%;
+					}
+					&:nth-child(8) {
+						width: 5%;
+					}
+				}
+			}
+		}
+		.rowup {
+			a {
+				margin: 0px;
+				&:first-child {
+					margin-top: 5px;
+				}
+			}
+			td {
+				&.unsetsp {
+					position: relative;
+					span {
+						display: block;
+						padding: 5px 0px;
+						color: #4d515d;
+						&.smallsp {
+							font-size: 13px;
+							font-weight: normal;
+							position: absolute;
+							left: 10px;
+							top: 50%;
+							transform: translateY(-50%);
+						}
+					}
+				}
+				&:nth-child(1) {
+					width: 7%;
+				}
+				&:nth-child(2) {
+					width: 15%;
+				}
+				&:nth-child(3) {
+					width: 5%;
+				}
+				&:nth-child(4) {
+					width: 8%;
+				}
+				&:nth-child(5) {
+					width: 15%;
+				}
+				&:nth-child(6) {
+					width: 15%;
+				}
+				&:nth-child(7) {
+					width: 15%;
+				}
+				&:nth-child(8) {
+					width: 15%;
+				}
+				&:nth-child(9) {
+					width: 5%;
+				}
+			}
+		}
+      	.smallbut_1,.smallbut_2 {
+			position: relative;
+			button {
+				width: 54px;
+				height: 20px;
+				line-height: 18px;
+				float: right;
+				margin: 2px 5px;
+				font-weight: bold;
+				padding: 1px 0px 0px;
+			}
+			.smallsp {
+				font-size: 14px;
+				font-weight: normal;
+				position: absolute;
+				left: 5px;
+				top: 50%;
+				transform: translateY(-50%);
+			}
+      	}
+		.smallbut_2 {
+			button {
+				padding-top: 4px;
+				width: 69px;
+				height: 32px;
+			}
+      	}
+    }
+    //足球比賽結果
+    &.tsocre {
+		&:first-child {
+			margin-top: 85px;
+		}
+      .rowup {
+        td {
+          &:nth-child(1) {
+			width: 10%;
+          }
+          &:nth-child(2) {
+            width: 18%;
+          }
+          &:nth-child(3) {
+            width: 38%;
+          }
+          &:nth-child(4) {
+            width: 17%;
+          }
+          &:nth-child(5) {
+            width: 17%;
+          }
+        }
+      }
+    }
+    //棒球比賽結果
+    &.tbasere {
+		&:first-child {
+			margin-top: 85px;
+		}
+      	.rowup {
+			td {
+				&:nth-child(1) {
+					width: 10%;
+				}
+				&:nth-child(2) {
+					width: 20%;
+				}
+				&:nth-child(3) {
+					width: 25%;
+				}
+				&:nth-child(4) {
+					width: 4%;
+				}
+				&:nth-child(5) {
+					width: 4%;
+				}
+				&:nth-child(6) {
+					width: 4%;
+				}
+				&:nth-child(7) {
+					width: 4%;
+				}
+				&:nth-child(8) {
+					width: 4%;
+				}
+				&:nth-child(9) {
+					width: 4%;
+				}
+				&:nth-child(10) {
+					width: 4%;
+				}
+				&:nth-child(11) {
+					width: 4%;
+				}
+				&:nth-child(12) {
+					width: 4%;
+				}
+				&:nth-child(13) {
+					width: 4%;
+				}
+				&:nth-child(14) {
+					width: 5%;
+				}
+			}
+        }
+    }
+    //籃球比賽結果
+    &.tbskre {
+		&:first-child {
+			margin-top: 85px;
+		}
+		.rowup {
+			td {
+				&:nth-child(1) {
+					width: 10%;
+				}
+				&:nth-child(2) {
+					width: 20%;
+				}
+				&:nth-child(3) {
+					width: 34%;
+				}
+				&:nth-child(4) {
+					width: 6%;
+				}
+				&:nth-child(5) {
+					width: 6%;
+				}
+				&:nth-child(6) {
+					width: 6%;
+				}
+				&:nth-child(7) {
+					width: 6%;
+				}
+				&:nth-child(8) {
+					width: 6%;
+				}
+				&:nth-child(9) {
+					width: 6%;
+				}
+			}
+		}
+    }
+    //投注記錄選單
+    &.tbet {
+		display: none;
+		width: 830px;
+		margin-left: 17px;
+		cursor: pointer;
+		&.display {
+			display: table;
+		}
+		&.recordboard {
+			width: 96%;
+			margin: 0px auto 15px;
+		}
+		tr {
+			th {
+				font-size: 15px;
+				border-color: #b9c0d2;
+				border-width: 0px 0px 1px 0px;
+				&:first-child {
+					padding-left: 20px;
+				}
+				&.spth {
+					padding: 0px;
+					border-right: solid 1px #b9c0d2;
+					width: 5%;
+					font-size: 24px;
+				}
+				p {
+					float: left;
+					padding-top: 3px;
+				}
+				span {
+					margin-top: 3px;
+					&.arrow {
+						background: url('../images/arrow_b.png') no-repeat center;
+						transform: rotate(90deg);
+						margin: 2px 0px 0px 15px;
+						&.un {
+							background: url('../images/arrow_w.png') no-repeat center;
+						}
+					}
+				}
+				//線段
+				.topline {
+					width: 1px;
+					height: 20px;
+					background: #b9c0d2;
+					float: left;
+					margin: 0px 10px;
+					padding: 0px;
+				}
+			}
+			td {
+				font-size: 14px;
+				font-weight: normal;
+				border-color: #b9c0d2;
+				border-width: 1px 1px 1px 0px;
+				padding: 8px 0px;
+				line-height: 20px;
+				&:nth-child(1) {
+					width: 11%;
+				}
+				&:nth-child(2) {
+					width: 25%;
+				}
+				&:nth-child(3) {
+					width: 10%;
+				}
+				&:nth-child(4) {
+					width: 22%;
+				}
+				&:nth-child(5) {
+					width: 10%;
+				}
+				&:nth-child(6) {
+					width: 22%;
+				}
+				&.tleft {
+					padding: 5px 0px 5px 10px;
+				}
+			}
+		}
+    }
+    &.tbet2 {
+		width: 96%;
+		box-shadow: none;
+		border-radius: 12px;
+		margin: 0px auto 25px;
+      	tr {
+			background: #bf652e;
+			td {
+				font-weight: normal;
+				position: relative;
+				font-size: 14px;
+				color: white;
+				border: none;
+				padding: 8px 0px;
+				vertical-align: middle;
+				padding: 5px 0px;
+				line-height: 28px;
+				&:nth-child(1) {
+					width: 11%;
+					padding-left: 10px;
+				}
+				&:nth-child(2) {
+					width: 25%;
+				}
+				&:nth-child(3) {
+					width: 10%;
+				}
+				&:nth-child(4) {
+					width: 22%;
+				}
+				&:nth-child(5) {
+					width: 10%;
+				}
+				&:nth-child(6) {
+					width: 22%;
+				}
+				&.tleft {
+					text-align: left;
+					padding-left: 10px;
+				}
+				.topline {
+					float: right;
+					width: 1px;
+					height: 22px;
+					background: #fff;
+					margin-top: 3px;
+				}
+			}
+      	}
+    }
+    //串關投注格
+    &.tbetting {
+      	width: 100%;
+		border-radius: 0px;
+		margin: 0px;
+		position: relative;
+		box-shadow: none;
+		tr {
+			th {
+				border-width: 1px;
+				font-size: 13px;
+				line-height: 16px;
+				button {
+					width: 18px;
+					height: 18px;
+					position: absolute;
+					right: 10px;
+					background: transparent;
+					&::before {
+						content: "";
+						position: absolute;
+						width: 1px;
+						height: 18px;
+						background: #000;
+						top: 0px;
+						left: 8px;
+						transform: rotate(45deg);
+					}
+					&::after {
+						content: "";
+						position: absolute;
+						width: 1px;
+						height: 18px;
+						background: #000;
+						left: 8px;
+						top: 0px;
+						transform: rotate(135deg);
+					}
+				}
+			}
+			td {
+				height: 50px;
+				border-width: 1px;
+				&:nth-child(1) {
+					width: 10%;
+					border-right: none;
+				}
+				&:nth-child(2) {
+					width: 40%;
+					border-left: none;
+				}
+				&:nth-child(3) {
+					width: 50%;
+					font-size: 13px;
+					font-weight: lighter;
+					color: #4d515d;
+					line-height: 25px;
+				}
+			}
+		}
+	}
+	//選擇版面
+	&.tch {
+		width: 100%;
+		border-radius: 0px;
+		margin: 0px;
+		box-shadow: none;
+		background: transparent;
+		tr {
+			text-align: left;
+			td {
+				width: 12.5%;
+				height: 30px;
+				font-size: 15px;
+				position: relative;
+				border: none;
+				padding: 5px 0px 5px 30px;
+			}
+		}
+	}
+	&.tch2 {
+		width: 100%;
+		border-radius: 0px;
+		margin: 0px;
+		box-shadow: none;
+		background: transparent;
+		tr {
+			text-align: left;
+			td {
+				width: 33%;
+				height: 30px;
+				font-size: 15px;
+				position: relative;
+				border: none;
+				padding: 5px 0px 5px 30px;
+			}
+		}
+	}
+	//盤口教程
+	&.tteach {
+		width: 100%;
+		tr {
+			&.teachre {
+				&.dou {
+					td {
+						&.tright {
+							padding: 5px 145px 30px 0px;
+						}
+						&.tleft {
+							padding: 5px 0px 30px 145px;
+						}
+						.rebody {
+							transform: translateY(-70%) translateX(-50%);
+						}
+					}
+				}
+				td {
+					border: none;
+					&.tright {
+						padding: 50px 145px 30px 0px;
+					}
+					&.tleft {
+						padding: 50px 0px 30px 145px;
+					}
+					.rebody {
+						width: 320px;
+						height: 80px;
+						background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+						border-radius: 40px;
+						position: absolute;
+						left: 50%;
+						top: 50%;
+						transform: translateY(-38%) translateX(-50%);
+						p {
+							width: 100%;
+							margin: 0px;
+							&:first-child {
+								margin-top: 15px;
+							}
+						}
+						.releft {
+							float: left;
+							width: 33%;
+							position: unset;
+							padding-left: 10px;
+						}
+						.reright {
+							float: right;
+							width: 33%;
+							position: unset;
+							padding-right: 10px;
+						}
+						.remid {
+							width: 90px;
+							height: 90px;
+							position: absolute;
+							left: 50%;
+							top: 50%;
+							transform: translateY(-50%) translateX(-50%);
+							background: #e9f5ff;
+							border-radius: 50%;
+							p {
+								&:first-child {
+									margin-top: 20px;
+								}
+								&:last-child {
+									font-size: 24px;
+								}
+							}
+						}
+					}
+				}
+			}
+			td { 
+				line-height: 24px;
+				position: relative;
+				border-width: 0px 0px 1px 0px;
+				&:nth-child(1) {
+					width: 45%;
+				}
+				&:nth-child(2) {
+					width: 10%;
+				}
+				&:nth-child(3) {
+					width: 45%;
+				}
+				&.tright,&.tleft {
+					padding: 20px 60px;
+				}
+				.teamimg {
+					display: block;
+					width: 30px;
+					height: 30px;
+					background: url('../images/teamimg.png') no-repeat;
+					background-size: 200%;
+					position: absolute;
+					top: 50%;
+					transform: translateY(-50%);
+					&.fr {
+						right: 0px;
+					}
+					&.fl {
+						left: 0px;
+						background-position-x: -30px;
+					}
+				}
+				.capital {
+					display: block;
+					width: 200%;
+					position: absolute;
+					padding: 5px 10px;
+					bottom: -20px;
+					left: 50%;
+					transform: translateX(-50%);
+					border: solid 1px #b9c0d2;
+					border-radius: 30px;
+					color: #4a5ec5;
+					background: #fff;
+				}
+			}
+		}
+	}
+	//內頁
+	&.tinn {
+		border-radius: 10px;
+		margin: 0px auto 20px;
+		&:last-child {
+			margin-bottom: 80px;
+		}
+		tr {
+			&.cell3 {
+				td {
+					width: 33%;
+					button {
+						span {
+							margin-left: 100px;
+						}
+					}
+				}
+			}
+			&.cell8 {
+				td {
+					width: 12.5%;
+					button {
+						span {
+							margin-left: 15px;
+						}
+					}
+				}
+			}
+			&.cell6 {
+				td {
+					width: 15%;
+					button {
+						span {
+							margin-left: 15px;
+						}
+					}
+				}
+			}
+			&.cell4 {
+				td {
+					width: 25%;
+					button {
+						span {
+							margin-left: 30px;
+						}
+					}
+				}
+			}
+			&.cell2 {
+				td {
+					width: 50%;
+					button {
+						span {
+							margin-left: 120px;
+						}
+					}
+				}
+			}
+			td {
+				border: none;
+				font-size: 15px;
+				button {
+					width: 98%;
+					background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+					font-size: 15px;
+					&:hover,&:active {
+						background: #3654ff;
+					}
+				}
+			}
+		}
+	}
+	//多版table
+	&.tperson {
+		width: 830px;
+		position: relative;
+		margin-left: 17px;
+		//個人資料頁用
+		&.person {
+			tr {
+				td {
+					//個人資料_大頭貼
+					.sticker {
+						width: 79px;
+						height: 81px;
+						background: url('../images/avatar_big.png') no-repeat;
+						position: relative;
+						cursor: pointer;
+						&::before {
+							content: "";
+							width: 30px;
+							height: 30px;
+							position: absolute;
+							background: url('../images/edit.png') no-repeat;
+							right: 0px;
+							bottom: 0px;
+						}
+					}
+				}
+			}
+		}
+		//我的錢包用
+		&.money {
+			tr {
+				th {
+					//重新整理按鈕
+					.re {
+						position: absolute;
+						background: transparent;
+						font-size: 14px;
+						right: 20px;
+						top: 4px;
+						color: #4d515d;
+						&.notbut {
+							cursor: default;
+							&::before {
+								display: none;
+							}
+						}
+						&::before {
+							content: "";
+							position: absolute;
+							width: 14px;
+							height: 14px;
+							background: url('../images/reset.png') no-repeat;
+							background-size: 100%;
+							left: -12px;
+							top: 5px;
+						}
+						&:hover:before {
+							animation: reset 1s ease-in-out 0s infinite;
+						}
+					}
+				}
+				td {
+					//我的錢包_銀行卡卡片格
+					.creditcard {
+						width: 250px;
+						height: 110px;
+						background: #f1f1f1;
+						border-radius: 5px;
+						float: left;
+						margin-right: 20px;
+						border: none;
+						transition: 0.3s all;
+						position: relative;
+						//hover效果
+						&.un {
+							.card_ic {
+								background-position-x: -42px;
+							}
+						}
+						//已新增卡片效果
+						&.c1,&.c2,&.c3 {
+							&.click {
+								&::before {
+									content: "";
+									position: absolute;
+									width: 30px;
+									height: 30px;
+									border: solid 5px #fff;
+									border-radius: 30px;
+									top: -8px;
+									right: -8px;
+								}
+								&::after {
+									content: "";
+									position: absolute;
+									width: 8px;
+									height: 16px;
+									border: solid 5px #fff;
+									border-width: 0px 5px 5px 0px;
+									transform: rotate(45deg);
+									top: 0px;
+									right: 5px;
+								}
+							}
+							div {
+								width: 30px;
+								height: 30px;
+								background: url('../images/card_icon.png') no-repeat;
+								background-size: 300%;
+								position: absolute;
+								top: 25px;
+								left: 10px;
+							}
+							p {
+								position: absolute;
+								top: 20px;
+								left: 50px;
+								color: #fff;
+								&.race {
+									top: 40px;
+									font-size: 10px;
+									font-weight: lighter;
+								}
+								&.cardnum {
+									left: 10px;
+									top: 70px;
+									font-weight: bold;
+
+								}
+							}
+						}
+						//卡片1
+						&.c1 {
+							background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
+							&:hover,&:active {
+								box-shadow: none;
+								background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
+							}
+							&::before {
+								box-shadow: 0 0 6px 1px #6689c6;
+							}
+							.bank_ic1 {
+								width: 30px;
+								height: 30px;
+								background: url('../images/card_icon.png') no-repeat;
+								background-size: 300%;
+								position: absolute;
+								top: 25px;
+								left: 10px;
+							}
+							p {
+								position: absolute;
+								top: 20px;
+								left: 50px;
+								color: #fff;
+								&.race {
+									top: 40px;
+									font-size: 10px;
+									font-weight: lighter;
+								}
+								&.cardnum {
+									left: 10px;
+									top: 70px;
+									font-weight: bold;
+
+								}
+							}
+						}
+						//卡片2
+						&.c2 {
+							background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+							&:hover,&:active {
+								box-shadow: none;
+								background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
+							}
+							&::before {
+								box-shadow: 0 0 6px 1px #32a9b2;
+							}
+							div {
+								background-position-x: -30px;
+							}
+						}
+						//卡片3
+						&.c3 {
+							background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
+							&:hover,&:active {
+								box-shadow: none;
+								background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
+							}
+							&::before {
+								box-shadow: 0 0 6px 1px #d8767a;
+							}
+							div {
+								background-position-x: -60px;
+							}
+						}
+						&:last-child {
+							margin: 0px;
+						}
+						&:hover,&:active {
+							box-shadow: 0 0 4px 1px #bac0db;
+							background: #fff;
+						}
+						//新增銀行卡圖
+						.card_ic {
+							width: 42px;
+							height: 29px;
+							margin: 0px auto 10px;
+							background: url('../images/add_card.png');
+						}
+						p {
+							font-size: 14px;
+							color: #4d515d;
+						}
+					}
+					//我的錢包_小框
+					.smallbox {
+						width: 190px;
+						height: 90px;
+						border: solid 1px #b9c0d2;
+						border-radius: 5px;
+						text-align: left;
+						float: left;
+						margin: 0px 7px 7px 0px;
+						position: relative;
+						&.nmar {
+							margin-right: 0px;
+						}
+						//一鍵回收
+						.charge {
+							background: #d7af8a;
+							color: #fff;
+							position: absolute;
+							border: none;
+							font-size: 14px;
+							padding: 2px 5px;
+							border-radius: 20px;
+							border: solid 1px #d7af8a;
+							top: 10px;
+							right: 5px;
+							&:hover,&:active {
+								background: transparent;
+								color: #d7af8a;
+							}
+						}
+						p {
+							color: #4d515d;
+							font-size: 14px;
+							padding: 15px 0px 10px 20px;
+							&.dollar {
+								font-size: 10px;
+								span {
+									font-size: 16px;
+								}
+							}
+						}
+					}
+				}
+			}
+		}
+		//聯繫我們用
+		&.contactus {
+			tr {
+				td {
+					&:nth-child(1){
+						width: 13%;
+					}
+					//選擇問題類型選單
+					.innerlist {
+						float: left;
+						height: 34px;
+						ul {
+							width: 220px;
+							height: 34px;
+							border: 1px solid #b9bfdc;
+							border-radius: 5px;
+							text-align: left;
+							overflow: hidden;
+							&.open {
+								height: auto;
+							}
+							button {
+								float: right;
+								width: 34px;
+								height: 34px;
+								border: none;
+								background: url('../images/arrow_b.png') no-repeat center;
+								transform: rotate(90deg);
+							}
+							li {
+								line-height: 34px;
+								padding-left: 15px;
+								font-size: 15px;
+								color: #8c93a6;
+							}
+						}
+					}
+					//小灰字
+					.sword {
+						font-size: 15px;
+						color: #8c93a6;
+					}
+					//打字區
+					textarea {
+						width: 95%;
+						margin-bottom: 20px;
+						resize: none;
+						border: none;
+						outline: none;
+					}
+					//上傳圖片按鈕
+					.upimg {
+						width: 70px;
+						height: 70px;
+						background: transparent;
+						padding-top: 20px;
+						position: relative;
+						transition: 0.3s all;
+						&:hover,&:active {
+							box-shadow: 0 0 8px 1px #d7ddf1;
+							color: #000;
+						}
+						span {
+							display: block;
+							width: 24px;
+							height: 19px;
+							background: url('../images/uploadimg.png');
+							position: absolute;
+							top: 13px;
+							left: 23px;
+						}
+					}
+					//圖片張數
+					.imgpage {
+						position: absolute;
+						top: 10px;
+						right: 15px;
+						color: #838ba0;
+					}
+					//提交圖片按鈕
+					.upimgbut {
+						width: 220px;
+						height: 36px;
+						color: #fff;
+						font-size: 16px;
+						float: right;
+						background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+						border-radius: 5px;
+						padding: 0px;
+						&:hover,&:active {
+							background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
+						}
+					}
+				}
+			}
+		}
+		//設定用
+		&.control {
+			.midC {
+				width: 50%;
+				padding: 20px 0px;
+				float: left;
+				.rowbut {
+					display: inline-block;
+					position: relative;
+					background: #a3a8c4;
+					margin-left: 40px;
+					padding: 8px 20px;
+					border-radius: 20px;
+					position: relative;
+					cursor: pointer;
+					&.lside {
+						span {
+							&:last-child {
+								color: #fff;
+							}
+						}
+						.innbut {
+							animation: rowbut 0.3s ease-out 0s;
+						}
+					}
+					&.rside {
+						span {
+							&:nth-of-type(1) {
+								color: #fff;
+							}
+						}
+						.innbut {
+							left: 50%;
+							animation: rowbut2 0.3s ease-out 0s;
+						}
+					}
+					span {
+						margin-right: 20px;
+						font-size: 14px;
+						position: relative;
+						&:last-child {
+							margin: 0px;
+						}
+					}
+					.innbut {
+						width: 45%;
+						height: 80%;
+						background: #fff;
+						position: absolute;
+						left: 5%;
+						top: 10%;
+						border-radius: 20px;
+					}
+				}
+			}
+		}
+		//加入我們用
+		&.joinus {
+			tr {
+				td {
+					//小圖
+					.join_ic {
+						float: left;
+						width: 50px;
+						height: 50px;
+						background: url('../images/joinus_ic.png') no-repeat;
+						background-size: 500%;
+						&.img2 {
+							background-position-x: -50px;
+						}
+						&.img3 {
+							background-position-x: -100px;
+						}
+						&.img4 {
+							background-position-x: -150px;
+							margin: 8px 20px 0px 40px;
+						}
+						&.img5 {
+							background-position-x: -200px;
+							margin: 8px 20px 0px 60px;
+						}
+					}
+					//窗格格式
+					.support {
+						float: left;
+						width: 214px;
+						height: 214px;
+						padding: 20px;
+						border: 1px solid #b9c0d2;
+						border-radius: 5px;
+						margin-right: 10px;
+						&:last-child {
+							margin-right: 0px;
+						}
+						div {
+							margin: 20px auto 30px;
+							float: none;
+						}
+						p {
+							font-size: 18px;
+							color: #4d515d;
+							&.gray {
+								font-size: 15px;
+								padding-top: 15px;
+								line-height: 20px;
+							}
+						}
+					}
+				}
+			}
+		}
+		//取款頁面用
+		&.withdrawl {
+			tr {
+				td {
+					font-size: 14px;
+					color: #4d515d;
+					input {
+						width: 220px;
+						height: 30px;
+						font-size: 15px;
+						padding-left: 10px;
+						margin: 10px 0px;
+						border-radius: 5px;
+						border: 1px solid #b9c0d2;
+						&::placeholder {
+							font-weight: bold;
+							font-size: 13px;
+							color: #c7c7c7;
+						}
+						&.focus {
+							border: 1px solid #364bb9;
+						}
+					}
+					.range {
+						color: #8c93a6;
+						font-size: 14px;
+						position: relative;
+						margin-left: 40px;
+						&::before {
+							content: "";
+							width: 15px;
+							height: 15px;
+							position: absolute;
+							background: url('../images/infor.png') no-repeat;
+							top: -1px;
+							left: -18px;
+						}
+					}
+					.withbut {
+						width: 235px;
+						height: 34px;
+						padding: 0px;
+						font-weight: bold;
+						background: #c3c7d2;
+						color: #fff;
+						cursor: default;
+						&.focus {
+							background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+							cursor: pointer;
+							&:hover,&:active {
+								background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+							}
+						}
+					}
+					.timebox {
+						float: left;
+						width: 250px;
+						height: 120px;
+						background: #fff;
+						margin-right: 17px;
+						border-radius: 10px;
+						border: 1px solid #b9bfdc;
+						overflow: hidden;
+						&:last-child {
+							margin-right: 0px;
+						}
+						.boxtitle {
+							width: 100%;
+							height: 35px;
+							background: #dee0e5;
+							text-align: left;
+							p {
+								line-height: 35px;
+								padding-left: 20px;
+							}
+						}
+						.content {
+							width: 100%;
+							height: 85px;
+							p {
+								font-size: 24px;
+								padding: 15px 0px 10px;
+							}
+						}
+					}
+				}
+			}
+		}
+		//轉點頁面用
+		&.transpoint {
+			tr {
+				td {
+					//小灰字
+					&.sword {
+						font-size: 14px;
+						color: #4d515d;
+					}
+					//ul輸入框
+					.ulbox {
+						display: inline-block;
+						width: 262px;
+						height: 34px;
+						position: relative;
+						margin: 0px 20px;
+						select {
+							width: 260px;
+							height: 32px;
+							position: absolute;
+							top: 0px;
+							left: 0px;
+							background: #fff;
+							border: 1px solid #b9bfdc;
+							border-radius: 5px;
+							padding-left: 10px;
+						}
+					}
+					.inputmoney {
+						width: 248px;
+						height: 26px;
+						border-radius: 5px;
+						border: 1px solid #b9bfdc;
+						padding-left: 10px;
+						margin: 15px 0px;
+						&::placeholder {
+							color: #c7c7c7;
+							font-weight: bold;
+						}
+					}
+					//箭頭圖
+					.arrow {
+						display: inline-block;
+						width: 24px;
+						height: 15px;
+						background: url('../images/arrow_trans.png');
+						margin-bottom: 10px;
+					}
+					//轉點按鈕
+					.transbut {
+						width: 262px;
+						height: 32px;
+						padding: 0px;
+						font-weight: bold;
+						background: #c3c7d2;
+						color: #fff;
+						font-size: 16px;
+						cursor: default;
+						&.focus {
+							background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+							cursor: pointer;
+							&:hover,&:active {
+								background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+							}
+						}
+					}
+				}
+			}
+		}
+		//存款用
+		&.deposit {
+			&.tbank,&.tnum,&.tnetcard {
+				display: none;
+				&.display {
+					display: table;
+				}
+			}
+			tr {
+				th {
+					//存款教程
+					.teach {
+						position: absolute;
+						background: transparent;
+						font-size: 14px;
+						right: 20px;
+						top: 4px;
+						color: #4d515d;
+						&::before {
+							content: "";
+							position: absolute;
+							width: 15px;
+							height: 15px;
+							background: url('../images/infor.png') no-repeat;
+							background-size: 100%;
+							left: -12px;
+							top: 4px;
+						}
+					}
+				}
+				td {
+
+					button {
+						//支付方式
+						&.paybut {
+							width: 100px;
+							height: 80px;
+							border-radius: 10px;
+							background: transparent;
+							padding: 0px;
+							margin: 5px;
+							color: #4d515d;
+							position: relative;
+							&:hover,&:active,&.active {
+								color: #4d515d;
+								border-color: #3046b7;
+								&::before {
+									content: "";
+									position: absolute;
+									width: 29px;
+									height: 29px;
+									background: url('../images/box_check.png');
+									right: 0px;
+									bottom: 0px;
+								}
+							}
+							//圖
+							span {
+								display: block;
+								width: 40px;
+								height: 40px;
+								background: url('../images/save_icon.png') no-repeat;
+								margin: 0px auto;
+								background-size: 1400%;
+								&.bankcard {
+									background-position-x: -40px;
+								}
+								&.paypalcard {
+									background-position-x: -80px;
+								}
+								&.wechat {
+									background-position-x: -120px;
+								}
+								&.paypal {
+									background-position-x: -160px;
+								}
+								&.QQ {
+									background-position-x: -200px;
+								}
+								&.UP {
+									background-position-x: -240px;
+								}
+								&.num {
+									background-position-x: -280px;
+								}
+								&.QRcode {
+									background-position-x: -320px;
+								}
+								&.instead {
+									background-position-x: -360px;
+								}
+								&.netcard {
+									background-position-x: -400px;
+								}
+								&.wechatcard {
+									background-position-x: -440px;
+								}
+								&.cloudcard {
+									background-position-x: -480px;
+								}
+								&.big {
+									background-position-x: -520px;
+								}
+							}
+						}
+						//存款金額
+						&.moneybut {
+							width: 140px;
+							height: 40px;
+							background: transparent;
+							border-radius: 10px;
+							font-size: 17px;
+							color: #4d515d;
+							margin: 20px 15px 0px 0px;
+							position: relative;
+							&:hover,&:active,&.active {
+								color: #4d515d;
+								border-color: #3046b7;
+								&::before {
+									content: "";
+									position: absolute;
+									width: 15px;
+									height: 15px;
+									background: url('../images/box_check.png');
+									background-size: 100%;
+									right: 0px;
+									bottom: 0px;
+								}
+							}
+						}
+						//支付通道
+						&.payline {
+							width: 140px;
+							height: 40px;
+							border-radius: 10px;
+							background: transparent;
+							padding: 0px;
+							font-size: 17px;
+							line-height: 40px;
+							margin: 0px 5px;
+							color: #4d515d;
+							position: relative;
+							&:hover,&:active,&.active {
+								color: #4d515d;
+								border-color: #3046b7;
+								&::before {
+									content: "";
+									position: absolute;
+									width: 18px;
+									height: 18px;
+									background: url('../images/box_check.png');
+									background-size: 100%;
+									right: 0px;
+									bottom: 0px;
+								}
+							}
+							span {
+								display: block;
+								width: 25px;
+								height: 25px;
+								float: left;
+								background: url('../images/change.png');
+								margin: 6px 0px 0px 20px;
+							}
+						}
+					}
+					//選擇銀行
+					.chbank {
+						width: 240px;
+						height: 36px;
+						border: 1px solid #b9bfdc;
+						border-radius: 5px;
+						padding: 0px 10px;
+						outline: none;
+					}
+					//流水號匯款
+					.numbox {
+						width: 50%;
+						float: left;
+						p {
+							width: 100px;
+							float: left;
+							margin: 30px 0px 0px 20px;
+							color: #4d515d;
+							font-size: 14px;
+							&:nth-of-type(3) {
+								margin-bottom: 30px;
+							}
+						}
+						select {
+							width: 200px;
+							float: left;
+							margin: 19px 0px 0px 0px;
+						}
+						input {
+							float: left;
+							width: 186px;
+							height: 32px;
+							margin: 19px 0px 0px 0px;
+							border: 1px solid #b9bfdc;
+							border-radius: 5px;
+							padding-left: 10px;
+							&.dis {
+								width: 188px;
+								border: none;
+								background: transparent;
+								color: #838ba0;
+							}
+						}
+						.copy {
+							float: left;
+							width: 50px;
+							height: 24px;
+							background: transparent;
+							margin: 25px 10px 6px 10px;
+							border-radius: 20px;
+							padding: 0px;
+							color: #b9c0d2;
+							&:hover,&:active {
+								background: #b9c0d2;
+								color: #fff;
+							}
+						}
+					}
+					//存款金額
+					.depositmoney {
+						width: 220px;
+						height: 30px;
+						font-size: 15px;
+						padding-left: 10px;
+						margin: 10px 0px;
+						border-radius: 5px;
+						border: 1px solid #b9c0d2;
+						&::placeholder {
+							font-weight: bold;
+							font-size: 13px;
+							color: #c7c7c7;
+						}
+						&.focus {
+							border: 1px solid #364bb9;
+						}
+					}
+					//提醒字
+					.range {
+						color: #8c93a6;
+						font-size: 14px;
+						position: relative;
+						margin-left: 40px;
+						&::before {
+							content: "";
+							width: 15px;
+							height: 15px;
+							position: absolute;
+							background: url('../images/infor.png') no-repeat;
+							top: -1px;
+							left: -18px;
+						}
+					}
+					//存款按鈕
+					.withbut {
+						width: 235px;
+						height: 34px;
+						padding: 0px;
+						font-weight: bold;
+						background: #c3c7d2;
+						color: #fff;
+						cursor: default;
+						&.focus {
+							background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+							cursor: pointer;
+							&:hover,&:active {
+								background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+							}
+						}
+					}
+				}
+			}
+		}
+		tr {
+			th {
+				font-size: 15px;
+				&.tleft {
+					padding: 8px 0px 8px 20px;
+				}
+				p {
+					float: right;
+					margin: 2px 20px 0px 0px;
+				}
+				//線段
+				.topline {
+					display: inline-block;
+					width: 1px;
+					height: 18px;
+					background: #bcbcbc;
+					margin: 0px 10px -4px 10px;
+				}
+				//視窗右下灰色字
+				.remind {
+					color: #8c93a6;
+					font-size: 14px;
+					margin: 3px 20px 0px 0px;
+					float: right;
+					position: relative;
+					&.un {
+						float: left;
+						margin: 10px 0px 0px 20px;
+					}
+					&::before {
+						content: "";
+						width: 15px;
+						height: 15px;
+						position: absolute;
+						background: url('../images/infor.png') no-repeat;
+						top: -1px;
+						left: -18px;
+					}
+					a {
+						display: inline;
+						margin-left: 10px;
+						color: #5163c7;
+					}
+				}
+				
+			}
+			td {
+				padding: 20px;
+				border: none;
+				position: relative;
+				&.npad {
+					padding: 0px;
+				}
+				//線
+				.line {
+					width: 1px;
+					height: 60px;
+					background: #b9c0d2;;
+					position: absolute;
+					left: 50%;
+					&.sec {
+						top: 120px;
+					}
+					//上下分隔線
+					&.base {
+						width: 90%;
+						height: 1px;
+						left: 5%;
+						top: 50%;
+					}
+					//黏底線
+					&.bottom {
+						width: 96%;
+						left: 2%;
+						height: 1px;
+						bottom: 0px;
+					}
+					//無外框線線段
+					&.nbox {
+						height: 80%;
+						top: 10%;
+					}
+				}
+				//線框
+				.tbox {
+					width: auto;
+					height: 100%;
+					border: 1px solid #b9c0d2;
+					border-radius: 12px;
+					padding: 20px 15px;
+					float: left;
+					position: relative;
+					//轉點_錢包金額
+					&.trans {
+						margin-left: 21px;
+					}
+					//設定頁用
+					&.control {
+						border: none;
+					}
+					&.npad {
+						padding: 0px;
+					}
+					//個人資料窗格
+					.norword {
+						width: 319px;
+						height: 20px;
+						height: auto;
+						text-align: left;
+						float: left;
+						margin-bottom: 15px;
+						&:nth-last-child(1),&:nth-last-child(2) {
+							margin-bottom: 0px;
+						}
+						p {
+							float: left;
+							width: 100px;
+							font-size: 15px;
+							color: #515560;
+							line-height: 20px;
+						}
+						span {
+							float: left;
+							width: 155px;
+							font-size: 15px;
+							line-height: 20px;
+						}
+						button {
+							font-size: 15px;
+							background: #8892c9;
+							border-radius: 20px;
+							padding: 0px 10px;
+							color: #fff;
+							float: right;
+							margin: -3px 10px 0px 0px;
+							&:hover,&:active {
+								color: #8892c9;
+								background: transparent;
+							}
+							&.nomar_r {
+								margin-right: 0px;
+							}
+						}
+					}
+					//雙分格
+					.half {
+						width: 379px;
+						height: auto;
+						float: left;
+						position: relative;
+						text-align: left;
+						//轉點縮小版
+						&.lite {
+							width: 235px;
+							.rowbut {
+								width: 50px;
+								height: 25px;
+								background: #cbcdd9;
+								position: absolute;
+								right: 0px;
+								top: 18px;
+								border-radius: 15px;
+								transition: 0.3s all;
+								cursor: pointer;
+								&.turn {
+									background: #4d515d;
+									div {
+										left: 50%;
+									}
+								}
+								div {
+									width: 40%;
+									height: 80%;
+									background: #fff;
+									position: absolute;
+									top: 10%;
+									left: 10%;
+									border-radius: 30px;
+									transition: 0.3s all;
+								}
+							}
+							.wallet_ic {
+								width: 17px;
+								height: 16px;
+								margin: 8px 10px 0px 0px;
+								&.un {
+									background-position-x: -17px;
+									margin: 8px 10px 0px 20px;
+								}
+							}
+						}
+						&.sec {
+							margin-top: 40px;
+						}
+						p {
+							padding: 10px 0px 0px;
+							font-size: 15px;
+							&.sup {
+								font-size: 18px;
+							}
+							&.gray {
+								font-size: 15px;
+								color: #838ba0;
+							}
+							&.dollar {
+								font-size: 10px;
+								&.lite {
+									padding-left: 20px;
+								}
+								span {
+									font-size: 24px;
+								}
+							}
+						}
+						//我的錢包_錢包圖
+						.wallet_ic {
+							float: left;
+							width: 34px;
+							height: 32px;
+							background: url('../images/wallet_ic.png') no-repeat;
+							background-size: 200%;
+							margin: 14px 20px 14px 40px;
+							&.un {
+								background-position-x: -34px;
+								margin-left: 60px;
+							}
+						}
+						//聯絡我們_圖
+						.contact_ic {
+							float: left;
+							width: 30px;
+							height: 30px;
+							background: url('../images/contact_ic.png') no-repeat;
+							background-size: 500%;
+							margin: 14px 20px 14px 40px;
+							&.QQ {
+								background-position-x: -30px;
+							}
+							&.sk {
+								background-position-x: -60px;
+							}
+							&.ask {
+								background-position-x: -90px;
+							}
+							&.fly {
+								background-position-x: -120px;
+							}
+						}
+						//一鍵回收
+						.charge {
+							background: #d7af8a;
+							color: #fff;
+							border: none;
+							font-size: 14px;
+							padding: 2px 5px;
+							border-radius: 20px;
+							float: right;
+							margin-right: 20px;
+							border: solid 1px #d7af8a;
+							&:hover,&:active {
+								background: transparent;
+								color: #d7af8a;
+							}
+						}
+						//複製鈕
+						.copy {
+							background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
+    						border-radius: 5px;
+							border: 1px solid #495cc5;
+							float: right;
+							margin: 13px 20px 0px 0px;
+							padding: 6px 20px;
+							&:hover,&:active {
+								background: linear-gradient(to top, #ffffff 0%, #d5daef 100%);
+								color: #000;
+							}
+						}
+					}
+					//關於我們_官方認證小圖
+					.officalimg {
+						display: inline-block;
+						width: 194px;
+						height: 80px;
+						margin-bottom: 20px;
+						div {
+							width: 80px;
+							height: 50px;
+							background: url('../images/about_offical.png') no-repeat;
+							margin: 0px auto 5px;
+							&.img2 {
+								background-position-x: -80px;
+							}
+							&.img3 {
+								background-position-x: -160px;
+							}
+							&.img4 {
+								background-position-x: -240px;
+							}
+						}
+						p {
+							line-height: 18px;
+							font-size: 15px;
+						}
+					}
+					//關於我們_贊助夥伴小圖
+					.partnerimg {
+						display: inline-block;
+						width: 155px;
+						height: 80px;
+						margin: 0px auto 20px;
+						div {
+							width: 80px;
+							height: 50px;
+							background: url('../images/about_partner.png') no-repeat;
+							margin: 0px auto 5px;
+							&.img2 {
+								background-position-x: -80px;
+							}
+							&.img3 {
+								background-position-x: -160px;
+							}
+							&.img4 {
+								background-position-x: -240px;
+							}
+							&.img5 {
+								background-position-x: -320px;
+							}
+							&.img6 {
+								background-position-x: -400px;
+							}
+							&.img7 {
+								background-position-x: -480px;
+							}
+						}
+						p {
+							line-height: 18px;
+							font-size: 15px;
+						}
+					}
+				}
+				//視窗右下灰色字
+				.remind {
+					color: #8c93a6;
+					font-size: 14px;
+					margin: 0px 20px 20px 0px;
+					float: right;
+					position: relative;
+					&.un {
+						float: left;
+						margin: 10px 0px 0px 20px;
+					}
+					&::before {
+						content: "";
+						width: 15px;
+						height: 15px;
+						position: absolute;
+						background: url('../images/infor.png') no-repeat;
+						top: -1px;
+						left: -18px;
+					}
+					a {
+						display: inline;
+						margin-left: 10px;
+						color: #5163c7;
+					}
+				}
+			}
+		}
+	}
+	//頁面小版
+	&.tsmall {
+		float: left;
+		width: 410px;
+		margin: 0px 0px 15px 17px;
+		&.un {
+			margin-left: 10px;
+		}
+		tr {
+			td {
+				width: 33.3%;
+				border-width: 0px 0px 1px 0px;
+				color: #4d515d;
+				padding: 10px 20px;
+				font-size: 15px;
+				line-height: 20px;
+				//線框
+				.tbox {
+					width: 100%;
+					height: auto;
+					padding: 20px 0px;
+					border: 1px solid #b9c0d2;
+					border-radius: 5px;
+					float: left;
+					text-align: left;
+					&.app {
+						margin-top: 15px;
+					}
+					&.bowser {
+						padding: 30px 0px;
+					}
+					p {
+						float: left;
+						margin: 10px 0px 0px 30px;
+						line-height: 22px;
+						&.bowserP {
+							margin: 0px 0px 0px 30px;
+						}
+						span {
+							color: #1bc100;
+							font-size: 18px;
+							font-weight: bold;
+						}
+					}
+					//線段
+					.line {
+						width: 90%;
+						height: 1px;
+						background: #b9c0d2;
+						float: left;
+						margin: 28px 0px 28px 18px;
+					}
+					//設定_版本圖
+					.version {
+						width: 82px;
+						height: 65px;
+						background: url('../images/version_check.png') no-repeat;
+						float: right;
+						margin-right: 70px;
+					}
+					//下載APP_QRcode
+					.qrcode {
+						float: left;
+						width: 110px;
+						height: 110px;
+						background: url('../images/download_app_qr.png') no-repeat;
+						margin: 0px 0px 0px 40px;
+					}
+					//下載APP_QRcode安裝教學
+					.appbut {
+						border: 1px solid #495cc5;
+						background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+						width: 80px;
+						margin: 20px 0px 0px 50px;
+						font-size: 14px;
+						font-weight: bold;
+						padding: 5px 0px;
+						&:hover,&:active {
+							background: linear-gradient(to top, #fff 0%, #d5daef 100%);
+							color: #000;
+						}
+					}
+					//下載APP_瀏覽器圖
+					.bowser {
+						float: left;
+						width: 40px;
+						height: 40px;
+						background: url('../images/download_app_browser.png');
+						background-size: 200%;
+						margin: 0px 0px 0px 30px;
+						&.un {
+							background-position-x: -40px;
+						}
+					}
+					//下載APP_bowser前往鈕
+					.bowserbut {
+						width: 80px;
+						padding: 5px 0px;
+						font-size: 14px;
+						font-weight: bold;
+						padding: 5px 0px;
+						float: right;
+						margin: 3px 30px 0px 0px;
+						border: 1px solid #495cc5;
+						background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+						&:hover,&:active {
+							background: linear-gradient(to top, #fff 0%, #d5daef 100%);
+							color: #000;
+						}
+					}
+				}
+			}
+		}
+	}
+	//交易紀錄
+	&.tdeal {
+		display: none;
+		width: 830px;
+		margin-left: 17px;
+		&.display {
+			display: table;
+		}
+		tr {
+			&.fail {
+				background: #ededed;
+				td {
+					color: #838ba0;
+				}
+			}
+			td {
+				font-size: 14px;
+				padding: 15px 0px;
+				&:nth-child(1) {
+					width: 18%;
+				}
+				&:nth-child(2) {
+					width: 12%;
+				}
+				&:nth-child(3) {
+					width: 16%;
+				}
+				&:nth-child(4) {
+					width: 20%;
+				}
+				&:nth-child(5) {
+					width: 19%;
+				}
+				&:nth-child(6) {
+					width: 15%;
+				}
+			}
+		}
+	}
+	//體育規則
+	&.tsportP {
+		display: none;
+		width: 830px;
+		margin: 0px 0px 20px 17px;
+		transform: translateY(130px);
+		&.display {
+			display: table;
+		}
+		tr {
+			text-align: left;
+			th {
+				padding: 8px 20px;
+			}
+			td {
+				padding: 10px;
+				line-height: 28px;
+				font-size: 15px;
+				color: #4d515d;
+			}
+		}
+	}
+	//消息中心公告
+	&.tmes {
+		width: 96%;
+		tr {
+			th {
+				border: none;
+			}
+			td {
+				&:first-child {
+					width: 50%;
+				}
+			}
+		}
+	}
+}
+//新手版/專業版切換
+.new,.old,.result,.complex {
+	display: none;
+	height: 820px;
+	&.display {
+		display: block;
+	}
+}

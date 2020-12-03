@@ -1,0 +1,991 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>美式足球</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../../js/javascript.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!--filter-->
+    <div class="filter"></div>
+    <!--header-->
+    <header>
+        <!--上時間列-->
+        <div class="time">
+            <div>
+                <span>
+                    <script language="javascript" class="clock">
+                        var dt = new Date();
+                        document.write(dt);
+                    </script>
+                </span>
+            </div>
+        </div>
+        <!--置中外包-->
+        <article>
+            <!--LOGO-->
+            <div class="logo">LOGO</div>
+            <!--上列表-->
+            <ul class="headerlist">
+                <li><a href="../../index.html" class="active">市場列表</a></li>
+                <li><a href="../discount/discount.html"><span></span>優惠</a></li>
+                <li><a href="../myself/mine.html"><span class="head_ic3"></span>我的</a></li>
+            </ul>
+            <!--登入後樣式-->
+            <div class="lobbyact">
+				<p>user545<span>0</span></p>
+				<p class="dollar">NT$ 0.00<button>登出</button><button class="ques"></button></p>
+            </div>
+        </article>
+    </header>
+    <!--main-->
+    <main>
+        <!--置中外包-->
+        <article class="other">
+            <!--左列-->
+            <section class="left">
+                <ul>
+                    <li><a href="#"><span></span>我的最愛<div>295</div></a></li>
+                    <li><a href="#"><span class="lf_hot"></span>熱門賽事<div>295</div></a></li>
+                    <li><a href="./soccer.html"><span class="lf_soc"></span>足球<div>295</div></a></li>
+                    <li><a href="./baseball.html"><span class="lf_base"></span>棒球<div>295</div></a></li>
+                    <li><a href="./basketball.html"><span class="lf_bsk"></span>籃球<div>295</div></a></li>
+                    <li><a href="./race.html"><span class="lf_rh"></span>賽馬賽狗<div>295</div></a></li>
+                    <li><a href="./esp.html"><span class="lf_esp"></span>電競<div>295</div></a></li>
+                    <li><a href="./stock.html"><span class="lf_temp"></span>股票指數<div>295</div></a></li>
+                    <li><a href="./lotto.html"><span class="lf_lot"></span>彩球<div>295</div></a></li>
+                    <li><a href="./iceball.html"><span class="lf_iceb"></span>冰球<div>295</div></a></li>
+                    <li><a href="./tennis.html"><span class="lf_ten"></span>網球<div>295</div></a></li>
+                    <li><a href="./snooker.html"><span class="lf_sno"></span>斯諾克<div>295</div></a></li>
+                    <li><a href="./vball.html"><span class="lf_vball"></span>排球<div>295</div></a></li>
+                    <li><a href="./racecar.html"><span class="lf_rc"></span>賽車<div>295</div></a></li>
+                    <li><a href="./badminton.html"><span class="lf_bad"></span>羽毛球<div>295</div></a></li>
+                    <li><a href="./beachball.html"><span class="lf_bsoc"></span>沙灘足球<div>295</div></a></li>
+                    <li><a href="./football.html" class="active"><span class="lf_fob"></span>美式足球<div>295</div></a></li>
+                    <li><a href="./tableball.html"><span class="lf_pp"></span>乒乓球<div>295</div></a></li>
+                </ul>
+            </section>
+            <!--美式足球-->
+            <section class="middle">
+                <!--懸浮列-->
+                <div class="topfix other display">
+                    <!--選單-->
+                    <ul class="other">
+                        <li class="allgame display active">所有賽事</li>
+                        <div class="topline"></div>
+                        <li class="display">早盤投注</li>
+                        <div class="topline"></div>
+                        <li class="bettingbut display">串關投注</li>
+                        <div class="topline"></div>
+                        <li class="resultbut display">比賽結果</li>
+                    </ul>
+                    <!--排序-->
+                    <div class="sort display">
+                        <button class="arrow chleaguebut">選擇聯盟</button>
+                        <div class="topline"></div>
+                        <button class="arrow">時間排序</button>
+                        <div class="topline"></div>
+                        <button class="arrow turnnew">新手版</button>
+                        <button class="arrow turnold un">專業版</button>
+                    </div>
+                    <!--時間列-->
+                    <div class="resultsearch">
+                        <button class="arrow chleaguebut">選擇聯盟</button>
+                        <div class="topline"></div>
+                        <div class="timesearch">
+                            <button class="date"></button>
+                            <select name="" id="">
+                                <option value="">2020-05-25</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <span>-</span>
+                            <button class="date"></button>
+                            <select name="" id="">
+                                <option value="">2020-05-31</option>
+                                <option value=""></option>
+                                <option value=""></option>
+                            </select>
+                            <button class="timesearchbut">查詢</button>
+                        </div>
+                    </div>
+                </div>
+                <!--內頁懸浮-->
+                <div class="innertopfix">
+                    <button class="back">返回</button>
+                    <ul>
+                        <li class="active">所有盤口</li>
+                        <div class="topline"></div>
+                        <li>全場</li>
+                        <div class="topline"></div>
+                        <li>半場</li>
+                        <div class="topline"></div>
+                        <li>節</li>
+                    </ul>
+                </div>
+                <!--選擇聯盟-->
+                <div class="chleague display">
+                    <table class="tch2">
+                        <tr>
+                            <td colspan="3"><span class="cube active"></span>選取/取消所有聯盟</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>義大利甲組聯賽</td>
+                            <td><span class="cube active"></span>法國甲組聯賽</td>
+                            <td><span class="cube active"></span>英格蘭足總盃</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>埃及超級聯賽</td>
+                            <td><span class="cube active"></span>阿爾及利亞甲組聯賽</td>
+                            <td><span class="cube active"></span>巴林超級聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>巴西盃</td>
+                            <td><span class="cube active"></span>巴西里約州甲組聯賽</td>
+                            <td><span class="cube active"></span>巴西巴西利亞甲組聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>巴西巴亞諾甲組聯賽</td>
+                            <td><span class="cube active"></span>巴西伯南布哥甲組-聯賽</td>
+                            <td><span class="cube active"></span>比利時盃</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>德國足協盃</td>
+                            <td><span class="cube active"></span>法國甲組聯賽-特別投注</td>
+                            <td><span class="cube active"></span>克羅地亞盃</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>超級盃(在卡塔爾)</td>
+                            <td><span class="cube active"></span>卡塔爾埃米爾盃</td>
+                            <td><span class="cube active"></span>墨西哥超級聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>摩洛哥甲組聯賽</td>
+                            <td><span class="cube active"></span>南美洲球會盃</td>
+                            <td><span class="cube active"></span>南美自由盃</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>南非盃</td>
+                            <td><span class="cube active"></span>奇幻賽事</td>
+                            <td><span class="cube active"></span>塞浦路斯盃</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>塞浦路斯甲組聯賽</td>
+                            <td><span class="cube active"></span>沙特超級聯賽</td>
+                            <td><span class="cube active"></span>英格蘭超級聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>土耳其盃</td>
+                            <td><span class="cube active"></span>突尼斯甲組聯賽</td>
+                            <td><span class="cube active"></span>匈牙利甲組聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>希臘盃</td>
+                            <td><span class="cube active"></span>西班牙盃</td>
+                            <td><span class="cube active"></span>亞洲足聯盃外圍賽-附加賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>以色列超級聯賽</td>
+                            <td><span class="cube active"></span>以色列北部國家聯賽U19</td>
+                            <td><span class="cube active"></span>伊朗超級聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>印度超級聯賽</td>
+                            <td><span class="cube active"></span>印度I聯賽</td>
+                            <td><span class="cube active"></span>印度果阿超級聯賽</td>
+                        </tr>
+                        <tr>
+                            <td><span class="cube active"></span>義大利青年盃U19</td>
+                            <td><span class="cube active"></span>英格蘭足球協會南部全國聯賽</td>
+                            <td><span class="cube active"></span>英格蘭伊斯米安超級聯賽</td>
+                        </tr>
+                    </table>
+                </div>
+                <!--隱藏版-->
+                <div class="hideboard"></div>
+                <!--新手版-->
+                <div class="new display">
+                    <p class="title ing">進行中的比賽</p>
+                    <!--美式足球進行中新增-->
+                    <table class="tsocin">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="5" class="tleft bg_gold"><span class="football"></span>美式美式足球-NCAA美國大學 02月06日 03:45
+                            </th>
+                        </tr>
+                        <tr class="bg_title">
+                            <th>時間</th>
+                            <th>隊伍</th>
+                            <th>總分</th>
+                            <th>獨贏</th>
+                            <th>更多</th>
+                        </tr>
+                        <!--第一行-->
+                        <tr>
+                            <td class="wd_blue redpoint wd_b">40:20</td>
+                            <td class="tleft">路易斯安那理工牛頭犬 <span class="wd_blue">VS</span> 北德州綠鷹[主]</td>
+                            <td class="wd_red wd_b">0 - 1</td>
+                            <td><button>主&emsp;<span class="wd_red">0.960</span></button><button>和&emsp;<span class="wd_red">0.960</span></button><button>客&emsp;<span class="wd_red">0.960</span></button></td>
+                            <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a><a href="javascript:;" class="tbimg3 inn_soc">+99></a></td>
+                        </tr>
+                    </table>
+                    <p class="title ready">未開始的比賽</p>
+                    <!--美式足球未開賽新增-->
+                    <table class="tsocin2">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="5" class="tleft bg_gray"><span class="football un"></span>美式足球-義大利甲組聯賽 02月06日 03:45
+                            </th>
+                        </tr>
+                        <tr class="bg_title_un">
+                            <th>時間</th>
+                            <th>隊伍</th>
+                            <th>獨贏</th>
+                            <th>更多</th>
+                        </tr>
+                        <!--第一行-->
+                        <tr>
+                            <td class="wd_b">40:20</td>
+                            <td class="tleft">空軍學院獵鷹 <span class="wd_blue">VS</span> 猶他州立農學人[主]</td>
+                            <td><button>主&emsp;<span class="wd_blue">0.960</span></button><button>和&emsp;<span class="wd_blue">0.960</span></button><button>客&emsp;<span class="wd_blue">0.960</span></button></td>
+                            <td><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a><a href="javascript:;" class="tbimg3 inn_soc">+99></a></td>
+                        </tr>
+                    </table>
+                    <p class="title over">已結束的比賽</p>
+                    <!--美式足球已完成新增-->
+                </div>
+                <!--專業版-->
+                <div class="old">
+                    <p class="title ing">進行中的比賽</p>
+                    <table class="tsp">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="9" class="tleft bg_gold"><span class="football"></span>美式足球-NCAA美國大學美式足球 02月06日 03:45</th>
+                        </tr>
+                        <tr class="bg_title">
+                            <th>時間</th>
+                            <th>隊伍</th>
+                            <th>總分</th>
+                            <th>獨贏</th>
+                            <th>讓球</th>
+                            <th>大小</th>
+                            <th>上半讓球</th>
+                            <th>上半大小</th>
+                            <th>更多</th>
+                        </tr>
+                        <!--第一行上半部-->
+                        <tr class="rowup redbut">
+                            <td class="wd_blue redpoint wd_b" rowspan="2">40:20</td>
+                            <td class="tleft">路易斯安那理工牛頭犬</td>
+                            <td class="wd_red wd_b">0</td>
+                            <td rowspan="2" class="smallbut_1"><button>2</button><button>2</button><button>2</button></td>
+                            <td rowspan="2" class="smallbut_1"><span class="smallsp">1.5</span><button>1&emsp;2</button><button>1&emsp;2</button><button>1&emsp;2</button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">66平</span><button>大&emsp;<span>1.44</span></button><button>小&emsp;<span>1.44</span></button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">1+50</span><button><span>1.44</span></button><button><span>1.44</span></button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">1+50平</span><button>大&emsp;<span>1.44</span></button><button>小&emsp;<span>1.44</span></button></td>
+                            <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a><a href="javascript:;" class="tbimg3 inn_soc">+99></a></td>
+                        </tr>
+                        <!--第一行下半部-->
+                        <tr>
+                            <td class="tleft">北德州綠鷹[主]</td>
+                            <td class="wd_red wd_b">1</td>
+                        </tr>
+                    </table>
+                    <p class="title ready">未開始的比賽</p>
+                    <table class="tsp un">
+                        <!--標題-->
+                        <tr>
+                            <th colspan="9" class="tleft bg_gray"><span class="football un"></span>美式足球-NCAA美國大學美式足球 02月06日 03:45</th>
+                        </tr>
+                        <tr class="bg_title_un">
+                            <th>時間</th>
+                            <th>隊伍</th>
+                            <th>獨贏</th>
+                            <th>讓球</th>
+                            <th>大小</th>
+                            <th>上半讓球</th>
+                            <th>上半大小</th>
+                            <th>更多</th>
+                        </tr>
+                        <!--第一行上半部-->
+                        <tr class="rowup bluebut">
+                            <td rowspan="2" class="wd_b">40:20</td>
+                            <td class="tleft">空軍學院獵鷹</td>
+                            <td rowspan="2" class="smallbut_1"><button>1.44</button><button>1.44</button><button>1.44</button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">1.5</span><button><span>1.44</span></button><button><span>1.44</span></button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">1+50</span><button>大&emsp;<span>1.44</span></button><button>小&emsp;<span>1.44</span></button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">1+50</span><button><span>1.44</span></button><button><span>1.44</span></button></td>
+                            <td rowspan="2" class="smallbut_2"><span class="smallsp">1+50平</span><button>大&emsp;<span>1.44</span></button><button>小&emsp;<span>1.44</span></button></td>
+                            <td rowspan="2"><a href="#" class="tbimg1"></a><a href="#" class="tbimg2"></a><a href="javascript:;" class="tbimg3 inn_soc">+99></a></td>
+                        </tr>
+                        <!--第一行下半部-->
+                        <tr>
+                            <td class="tleft">猶他州立農學人[主]</td>
+                        </tr>
+                    </table>
+                    <p class="title over">已結束的比賽</p>
+                </div>
+                <!--比賽結果--><!--未修改-->
+                <div class="result">
+                    <!--上場-->
+                    <table class="tsocre">
+                        <!--標題-->
+                        <tr>
+                        <th colspan="5" class="bg_gray tleft"><span class="soccer un"></span>2020-05-31</th>
+                        </tr>
+                        <tr class="bg_title_un">
+                        <th>開賽時間</th>
+                        <th>聯盟</th>
+                        <th>主客隊伍</th>
+                        <th>半場</th>
+                        <th>全場</th>
+                        </tr>
+                        <!--第一行上半-->
+                        <tr class="rowup">
+                        <td rowspan="2">40:20</td>
+                        <td rowspan="2">義大利甲級聯賽</td>
+                        <td class="tleft">拉素</td>
+                        <td>4</td>
+                        <td class="wd_red">4</td>
+                        </tr>
+                        <!--第一行下半-->
+                        <tr>
+                        <td class="tleft">羅維納</td>
+                        <td>2</td>
+                        <td class="wd_red">2</td>
+                        </tr>
+                        <!--第二行上半-->
+                        <tr class="rowup">
+                        <td rowspan="2">40:20</td>
+                        <td rowspan="2">義大利甲級聯賽</td>
+                        <td class="tleft">拉素</td>
+                        <td>4</td>
+                        <td class="wd_red">4</td>
+                        </tr>
+                        <!--第二行下半-->
+                        <tr>
+                        <td class="tleft">羅維納</td>
+                        <td>2</td>
+                        <td class="wd_red">2</td>
+                        </tr>
+                    </table>
+                    <!--下場-->
+                    <table class="tsocre">
+                        <!--標題-->
+                        <tr>
+                        <th colspan="5" class="bg_gray tleft"><span class="soccer un"></span>2020-05-30</th>
+                        </tr>
+                        <tr class="bg_title_un">
+                        <th>開賽時間</th>
+                        <th>聯盟</th>
+                        <th>主客隊伍</th>
+                        <th>半場</th>
+                        <th>全場</th>
+                        </tr>
+                        <!--第一行上半-->
+                        <tr class="rowup">
+                        <td rowspan="2">40:20</td>
+                        <td rowspan="2">義大利甲級聯賽</td>
+                        <td class="tleft">拉素</td>
+                        <td>4</td>
+                        <td class="wd_red">4</td>
+                        </tr>
+                        <!--第一行下半-->
+                        <tr>
+                        <td class="tleft">羅維納</td>
+                        <td>2</td>
+                        <td class="wd_red">2</td>
+                        </tr>
+                        <!--第二行上半-->
+                        <tr class="rowup">
+                        <td rowspan="2">40:20</td>
+                        <td rowspan="2">義大利甲級聯賽</td>
+                        <td class="tleft">拉素</td>
+                        <td>4</td>
+                        <td class="wd_red">4</td>
+                        </tr>
+                        <!--第二行下半-->
+                        <tr>
+                        <td class="tleft">羅維納</td>
+                        <td>2</td>
+                        <td class="wd_red">2</td>
+                        </tr>
+                    </table>           
+                </div>
+                <!--串關投注-->
+                <div class="bettingbar slide">
+                    <!--總投注額-->
+					<span class="barnum">4</span>
+                    <div class="opbut">
+						<span>串一</span>
+					</div>
+                    <!--投注內容-->
+                    <div class="bettingbox">
+                        <!--table視窗-->
+                        <div class="bettingwindow">
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>1&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>2&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>3&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>4&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--總額顯示-->
+                        <div class="bettingtotal">
+                            <div>可贏(參考):&nbsp;&nbsp;<span class="wd_blue">150</span></div>
+                            <div>單注限額:&nbsp;&nbsp;<span class="wd_blue">150</span></div>
+                            <div>餘額:&nbsp;&nbsp;<span class="wd_blue">150</span></div>
+                        </div>
+                        <!--決定金額-->
+                        <div class="bettingend">
+                            <p>| 混合過關&emsp;4串一</p>
+                            <!--左-->
+                            <div class="endbox">
+                                <div><span class="inputname">投注金額</span><input type="text" placeholder="最低限額150"><span class="dollar">元</span></div>
+                                <div><span class="inputname">可贏金額(參考)</span><input type="text"></div>
+                            </div>
+                            <!--右-->
+                            <div class="endbox">
+                                <button>+100</button>
+                                <button>+100</button>
+                                <button>+100</button>
+                                <button>+100</button>
+                                <button>+100</button>
+                                <button>+100</button>
+                                <button>+100</button>
+                                <button class="cur">投注</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--串關投注確認窗-->
+                <div class="bettingch">
+                    <!--總投注額-->
+					<span class="barnum">4</span>
+					<span class="barword">串一</span>
+                    <button class="chbut"></button>
+                    <!--投注內容-->
+                    <div class="bettingbox">
+                        <!--table視窗-->
+                        <div class="bettingwindow">
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>1&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>2&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>3&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                            <table class="tbetting">
+                                <tr>
+                                    <th colspan="3" class="tleft"><span class="soccer un"></span>美式足球-全場-獨贏<button></button></th>
+                                </tr>
+                                <tr>
+                                    <td>4&ensp;|</td>
+                                    <td class="tleft">路易斯安那理工牛頭犬&ensp;@&nbsp;<span class="wd_red">1.95</td>
+                                    <td class="tleft">NCAA美國大學美式足球<br>北德州綠應[主]&nbsp;<span class="wd_red">2+50</span>&nbsp;<span class="wd_blue">vs</span>&nbsp;路易斯安那理工牛頭犬</td>
+                                </tr>
+                            </table>
+                        </div>
+                        <!--總額顯示-->
+                        <div class="bettingtotal">
+                            <div>可贏(參考):&nbsp;&nbsp;<span class="wd_blue">150</span></div>
+                            <div>單注限額:&nbsp;&nbsp;<span class="wd_blue">150</span></div>
+                            <div>餘額:&nbsp;&nbsp;<span class="wd_blue">150</span></div>
+                        </div>
+                        <!--決定金額-->
+                        <div class="bettingend">
+                            <!--左-->
+                            <div class="endbox">
+                                <p>注單已確認</p>
+                            </div>
+                            <!--右-->
+                            <div class="endbox">
+                                <span>下注時間:<span>2020-05-27 16:26:07</span></span>
+                                <br>
+                                <span>單號:<span class="wd_darkblue">CPR09621621</span></span>
+                                <br>
+                                <span>方式:<span>混和過關4串一</span></span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--內頁-->
+                <div class="inner">
+                    <!--上頂圖-->
+                    <div class="topimg football">
+                        <!--左字-->
+                        <div class="topword">
+                            <p>2020/02/06&emsp;03:45</p>
+                            <p>NCAA美國大學美式足球</p>
+                        </div>
+                        <!--中間隊伍-->
+                        <div class="topteam">
+                            <div><span></span><p>路易斯安那理工牛頭犬</p></div>
+                            <div class="teammid">
+                                <p>03:45</p>
+                                <p>-&emsp;&emsp;vs&emsp;&emsp;-</p>
+                                <p>未開賽</p>
+                            </div>
+                            <div class="team2"><span class="team2"></span><p>北德州綠鷹[主]</p></div>
+                        </div>
+                        <!--右雙IC-->
+                        <div class="toplink">
+                            <button></button>
+                            <button></button>
+                        </div>
+                    </div>
+                    <!--table-->
+                    <div>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="2">獨贏</th>
+                            </tr>
+                            <tr class="cell2">
+                                <td><button>主<span class="wd_blue">0.96</span></button></td>
+                                <td><button>客<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="2">獨贏-上半場</th>
+                            </tr>
+                            <tr class="cell2">
+                                <td><button>主<span class="wd_blue">0.96</span></button></td>
+                                <td><button>客<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="2">獨贏-第二局</th>
+                            </tr>
+                            <tr class="cell2">
+                                <td><button>主<span class="wd_blue">0.96</span></button></td>
+                                <td><button>客<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="4">讓分-上半場</th>
+                            </tr>
+                            <tr class="cell4">
+                                <td>主</td>
+                                <td><button>+2.5<span class="wd_blue">0.96</span></button></td>
+                                <td>客</td>
+                                <td><button>-2.5<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="4">總分:大/小-上半場</th>
+                            </tr>
+                            <tr class="cell4">
+                                <td>主</td>
+                                <td><button>+2.5<span class="wd_blue">0.96</span></button></td>
+                                <td>客</td>
+                                <td><button>-2.5<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="2">獨贏-下半場</th>
+                            </tr>
+                            <tr class="cell2">
+                                <td><button>主<span class="wd_blue">0.96</span></button></td>
+                                <td><button>客<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="4">讓分-下半場</th>
+                            </tr>
+                            <tr class="cell4">
+                                <td>主</td>
+                                <td><button>+2.5<span class="wd_blue">0.96</span></button></td>
+                                <td>客</td>
+                                <td><button>-2.5<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="4">總分:大/小-下半場</th>
+                            </tr>
+                            <tr class="cell4">
+                                <td>大</td>
+                                <td><button>+2.5<span class="wd_blue">0.96</span></button></td>
+                                <td>小</td>
+                                <td><button>-2.5<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="4">讓球</th>
+                            </tr>
+                            <tr class="cell4">
+                                <td>主</td>
+                                <td><button>+2.5<span class="wd_blue">0.96</span></button></td>
+                                <td>客</td>
+                                <td><button>-2.5<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                        <table class="tinn">
+                            <tr>
+                                <th class="tleft bg_darkpurple" colspan="4">總分:大/小</th>
+                            </tr>
+                            <tr class="cell4">
+                                <td>大</td>
+                                <td><button>+2.5<span class="wd_blue">0.96</span></button></td>
+                                <td>小</td>
+                                <td><button>-2.5<span class="wd_blue">0.96</span></button></td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </section>
+            <!--右列-->
+            <section class="right">
+                <!--上段字樣-->
+                <div class="righttop">
+                    <a href="#"><span></span>體育直播</a>
+                    <button class="liveteach">投注教程</button>
+                </div>
+                <!--直播小框-->
+                <div class="rightwindow">
+                    <p>布咸美恩斯 1905
+                        <br>
+                        接球員_Sea_food
+                    </p>
+                    <p class="vs">1<span>VS</span>1</p>
+                    <p>布拉格斯拉維亞B
+                        <br>
+                        接球員_Chickens
+                    </p>
+                    <div></div>
+                </div>
+                <!--下大框-->
+                <div class="room">
+                    <!--切換按鈕-->
+                    <div class="twobut">
+                        <button class="active liveroombut">直播賽事</button>
+                        <button class="chatroombut">聊天室</button>
+                    </div>
+                    <!--直播賽事-->
+                    <div class="livelist open">
+                        <ul>
+                            <li class="liveli1 active"><span></span>足球<p>20</p></li>
+                            <div class="soclive open">
+                                <a href="#">
+									<span>俱樂部友誼賽</span>
+									<span class="time">18:00</span>
+									<span class="time">06/24</span>
+									<div class="teamname">
+										<span>布咸美恩斯 1905<br>布拉格斯拉維亞 B</span>
+                                    	<button>直播</button>
+                                    	<button>動畫</button>
+									</div>
+                                </a>
+                                <a href="#">
+									<span>俱樂部友誼賽</span>
+									<span class="live">直播中</span>
+                                    <div class="teamname">
+										<span>布咸美恩斯 1905<br>布拉格斯拉維亞 B</span>
+										<button class="live">直播</button>
+										<button class="live">動畫</button>
+									</div>
+                                </a>
+                            </div>
+                            <li class="liveli2"><span class="rt_base"></span>棒球<p>20</p></li>
+                            <div class="baselive">
+                                <a href="#">
+									<span>俱樂部友誼賽</span>
+									<span class="time">18:00</span>
+									<span class="time">06/24</span>
+									<div class="teamname">
+										<span>布咸美恩斯 1905<br>布拉格斯拉維亞 B</span>
+                                    	<button>直播</button>
+                                    	<button>動畫</button>
+									</div>
+                                </a>
+                                <a href="#">
+									<span>俱樂部友誼賽</span>
+									<span class="live">直播中</span>
+                                    <div class="teamname">
+										<span>布咸美恩斯 1905<br>布拉格斯拉維亞 B</span>
+										<button class="live">直播</button>
+										<button class="live">動畫</button>
+									</div>
+                                </a>
+                            </div>
+                            <li class="liveli3"><span class="rt_bsk"></span>籃球<p>20</p></li>
+                            <div class="bsklive">
+                                <a href="#">
+									<span>俱樂部友誼賽</span>
+									<span class="time">18:00</span>
+									<span class="time">06/24</span>
+									<div class="teamname">
+										<span>布咸美恩斯 1905<br>布拉格斯拉維亞 B</span>
+                                    	<button>直播</button>
+                                    	<button>動畫</button>
+									</div>
+                                </a>
+                                <a href="#">
+									<span>俱樂部友誼賽</span>
+									<span class="live">直播中</span>
+                                    <div class="teamname">
+										<span>布咸美恩斯 1905<br>布拉格斯拉維亞 B</span>
+										<button class="live">直播</button>
+										<button class="live">動畫</button>
+									</div>
+                                </a>
+                            </div>
+                            <li><span class="rt_rh"></span>賽馬賽狗</li>
+                            <li><span class="rt_esp"></span>電競</li>
+                            <li><span class="rt_st"></span>指數</li>
+                            <li><span class="rt_lot"></span>彩球</li>
+                            <li><span class="rt_iceb"></span>冰球</li>
+                            <li><span class="rt_ten"></span>網球</li>
+                            <li><span class="rt_sno"></span>斯諾克</li>
+                            <li><span class="rt_vball"></span>排球</li>
+                            <li><span class="rt_rc"></span>賽車</li>
+                            <li><span class="rt_bad"></span>羽毛球</li>
+                            <li><span class="rt_bsoc"></span>沙灘足球</li>
+                            <li><span class="rt_fob"></span>美式足球</li>
+                            <li><span class="rt_pp"></span>乒乓球</li>
+                        </ul>
+                    </div>
+                    <!--聊天室-->
+                    <div class="chatroom">
+                        <div class="topbar"></div>
+                        <div class="chatwindow">
+                            <p>2020-06-29 18:00:52</p>
+                            <div><span class="username">user545</span><span>各位覺得哪一隊贏面大?</span></div>
+                            <div><span class="username">user545</span><span>我振興卷押下去了Q_Q</span></div>
+                            <p>2020-06-29 18:02:52</p>
+                            <div><span class="guestname">soccerlover999</span><span class="guest">開始拉</span></div>
+                            <div><span class="guestname">soccerlover999</span><span class="guest">布咸美恩斯贏面大</span></div>
+                            <p>2020-06-29 18:06:02</p>
+                            <div><span class="guestname">a48484848</span><span class="guest">耶耶耶</span></div>
+                            <div><span class="guestname">a48484848</span><span class="guest">開始拉~~~~</span></div>
+                        </div>
+                        <div class="chatbox">
+                            <span class="word"></span>
+                            <span class="look"></span>
+                            <textarea name="" id="" cols="30" rows="10"></textarea>
+                        </div>
+                        <div class="chatbut">
+                            <button>發送</button>
+                            <button>取消</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--懸浮側鍵-->
+        <section class="fixside">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                    <span>搜尋</span>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                </a>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--懸浮側鍵RWD-->
+        <section class="fixside_rwd">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--背景-->
+        <div class="bg">
+        </div>
+    </main>
+</body>
+
+</html>

@@ -1,0 +1,661 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0"> -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>消息中心</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="../../js/javascript.js"></script>
+    <link rel="stylesheet" href="../../css/style.css">
+</head>
+
+<body>
+    <!--filter-->
+    <div class="filter"></div>
+    <!--header-->
+    <header class="index">
+        <!--上時間列-->
+        <div class="time">
+            <div>
+                <span>
+                    <script language="javascript" class="clock">
+                        var dt = new Date();
+                        document.write(dt);
+                    </script>
+                </span>
+            </div>
+        </div>
+        <!--置中外包-->
+        <article>
+            <!--LOGO-->
+            <div class="logo">LOGO</div>
+            <!--上列表-->
+            <ul class="headerlist">
+                <li><a href="../../index.html">市場列表</a></li>
+                <li><a href="../discount/discount.html"><span></span>優惠</a></li>
+                <li><a href="./mine.html" class="active"><span class="head_ic3"></span>我的</a></li>
+            </ul>
+            <!--登入後樣式-->
+            <div class="lobbyact">
+				<p>user545<span>0</span></p>
+				<p class="dollar">NT$ 0.00<button>登出</button><button class="ques"></button></p>
+            </div>
+        </article>
+    </header>
+    <!--main-->
+    <main class="index">
+        <!--置中外包-->
+        <article class="mineboard">
+            <!--左列-->
+            <section class="left mine">
+                <!--上視窗-->
+                <div class="minewindow">
+                    <!--頭像區-->
+                    <div class="avater">
+                        <div class="sticker"></div>
+                        <p>user545<span>0</span></p>
+                        <p class="joinday">加入第6天</p>
+                    </div>
+                    <!--三按鈕-->
+                    <div class="threebut">
+                        <a href="../leftbtn/deposit.html"><span></span>存款</a>
+                        <a href="../leftbtn/transpoint.html"><span class="trans"></span>轉點</a>
+                        <a href="../leftbtn/withdrawl.html"><span class="take"></span>取款</a>
+                    </div>
+                </div>
+                <!--選單-->
+                <ul>
+                    <li><a href="./mine.html"><span></span>個人資料</a></li>
+                    <li><a href="./wallet.html"><span class="lf_wallet"></span>我的錢包</a></li>
+                    <li><a href="./deal_record.html"><span class="lf_dealre"></span>交易紀錄<div class="num">6</div></a></li>
+                    <li><a href="./betting_now.html"><span class="lf_betting"></span>即時注單<div class="num">2</div></a></li>
+                    <li><a href="./betting_record.html"><span class="lf_betre"></span>投注紀錄<div class="num">3</div></a></li>
+                    <li><a href="./help.html"><span class="lf_help"></span>幫助中心</a></li>
+                    <li><a href="./contact.html"><span class="lf_call"></span>聯繫我們</a></li>
+                    <li><a href="./message.html" class="active"><span class="lf_mess"></span>消息中心<div class="num">6</div></a></li>
+                    <li><a href="./control.html"><span class="lf_ctrl"></span>設定</a></li>
+                    <li><a href="./abuot.html"><span class="lf_about"></span>關於</a></li>
+                    <li><a href="./joinus.html"><span class="lf_join"></span>加入我們</a></li>
+                    <li><a href="./app.html"><span class="lf_app"></span>下載APP</a></li>
+                </ul>
+            </section>
+            <!--消息中心-->
+            <section class="myself">
+                <!--懸浮列-->
+                <div class="minetopfix">
+                    <!--左段字-->
+                    <p class="leftword">消息中心</p>
+                    <!--中段字-->
+                    <div class="midword"></div>
+                    <!--懸浮假bar-->
+                    <div class="fixbar mes">
+                        <ul>
+                            <li class="active">通知</li>
+                            <div class="topline"></div>
+                            <li>活動</li>
+                            <div class="topline"></div>
+                            <li>公告</li>
+                            <div class="topline"></div>
+                            <li>賽事公告</li>
+                        </ul>
+                        <button class="editbut">編輯</button>
+                        <button class="cancelbut">取消</button>
+                        <button class="delbut">刪除</button>
+                        <div class="mes_rowbut lside">
+                            <div class="innbut"></div>
+                            <span>IM體育</span>
+                            <span>UR體育</span>
+                        </div>
+                    </div>
+                </div>
+                <!--隱藏版-->
+                <div class="hideboard index mineboard"></div>
+                <!--通知-->
+                <div class="notice display">
+                    <div>
+                        <div class="helpbar">
+                            <input type="radio">
+                            <p>NBA 》 11點整NBA直播賽</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox">
+                            <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高888元彩金!單需一倍流水即可提款!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <input type="radio">
+                            <p>NBA 》 補進第4人籃網再簽甜瓜好友</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox">
+                            <p>面對振忠多達7名球員不打複賽的籃網，最近補強動作相當積極，在先後簽下克勞佛、比斯利與豪爾等人之後，《SNY》記者貝格利13日爆料，籃網將跟上季效力過尼克的蘭斯湯瑪斯達成加盟協議，湯瑪斯曾跟「甜瓜」安森尼關係不錯。</p>
+                            <p>蘭斯湯瑪斯是2010年選秀會落選球員，生涯待過鵜鶘、雷霆、尼克等隊，更在2013-14年球季效力大陸CBA佛山龍獅( 現改名廣州龍獅)，上季待在尼克場均4.5分、2.5籃板，其實籃網去年9月曾給他非正式合約，卻在開季前把他釋出。</p>
+                            <p>儘管籃網本季取得30勝34敗、東區第7戰績，卻在本季宣告復賽之後狀況連連，先是厄文、杜蘭特、克拉克斯頓、威爾 森錢德勒等人宣布不打復賽，接著狄安卓喬丹、丁維迪、普林斯等人確定感染新冠病毒不打，造成籃網一口氣少了7人。</p>
+                            <p>為了「應付」復賽後的8場例行賽，以及很可能發生的東區第8種子爭奪賽，籃網只好趕緊從自由球員市場找人，如今先 後簽下克勞佛、比斯利、豪爾與蘭斯湯瑪斯之後，陣容已經補到14人，相信已經足夠面對本季復賽，戰績好壞已不重要 了。</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <input type="radio">
+                            <p>NBA 》 第2隔離賽區?&ensp;柯瑞率先喊不打</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox">
+                            <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高888元彩金!單需一倍流水即可提款!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <input type="radio">
+                            <p>足球 》 MLS回歸嚴肅響應示威&ensp;球隊又爆染疫 複賽再減一隊</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox">
+                            <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高888元彩金!單需一倍流水即可提款!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <input type="radio">
+                            <p>北市大足球 》 國體江信隆超級噴射自由球&ensp;直奔球門死角</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox">
+                            <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高888元彩金!單需一倍流水即可提款!</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar">
+                            <input type="radio">
+                            <p>中華職棒 》 M1封王彩帶拋不下來&ensp;中信等不及了</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox">
+                            <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高888元彩金!單需一倍流水即可提款!</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="activity">
+                    <div>
+                        <div>
+                            <div class="helpbar">
+                                <p>【○○感恩祭】晚上8點上線即可搶8888禮金，禮金有限，送完為止</p>
+                                <span>活動時間 2020/07/13 ~ 2020/07/22</span>
+                            </div>
+                            <div class="helpbox mes">
+                                <div class="innerbox">
+                                    <p>活動對象：平台全體會員</p>
+                                    <p>活動時間：2020/07/13 00:00:00 ~ 2020/07/22 23:59:59</p>
+                                </div>
+                                <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高 888元彩金！單需一倍流水即可提款！</p>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>18元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>88</td>
+                                        <td>88元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>888</td>
+                                        <td>388元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>8888</td>
+                                        <td>888元</td>
+                                    </tr>
+                                </table>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-13 02:00:00</td>
+                                        <td>伯恩茅斯 VS 萊斯特城</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-14 03:00:00</td>
+                                        <td>曼聯 VS 南安普敦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-16 01:00:00</td>
+                                        <td>曼城 VS 伯恩茅斯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-16 03:15:00</td>
+                                        <td>阿森納 VS 利物浦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-17 03:15:00</td>
+                                        <td>水晶宮 VS 曼聯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-19 23:00:00</td>
+                                        <td>熱刺 VS 萊斯特城</td>
+                                    </tr>
+                                </table>
+                                <span class="remind">具體開賽時間，請以官網時間為準</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="helpbar">
+                                <p>【○○天降紅包雨】27波熱門賽事紅包雨瘋搶888元</p>
+                                <span>活動時間 2020/07/13 ~ 2020/07/22</span>
+                            </div>
+                            <div class="helpbox mes">
+                                <div class="innerbox">
+                                    <p>活動對象：平台全體會員</p>
+                                    <p>活動時間：2020/07/13 00:00:00 ~ 2020/07/22 23:59:59</p>
+                                </div>
+                                <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高 888元彩金！單需一倍流水即可提款！</p>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>18元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>88</td>
+                                        <td>88元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>888</td>
+                                        <td>388元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>8888</td>
+                                        <td>888元</td>
+                                    </tr>
+                                </table>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-13 02:00:00</td>
+                                        <td>伯恩茅斯 VS 萊斯特城</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-14 03:00:00</td>
+                                        <td>曼聯 VS 南安普敦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-16 01:00:00</td>
+                                        <td>曼城 VS 伯恩茅斯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-16 03:15:00</td>
+                                        <td>阿森納 VS 利物浦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-17 03:15:00</td>
+                                        <td>水晶宮 VS 曼聯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-19 23:00:00</td>
+                                        <td>熱刺 VS 萊斯特城</td>
+                                    </tr>
+                                </table>
+                                <span class="remind">具體開賽時間，請以官網時間為準</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="helpbar">
+                                <p>【○○好康】年終感恩福利，每筆提款送499元</p>
+                                <span>活動時間 2020/07/13 ~ 2020/07/22</span>
+                            </div>
+                            <div class="helpbox mes">
+                                <div class="innerbox">
+                                    <p>活動對象：平台全體會員</p>
+                                    <p>活動時間：2020/07/13 00:00:00 ~ 2020/07/22 23:59:59</p>
+                                </div>
+                                <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高 888元彩金！單需一倍流水即可提款！</p>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>18元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>88</td>
+                                        <td>88元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>888</td>
+                                        <td>388元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>8888</td>
+                                        <td>888元</td>
+                                    </tr>
+                                </table>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-13 02:00:00</td>
+                                        <td>伯恩茅斯 VS 萊斯特城</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-14 03:00:00</td>
+                                        <td>曼聯 VS 南安普敦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-16 01:00:00</td>
+                                        <td>曼城 VS 伯恩茅斯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-16 03:15:00</td>
+                                        <td>阿森納 VS 利物浦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-17 03:15:00</td>
+                                        <td>水晶宮 VS 曼聯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-19 23:00:00</td>
+                                        <td>熱刺 VS 萊斯特城</td>
+                                    </tr>
+                                </table>
+                                <span class="remind">具體開賽時間，請以官網時間為準</span>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="helpbar">
+                                <p>【○○福利送】王者歸來，尊享888元，召回老友也能領千元</p>
+                                <span>活動時間 2020/07/13 ~ 2020/07/22</span>
+                            </div>
+                            <div class="helpbox mes">
+                                <div class="innerbox">
+                                    <p>活動對象：平台全體會員</p>
+                                    <p>活動時間：2020/07/13 00:00:00 ~ 2020/07/22 23:59:59</p>
+                                </div>
+                                <p>在活動期間，投注指定英超賽事，單注有效投注額 ≧ 500元且最終結算完畢，注單尾號含有連續數字8，即可獲得最高 888元彩金！單需一倍流水即可提款！</p>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>8</td>
+                                        <td>18元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>88</td>
+                                        <td>88元</td>
+                                    </tr>
+                                    <tr>
+                                        <td>888</td>
+                                        <td>388元</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>8888</td>
+                                        <td>888元</td>
+                                    </tr>
+                                </table>
+                                <table class="tmes">
+                                    <tr class="bg_darkpurple2">
+                                        <th class="wd_white">注單尾號</th>
+                                        <th class="wd_white">彩金金額</th>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-13 02:00:00</td>
+                                        <td>伯恩茅斯 VS 萊斯特城</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-14 03:00:00</td>
+                                        <td>曼聯 VS 南安普敦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-16 01:00:00</td>
+                                        <td>曼城 VS 伯恩茅斯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-16 03:15:00</td>
+                                        <td>阿森納 VS 利物浦</td>
+                                    </tr>
+                                    <tr>
+                                        <td>2020-07-17 03:15:00</td>
+                                        <td>水晶宮 VS 曼聯</td>
+                                    </tr>
+                                    <tr class="bg_lightpurple">
+                                        <td>2020-07-19 23:00:00</td>
+                                        <td>熱刺 VS 萊斯特城</td>
+                                    </tr>
+                                </table>
+                                <span class="remind">具體開賽時間，請以官網時間為準</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--公告-->
+                <div class="announcement">
+                    <div>
+                        <div class="helpbar nb">
+                            <p>【○○系統公告】</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox display">
+                            <p>4.0.2版本優化項目：</p>
+                            <p>1.存款/轉點/取款介面功能速度優化</p>
+                            <p>2.個人資料，財務密碼維護加強</p>
+                            <p>3.賽事直播系統更即時，最新進球不漏接</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar nb">
+                            <p>【○○維護通知】</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox display">
+                            <p>○○將於 2020-07-13 00:00~2020-07-15 12:00 進行維修，待修復完畢將另行公告，造成不便敬請見諒</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar nb">
+                            <p>【○○維護通知】</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox display">
+                            <p>○○將於 2020-07-13 00:00~2020-07-15 12:00 進行維修，待修復完畢將另行公告，造成不便敬請見諒</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar nb">
+                            <p>【○○系統公告】</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox display">
+                            <p>4.0.1版本優化項目</p>
+                            <p>1.存款/轉點/取款介面功能速度優化</p>
+                            <p>2.錯誤修正</p>
+                        </div>
+                    </div>
+                </div>
+                <!--賽事公告-->
+                <div class="competition">
+                    <div>
+                        <div class="helpbar nb">
+                            <p>【網球賽事】</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox display">
+                            <p>【網球賽事】07月13日 ATP朗塞斯頓挑戰賽-雙打(布雷資.卡夫奇克(斯洛文尼亞)/穆罕默德.薩夫瓦特(埃及)VS薩迪奧.杜姆 比亞/法賓.勒布爾(法國))因客隊隊名錯誤，所有注單一律取消，過關以(1)計算，正確客隊名稱為(雅各布.吉利斯/卡魯姆.普 特吉爾(澳大利亞))</p>
+                        </div>
+                    </div>
+                    <div>
+                        <div class="helpbar nb">
+                            <p>【足球賽事】</p>
+                            <span>2020-07-13&ensp;20:40</span>
+                        </div>
+                        <div class="helpbox display">
+                            <p>【足球賽事】07月13日 墨西哥超級聯賽(普埃布拉VS阿美利加會)因電視裁判助理的重新判定，所有投注在(GMT-4:00) 23:00:49至23:02:48的注單一律取消</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </article>
+        <!--懸浮側鍵-->
+        <section class="fixside">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                    <span>搜尋</span>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                </a>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--懸浮側鍵RWD-->
+        <section class="fixside_rwd">
+            <!--搜尋列-->
+            <div class="search">
+                <div class="searchbut">
+                    <div class="fixsideimg img1"></div>
+                </div>
+                <input type="text" placeholder="搜尋賽事">
+                <button>確認</button>
+                <!--隊伍內容-->
+                <ul class="searchbox">
+                    <li class="box1">熱門賽事</li>
+                    <div class="sbox1">
+                        <a href="#"><span class="team"></span>義大利甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team french"></span>法國甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team england"></span>英國甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box2">埃及</li>
+                    <div class="sbox2">
+                        <a href="#"><span class="team"></span>埃及超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box3">阿爾及利亞</li>
+                    <div class="sbox3">
+                        <a href="#"><span class="team"></span>阿爾及利亞甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box4">巴林</li>
+                    <div class="sbox4">
+                        <a href="#"><span class="team"></span>巴林超級聯賽<span class="num">(12)</span></a>
+                    </div>
+                    <li class="box5">巴西</li>
+                    <div class="sbox5">
+                        <a href="#"><span class="team"></span>巴西杯<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西里約州甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴西利亞甲組聯賽<span class="num">(12)</span></a>
+                        <a href="#"><span class="team"></span>巴西巴亞諾甲組聯賽<span class="num">(12)</span></a>
+                    </div>
+                </ul>
+            </div>
+            <!--功能列-->
+            <div class="fun">
+                <a href="#" class="deposit">
+                    <div class="fixsideimg img2"></div>
+                    <span class="wd_red">存款</span>
+                </a>
+                <a href="#" class="trans">
+                    <div class="fixsideimg img3"></div>
+                    <span>轉點</span>
+                </a>
+                <a href="#" class="dealrecord">
+                    <div class="fixsideimg img4"></div>
+                    <span>交易紀錄</span>
+                <a href="#" class="bettingrecord">
+                    <div class="fixsideimg img5"></div>
+                    <span>投注紀錄</span>
+                </a>
+                <a href="#" class="help">
+                    <div class="fixsideimg img6"></div>
+                    <span>幫助中心</span>
+                </a>
+                <a href="#" class="online">
+                    <div class="fixsideimg img7"></div>
+                    <span>在線客服</span>
+                </a>
+                <a href="#" class="app">
+                    <div class="fixsideimg img8"></div>
+                    <span>APP下載</span>
+                </a>
+            </div>
+        </section>
+        <!--背景-->
+        <div class="bg index"></div>
+    </main>
+</body>
+
+</html>
