@@ -1287,6 +1287,84 @@ html body {
       width: 5%; }
     html body table.tesp .rowup td:nth-child(19) {
       width: 4%; }
+    html body table.tstock tr td:nth-child(1) {
+      width: 20%; }
+    html body table.tstock tr td:nth-child(2) {
+      width: 20%; }
+    html body table.tstock tr td:nth-child(3) {
+      width: 20%; }
+    html body table.tstock tr td:nth-child(4) {
+      width: 15%; }
+    html body table.tstock tr td:nth-child(5) {
+      width: 15%; }
+    html body table.tstock tr td:nth-child(6) {
+      width: 10%; }
+    html body table.ticeball .rowup a {
+      margin: 3px; }
+    html body table.ticeball .rowup td:nth-child(1) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(2) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(3) {
+      width: 10%; }
+    html body table.ticeball .rowup td:nth-child(4) {
+      width: 20%; }
+    html body table.ticeball .rowup td:nth-child(5) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(6) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(7) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(8) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(9) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(10) {
+      width: 8%; }
+    html body table.ticeball .rowup td:nth-child(11) {
+      width: 6%; }
+    html body table.tten .rowup a {
+      margin: 3px; }
+    html body table.tten .rowup td:nth-child(1) {
+      width: 8%; }
+    html body table.tten .rowup td:nth-child(2) {
+      width: 8%; }
+    html body table.tten .rowup td:nth-child(3) {
+      width: 5%; }
+    html body table.tten .rowup td:nth-child(4) {
+      width: 26%; }
+    html body table.tten .rowup td:nth-child(5) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(6) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(7) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(8) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(9) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(10) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(11) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(12) {
+      width: 6%; }
+    html body table.tten .rowup td:nth-child(13) {
+      width: 5%; }
+    html body table.tsnooker .rowup a {
+      margin: 3px; }
+    html body table.tsnooker .rowup td:nth-child(1) {
+      width: 16%; }
+    html body table.tsnooker .rowup td:nth-child(2) {
+      width: 16%; }
+    html body table.tsnooker .rowup td:nth-child(3) {
+      width: 8%; }
+    html body table.tsnooker .rowup td:nth-child(4) {
+      width: 36%; }
+    html body table.tsnooker .rowup td:nth-child(5) {
+      width: 18%; }
+    html body table.tsnooker .rowup td:nth-child(6) {
+      width: 6%; }
     html body table.tsocin tr td:nth-child(1) {
       width: 8%; }
     html body table.tsocin tr td:nth-child(2) {
