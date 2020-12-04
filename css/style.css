@@ -6174,3 +6174,10 @@ html body {
       -ms-transform: rotate(45deg);
       transform: rotate(45deg);
       border-width: 0px 2px 2px 0px; }
+
+.power {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 20px;
+  background: #00b8ee; }

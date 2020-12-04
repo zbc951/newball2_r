@@ -128,6 +128,21 @@ $(function(){
         $('.li_hot').addClass('active');
         $('.li_hot').siblings().removeClass('active');
         $('.li_soc').children('a').attr('href','./html/balls/soccer.html');
+        $('.li_base').children('a').attr('href','./html/balls/baseball.html');
+        $('.li_bsk').children('a').attr('href','./html/balls/basketball.html');
+        $('.li_race').children('a').attr('href','./html/balls/race.html');
+        $('.li_esp').children('a').attr('href','./html/balls/esp.html');
+        $('.li_stock').children('a').attr('href','./html/balls/stock.html');
+        $('.li_lotto').children('a').attr('href','./html/balls/lotto.html');
+        $('.li_iceball').children('a').attr('href','./html/balls/iceball.html');
+        $('.li_tennis').children('a').attr('href','./html/balls/tennis.html');
+        $('.li_snooker').children('a').attr('href','./html/balls/snooker.html');
+        $('.li_vball').children('a').attr('href','./html/balls/vball.html');
+        $('.li_racecar').children('a').attr('href','./html/balls/racecar.html');
+        $('.li_badminton').children('a').attr('href','./html/balls/badminton.html');
+        $('.li_beachball').children('a').attr('href','./html/balls/beachball.html');
+        $('.li_football').children('a').attr('href','./html/balls/football.html');
+        $('.li_tableball').children('a').attr('href','./html/balls/tableball.html');
     })
     $('.signupbut').click(function(){
         $('.signup').addClass('display');
@@ -163,6 +178,58 @@ $(function(){
     $('.li_bsk').click(function(){
         $('.dbsk').siblings().addClass('turn');
         $('.dbsk').removeClass('turn');
+    })
+    $('.li_race').click(function(){
+        $('.drace').siblings().addClass('turn');
+        $('.drace').removeClass('turn');
+    })
+    $('.li_esp').click(function(){
+        $('.desp').siblings().addClass('turn');
+        $('.desp').removeClass('turn');
+    })
+    $('.li_stock').click(function(){
+        $('.dstock').siblings().addClass('turn');
+        $('.dstock').removeClass('turn');
+    })
+    $('.li_lotto').click(function(){
+        $('.dlotto').siblings().addClass('turn');
+        $('.dlotto').removeClass('turn');
+    })
+    $('.li_iceball').click(function(){
+        $('.diceball').siblings().addClass('turn');
+        $('.diceball').removeClass('turn');
+    })
+    $('.li_tennis').click(function(){
+        $('.dten').siblings().addClass('turn');
+        $('.dten').removeClass('turn');
+    })
+    $('.li_snooker').click(function(){
+        $('.dsnooker').siblings().addClass('turn');
+        $('.dsnooker').removeClass('turn');
+    })
+    $('.li_vball').click(function(){
+        $('.dvball').siblings().addClass('turn');
+        $('.dvball').removeClass('turn');
+    })
+    $('.li_racecar').click(function(){
+        $('.dracecar').siblings().addClass('turn');
+        $('.dracecar').removeClass('turn');
+    })
+    $('.li_badminton').click(function(){
+        $('.dbad').siblings().addClass('turn');
+        $('.dbad').removeClass('turn');
+    })
+    $('.li_beachball').click(function(){
+        $('.dbeachball').siblings().addClass('turn');
+        $('.dbeachball').removeClass('turn');
+    })
+    $('.li_football').click(function(){
+        $('.dfootball').siblings().addClass('turn');
+        $('.dfootball').removeClass('turn');
+    })
+    $('.li_tableball').click(function(){
+        $('.dtableball').siblings().addClass('turn');
+        $('.dtableball').removeClass('turn');
     })
 })
 //fixside
