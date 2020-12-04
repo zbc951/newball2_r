@@ -1299,6 +1299,34 @@ html body {
       width: 15%; }
     html body table.tstock tr td:nth-child(6) {
       width: 10%; }
+    html body table.tlotto .rowup td:nth-child(1) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(2) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(3) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(4) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(5) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(6) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(7) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(8) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(9) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(10) {
+      width: 6%; }
+    html body table.tlotto .rowup td:nth-child(11) {
+      width: 10%; }
+    html body table.tlotto .rowup td:nth-child(12) {
+      width: 10%; }
+    html body table.tlotto .rowup td:nth-child(13) {
+      width: 10%; }
+    html body table.tlotto .rowup td:nth-child(14) {
+      width: 10%; }
     html body table.ticeball .rowup a {
       margin: 3px; }
     html body table.ticeball .rowup td:nth-child(1) {

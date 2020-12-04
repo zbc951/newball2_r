@@ -267,7 +267,7 @@ table {
 			}
       	}
     }
-    //足球版首頁
+    //足球/沙灘足球版首頁
     &.tsoc {
 		tr {
 			td {
@@ -558,9 +558,54 @@ table {
 	}
 	//彩球版首頁
 	&.tlotto {
-		
+		.rowup {
+			td {
+				&:nth-child(1) {
+					width: 6%;
+				}
+				&:nth-child(2) {
+					width: 6%;
+				}
+				&:nth-child(3) {
+					width: 6%;
+				}
+				&:nth-child(4) {
+					width: 6%;
+				}
+				&:nth-child(5) {
+					width: 6%;
+				}
+				&:nth-child(6) {
+					width: 6%;
+				}
+				&:nth-child(7) {
+					width: 6%;
+				}
+				&:nth-child(8) {
+					width: 6%;
+				}
+				&:nth-child(9) {
+					width: 6%;
+				}
+				&:nth-child(10) {
+					width: 6%;
+				}
+				&:nth-child(11) {
+					width: 10%;
+				}
+				&:nth-child(12) {
+					width: 10%;
+				}
+				&:nth-child(13) {
+					width: 10%;
+				}
+				&:nth-child(14) {
+					width: 10%;
+				}
+			}
+		}
 	}
-	//冰球版首頁
+	//冰球/美式足球版首頁
 	&.ticeball {
 		.rowup {
 			a {
@@ -603,7 +648,7 @@ table {
 			}
 		}
 	}
-	//網球版首頁
+	//網球/羽毛球版首頁
 	&.tten {
 		.rowup {
 			a {
@@ -680,7 +725,7 @@ table {
 			}
 		}
 	}
-	//排球首頁
+	//排球/乒乓球首頁
 	&.tvball {
 		.rowup {
 			a {
