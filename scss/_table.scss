@@ -556,6 +556,10 @@ table {
 			}
 		}
 	}
+	//彩球版首頁
+	&.tlotto {
+		
+	}
 	//冰球版首頁
 	&.ticeball {
 		.rowup {
@@ -672,6 +676,94 @@ table {
 				}
 				&:nth-child(6) {
 					width: 6%;
+				}
+			}
+		}
+	}
+	//排球首頁
+	&.tvball {
+		.rowup {
+			a {
+				margin: 3px;
+			}
+			td {
+				&:nth-child(1) {
+					width: 8%;
+				}
+				&:nth-child(2) {
+					width: 8%;
+				}
+				&:nth-child(3) {
+					width: 5%;
+				}
+				&:nth-child(4) {
+					width: 20%;
+				}
+				&:nth-child(5) {
+					width: 6%;
+				}
+				&:nth-child(6) {
+					width: 6%;
+				}
+				&:nth-child(7) {
+					width: 6%;
+				}
+				&:nth-child(8) {
+					width: 6%;
+				}
+				&:nth-child(9) {
+					width: 6%;
+				}
+				&:nth-child(10) {
+					width: 6%;
+				}
+				&:nth-child(11) {
+					width: 6%;
+				}
+				&:nth-child(12) {
+					width: 6%;
+				}
+				&:nth-child(13) {
+					width: 6%;
+				}
+				&:nth-child(14) {
+					width: 5%;
+				}
+			}
+		}
+	}
+	&.tracecar {
+		tr {
+			a {
+				margin: 3px;
+			}
+			td {
+				&:nth-child(1) {
+					width: 8%;
+				}
+				&:nth-child(2) {
+					width: 8%;
+				}
+				&:nth-child(3) {
+					width: 20%;
+				}
+				&:nth-child(4) {
+					width: 10%;
+				}
+				&:nth-child(5) {
+					width: 8%;
+				}
+				&:nth-child(6) {
+					width: 20%;
+				}
+				&:nth-child(7) {
+					width: 16%;
+				}
+				&:nth-child(8) {
+					width: 5%;
+				}
+				&:nth-child(9) {
+					width: 5%;
 				}
 			}
 		}
