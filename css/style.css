@@ -1214,6 +1214,79 @@ html body {
       width: 3%; }
     html body table.tbase .rowup td:nth-child(18) {
       width: 6%; }
+    html body table.trace tr a {
+      margin: 3px; }
+    html body table.trace tr td:nth-child(1) {
+      width: 8%; }
+    html body table.trace tr td:nth-child(2) {
+      width: 8%; }
+    html body table.trace tr td:nth-child(3) {
+      width: 25%; }
+    html body table.trace tr td:nth-child(4) {
+      width: 13%; }
+    html body table.trace tr td:nth-child(5) {
+      width: 13%; }
+    html body table.trace tr td:nth-child(6) {
+      width: 8%; }
+    html body table.trace tr td:nth-child(7) {
+      width: 20%; }
+    html body table.trace tr td:nth-child(8) {
+      width: 5%; }
+    html body table.tesp.cs .win {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/statust.png"); }
+    html body table.tesp.cs .rowup td:nth-child(11) {
+      width: 5%; }
+    html body table.tesp.cs .rowup td:nth-child(12) {
+      width: 12%; }
+    html body table.tesp.cs .rowup td:nth-child(13) {
+      width: 12%; }
+    html body table.tesp.cs .rowup td:nth-child(14) {
+      width: 12%; }
+    html body table.tesp.cs .rowup td:nth-child(15) {
+      width: 5%; }
+    html body table.tesp .rowup a {
+      margin: 3px; }
+    html body table.tesp .rowup td:nth-child(1) {
+      width: 8%; }
+    html body table.tesp .rowup td:nth-child(2) {
+      width: 6%; }
+    html body table.tesp .rowup td:nth-child(3) {
+      width: 12%; }
+    html body table.tesp .rowup td:nth-child(4) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(5) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(6) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(7) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(8) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(9) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(10) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(11) {
+      width: 4%; }
+    html body table.tesp .rowup td:nth-child(12) {
+      width: 5%; }
+    html body table.tesp .rowup td:nth-child(13) {
+      width: 8%; }
+    html body table.tesp .rowup td:nth-child(14) {
+      width: 5%; }
+    html body table.tesp .rowup td:nth-child(15) {
+      width: 5%; }
+    html body table.tesp .rowup td:nth-child(16) {
+      width: 5%; }
+    html body table.tesp .rowup td:nth-child(17) {
+      width: 5%; }
+    html body table.tesp .rowup td:nth-child(18) {
+      width: 5%; }
+    html body table.tesp .rowup td:nth-child(19) {
+      width: 4%; }
     html body table.tsocin tr td:nth-child(1) {
       width: 8%; }
     html body table.tsocin tr td:nth-child(2) {
