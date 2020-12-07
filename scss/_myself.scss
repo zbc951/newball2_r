@@ -121,7 +121,7 @@
                 position: relative;
                 background: #a3a8c4;
                 margin: 7px 20px 0px 0px;
-                padding: 8px 20px;
+                padding: 8px 12px;
                 border-radius: 20px;
                 position: relative;
                 cursor: pointer;
@@ -145,7 +145,7 @@
                         }
                     }
                     .innbut {
-                        left: 50%;
+                        left: 53%;
                         animation: rowbut2 0.3s ease-out 0s;
                     }
                 }
@@ -158,11 +158,11 @@
                     }
                 }
                 .innbut {
-                    width: 45%;
+                    width: 44%;
                     height: 80%;
                     background: #fff;
                     position: absolute;
-                    left: 5%;
+                    left: 3%;
                     top: 10%;
                     border-radius: 20px;
                 }
@@ -701,10 +701,19 @@
                 button {
                     width: 16px;
                     height: 16px;
-                    background: url('../images/chatbox_ic.png') no-repeat;
+                    background: url('../images/windowface.png') no-repeat;
                     background-size: 200%;
                     float: left;
-                    margin: 2px 0px 0px 13px;
+                    margin: 8px 0px 0px 5px;
+                    &:first-child {
+                        margin-left: 15px;
+                    }
+                    &:hover,&:active {
+                        width: 16px;
+                        height: 16px;
+                        background: url('../images/windowface.png') no-repeat;
+                        background-size: 200%;
+                    }
                     &.un {
                         background-position-x: -16px;
                     }

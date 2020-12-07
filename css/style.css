@@ -165,7 +165,7 @@ html body {
           display: none; }
         html body header article .lobbyact p {
           color: #4d515d;
-          font-size: 14px;
+          font-size: 15px;
           margin: 20px 0px 0px 0px; }
           html body header article .lobbyact p.dollar {
             color: #2d43b6;
@@ -227,7 +227,7 @@ html body {
     position: relative; }
     html body main article {
       width: 1100px;
-      height: 860px;
+      height: 890px;
       margin: 0px auto;
       overflow: hidden;
       position: relative; }
@@ -261,7 +261,8 @@ html body {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    z-index: 6; }
+    z-index: 6;
+    scrollbar-width: thin; }
     html body .left::-webkit-scrollbar {
       width: 5px;
       background-color: transparent; }
@@ -745,7 +746,7 @@ html body {
               color: #4d515d;
               font-weight: bold;
               font-size: 16px;
-              padding: 8px 0px 0px 10px;
+              padding: 20px 0px 0px 10px;
               position: relative;
               float: left; }
               html body .right .room .livelist ul div a span.time {
@@ -767,7 +768,7 @@ html body {
                   height: 8px;
                   border-radius: 4px;
                   background: #ff0000;
-                  top: 10px;
+                  top: 22px;
                   right: -10px; }
             html body .right .room .livelist ul div a div {
               display: block;
@@ -780,17 +781,20 @@ html body {
                 color: #4d515d;
                 font-size: 13px;
                 font-weight: normal;
-                line-height: 24px; }
+                line-height: 18px;
+                padding: 3px 0px 0px 10px; }
               html body .right .room .livelist ul div a div button {
                 background: transparent;
                 border: solid 1px #3654ff;
                 color: #3654ff;
                 border-radius: 10px;
                 float: right;
-                margin: 25px 10px 0px 0px; }
+                margin: 15px 5px 0px 0px; }
                 html body .right .room .livelist ul div a div button:hover, html body .right .room .livelist ul div a div button:active {
                   background: #3654ff;
                   color: #fff; }
+                html body .right .room .livelist ul div a div button:nth-of-type(1) {
+                  margin-right: 10px; }
                 html body .right .room .livelist ul div a div button.live {
                   border-color: #d57f32;
                   color: #d57f32; }
@@ -835,7 +839,7 @@ html body {
             left: 20px; }
         html body .right .room .chatroom .chatwindow {
           width: 100%;
-          height: 330px;
+          height: 375px;
           border-bottom: solid 1px #e0e1e3;
           color: #8a8c93;
           text-align: center;
@@ -861,7 +865,7 @@ html body {
             html body .right .room .chatroom .chatwindow div span {
               display: block;
               float: right;
-              padding: 3px 5px;
+              padding: 6px 8px 5px;
               border: solid 1px #485abf;
               border-radius: 20px;
               font-size: 15px;
@@ -873,7 +877,7 @@ html body {
               html body .right .room .chatroom .chatwindow div span.username {
                 display: inline;
                 position: absolute;
-                top: -15px;
+                top: -18px;
                 right: 0px;
                 color: #93a2ee;
                 font-size: 10px;
@@ -882,7 +886,7 @@ html body {
               html body .right .room .chatroom .chatwindow div span.guestname {
                 display: inline;
                 position: absolute;
-                top: -15px;
+                top: -18px;
                 left: 0px;
                 color: #93a2ee;
                 font-size: 10px;
@@ -895,37 +899,42 @@ html body {
                 text-align: left; }
         html body .right .room .chatroom .chatbox {
           width: 280px;
-          height: 120px;
+          height: 95px;
           background: #fff; }
           html body .right .room .chatroom .chatbox textarea {
             width: 100%;
             height: 50px;
             border: none;
             outline: none;
-            padding: 10px;
+            padding: 5px 10px 10px 10px;
             resize: none; }
           html body .right .room .chatroom .chatbox span {
             display: block;
-            width: 15px;
-            height: 15px;
+            width: 18px;
+            height: 18px;
             float: left;
-            margin: 10px 5px 0px 5px;
+            margin: 5px 0px 0px 5px;
             position: relative;
             overflow: hidden;
-            background: url("../images/chatbox_ic.png");
+            background: url("../images/windowface.png");
             background-size: 200%;
             cursor: pointer; }
+            html body .right .room .chatroom .chatbox span:first-child {
+              margin-left: 10px; }
             html body .right .room .chatroom .chatbox span.look {
-              background-position-x: -15px; }
+              background-position-x: -18px; }
         html body .right .room .chatroom .chatbut {
           width: 100%;
-          height: 60px;
+          height: 40px;
           background: #d6ddff; }
           html body .right .room .chatroom .chatbut button {
             float: right;
-            margin: 20px 15px 0px 0px;
-            border-radius: 5px; }
+            margin: 6px 8px 0px 0px;
+            border-radius: 5px;
+            padding: 3px 7px;
+            font-size: 15px; }
             html body .right .room .chatroom .chatbut button:first-child {
+              margin-right: 15px;
               border: 1px solid #8593d8;
               color: #fff;
               background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
@@ -2045,7 +2054,8 @@ html body {
           font-size: 15px;
           position: relative;
           border: none;
-          padding: 5px 0px 5px 30px; }
+          padding: 0px 0px 0px 35px;
+          font-size: 14px; }
     html body table.tch2 {
       width: 100%;
       border-radius: 0px;
@@ -2061,7 +2071,7 @@ html body {
           font-size: 15px;
           position: relative;
           border: none;
-          padding: 5px 0px 5px 30px; }
+          padding: 0px 30px 0px 50px; }
     html body table.tteach {
       width: 100%; }
       html body table.tteach tr.teachre.dou td.tright {
@@ -2278,12 +2288,12 @@ html body {
           top: 0px;
           right: 5px; }
         html body table.tperson.money tr td .creditcard.c1 div, html body table.tperson.money tr td .creditcard.c2 div, html body table.tperson.money tr td .creditcard.c3 div {
-          width: 30px;
-          height: 30px;
-          background: url("../images/card_icon.png") no-repeat;
+          width: 35px;
+          height: 35px;
+          background: url("../images/bank_ic.png") no-repeat;
           background-size: 300%;
           position: absolute;
-          top: 25px;
+          top: 20px;
           left: 10px; }
         html body table.tperson.money tr td .creditcard.c1 p, html body table.tperson.money tr td .creditcard.c2 p, html body table.tperson.money tr td .creditcard.c3 p {
           position: absolute;
@@ -2310,30 +2320,11 @@ html body {
             background: -webkit-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
             background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
             background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%); }
+          html body table.tperson.money tr td .creditcard.c1.click:before {
+            background: #6589c6; }
           html body table.tperson.money tr td .creditcard.c1::before {
             -webkit-box-shadow: 0 0 6px 1px #6689c6;
             box-shadow: 0 0 6px 1px #6689c6; }
-          html body table.tperson.money tr td .creditcard.c1 .bank_ic1 {
-            width: 30px;
-            height: 30px;
-            background: url("../images/card_icon.png") no-repeat;
-            background-size: 300%;
-            position: absolute;
-            top: 25px;
-            left: 10px; }
-          html body table.tperson.money tr td .creditcard.c1 p {
-            position: absolute;
-            top: 20px;
-            left: 50px;
-            color: #fff; }
-            html body table.tperson.money tr td .creditcard.c1 p.race {
-              top: 40px;
-              font-size: 10px;
-              font-weight: lighter; }
-            html body table.tperson.money tr td .creditcard.c1 p.cardnum {
-              left: 10px;
-              top: 70px;
-              font-weight: bold; }
         html body table.tperson.money tr td .creditcard.c2 {
           background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
           background: -webkit-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
@@ -2346,11 +2337,13 @@ html body {
             background: -webkit-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
             background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
             background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%); }
+          html body table.tperson.money tr td .creditcard.c2.click:before {
+            background: #31a8b1; }
           html body table.tperson.money tr td .creditcard.c2::before {
             -webkit-box-shadow: 0 0 6px 1px #32a9b2;
             box-shadow: 0 0 6px 1px #32a9b2; }
           html body table.tperson.money tr td .creditcard.c2 div {
-            background-position-x: -30px; }
+            background-position-x: -35px; }
         html body table.tperson.money tr td .creditcard.c3 {
           background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
           background: -webkit-linear-gradient(right, #d7767a 0%, #ffadba 100%);
@@ -2363,11 +2356,13 @@ html body {
             background: -webkit-linear-gradient(left, #d7767a 0%, #ffadba 100%);
             background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
             background: linear-gradient(to right, #d7767a 0%, #ffadba 100%); }
+          html body table.tperson.money tr td .creditcard.c3.click::before {
+            background: #d7767a; }
           html body table.tperson.money tr td .creditcard.c3::before {
             -webkit-box-shadow: 0 0 6px 1px #d8767a;
             box-shadow: 0 0 6px 1px #d8767a; }
           html body table.tperson.money tr td .creditcard.c3 div {
-            background-position-x: -60px; }
+            background-position-x: -70px; }
         html body table.tperson.money tr td .creditcard:last-child {
           margin: 0px; }
         html body table.tperson.money tr td .creditcard:hover, html body table.tperson.money tr td .creditcard:active {
@@ -2504,7 +2499,7 @@ html body {
           position: relative;
           background: #a3a8c4;
           margin-left: 40px;
-          padding: 8px 20px;
+          padding: 8px 12px;
           border-radius: 20px;
           position: relative;
           cursor: pointer; }
@@ -2516,21 +2511,21 @@ html body {
           html body table.tperson.control .midC .rowbut.rside span:nth-of-type(1) {
             color: #fff; }
           html body table.tperson.control .midC .rowbut.rside .innbut {
-            left: 50%;
+            left: 53%;
             -webkit-animation: rowbut2 0.3s ease-out 0s;
             animation: rowbut2 0.3s ease-out 0s; }
           html body table.tperson.control .midC .rowbut span {
-            margin-right: 20px;
+            margin-right: 22px;
             font-size: 14px;
             position: relative; }
             html body table.tperson.control .midC .rowbut span:last-child {
               margin: 0px; }
           html body table.tperson.control .midC .rowbut .innbut {
-            width: 45%;
+            width: 44%;
             height: 80%;
             background: #fff;
             position: absolute;
-            left: 5%;
+            left: 3%;
             top: 10%;
             border-radius: 20px; }
       html body table.tperson.joinus tr td .join_ic {
@@ -3392,7 +3387,8 @@ html body {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    scrollbar-width: thin; }
     html body .middle::-webkit-scrollbar {
       width: 5px;
       background-color: transparent; }
@@ -4021,6 +4017,7 @@ html body {
       width: 850px;
       height: 0px;
       margin: 60px 0px 0px 13px;
+      padding: 20px 0px;
       overflow: hidden;
       -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
       box-shadow: 0 0 6px 1px #bcc2dc;
@@ -4042,16 +4039,17 @@ html body {
         background: #b9becf;
         border-radius: 10px; }
       html body .middle .chleague span.cube {
-        left: 10px;
-        top: 12px; }
-      html body .middle .chleague.open {
-        height: 400px; }
+        left: 30px;
+        top: 7px; }
       html body .middle .chleague.display {
-        display: block; }
+        display: block;
+        height: 400px; }
     html body .middle .chballs {
+      display: none;
       width: 850px;
       height: 0px;
       margin: 60px 0px 0px 13px;
+      padding: 20px 0px 0px;
       position: fixed;
       z-index: 6;
       overflow: hidden;
@@ -4073,10 +4071,11 @@ html body {
         background: #b9becf;
         border-radius: 10px; }
       html body .middle .chballs span.cube {
-        left: 10px;
-        top: 12px; }
-      html body .middle .chballs.open {
-        height: 120px; }
+        left: 17px;
+        top: 7px; }
+      html body .middle .chballs.display {
+        display: block;
+        height: 110px; }
     html body .middle .teach {
       display: none;
       width: 96%;
@@ -4998,7 +4997,7 @@ html body {
           position: relative;
           background: #a3a8c4;
           margin: 7px 20px 0px 0px;
-          padding: 8px 20px;
+          padding: 8px 12px;
           border-radius: 20px;
           position: relative;
           cursor: pointer; }
@@ -5012,7 +5011,7 @@ html body {
           html body .myself .minetopfix .fixbar .mes_rowbut.rside span:nth-of-type(1) {
             color: #fff; }
           html body .myself .minetopfix .fixbar .mes_rowbut.rside .innbut {
-            left: 50%;
+            left: 53%;
             -webkit-animation: rowbut2 0.3s ease-out 0s;
             animation: rowbut2 0.3s ease-out 0s; }
           html body .myself .minetopfix .fixbar .mes_rowbut span {
@@ -5022,11 +5021,11 @@ html body {
             html body .myself .minetopfix .fixbar .mes_rowbut span:last-child {
               margin: 0px; }
           html body .myself .minetopfix .fixbar .mes_rowbut .innbut {
-            width: 45%;
+            width: 44%;
             height: 80%;
             background: #fff;
             position: absolute;
-            left: 5%;
+            left: 3%;
             top: 10%;
             border-radius: 20px; }
         html body .myself .minetopfix .fixbar button {
@@ -5477,10 +5476,17 @@ html body {
           html body .myself .onlineroom .chatarea .face button {
             width: 16px;
             height: 16px;
-            background: url("../images/chatbox_ic.png") no-repeat;
+            background: url("../images/windowface.png") no-repeat;
             background-size: 200%;
             float: left;
-            margin: 2px 0px 0px 13px; }
+            margin: 8px 0px 0px 5px; }
+            html body .myself .onlineroom .chatarea .face button:first-child {
+              margin-left: 15px; }
+            html body .myself .onlineroom .chatarea .face button:hover, html body .myself .onlineroom .chatarea .face button:active {
+              width: 16px;
+              height: 16px;
+              background: url("../images/windowface.png") no-repeat;
+              background-size: 200%; }
             html body .myself .onlineroom .chatarea .face button.un {
               background-position-x: -16px; }
         html body .myself .onlineroom .chatarea textarea {
@@ -5695,7 +5701,7 @@ html body {
           transform: rotate(135deg); }
     html body .login .loginbox {
       width: 100%;
-      height: 210px;
+      height: 195px;
       background: #fff;
       border-radius: 0px 0px 12px 12px;
       padding: 20px 0px; }
@@ -5816,12 +5822,12 @@ html body {
           transform: rotate(135deg); }
     html body .signup .signupbox {
       width: 100%;
-      height: 270px;
+      height: 265px;
       background: #fff;
       border-radius: 0px 0px 12px 12px;
       padding: 20px 0px; }
       html body .signup .signupbox div {
-        width: 50%;
+        width: 48%;
         height: 50px;
         float: left;
         position: relative; }
@@ -5839,13 +5845,13 @@ html body {
           font-size: 17px;
           padding: 3px 0px 3px 10px;
           float: right;
-          margin: 7px 50px 0px 0px;
+          margin: 7px 10px 0px 0px;
           border: 1px solid #b9bfdc;
           border-radius: 4px; }
         html body .signup .signupbox div span {
           line-height: 50px;
           color: #4d515d;
-          padding-left: 15px; }
+          padding-left: 40px; }
         html body .signup .signupbox div button {
           width: 180px;
           height: 36px;
@@ -6149,7 +6155,7 @@ html body {
           transform: rotate(135deg); }
     html body .cardadd .cardaddbox {
       width: 100%;
-      height: 300px;
+      height: 315px;
       background: #fff;
       border-radius: 0px 0px 12px 12px;
       padding: 20px 0px; }

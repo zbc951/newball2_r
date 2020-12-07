@@ -1723,7 +1723,8 @@ table {
 				font-size: 15px;
 				position: relative;
 				border: none;
-				padding: 5px 0px 5px 30px;
+				padding: 0px 0px 0px 35px;
+				font-size: 14px;
 			}
 		}
 	}
@@ -1741,7 +1742,7 @@ table {
 				font-size: 15px;
 				position: relative;
 				border: none;
-				padding: 5px 0px 5px 30px;
+				padding: 0px 30px 0px 50px;
 			}
 		}
 	}
@@ -2047,12 +2048,12 @@ table {
 								}
 							}
 							div {
-								width: 30px;
-								height: 30px;
-								background: url('../images/card_icon.png') no-repeat;
+								width: 35px;
+								height: 35px;
+								background: url('../images/bank_ic.png') no-repeat;
 								background-size: 300%;
 								position: absolute;
-								top: 25px;
+								top: 20px;
 								left: 10px;
 							}
 							p {
@@ -2080,34 +2081,13 @@ table {
 								box-shadow: none;
 								background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
 							}
+							&.click {
+								&:before {
+									background: #6589c6;
+								}
+							}
 							&::before {
 								box-shadow: 0 0 6px 1px #6689c6;
-							}
-							.bank_ic1 {
-								width: 30px;
-								height: 30px;
-								background: url('../images/card_icon.png') no-repeat;
-								background-size: 300%;
-								position: absolute;
-								top: 25px;
-								left: 10px;
-							}
-							p {
-								position: absolute;
-								top: 20px;
-								left: 50px;
-								color: #fff;
-								&.race {
-									top: 40px;
-									font-size: 10px;
-									font-weight: lighter;
-								}
-								&.cardnum {
-									left: 10px;
-									top: 70px;
-									font-weight: bold;
-
-								}
 							}
 						}
 						//卡片2
@@ -2117,11 +2097,16 @@ table {
 								box-shadow: none;
 								background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
 							}
+							&.click {
+								&:before {
+									background: #31a8b1;
+								}
+							}
 							&::before {
 								box-shadow: 0 0 6px 1px #32a9b2;
 							}
 							div {
-								background-position-x: -30px;
+								background-position-x: -35px;
 							}
 						}
 						//卡片3
@@ -2131,11 +2116,16 @@ table {
 								box-shadow: none;
 								background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
 							}
+							&.click {
+								&::before {
+									background: #d7767a;
+								}
+							}
 							&::before {
 								box-shadow: 0 0 6px 1px #d8767a;
 							}
 							div {
-								background-position-x: -60px;
+								background-position-x: -70px;
 							}
 						}
 						&:last-child {
@@ -2309,7 +2299,7 @@ table {
 					position: relative;
 					background: #a3a8c4;
 					margin-left: 40px;
-					padding: 8px 20px;
+					padding: 8px 12px;
 					border-radius: 20px;
 					position: relative;
 					cursor: pointer;
@@ -2330,12 +2320,12 @@ table {
 							}
 						}
 						.innbut {
-							left: 50%;
+							left: 53%;
 							animation: rowbut2 0.3s ease-out 0s;
 						}
 					}
 					span {
-						margin-right: 20px;
+						margin-right: 22px;
 						font-size: 14px;
 						position: relative;
 						&:last-child {
@@ -2343,11 +2333,11 @@ table {
 						}
 					}
 					.innbut {
-						width: 45%;
+						width: 44%;
 						height: 80%;
 						background: #fff;
 						position: absolute;
-						left: 5%;
+						left: 3%;
 						top: 10%;
 						border-radius: 20px;
 					}

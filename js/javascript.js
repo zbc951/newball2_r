@@ -68,11 +68,11 @@ $(function(){
 $(function(){
     $('.chballsbut').click(function(){
         $('.chballsbut').toggleClass('active');
-        $('.chballs').toggleClass('open');
+        $('.chballs').toggleClass('display');
     });
     $('.chleaguebut').click(function(){
         $('.chleaguebut').toggleClass('active');
-        $('.chleague').toggleClass('open');
+        $('.chleague').toggleClass('display');
     });
 });
 //串關投注
