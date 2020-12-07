@@ -129,9 +129,21 @@
             font-weight: bold;
             color: #fff;
             border-radius: 5px;
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
             }
         }
+    }
+    //
+    .activebox {
+        width: 93%;
+        height: auto;
+        background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+        margin: 0px 0px 0px 5%;
+        border-radius: 0px 0px 20px 20px;
+        box-shadow: 0 0 4px 2px #bac0db;
+        transform: translateY(-20px);
+        position: relative;
+        z-index: -1;
     }
 }

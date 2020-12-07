@@ -1058,10 +1058,10 @@ html body {
           border-right: none; }
         html body table tr td.tleft {
           text-align: left;
-          padding: 5px 10px; }
+          padding: 8px 10px; }
         html body table tr td.tright {
           text-align: right;
-          padding: 5px 10px; }
+          padding: 8px 10px; }
         html body table tr td.redpoint {
           position: relative;
           padding-right: 10px; }
@@ -4107,14 +4107,14 @@ html body {
       html body .middle .inner table:nth-of-type(1) {
         margin-top: 160px; }
   html body .fixside {
-    width: 60px;
+    width: 64px;
     height: 520px;
     position: fixed;
     right: 0px;
     top: 180px;
     z-index: 6; }
     html body .fixside .search {
-      width: 300px;
+      width: 304px;
       height: 60px;
       background: #eaedf4;
       border-radius: 12px 0px 0px 12px;
@@ -4129,7 +4129,7 @@ html body {
       html body .fixside .search.open {
         left: -240px; }
       html body .fixside .search .searchbut {
-        width: 60px;
+        width: 64px;
         height: 60px;
         cursor: pointer;
         border-radius: 12px 0px 0px 12px;
@@ -4161,7 +4161,7 @@ html body {
           background: url("../images/fixside_ic.png");
           background-size: 800%;
           float: left;
-          margin: 5px 15px 5px 15px; }
+          margin: 5px 15px 5px 17px; }
       html body .fixside .search input {
         width: 140px;
         height: 30px;
@@ -4207,10 +4207,10 @@ html body {
           background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
           background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%); }
       html body .fixside .search .searchbox {
-        width: 240px;
+        width: 244px;
         height: auto;
         float: left;
-        margin-left: 60px;
+        margin-left: 64px;
         overflow: hidden;
         border-radius: 0px 0px 0px 12px;
         -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
@@ -4288,7 +4288,7 @@ html body {
               float: right;
               margin: 0px 20px 0px 0px; }
     html body .fixside .fun {
-      width: 60px;
+      width: 64px;
       height: auto;
       margin-top: 100px;
       border-radius: 12px 0px 0px 12px;
@@ -4298,10 +4298,12 @@ html body {
       html body .fixside .fun a {
         display: block;
         width: 100%;
-        height: 60px;
+        height: 70px;
         background: #eaedf4;
         text-align: center;
         cursor: pointer; }
+        html body .fixside .fun a:last-child {
+          height: 75px; }
         html body .fixside .fun a:hover, html body .fixside .fun a:active {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
@@ -4329,7 +4331,7 @@ html body {
           background: url("../images/fixside_ic.png");
           background-size: 800%;
           float: left;
-          margin: 5px 15px 5px 15px; }
+          margin: 13px 15px 3px 17px; }
           html body .fixside .fun a .fixsideimg.img2 {
             background-position-x: -30px; }
           html body .fixside .fun a .fixsideimg.img3 {
@@ -4535,10 +4537,12 @@ html body {
       html body .fixside_rwd .fun a {
         display: block;
         width: 100%;
-        height: 60px;
+        height: 64px;
         background: #eaedf4;
         text-align: center;
         cursor: pointer; }
+        html body .fixside_rwd .fun a:last-child {
+          padding-bottom: 3px; }
         html body .fixside_rwd .fun a:hover, html body .fixside_rwd .fun a:active {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
@@ -4566,10 +4570,10 @@ html body {
           background: url("../images/fixside_ic.png");
           background-size: 800%;
           float: left;
-          margin: 5px 15px 2px 8px; }
+          margin: 6px 15px 2px 8px; }
           html body .fixside_rwd .fun a .fixsideimg.img2 {
             background-position-x: -20px;
-            margin-top: 13px; }
+            margin-top: 14px; }
           html body .fixside_rwd .fun a .fixsideimg.img3 {
             background-position-x: -40px;
             margin-top: 13px; }
@@ -4701,11 +4705,27 @@ html body {
         font-weight: bold;
         color: #fff;
         border-radius: 5px; }
-        html body .discount .window button:hover, html body .discount .window button:active {
+        html body .discount .window button:hover, html body .discount .window button:active, html body .discount .window button.active {
           background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3349b8));
           background: -webkit-linear-gradient(bottom, #8e9bdc 0%, #3349b8 100%);
           background: -o-linear-gradient(bottom, #8e9bdc 0%, #3349b8 100%);
           background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%); }
+    html body .discount .activebox {
+      width: 93%;
+      height: auto;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
+      background: -webkit-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      margin: 0px 0px 0px 5%;
+      border-radius: 0px 0px 20px 20px;
+      -webkit-box-shadow: 0 0 4px 2px #bac0db;
+      box-shadow: 0 0 4px 2px #bac0db;
+      -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+      transform: translateY(-20px);
+      position: relative;
+      z-index: -1; }
   html body .myself {
     width: 870px;
     height: 850px;
@@ -6177,7 +6197,8 @@ html body {
 
 .power {
   display: inline-block;
-  width: 20px;
-  height: 20px;
+  width: 13px;
+  height: 13px;
   border-radius: 20px;
-  background: #00b8ee; }
+  background: #00b8ee;
+  margin: 3px 0px 0px 0px; }
