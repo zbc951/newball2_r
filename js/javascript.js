@@ -296,7 +296,7 @@ $(function(){
         $('.bgsm').addClass('display');
     });
 });
-//足球內頁出入
+//內頁出入
 $(function(){
     $('.inn_soc').click(function(){
         $('.topfix,.new,.old,.bettingbar,.chleague,.complex').removeClass('display');
@@ -318,74 +318,6 @@ $(function(){
         $(this).siblings().removeClass('active');
         $('.turnnew').removeClass('un');
         $('.turnold').addClass('un');
-    });
-});
-//left自動高度
-$(document).ready(function () {
-    //預設高度
-    var leftNav = $(".left");
-    var wH = window.innerHeight;
-    leftNav.css("height", (String(wH - 120) + "px"));
-    //自適應高度
-    $(window).resize(function () {
-        var leftNav = $(".left");
-        var wH = window.innerHeight;
-        leftNav.css("height", (String(wH - 120) + "px"));
-    });
-});
-// middle自動高度
-$(document).ready(function () {
-    var middleNav = $(".middle");
-    var wH = window.innerHeight;
-    middleNav.css("height", (String(wH - 120) + "px"));
-    $(window).resize(function () {
-        var middleNav = $(".middle");
-        var wH = window.innerHeight;
-        middleNav.css("height", (String(wH - 120) + "px"));
-    });
-});
-// myself自動高度
-$(document).ready(function () {
-    var middleNav = $(".myself");
-    var wH = window.innerHeight;
-    middleNav.css("height", (String(wH - 260) + "px"));
-    $(window).resize(function () {
-        var middleNav = $(".myself");
-        var wH = window.innerHeight;
-        middleNav.css("height", (String(wH - 260) + "px"));
-    });
-});
-// right自動高度
-$(document).ready(function () {
-    var rightNav = $(".right");
-    var wH = window.innerHeight;
-    rightNav.css("height", (String(wH - 120) + "px"));
-    $(window).resize(function () {
-        var rightNav = $(".right");
-        var wH = window.innerHeight;
-        rightNav.css("height", (String(wH - 120) + "px"));
-    });
-});
-// rightlivelist自動高度
-$(document).ready(function () {
-    var livelistNav = $(".livelist");
-    var wH = window.innerHeight;
-    livelistNav.css("height", (String(wH - 435) + "px"));
-    $(window).resize(function () {
-        var livelistNav = $(".livelist");
-        var wH = window.innerHeight;
-        livelistNav.css("height", (String(wH - 435) + "px"));
-    });
-});
-// rightchatroom自動高度
-$(document).ready(function () {
-    var chatroomNav = $(".chatroom");
-    var wH = window.innerHeight;
-    chatroomNav.css("height", (String(wH - 435) + "px"));
-    $(window).resize(function () {
-        var chatroomNav = $(".chatroom");
-        var wH = window.innerHeight;
-        chatroomNav.css("height", (String(wH - 435) + "px"));
     });
 });
 //即時注單
@@ -729,7 +661,13 @@ $(function(){
         $('.tnetcard').siblings().removeClass('display');
     })
 })
-    
+//優惠頁
+$(function(){
+    $('.discount .window button').click(function(){
+        $($(this).closest('div')).next().toggleClass('open');
+        $($(this).closest('div')).next().siblings().removeClass('open');
+    })
+})
 //共用
 
 //修改密碼窗
@@ -772,3 +710,71 @@ $(function(){
         $(this).siblings().removeClass('active');
     });
 })
+//left自動高度
+$(document).ready(function () {
+    //預設高度
+    var leftNav = $(".left");
+    var wH = window.innerHeight;
+    leftNav.css("height", (String(wH - 120) + "px"));
+    //自適應高度
+    $(window).resize(function () {
+        var leftNav = $(".left");
+        var wH = window.innerHeight;
+        leftNav.css("height", (String(wH - 120) + "px"));
+    });
+});
+// middle自動高度
+$(document).ready(function () {
+    var middleNav = $(".middle");
+    var wH = window.innerHeight;
+    middleNav.css("height", (String(wH - 120) + "px"));
+    $(window).resize(function () {
+        var middleNav = $(".middle");
+        var wH = window.innerHeight;
+        middleNav.css("height", (String(wH - 120) + "px"));
+    });
+});
+// myself自動高度
+$(document).ready(function () {
+    var middleNav = $(".myself");
+    var wH = window.innerHeight;
+    middleNav.css("height", (String(wH - 260) + "px"));
+    $(window).resize(function () {
+        var middleNav = $(".myself");
+        var wH = window.innerHeight;
+        middleNav.css("height", (String(wH - 260) + "px"));
+    });
+});
+// right自動高度
+$(document).ready(function () {
+    var rightNav = $(".right");
+    var wH = window.innerHeight;
+    rightNav.css("height", (String(wH - 120) + "px"));
+    $(window).resize(function () {
+        var rightNav = $(".right");
+        var wH = window.innerHeight;
+        rightNav.css("height", (String(wH - 120) + "px"));
+    });
+});
+// rightlivelist自動高度
+$(document).ready(function () {
+    var livelistNav = $(".livelist");
+    var wH = window.innerHeight;
+    livelistNav.css("height", (String(wH - 435) + "px"));
+    $(window).resize(function () {
+        var livelistNav = $(".livelist");
+        var wH = window.innerHeight;
+        livelistNav.css("height", (String(wH - 435) + "px"));
+    });
+});
+// rightchatroom自動高度
+$(document).ready(function () {
+    var chatroomNav = $(".chatroom");
+    var wH = window.innerHeight;
+    chatroomNav.css("height", (String(wH - 435) + "px"));
+    $(window).resize(function () {
+        var chatroomNav = $(".chatroom");
+        var wH = window.innerHeight;
+        chatroomNav.css("height", (String(wH - 435) + "px"));
+    });
+});

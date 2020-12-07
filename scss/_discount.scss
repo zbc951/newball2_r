@@ -134,10 +134,10 @@
             }
         }
     }
-    //
+    //下box
     .activebox {
         width: 93%;
-        height: auto;
+        height: 0px;
         background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
         margin: 0px 0px 0px 5%;
         border-radius: 0px 0px 20px 20px;
@@ -145,5 +145,22 @@
         transform: translateY(-20px);
         position: relative;
         z-index: -1;
+        overflow: hidden;
+        &.open {
+            height: auto;
+        }
+        ul {
+            padding-top: 35px;
+            text-align: left;
+            li {
+                list-style: decimal;
+                margin: 5px 0px 5px 50px;
+                line-height: 24px;
+                font-size: 16px;
+                &:last-child {
+                    padding-bottom: 20px;
+                }
+            }
+        }
     }
 }

@@ -1003,6 +1003,9 @@ html body {
             margin: 4px 0px 0px 3px;
             background: #e60012;
             border-radius: 10px; }
+        html body table tr th.tright {
+          text-align: right;
+          padding: 8px 10px; }
         html body table tr th span {
           display: block;
           height: 14px;
@@ -1713,6 +1716,147 @@ html body {
       width: 6%; }
     html body table.tbskre .rowup td:nth-child(9) {
       width: 6%; }
+    html body table.tracere:first-child {
+      margin-top: 85px; }
+    html body table.tracere tr td:nth-child(1) {
+      width: 10%; }
+    html body table.tracere tr td:nth-child(2) {
+      width: 10%; }
+    html body table.tracere tr td:nth-child(3) {
+      width: 30%; }
+    html body table.tracere tr td:nth-child(4) {
+      width: 10%; }
+    html body table.tracere tr td:nth-child(5) {
+      width: 30%; }
+    html body table.tracere tr td:nth-child(6) {
+      width: 10%; }
+    html body table.tespre:first-child {
+      margin-top: 85px; }
+    html body table.tespre.cs .win {
+      display: inline-block;
+      width: 15px;
+      height: 15px;
+      background: url("../images/statust.png"); }
+    html body table.tespre.cs .rowup td:nth-child(11) {
+      width: 5%; }
+    html body table.tespre.cs .rowup td:nth-child(12) {
+      width: 12%; }
+    html body table.tespre.cs .rowup td:nth-child(13) {
+      width: 12%; }
+    html body table.tespre.cs .rowup td:nth-child(14) {
+      width: 12%; }
+    html body table.tespre.cs .rowup td:nth-child(15) {
+      width: 5%; }
+    html body table.tespre .rowup a {
+      margin: 3px; }
+    html body table.tespre .rowup td:nth-child(1) {
+      width: 8%; }
+    html body table.tespre .rowup td:nth-child(2) {
+      width: 6%; }
+    html body table.tespre .rowup td:nth-child(3) {
+      width: 12%; }
+    html body table.tespre .rowup td:nth-child(4) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(5) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(6) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(7) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(8) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(9) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(10) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(11) {
+      width: 4%; }
+    html body table.tespre .rowup td:nth-child(12) {
+      width: 5%; }
+    html body table.tespre .rowup td:nth-child(13) {
+      width: 8%; }
+    html body table.tespre .rowup td:nth-child(14) {
+      width: 5%; }
+    html body table.tespre .rowup td:nth-child(15) {
+      width: 5%; }
+    html body table.tespre .rowup td:nth-child(16) {
+      width: 5%; }
+    html body table.tespre .rowup td:nth-child(17) {
+      width: 5%; }
+    html body table.tespre .rowup td:nth-child(18) {
+      width: 5%; }
+    html body table.tespre .rowup td:nth-child(19) {
+      width: 4%; }
+    html body table.tstockre:first-child {
+      margin-top: 85px; }
+    html body table.tstockre tr td:nth-child(1) {
+      width: 20%; }
+    html body table.tstockre tr td:nth-child(2) {
+      width: 20%; }
+    html body table.tstockre tr td:nth-child(3) {
+      width: 20%; }
+    html body table.tstockre tr td:nth-child(4) {
+      width: 15%; }
+    html body table.tstockre tr td:nth-child(5) {
+      width: 15%; }
+    html body table.tstockre tr td:nth-child(6) {
+      width: 10%; }
+    html body table.tlottore:first-child {
+      margin-top: 85px; }
+    html body table.tlottore .rowup td:nth-child(1) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(2) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(3) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(4) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(5) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(6) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(7) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(8) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(9) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(10) {
+      width: 6%; }
+    html body table.tlottore .rowup td:nth-child(11) {
+      width: 10%; }
+    html body table.tlottore .rowup td:nth-child(12) {
+      width: 10%; }
+    html body table.tlottore .rowup td:nth-child(13) {
+      width: 10%; }
+    html body table.tlottore .rowup td:nth-child(14) {
+      width: 10%; }
+    html body table.ticeballre:first-child {
+      margin-top: 85px; }
+    html body table.ticeballre .rowup a {
+      margin: 3px; }
+    html body table.ticeballre .rowup td:nth-child(1) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(2) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(3) {
+      width: 10%; }
+    html body table.ticeballre .rowup td:nth-child(4) {
+      width: 20%; }
+    html body table.ticeballre .rowup td:nth-child(5) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(6) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(7) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(8) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(9) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(10) {
+      width: 8%; }
+    html body table.ticeballre .rowup td:nth-child(11) {
+      width: 6%; }
     html body table.tbet {
       display: none;
       width: 830px;
@@ -1734,19 +1878,36 @@ html body {
           border-right: solid 1px #b9c0d2;
           width: 5%;
           font-size: 24px; }
+        html body table.tbet tr th.tright {
+          padding: 0px 20px 0px 0px; }
+          html body table.tbet tr th.tright.record {
+            padding-right: 13px; }
+          html body table.tbet tr th.tright p {
+            display: inline-block;
+            float: none; }
+          html body table.tbet tr th.tright span {
+            display: inline-block;
+            float: none; }
         html body table.tbet tr th p {
           float: left;
           padding-top: 3px; }
         html body table.tbet tr th span {
           margin-top: 3px; }
           html body table.tbet tr th span.arrow {
-            background: url("../images/arrow_b.png") no-repeat center;
+            background: url("../images/arrow.png") no-repeat center;
             -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
-            margin: 2px 0px 0px 15px; }
+            margin: 2px 0px 0px 15px;
+            background-size: 100%; }
             html body table.tbet tr th span.arrow.un {
-              background: url("../images/arrow_w.png") no-repeat center; }
+              background: url("../images/arrow.png") no-repeat center;
+              background-size: 100%;
+              -webkit-transform: rotate(-90deg);
+              -ms-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+              -webkit-filter: brightness(2.5);
+              filter: brightness(2.5); }
         html body table.tbet tr th .topline {
           width: 1px;
           height: 20px;
@@ -4712,7 +4873,7 @@ html body {
           background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%); }
     html body .discount .activebox {
       width: 93%;
-      height: auto;
+      height: 0px;
       background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
       background: -webkit-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
       background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
@@ -4725,7 +4886,20 @@ html body {
       -ms-transform: translateY(-20px);
       transform: translateY(-20px);
       position: relative;
-      z-index: -1; }
+      z-index: -1;
+      overflow: hidden; }
+      html body .discount .activebox.open {
+        height: auto; }
+      html body .discount .activebox ul {
+        padding-top: 35px;
+        text-align: left; }
+        html body .discount .activebox ul li {
+          list-style: decimal;
+          margin: 5px 0px 5px 50px;
+          line-height: 24px;
+          font-size: 16px; }
+          html body .discount .activebox ul li:last-child {
+            padding-bottom: 20px; }
   html body .myself {
     width: 870px;
     height: 850px;
