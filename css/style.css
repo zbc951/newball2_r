@@ -180,6 +180,7 @@ html body {
           background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
           background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
           background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+          background-color: #2e44b6;
           position: relative;
           text-align: right;
           color: #fff;
@@ -187,6 +188,9 @@ html body {
           border-radius: 5px;
           margin: -3px 0px 0px 10px;
           padding: 3px 5px 0px 0px; }
+          @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body header article .lobbyact span {
+              padding: 1px 5px 0px 0px; } }
           html body header article .lobbyact span::before {
             content: "";
             position: absolute;
@@ -204,7 +208,9 @@ html body {
           background: -webkit-linear-gradient(top, #ddb692 0%, #b78a61 100%);
           background: -o-linear-gradient(top, #ddb692 0%, #b78a61 100%);
           background: linear-gradient(to bottom, #ddb692 0%, #b78a61 100%);
+          background-color: #b78a61;
           border-radius: 5px;
+          padding: 0px;
           font-size: 15px;
           color: #fff; }
           html body header article .lobbyact button:hover {
@@ -276,10 +282,10 @@ html body {
       width: 260px;
       height: 275px;
       background: #fff; }
-      html body .left.dis ul li a.un span {
-        background-position-y: -20px; }
-      html body .left.dis ul li a.active span {
-        background-position-y: -20px; }
+      html body .left.dis ul li:hover span {
+        background-position-y: -19px; }
+      html body .left.dis ul li.active span {
+        background-position-y: -19px; }
       html body .left.dis span {
         width: 20px;
         height: 20px;
@@ -321,6 +327,7 @@ html body {
             background: -webkit-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
             background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
             background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
+            background-color: #2e44b6;
             position: relative;
             text-align: right;
             color: #fff;
@@ -350,7 +357,8 @@ html body {
             text-align: center;
             background: transparent;
             color: #000;
-            padding-top: 10px; }
+            padding-top: 10px;
+            /*for IE 9*/ }
             html body .left.mine .minewindow .threebut a:hover, html body .left.mine .minewindow .threebut a:active {
               background: #3654ff;
               color: #fff; }
@@ -363,6 +371,9 @@ html body {
                 background-position-y: -30px; }
             html body .left.mine .minewindow .threebut a:first-child {
               margin-left: 18px; }
+            @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .left.mine .minewindow .threebut a:first-child {
+                margin-left: 10px; } }
             html body .left.mine .minewindow .threebut a span {
               display: block;
               width: 30px;
@@ -412,6 +423,7 @@ html body {
       background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
       background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
       background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+      background-color: #1b2c86;
       color: #ffffff; }
       html body .left ul li.active a span {
         background-position-y: -22px; }
@@ -431,6 +443,7 @@ html body {
         background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
         background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
         background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+        background-color: #1b2c86;
         color: #ffffff; }
         html body .left ul li a:hover span, html body .left ul li a:active span {
           background-position-y: -22px; }
@@ -442,7 +455,8 @@ html body {
         background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
         background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
         background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
-        color: #ffffff; }
+        color: #ffffff;
+        background-color: #1b2c86; }
         html body .left ul li a.active::before {
           color: #6272cc;
           background: #ffffff; }
@@ -561,7 +575,11 @@ html body {
         border: solid 1px #000;
         margin: 12px 35px 0px 0px;
         position: relative;
-        color: #4d515d; }
+        color: #4d515d;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .right .righttop .liveteach {
+            padding: 5px; } }
         html body .right .righttop .liveteach::before {
           content: "";
           position: absolute;
@@ -618,7 +636,8 @@ html body {
             background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
             background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
             background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-            background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%); }
+            background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
+            background-color: #ebecf7; }
       html body .right .room .livelist {
         display: none;
         width: 100%;
@@ -789,7 +808,11 @@ html body {
                 color: #3654ff;
                 border-radius: 10px;
                 float: right;
-                margin: 15px 5px 0px 0px; }
+                margin: 15px 5px 0px 0px;
+                /*for IE 9*/ }
+                @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+                  html body .right .room .livelist ul div a div button {
+                    padding: 5px 8px; } }
                 html body .right .room .livelist ul div a div button:hover, html body .right .room .livelist ul div a div button:active {
                   background: #3654ff;
                   color: #fff; }
@@ -828,6 +851,7 @@ html body {
           background: -webkit-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%);
+          background-color: #eaecf7;
           position: relative; }
           html body .right .room .chatroom .topbar::before {
             content: "";
@@ -873,7 +897,11 @@ html body {
               background: #485abf;
               position: relative;
               margin: 20px 10px 10px;
-              text-align: right; }
+              text-align: right;
+              /*for IE 9*/ }
+              @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+                html body .right .room .chatroom .chatwindow div span {
+                  padding-top: 3px; } }
               html body .right .room .chatroom .chatwindow div span.username {
                 display: inline;
                 position: absolute;
@@ -940,7 +968,8 @@ html body {
               background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
               background: -webkit-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
               background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
-              background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%); }
+              background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%);
+              background: #3d50bb; }
               html body .right .room .chatroom .chatbut button:first-child:hover, html body .right .room .chatroom .chatbut button:first-child:active {
                 background: -webkit-gradient(linear, left top, left bottom, from(#3d50bb), to(#8593d8));
                 background: -webkit-linear-gradient(top, #3d50bb 0%, #8593d8 100%);
@@ -970,7 +999,7 @@ html body {
       html body table tr.graybut td button {
         background: #eeeded;
         border: none;
-        cursor: unset; }
+        cursor: default; }
         html body table tr.graybut td button:hover {
           background: #eeeded;
           color: #000; }
@@ -981,7 +1010,8 @@ html body {
         background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
         background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
         background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
-        background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%); }
+        background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+        background-color: #ebecf7; }
         html body table tr.bluebut td button:hover {
           color: #fff;
           background: #3654ff; }
@@ -1138,7 +1168,8 @@ html body {
           background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
           background: -webkit-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
-          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%); }
+          background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+          background-color: #ffe9da; }
           html body table tr td button:hover {
             background: #3654ff;
             color: white; }
@@ -1518,6 +1549,7 @@ html body {
       background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
       background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
       background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+      background-color: #ebecf7;
       font-size: 15px; }
     html body table.trh tr td:nth-child(1) {
       width: 10%; }
@@ -1649,7 +1681,11 @@ html body {
         float: right;
         margin: 2px 5px;
         font-weight: bold;
-        padding: 1px 0px 0px; }
+        padding: 1px 0px 0px;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
+            margin: 2px; } }
       html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
         font-size: 14px;
         font-weight: normal;
@@ -1658,7 +1694,11 @@ html body {
         top: 50%;
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
-        transform: translateY(-50%); }
+        transform: translateY(-50%);
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
+            font-size: 13px; } }
     html body table.tsp .smallbut_2 button {
       padding-top: 4px;
       width: 69px;
@@ -2045,7 +2085,11 @@ html body {
       margin: 0px;
       -webkit-box-shadow: none;
       box-shadow: none;
-      background: transparent; }
+      background: transparent;
+      /*for IE 9*/ }
+      @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+        html body table.tch {
+          margin-bottom: 20px; } }
       html body table.tch tr {
         text-align: left; }
         html body table.tch tr td {
@@ -2062,7 +2106,11 @@ html body {
       margin: 0px;
       -webkit-box-shadow: none;
       box-shadow: none;
-      background: transparent; }
+      background: transparent;
+      /*for IE 9*/ }
+      @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+        html body table.tch2 {
+          margin-bottom: 20px; } }
       html body table.tch2 tr {
         text-align: left; }
         html body table.tch2 tr td {
@@ -2099,10 +2147,10 @@ html body {
           background: -webkit-linear-gradient(left, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
           background: -o-linear-gradient(left, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
           background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+          background-color: #effbff;
           border-radius: 40px;
           position: absolute;
           left: 50%;
-          top: 50%;
           -webkit-transform: translateY(-38%) translateX(-50%);
           -ms-transform: translateY(-38%) translateX(-50%);
           transform: translateY(-38%) translateX(-50%); }
@@ -2217,7 +2265,12 @@ html body {
           background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
-          font-size: 15px; }
+          background-color: #ebecf7;
+          font-size: 15px;
+          /*for IE 9*/ }
+          @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body table.tinn tr td button {
+              padding: 5px 0px; } }
           html body table.tinn tr td button:hover, html body table.tinn tr td button:active {
             background: #3654ff; }
     html body table.tperson {
@@ -2244,7 +2297,11 @@ html body {
         font-size: 14px;
         right: 20px;
         top: 4px;
-        color: #4d515d; }
+        color: #4d515d;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body table.tperson.money tr th .re {
+            padding-left: 20px; } }
         html body table.tperson.money tr th .re.notbut {
           cursor: default; }
           html body table.tperson.money tr th .re.notbut::before {
@@ -2257,7 +2314,12 @@ html body {
           background: url("../images/reset.png") no-repeat;
           background-size: 100%;
           left: -12px;
-          top: 5px; }
+          top: 5px;
+          /*for IE 9*/ }
+          @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body table.tperson.money tr th .re::before {
+              top: 3px;
+              left: 3px; } }
         html body table.tperson.money tr th .re:hover:before {
           -webkit-animation: reset 1s ease-in-out 0s infinite;
           animation: reset 1s ease-in-out 0s infinite; }
@@ -2321,14 +2383,16 @@ html body {
           background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
           background: -webkit-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
           background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
-          background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%); }
+          background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
+          background-color: #6589c6; }
           html body table.tperson.money tr td .creditcard.c1:hover, html body table.tperson.money tr td .creditcard.c1:active {
             -webkit-box-shadow: none;
             box-shadow: none;
             background: -webkit-gradient(linear, left top, right top, from(#6589c6), to(#a3c3f4));
             background: -webkit-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
             background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
-            background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%); }
+            background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
+            background-color: #6589c6; }
           html body table.tperson.money tr td .creditcard.c1.click:before {
             background: #6589c6; }
           html body table.tperson.money tr td .creditcard.c1::before {
@@ -2338,14 +2402,16 @@ html body {
           background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
           background: -webkit-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
           background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
-          background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%); }
+          background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+          background-color: #31a8b1; }
           html body table.tperson.money tr td .creditcard.c2:hover, html body table.tperson.money tr td .creditcard.c2:active {
             -webkit-box-shadow: none;
             box-shadow: none;
             background: -webkit-gradient(linear, left top, right top, from(#31a8b1), to(#60d6ce));
             background: -webkit-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
             background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
-            background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%); }
+            background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
+            background-color: #31a8b1; }
           html body table.tperson.money tr td .creditcard.c2.click:before {
             background: #31a8b1; }
           html body table.tperson.money tr td .creditcard.c2::before {
@@ -2357,14 +2423,16 @@ html body {
           background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
           background: -webkit-linear-gradient(right, #d7767a 0%, #ffadba 100%);
           background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
-          background: linear-gradient(to left, #d7767a 0%, #ffadba 100%); }
+          background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
+          background-color: #d7767a; }
           html body table.tperson.money tr td .creditcard.c3:hover, html body table.tperson.money tr td .creditcard.c3:active {
             -webkit-box-shadow: none;
             box-shadow: none;
             background: -webkit-gradient(linear, left top, right top, from(#d7767a), to(#ffadba));
             background: -webkit-linear-gradient(left, #d7767a 0%, #ffadba 100%);
             background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
-            background: linear-gradient(to right, #d7767a 0%, #ffadba 100%); }
+            background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
+            background-color: #d7767a; }
           html body table.tperson.money tr td .creditcard.c3.click::before {
             background: #d7767a; }
           html body table.tperson.money tr td .creditcard.c3::before {
@@ -2492,6 +2560,7 @@ html body {
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+        background-color: #3247b8;
         border-radius: 5px;
         padding: 0px; }
         html body table.tperson.contactus tr td .upimgbut:hover, html body table.tperson.contactus tr td .upimgbut:active {
@@ -2628,12 +2697,14 @@ html body {
             background: -webkit-linear-gradient(top, #8e9bdc 0%, #3046b7);
             background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
             background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+            background-color: #3046b7;
             cursor: pointer; }
             html body table.tperson.withdrawl tr td .withbut.focus:hover, html body table.tperson.withdrawl tr td .withbut.focus:active {
               background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
               background: -webkit-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
               background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
-              background: linear-gradient(to top, #8e9bdc 0%, #3046b7); }
+              background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+              background-color: #3046b7; }
         html body table.tperson.withdrawl tr td .timebox {
           float: left;
           width: 250px;
@@ -2717,12 +2788,14 @@ html body {
           background: -webkit-linear-gradient(top, #8e9bdc 0%, #3046b7);
           background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
           background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+          background-color: #3046b7;
           cursor: pointer; }
           html body table.tperson.transpoint tr td .transbut.focus:hover, html body table.tperson.transpoint tr td .transbut.focus:active {
             background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
             background: -webkit-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
             background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
-            background: linear-gradient(to top, #8e9bdc 0%, #3046b7); }
+            background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+            background-color: #3046b7; }
       html body table.tperson.deposit.tbank, html body table.tperson.deposit.tnum, html body table.tperson.deposit.tnetcard {
         display: none; }
         html body table.tperson.deposit.tbank.display, html body table.tperson.deposit.tnum.display, html body table.tperson.deposit.tnetcard.display {
@@ -2890,7 +2963,8 @@ html body {
           margin: 25px 10px 6px 10px;
           border-radius: 20px;
           padding: 0px;
-          color: #b9c0d2; }
+          color: #b9c0d2;
+          background-color: #ffffff; }
           html body table.tperson.deposit tr td .numbox .copy:hover, html body table.tperson.deposit tr td .numbox .copy:active {
             background: #b9c0d2;
             color: #fff; }
@@ -2946,12 +3020,14 @@ html body {
           background: -webkit-linear-gradient(top, #8e9bdc 0%, #3046b7);
           background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
           background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+          background-color: #3046b7;
           cursor: pointer; }
           html body table.tperson.deposit tr td .withbut.focus:hover, html body table.tperson.deposit tr td .withbut.focus:active {
             background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
             background: -webkit-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
             background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
-            background: linear-gradient(to top, #8e9bdc 0%, #3046b7); }
+            background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+            background-color: #3046b7; }
       html body table.tperson tr th {
         font-size: 15px; }
         html body table.tperson tr th.tleft {
@@ -3054,7 +3130,12 @@ html body {
               padding: 0px 10px;
               color: #fff;
               float: right;
-              margin: -3px 10px 0px 0px; }
+              margin: -3px 10px 0px 0px;
+              /*for IE 9*/ }
+              @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+                html body table.tperson tr td .tbox .norword button {
+                  padding: 3px 10px;
+                  margin-top: 0px; } }
               html body table.tperson tr td .tbox .norword button:hover, html body table.tperson tr td .tbox .norword button:active {
                 color: #8892c9;
                 background: transparent; }
@@ -3161,6 +3242,7 @@ html body {
               background: -webkit-linear-gradient(top, #ffffff 0%, #d5daef 100%);
               background: -o-linear-gradient(top, #ffffff 0%, #d5daef 100%);
               background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
+              background-color: #ffffff;
               border-radius: 5px;
               border: 1px solid #495cc5;
               float: right;
@@ -3171,6 +3253,7 @@ html body {
                 background: -webkit-linear-gradient(bottom, #ffffff 0%, #d5daef 100%);
                 background: -o-linear-gradient(bottom, #ffffff 0%, #d5daef 100%);
                 background: linear-gradient(to top, #ffffff 0%, #d5daef 100%);
+                background-color: #d5daef;
                 color: #000; }
           html body table.tperson tr td .tbox .officalimg {
             display: inline-block;
@@ -3296,6 +3379,7 @@ html body {
             background: -webkit-linear-gradient(top, #fff 0%, #d5daef 100%);
             background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
             background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+            background-color: #d5daef;
             width: 80px;
             margin: 20px 0px 0px 50px;
             font-size: 14px;
@@ -3328,7 +3412,8 @@ html body {
             background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
             background: -webkit-linear-gradient(top, #fff 0%, #d5daef 100%);
             background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
-            background: linear-gradient(to bottom, #fff 0%, #d5daef 100%); }
+            background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+            background-color: #d5daef; }
             html body table.tsmall tr td .tbox .bowserbut:hover, html body table.tsmall tr td .tbox .bowserbut:active {
               background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
               background: -webkit-linear-gradient(bottom, #fff 0%, #d5daef 100%);
@@ -3418,6 +3503,7 @@ html body {
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background-color: #fafbff;
       position: fixed;
       margin: 10px 0px 0px 13px;
       z-index: 10; }
@@ -3430,8 +3516,18 @@ html body {
         height: 30px;
         float: left;
         margin-top: 10px;
-        /*for FireFox*/ }
+        /*for FireFox*/
+        /*for IE*/
+        /*for IE 9*/ }
         @media screen and (min--moz-device-pixel-ratio: 0) {
+          html body .middle .topfix .turnbut {
+            width: 125px;
+            margin: 10px 0px 0px 15px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          html body .middle .topfix .turnbut {
+            width: 125px;
+            margin: 10px 0px 0px 15px; } }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
           html body .middle .topfix .turnbut {
             width: 125px;
             margin: 10px 0px 0px 15px; } }
@@ -3497,6 +3593,7 @@ html body {
               background: -webkit-linear-gradient(top, #354ab9 0%, #8b98da 100%);
               background: -o-linear-gradient(top, #354ab9 0%, #8b98da 100%);
               background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
+              background-color: #354ab9;
               color: #fff; }
           html body .middle .topfix ul li.display {
             display: inline-block; }
@@ -3531,7 +3628,9 @@ html body {
           border-bottom: solid 3px transparent;
           float: left;
           color: #4d515d;
-          position: relative; }
+          position: relative;
+          /*for IE*/
+          /*for IE 9*/ }
           html body .middle .topfix .sort button:hover, html body .middle .topfix .sort button:active, html body .middle .topfix .resultsearch button:hover, html body .middle .topfix .resultsearch button:active {
             color: #293eb0;
             border-color: #293eb0; }
@@ -3548,6 +3647,20 @@ html body {
               -webkit-transform: rotate(90deg);
               -ms-transform: rotate(90deg);
               transform: rotate(90deg); }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+            html body .middle .topfix .sort button, html body .middle .topfix .resultsearch button {
+              padding: 0px 20px 0px 10px; }
+              html body .middle .topfix .sort button.arrow, html body .middle .topfix .resultsearch button.arrow {
+                margin: 0px 10px; }
+                html body .middle .topfix .sort button.arrow::before, html body .middle .topfix .resultsearch button.arrow::before {
+                  right: 4px; } }
+          @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body .middle .topfix .sort button, html body .middle .topfix .resultsearch button {
+              padding: 0px 20px 0px 10px; }
+              html body .middle .topfix .sort button.arrow, html body .middle .topfix .resultsearch button.arrow {
+                margin: 0px 10px; }
+                html body .middle .topfix .sort button.arrow::before, html body .middle .topfix .resultsearch button.arrow::before {
+                  right: 4px; } }
           html body .middle .topfix .sort button.un, html body .middle .topfix .resultsearch button.un {
             display: none; }
           html body .middle .topfix .sort button.active, html body .middle .topfix .resultsearch button.active {
@@ -3562,7 +3675,11 @@ html body {
             background: url("../images/date_icon.png");
             float: left;
             margin-top: 15px;
-            border: none; }
+            border: none;
+            /*for IE 9*/ }
+            @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .middle .topfix .sort .timesearch .date, html body .middle .topfix .resultsearch .timesearch .date {
+                padding: 0px; } }
           html body .middle .topfix .sort .timesearch span, html body .middle .topfix .resultsearch .timesearch span {
             float: left;
             line-height: 50px;
@@ -3582,12 +3699,18 @@ html body {
             border-radius: 5px;
             border: 1px solid #3145b2;
             height: auto;
-            color: #3145b2; }
+            color: #3145b2;
+            /*for IE 9*/ }
+            @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .middle .topfix .sort .timesearch .timesearchbut, html body .middle .topfix .resultsearch .timesearch .timesearchbut {
+                padding: 5px;
+                margin-left: 8px; } }
             html body .middle .topfix .sort .timesearch .timesearchbut:hover, html body .middle .topfix .sort .timesearch .timesearchbut:active, html body .middle .topfix .resultsearch .timesearch .timesearchbut:hover, html body .middle .topfix .resultsearch .timesearch .timesearchbut:active {
               background: -webkit-gradient(linear, right top, left top, from(#8e9bdc), to(#2e44b6));
               background: -webkit-linear-gradient(right, #8e9bdc 0%, #2e44b6 100%);
               background: -o-linear-gradient(right, #8e9bdc 0%, #2e44b6 100%);
               background: linear-gradient(to left, #8e9bdc 0%, #2e44b6 100%);
+              background-color: #2e44b6;
               color: #fff; }
     html body .middle .innertopfix {
       display: none;
@@ -3600,6 +3723,7 @@ html body {
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background-color: #e4e7f6;
       position: fixed;
       margin: 100px 0px 0px 10px;
       z-index: 10; }
@@ -3615,6 +3739,7 @@ html body {
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+        background-color: #2f45b7;
         border-radius: 5px;
         color: #fff;
         font-size: 15px;
@@ -3663,6 +3788,7 @@ html body {
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background-color: #fafbff;
       padding: 10px 10px 5px 10px;
       border-radius: 0px 0px 5px 5px;
       -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
@@ -3733,6 +3859,7 @@ html body {
       background: -webkit-linear-gradient(top, #eb0004 0%, #850004 100%);
       background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
       background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+      background-color: #850004;
       border-radius: 15px 15px 0px 0px;
       z-index: 10;
       cursor: pointer;
@@ -3769,7 +3896,11 @@ html body {
         line-height: 28px;
         font-size: 17px;
         color: #850004;
-        position: relative; }
+        position: relative;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .middle .bettingbar .barnum {
+            line-height: 24px; } }
       html body .middle .bettingbar .opbut {
         width: 100%;
         height: 50px; }
@@ -3886,7 +4017,8 @@ html body {
               background: -webkit-gradient(linear, left bottom, left top, from(#efd5d5), to(#fff));
               background: -webkit-linear-gradient(bottom, #efd5d5 0%, #fff 100%);
               background: -o-linear-gradient(bottom, #efd5d5 0%, #fff 100%);
-              background: linear-gradient(to top, #efd5d5 0%, #fff 100%); }
+              background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+              background-color: #efd5d5; }
               html body .middle .bettingbar .bettingbox .bettingend .endbox button:hover {
                 background: -webkit-gradient(linear, left top, left bottom, from(#efd5d5), to(#fff));
                 background: -webkit-linear-gradient(top, #efd5d5 0%, #fff 100%);
@@ -3897,6 +4029,7 @@ html body {
                 background: -webkit-linear-gradient(bottom, #ec0004 0%, #850004 100%);
                 background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
                 background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                background-color: #850004;
                 color: #fff; }
               html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur {
                 width: 176px;
@@ -3904,7 +4037,8 @@ html body {
                 background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
                 background: -webkit-linear-gradient(top, #ec0004 0%, #850004 100%);
                 background: -o-linear-gradient(top, #ec0004 0%, #850004 100%);
-                background: linear-gradient(to bottom, #ec0004 0%, #850004 100%); }
+                background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
+                background-color: #850004; }
                 html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur:hover {
                   background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
                   background: -webkit-linear-gradient(bottom, #ec0004 0%, #850004 100%);
@@ -3924,6 +4058,7 @@ html body {
       background: -webkit-linear-gradient(top, #eb0004 0%, #850004 100%);
       background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
       background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+      background-color: #850004;
       border-radius: 15px 15px 0px 0px; }
       html body .middle .bettingch .barnum {
         display: block;
@@ -3936,7 +4071,11 @@ html body {
         line-height: 28px;
         font-size: 17px;
         color: #850004;
-        position: relative; }
+        position: relative;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .middle .bettingch .barnum {
+            line-height: 24px; } }
       html body .middle .bettingch .barword {
         color: #fff;
         float: left;
@@ -4075,7 +4214,8 @@ html body {
       background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
-      background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%); }
+      background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background-color: #fafbff; }
       html body .middle .chleague::-webkit-scrollbar {
         width: 5px;
         background-color: transparent; }
@@ -4107,7 +4247,8 @@ html body {
       background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
-      background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%); }
+      background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background-color: #fafbff; }
       html body .middle .chballs::-webkit-scrollbar {
         width: 5px;
         background-color: transparent; }
@@ -4141,6 +4282,7 @@ html body {
         background: -webkit-linear-gradient(top, #dfb995, #b6885f);
         background: -o-linear-gradient(top, #dfb995, #b6885f);
         background: linear-gradient(to bottom, #dfb995, #b6885f);
+        background: #b6885f;
         border: 1px solid #b78960;
         font-size: 15px; }
         html body .middle .teach button:hover, html body .middle .teach button:active {
@@ -4154,6 +4296,7 @@ html body {
           background: -webkit-linear-gradient(top, #444f8b, #6a75b2);
           background: -o-linear-gradient(top, #444f8b, #6a75b2);
           background: linear-gradient(to bottom, #444f8b, #6a75b2);
+          background-color: #6a75b2;
           border: 1px solid #444f8b; }
     html body .middle .inner {
       display: none; }
@@ -4346,7 +4489,8 @@ html body {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
           background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+          background-color: #1a2b84; }
           html body .fixside .search .searchbut:hover span, html body .fixside .search .searchbut:active span {
             color: #fff; }
           html body .fixside .search .searchbut:hover .fixsideimg, html body .fixside .search .searchbut:active .fixsideimg {
@@ -4355,7 +4499,8 @@ html body {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
           background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+          background-color: #1a2b84; }
           html body .fixside .search .searchbut.active span {
             color: #fff; }
           html body .fixside .search .searchbut.active .fixsideimg {
@@ -4403,6 +4548,7 @@ html body {
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+        background-color: #2f45b7;
         color: #fff;
         float: left;
         border-radius: 5px;
@@ -4433,6 +4579,7 @@ html body {
           background: -webkit-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
           background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
           background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
+          background-color: #e2e6f5;
           cursor: pointer; }
           html body .fixside .search .searchbox li:hover, html body .fixside .search .searchbox li:active {
             background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
@@ -4515,7 +4662,8 @@ html body {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
           background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+          background-color: #1a2b84; }
           html body .fixside .fun a:hover span, html body .fixside .fun a:active span {
             color: #fff; }
           html body .fixside .fun a:hover .fixsideimg, html body .fixside .fun a:active .fixsideimg {
@@ -4596,7 +4744,8 @@ html body {
             background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
             background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
             background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-            background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+            background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+            background-color: #1a2b84; }
             html body .fixside_rwd .search.open .searchbut.active span {
               color: #fff; }
             html body .fixside_rwd .search.open .searchbut.active .fixsideimg {
@@ -4625,7 +4774,8 @@ html body {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
           background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+          background-color: #1a2b84; }
           html body .fixside_rwd .search .searchbut:hover span, html body .fixside_rwd .search .searchbut:active span {
             color: #fff; }
           html body .fixside_rwd .search .searchbut:hover .fixsideimg, html body .fixside_rwd .search .searchbut:active .fixsideimg {
@@ -4648,7 +4798,11 @@ html body {
         border: none;
         border-radius: 15px;
         float: left;
-        margin: 15px 0px 0px 10px; }
+        margin: 15px 0px 0px 10px;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .fixside_rwd .search input {
+            margin: 15px 0px 0px 60px; } }
         html body .fixside_rwd .search input::-webkit-input-placeholder {
           font-weight: bold;
           color: #c7c7c7;
@@ -4672,6 +4826,7 @@ html body {
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+        background-color: #2f45b7;
         color: #fff;
         float: left;
         border-radius: 5px;
@@ -4692,7 +4847,12 @@ html body {
         -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
         box-shadow: 0 0 5px 1px #b6bcdd;
         position: relative;
-        z-index: 6; }
+        z-index: 6;
+        /*for IE 9*/ }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .fixside_rwd .search .searchbox {
+            width: 275px;
+            margin: 5px 0px 0px 30px; } }
         html body .fixside_rwd .search .searchbox li {
           width: 100%;
           height: 50px;
@@ -4704,6 +4864,7 @@ html body {
           background: -webkit-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
           background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
           background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
+          background: #e2e6f5;
           cursor: pointer; }
           html body .fixside_rwd .search .searchbox li:hover, html body .fixside_rwd .search .searchbox li:active {
             background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
@@ -4801,7 +4962,8 @@ html body {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
           background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+          background-color: #1a2b84; }
           html body .fixside_rwd .fun .rwd_hambut:hover span, html body .fixside_rwd .fun .rwd_hambut:active span {
             background: #fff; }
         html body .fixside_rwd .fun .rwd_hambut span {
@@ -4828,7 +4990,8 @@ html body {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
           background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+          background-color: #1a2b84; }
           html body .fixside_rwd .fun a:hover span, html body .fixside_rwd .fun a:active span {
             color: #fff; }
           html body .fixside_rwd .fun a:hover .fixsideimg, html body .fixside_rwd .fun a:active .fixsideimg {
@@ -4895,6 +5058,7 @@ html body {
       background: -webkit-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
       background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
       background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      background-color: #fafbff;
       margin: 15px 0px 0px 5%;
       border-radius: 20px;
       border: 1px solid #8581b4;
@@ -4975,6 +5139,7 @@ html body {
         background: -webkit-linear-gradient(top, #8e9bdc 0%, #3349b8 100%);
         background: -o-linear-gradient(top, #8e9bdc 0%, #3349b8 100%);
         background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
+        background: #3349b8;
         border: solid 1px #1e2f8e;
         width: 110px;
         height: 30px;
@@ -4996,6 +5161,7 @@ html body {
       background: -webkit-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
       background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
       background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
+      background-color: #fafbff;
       margin: 0px 0px 0px 5%;
       border-radius: 0px 0px 20px 20px;
       -webkit-box-shadow: 0 0 4px 2px #bac0db;
@@ -5059,6 +5225,7 @@ html body {
         background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        background-color: #fafbff;
         bottom: 0px;
         z-index: 2; }
         html body .myself .minetopfix .fixbar.edit .editbut {
@@ -5155,12 +5322,17 @@ html body {
           border: solid 1px #3145b2;
           border-radius: 5px;
           font-size: 15px;
-          margin: 8px 10px 0px 0px; }
+          margin: 8px 10px 0px 0px;
+          /*for IE 9*/ }
+          @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body .myself .minetopfix .fixbar button {
+              padding: 6px 5px; } }
           html body .myself .minetopfix .fixbar button:hover, html body .myself .minetopfix .fixbar button:active {
             background: -webkit-gradient(linear, left top, left bottom, from(#1b2c86), to(#7e8bd1));
             background: -webkit-linear-gradient(top, #1b2c86 0%, #7e8bd1 100%);
             background: -o-linear-gradient(top, #1b2c86 0%, #7e8bd1 100%);
             background: linear-gradient(to bottom, #1b2c86 0%, #7e8bd1 100%);
+            background-color: #1b2c86;
             color: #fff; }
           html body .myself .minetopfix .fixbar button.none {
             display: none; }
@@ -5271,6 +5443,7 @@ html body {
       background: -webkit-linear-gradient(top, #ffffff 0%, #edeef5 100%);
       background: -o-linear-gradient(top, #ffffff 0%, #edeef5 100%);
       background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
+      background-color: #d6d9ee;
       border-radius: 5px;
       margin: 0px 0px 15px 17px;
       border: 1px solid #989dbc;
@@ -5280,7 +5453,8 @@ html body {
         background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
         background: -webkit-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
         background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
-        background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%); }
+        background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
+        background-color: #d8a77b; }
       html body .myself .recordbar div {
         float: left;
         width: 25%;
@@ -5350,7 +5524,8 @@ html body {
         background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
         background: -webkit-linear-gradient(top, #6b76b4 0%, #424d89 100%);
         background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
-        background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%); }
+        background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+        background-color: #424d89; }
         html body .myself .helpbar.open::before {
           width: 8px;
           height: 11px;
@@ -5376,7 +5551,8 @@ html body {
         background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
         background: -webkit-linear-gradient(top, #6b76b4 0%, #424d89 100%);
         background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
-        background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%); }
+        background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+        background-color: #424d89; }
         html body .myself .helpbar.nb::before {
           display: none; }
         html body .myself .helpbar.nb p {
@@ -5488,6 +5664,7 @@ html body {
         background: -webkit-linear-gradient(top, #dfb995 0%, #b78960 100%);
         background: -o-linear-gradient(top, #dfb995 0%, #b78960 100%);
         background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
+        background-color: #b78960;
         border-radius: 5px;
         color: #fff;
         font-size: 14px;
@@ -5499,13 +5676,15 @@ html body {
           background: -webkit-linear-gradient(top, #434e8a 0%, #6974b2 100%);
           background: -o-linear-gradient(top, #434e8a 0%, #6974b2 100%);
           background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-          border-color: #444f8b; }
+          border-color: #444f8b;
+          background-color: #434e8a; }
         html body .myself .sportbar button.active {
           background: -webkit-gradient(linear, left top, left bottom, from(#434e8a), to(#6974b2));
           background: -webkit-linear-gradient(top, #434e8a 0%, #6974b2 100%);
           background: -o-linear-gradient(top, #434e8a 0%, #6974b2 100%);
           background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-          border-color: #444f8b; }
+          border-color: #444f8b;
+          background-color: #434e8a; }
         html body .myself .sportbar button.nmar {
           margin-right: 0px; }
     html body .myself .contact, html body .myself .suggest, html body .myself .feeback, html body .myself .online {
@@ -5639,6 +5818,7 @@ html body {
           background: -webkit-linear-gradient(top, #8996da 0%, #3046b7 100%);
           background: -o-linear-gradient(top, #8996da 0%, #3046b7 100%);
           background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
+          background-color: #3046b7;
           border-radius: 5px;
           color: #fff;
           font-size: 15px; }
@@ -5782,6 +5962,7 @@ html body {
       background: -webkit-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+      background-color: #3046b7;
       border-radius: 12px 12px 0px 0px;
       position: relative; }
       html body .login .loginbar span {
@@ -5860,6 +6041,7 @@ html body {
           background: -webkit-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+          background-color: #d5d9ef;
           border: 1px solid #495cc5;
           color: #4d515d;
           border-radius: 5px;
@@ -5877,7 +6059,11 @@ html body {
             background: -webkit-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
             background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
             background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-            color: #fff; }
+            color: #fff;
+            /*for IE 9*/ }
+            @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .login .loginbox div button:last-child {
+                color: #4d515d; } }
             html body .login .loginbox div button:last-child:hover, html body .login .loginbox div button:last-child:active {
               background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
               background: -webkit-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
@@ -5903,6 +6089,7 @@ html body {
       background: -webkit-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+      background-color: #3046b7;
       border-radius: 12px 12px 0px 0px;
       position: relative; }
       html body .signup .signupbar span {
@@ -5979,6 +6166,7 @@ html body {
           background: -webkit-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+          background-color: #d5d9ef;
           border: 1px solid #495cc5;
           color: #4d515d;
           border-radius: 5px;
@@ -5996,7 +6184,11 @@ html body {
             background: -webkit-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
             background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
             background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
-            color: #fff; }
+            color: #fff;
+            /*for IE 9*/ }
+            @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .signup .signupbox div button:last-child {
+                color: #4d515d; } }
             html body .signup .signupbox div button:last-child:hover, html body .signup .signupbox div button:last-child:active {
               background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
               background: -webkit-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
@@ -6022,6 +6214,7 @@ html body {
       background: -webkit-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+      background-color: #3046b7;
       border-radius: 12px 12px 0px 0px;
       position: relative; }
       html body .cardremind .remindbar span {
@@ -6075,6 +6268,7 @@ html body {
         background: -webkit-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
         background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
         background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+        background-color: #3247b8;
         border: 1px solid #495cc5;
         color: #4d515d;
         border-radius: 5px;
@@ -6118,6 +6312,7 @@ html body {
       background: -webkit-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+      background-color: #3046b7;
       border-radius: 12px 12px 0px 0px;
       position: relative; }
       html body .passwordchange .changebar span {
@@ -6193,6 +6388,7 @@ html body {
           background: -webkit-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
           background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
           background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
+          background-color: #d5d9ef;
           border: 1px solid #495cc5;
           color: #4d515d;
           border-radius: 5px;
@@ -6210,6 +6406,7 @@ html body {
             background: -webkit-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
             background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
             background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+            background-color: #3247b8;
             color: #fff; }
             html body .passwordchange .changebox div button:last-child:hover, html body .passwordchange .changebox div button:last-child:active {
               background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
@@ -6236,6 +6433,7 @@ html body {
       background: -webkit-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
       background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
+      background-color: #3046b7;
       border-radius: 12px 12px 0px 0px;
       position: relative; }
       html body .cardadd .cardaddbar span {
@@ -6360,6 +6558,7 @@ html body {
           background: -webkit-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
           background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
           background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+          background-color: #3247b8;
           border: 1px solid #495cc5;
           color: #fff;
           border-radius: 5px;
@@ -6468,6 +6667,7 @@ html body {
   background: -webkit-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
   background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
+  background-color: #cbd0e9;
   border: 1px solid #b2afcf;
   border-radius: 5px;
   overflow: hidden;
@@ -6480,6 +6680,7 @@ html body {
     background: -webkit-linear-gradient(top, #3449b9 0%, #8694d8 100%);
     background: -o-linear-gradient(top, #3449b9 0%, #8694d8 100%);
     background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
+    background-color: #3449b9;
     position: absolute; }
     .cube.active::before {
       content: "";

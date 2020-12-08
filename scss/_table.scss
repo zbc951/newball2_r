@@ -18,7 +18,7 @@ table {
 				button {
 					background: #eeeded;
 					border: none;
-					cursor: unset;
+					cursor: default;
 					&:hover {
 						background: #eeeded;
 						color: #000;
@@ -34,6 +34,7 @@ table {
 				button {
 					color: #005aff;
 					background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+					background-color: #ebecf7;
 					&:hover {
 						color: #fff;
 						background: #3654ff;
@@ -253,7 +254,8 @@ table {
 				border: 1px solid #b9bfdc;
 				border-radius: 5px;
 				padding: 3px 0px 0px 0px;
-        		background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+				background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+				background-color: #ffe9da;
 				&:hover {
 					background: #3654ff;
 					color: white;
@@ -918,6 +920,7 @@ table {
           height: 28px;
           margin-left: 3px;
 		  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+		  background-color: #ebecf7;
 		  font-size: 15px;
         }
       }
@@ -1113,6 +1116,10 @@ table {
 				margin: 2px 5px;
 				font-weight: bold;
 				padding: 1px 0px 0px;
+				/*for IE 9*/
+				@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+					margin: 2px;
+				}
 			}
 			.smallsp {
 				font-size: 14px;
@@ -1121,6 +1128,10 @@ table {
 				left: 5px;
 				top: 50%;
 				transform: translateY(-50%);
+				/*for IE 9*/
+				@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+					font-size: 13px;
+				}
 			}
       	}
 		.smallbut_2 {
@@ -1715,6 +1726,10 @@ table {
 		margin: 0px;
 		box-shadow: none;
 		background: transparent;
+		/*for IE 9*/
+		@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+			margin-bottom: 20px;
+		}
 		tr {
 			text-align: left;
 			td {
@@ -1734,6 +1749,10 @@ table {
 		margin: 0px;
 		box-shadow: none;
 		background: transparent;
+		/*for IE 9*/
+		@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+			margin-bottom: 20px;
+		}
 		tr {
 			text-align: left;
 			td {
@@ -1782,11 +1801,13 @@ table {
 						width: 320px;
 						height: 80px;
 						background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
+						background-color:  #effbff;
 						border-radius: 40px;
 						position: absolute;
 						left: 50%;
-						top: 50%;
 						transform: translateY(-38%) translateX(-50%);
+						@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+						}
 						p {
 							width: 100%;
 							margin: 0px;
@@ -1947,7 +1968,12 @@ table {
 				button {
 					width: 98%;
 					background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+					background-color: #ebecf7;
 					font-size: 15px;
+					/*for IE 9*/
+					@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+						padding: 5px 0px;
+					}
 					&:hover,&:active {
 						background: #3654ff;
 					}
@@ -1996,6 +2022,10 @@ table {
 						right: 20px;
 						top: 4px;
 						color: #4d515d;
+						/*for IE 9*/
+						@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+							padding-left: 20px;
+						}
 						&.notbut {
 							cursor: default;
 							&::before {
@@ -2011,6 +2041,11 @@ table {
 							background-size: 100%;
 							left: -12px;
 							top: 5px;
+							/*for IE 9*/
+							@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+								top: 3px;
+								left: 3px;
+							}
 						}
 						&:hover:before {
 							animation: reset 1s ease-in-out 0s infinite;
@@ -2090,9 +2125,11 @@ table {
 						//卡片1
 						&.c1 {
 							background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
+							background-color: #6589c6;
 							&:hover,&:active {
 								box-shadow: none;
 								background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
+								background-color: #6589c6;
 							}
 							&.click {
 								&:before {
@@ -2106,9 +2143,11 @@ table {
 						//卡片2
 						&.c2 {
 							background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
+							background-color: #31a8b1;
 							&:hover,&:active {
 								box-shadow: none;
 								background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
+								background-color: #31a8b1;
 							}
 							&.click {
 								&:before {
@@ -2125,9 +2164,11 @@ table {
 						//卡片3
 						&.c3 {
 							background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
+							background-color: #d7767a;
 							&:hover,&:active {
 								box-shadow: none;
 								background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
+								background-color: #d7767a;
 							}
 							&.click {
 								&::before {
@@ -2292,6 +2333,7 @@ table {
 						font-size: 16px;
 						float: right;
 						background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
+						background-color: #3247b8;
 						border-radius: 5px;
 						padding: 0px;
 						&:hover,&:active {
@@ -2460,9 +2502,11 @@ table {
 						cursor: default;
 						&.focus {
 							background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+							background-color: #3046b7;
 							cursor: pointer;
 							&:hover,&:active {
 								background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+								background-color: #3046b7;
 							}
 						}
 					}
@@ -2560,9 +2604,11 @@ table {
 						cursor: default;
 						&.focus {
 							background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+							background-color: #3046b7;
 							cursor: pointer;
 							&:hover,&:active {
 								background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+								background-color: #3046b7;
 							}
 						}
 					}
@@ -2787,6 +2833,7 @@ table {
 							border-radius: 20px;
 							padding: 0px;
 							color: #b9c0d2;
+							background-color: #ffffff;
 							&:hover,&:active {
 								background: #b9c0d2;
 								color: #fff;
@@ -2838,9 +2885,11 @@ table {
 						cursor: default;
 						&.focus {
 							background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
+							background-color: #3046b7;
 							cursor: pointer;
 							&:hover,&:active {
 								background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
+								background-color: #3046b7;
 							}
 						}
 					}
@@ -2982,6 +3031,11 @@ table {
 							color: #fff;
 							float: right;
 							margin: -3px 10px 0px 0px;
+							/*for IE 9*/
+							@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+								padding: 3px 10px;
+								margin-top: 0px;
+							}
 							&:hover,&:active {
 								color: #8892c9;
 								background: transparent;
@@ -3114,6 +3168,7 @@ table {
 						//複製鈕
 						.copy {
 							background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
+							background-color: #ffffff;
     						border-radius: 5px;
 							border: 1px solid #495cc5;
 							float: right;
@@ -3121,6 +3176,7 @@ table {
 							padding: 6px 20px;
 							&:hover,&:active {
 								background: linear-gradient(to top, #ffffff 0%, #d5daef 100%);
+								background-color: #d5daef;
 								color: #000;
 							}
 						}
@@ -3288,6 +3344,7 @@ table {
 					.appbut {
 						border: 1px solid #495cc5;
 						background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+						background-color: #d5daef;
 						width: 80px;
 						margin: 20px 0px 0px 50px;
 						font-size: 14px;
@@ -3321,6 +3378,7 @@ table {
 						margin: 3px 30px 0px 0px;
 						border: 1px solid #495cc5;
 						background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
+						background-color: #d5daef;
 						&:hover,&:active {
 							background: linear-gradient(to top, #fff 0%, #d5daef 100%);
 							color: #000;

@@ -28,6 +28,7 @@
         border-radius: 5px;
         box-shadow: 0 0 6px 1px #bcc2dc;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        background-color: #fafbff;
         position: fixed;
         margin: 10px 0px 0px 13px;
         z-index: 10;
@@ -46,6 +47,16 @@
             margin-top: 10px;
             /*for FireFox*/
             @media screen and (min--moz-device-pixel-ratio:0){
+                width: 125px;
+                margin: 10px 0px 0px 15px;
+            }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                width: 125px;
+                margin: 10px 0px 0px 15px;
+            }
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                 width: 125px;
                 margin: 10px 0px 0px 15px;
             }
@@ -121,6 +132,7 @@
                     color: #3145b2;
                     &:hover,&:active {
                         background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
+                        background-color: #354ab9;
                         color: #fff;
                     }
                 }
@@ -185,6 +197,26 @@
                         transform: rotate(90deg);
                     }
                 }
+                /*for IE*/
+                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                    padding: 0px 20px 0px 10px;
+                    &.arrow {
+                        margin: 0px 10px;
+                        &::before {
+                            right: 4px;
+                        }
+                    }
+                }
+                /*for IE 9*/
+                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                    padding: 0px 20px 0px 10px;
+                    &.arrow {
+                        margin: 0px 10px;
+                        &::before {
+                            right: 4px;
+                        }
+                    }
+                }
                 &.un {
                     display: none;
                 }
@@ -203,6 +235,10 @@
                     float: left;
                     margin-top: 15px;
                     border: none;
+                    /*for IE 9*/
+                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        padding: 0px;
+                    }
                 }
                 span {
                     float: left;
@@ -226,8 +262,14 @@
                     border: 1px solid #3145b2;
                     height: auto;
                     color: #3145b2;
+                    /*for IE 9*/
+                    @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        padding: 5px;
+                        margin-left: 8px;
+                    }
                     &:hover,&:active {
                         background: linear-gradient(to left, #8e9bdc 0%, #2e44b6 100%);
+                        background-color:#2e44b6;
                         color: #fff;
                     }
                 }
@@ -241,6 +283,7 @@
         border-radius: 5px;
         box-shadow: 0 0 6px 1px #bcc2dc;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        background-color: #e4e7f6;
         position: fixed;
         margin: 100px 0px 0px 10px;
         z-index: 10;
@@ -254,6 +297,7 @@
             margin: 14px 0px 0px 15px;
             padding-left: 20px;
             background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+            background-color: #2f45b7;
             border-radius: 5px;
             color: #fff;
             font-size: 15px;
@@ -309,6 +353,7 @@
         margin: 40px 0px 0px 775px;
         z-index: 6;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        background-color: #fafbff;
         padding: 10px 10px 5px 10px;
         border-radius: 0px 0px 5px 5px;
         box-shadow: 0 0 6px 1px #bcc2dc;
@@ -393,6 +438,7 @@
         margin: 0px 0px 0px 250px;
         bottom: 0px;
         background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+        background-color: #850004;
         border-radius: 15px 15px 0px 0px;
         z-index: 10;
         cursor: pointer;
@@ -429,6 +475,10 @@
             font-size: 17px;
             color: #850004;
             position: relative;
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                line-height: 24px;
+            }
         }
         //觸發按鈕
         .opbut {
@@ -551,17 +601,20 @@
                         font-weight: bold;
                         line-height: 35px;
                         background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
+                        background-color: #efd5d5;
                         &:hover {
                             background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
                         }
                         &:active {
                             background: linear-gradient(to top, #ec0004 0%, #850004 100%);
+                            background-color: #850004;
                             color: #fff;
                         }
                         &.cur {
                             width: 176px;
                             color: #fff;
                             background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
+                            background-color: #850004;
                             &:hover {
                                 background: linear-gradient(to top, #ec0004 0%, #850004 100%);
                             }
@@ -584,6 +637,7 @@
         left: 35%;
         top: 150px;
         background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
+        background-color: #850004;
         border-radius: 15px 15px 0px 0px;
         //總投注額
         .barnum {
@@ -598,6 +652,10 @@
             font-size: 17px;
             color: #850004;
             position: relative;
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                line-height: 24px;
+            }
         }
         .barword {
             color: #fff;
@@ -755,6 +813,7 @@
         position: fixed;
         z-index: 6;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        background-color: #fafbff;
         &::-webkit-scrollbar {
             width: 5px;
             background-color: transparent;
@@ -793,6 +852,7 @@
         border-radius: 0px 0px 5px 5px;
         box-shadow: 0 0 6px 1px #bcc2dc;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+        background-color: #fafbff;
         &::-webkit-scrollbar {
             width: 5px;
             background-color: transparent;
@@ -834,6 +894,7 @@
             float: left;
             margin: 0px 5px 20px 0px;
             background: linear-gradient(to bottom, #dfb995, #b6885f);
+            background: #b6885f;
             border: 1px solid #b78960;
             font-size: 15px;
             &:hover,&:active {
@@ -842,6 +903,7 @@
             }
             &.active {
                 background: linear-gradient(to bottom, #444f8b, #6a75b2);
+                background-color: #6a75b2;
                 border: 1px solid #444f8b;
             }
         }

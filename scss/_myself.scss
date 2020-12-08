@@ -43,6 +43,7 @@
             border-radius: 5px;
             box-shadow: 0px 0px 6px 1px #bcc2dc;
             background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+            background-color: #fafbff;
             bottom: 0px;
             z-index: 2;
             //消息中心用
@@ -176,8 +177,13 @@
                 border-radius: 5px;
                 font-size: 15px;
                 margin: 8px 10px 0px 0px;
+                /*for IE 9*/
+                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                    padding: 6px 5px;
+                }
                 &:hover,&:active {
                     background: linear-gradient(to bottom, #1b2c86 0%, #7e8bd1 100%);
+                    background-color: #1b2c86;
                     color: #fff;
                 }
                 &.none {
@@ -330,6 +336,7 @@
         width: 830px;
         height: 35px;
         background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
+        background-color: #d6d9ee;
         border-radius: 5px;
         margin: 0px 0px 15px 17px;
         border: 1px solid #989dbc;
@@ -337,6 +344,7 @@
         z-index: 1;
         &.open {
             background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
+            background-color: #d8a77b;
         }
         div {
             float: left;
@@ -415,6 +423,7 @@
         }
         &.open {
             background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+            background-color: #424d89;
             &::before {
                 width: 8px;
                 height: 11px;
@@ -446,6 +455,7 @@
         //不含before版本
         &.nb {
             background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
+            background-color: #424d89;
             &::before {
                 display: none;
             }
@@ -577,6 +587,7 @@
             height: 32px;
             border: 1px solid #b78960;
             background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
+            background-color: #b78960;
             border-radius: 5px;
             color: #fff;
             font-size: 14px;
@@ -586,10 +597,12 @@
             &:hover,&:active {
                 background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
                 border-color: #444f8b;
+                background-color: #434e8a;
             }
             &.active {
                 background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
                 border-color: #444f8b;
+                background-color: #434e8a;
             }
             &.nmar {
                 margin-right: 0px;
@@ -737,6 +750,7 @@
                 height: 36px;
                 margin-right: 20px;
                 background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
+                background-color: #3046b7;
                 border-radius: 5px;
                 color: #fff;
                 font-size: 15px;
