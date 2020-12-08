@@ -4,12 +4,6 @@ $(function(){
         $(this).toggleClass('un');
     });
 });
-//leftside小圖
-$(function(){
-    $('.left a').hover(function(){
-        $(this).toggleClass('un');
-    });
-});
 //right房間切換
 $(function(){
     $('.liveroombut').click(function(){
@@ -49,18 +43,27 @@ $(function(){
 });
 //專業版/新手版切換
 $(function(){
+    $('.newbut,.oldbut').click(function(){
+        $('.newold').toggleClass('open')
+    })
     $('.turnnew').click(function(){
-        $('.turnnew').addClass('un');
-        $('.turnold').removeClass('un');
-        $('.new,.let,.bgsm,.bettingbar').removeClass('display');
-        $('.old').addClass('display');
+        $('.oldbut').addClass('un');
+        $('.newbut').removeClass('un');
+        $('.new').addClass('display');
+        $('.newold').removeClass('open')
+        $('.turnnew').addClass('active')
+        $('.turnold').removeClass('active')
+        $('.old,.let,.bgsm,.bettingbar').removeClass('display');
         $('.teachbut,.bettingbut').removeClass('active');
     });
     $('.turnold').click(function(){
-        $('.turnnew').removeClass('un');
-        $('.turnold').addClass('un');
-        $('.new').addClass('display');
-        $('.old,.let,.bgsm,.bettingbar').removeClass('display');
+        $('.newbut').addClass('un');
+        $('.oldbut').removeClass('un');
+        $('.old').addClass('display');
+        $('.newold').removeClass('open')
+        $('.turnold').addClass('active')
+        $('.turnnew').removeClass('active')
+        $('.new,.let,.bgsm,.bettingbar').removeClass('display');
         $('.teachbut,.bettingbut').removeClass('active');
     });
 });
@@ -69,10 +72,12 @@ $(function(){
     $('.chballsbut').click(function(){
         $('.chballsbut').toggleClass('active');
         $('.chballs').toggleClass('display');
+        $('.newold').removeClass('open')
     });
     $('.chleaguebut').click(function(){
         $('.chleaguebut').toggleClass('active');
         $('.chleague').toggleClass('display');
+        $('.newold').removeClass('open')
     });
 });
 //串關投注
@@ -94,8 +99,11 @@ $(function(){
         $(this).siblings().removeClass('active');
         $('.new,.result,.teach,.resultsearch').removeClass('display');
         $('.teachbut,.sort,.old,.complex').addClass('display');
-        $('.turnnew').addClass('un');
-        $('.turnold').removeClass('un');
+        $('.newbut').addClass('un');
+        $('.oldbut').removeClass('un');
+        $('.turnold').addClass('active')
+        $('.turnnew').removeClass('active')
+        $('.newold').removeClass('open')
     });
 });
 //cube
@@ -268,6 +276,7 @@ $(function(){
 $(function(){
     $('.resultbut').click(function(){
         $(this).addClass('active');
+        $('.newold').removeClass('open')
         $('.bettingbut,.allgame').removeClass('active');
         $('.sort,.resultsearch,.result').addClass('display');
         $('.new,.old,.sort,.let,.bgsm,.bettingbar,.teachbut,.complex').removeClass('display');
@@ -280,8 +289,11 @@ $(function(){
         $('.bgsmbut,.bettingbut,.allgame').removeClass('active');
         $('.let').addClass('display');
         $('.bgsm,.bettingbar,.new,.old').removeClass('display');
-        $('.turnnew').removeClass('un');
-        $('.turnold').addClass('un');
+        $('.newbut').removeClass('un');
+        $('.oldbut').addClass('un');
+        $('.newold').removeClass('open')
+        $('.turnnew').addClass('active');
+        $('.turnold').removeClass('active');
     });
     $('.letbut').click(function(){
         $('.letbut').addClass('active');
@@ -302,11 +314,16 @@ $(function(){
         $('.topfix,.new,.old,.bettingbar,.chleague,.complex').removeClass('display');
         $('.innertopfix,.inner').addClass('display');
         $('.hideboard').addClass('innerboard');
+        $('.newold').removeClass('open')
     });
     $('.back').click(function(){
-        $('.topfix,.new,.chleague,.complex').addClass('display');
+        $('.topfix,.new,.complex').addClass('display');
         $('.innertopfix,.inner').removeClass('display');
         $('.hideboard').removeClass('innerboard');
+        $('.turnold').removeClass('active');
+        $('.turnnew').addClass('active');
+        $('.newbut').removeClass('un');
+        $('.oldbut').addClass('un');
     });
 });
 //所有賽事
@@ -316,8 +333,11 @@ $(function(){
         $('.old,.bettingbar,.teach,.result,.resultsearch').removeClass('display');
         $(this).addClass('active');
         $(this).siblings().removeClass('active');
-        $('.turnnew').removeClass('un');
-        $('.turnold').addClass('un');
+        $('.newbut').removeClass('un');
+        $('.oldbut').addClass('un');
+        $('.newold').removeClass('open');
+        $('.turnnew').addClass('active');
+        $('.turnold').removeClass('active');
     });
 });
 //即時注單

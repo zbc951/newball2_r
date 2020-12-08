@@ -1750,6 +1750,12 @@ table {
 	&.tteach {
 		width: 100%;
 		tr {
+			th {
+				font-size: 15px;
+				&.tleft {
+					padding: 7px 20px;
+				}
+			}
 			&.teachre {
 				&.dou {
 					td {
@@ -1931,6 +1937,13 @@ table {
 			td {
 				border: none;
 				font-size: 15px;
+				padding: 10px 0px;
+				&:first-child {
+					padding-left: 8px;
+				}
+				&:last-child {
+					padding-right: 8px;
+				}
 				button {
 					width: 98%;
 					background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);

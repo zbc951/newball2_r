@@ -432,11 +432,11 @@ html body {
         background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
         background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
         color: #ffffff; }
-      html body .left ul li a.un span {
-        background-position-y: -22px; }
-      html body .left ul li a.un div {
-        color: #6272cc;
-        background: #ffffff; }
+        html body .left ul li a:hover span, html body .left ul li a:active span {
+          background-position-y: -22px; }
+        html body .left ul li a:hover div, html body .left ul li a:active div {
+          color: #6272cc;
+          background: #ffffff; }
       html body .left ul li a.active {
         background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
         background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
@@ -2074,6 +2074,10 @@ html body {
           padding: 0px 30px 0px 50px; }
     html body table.tteach {
       width: 100%; }
+      html body table.tteach tr th {
+        font-size: 15px; }
+        html body table.tteach tr th.tleft {
+          padding: 7px 20px; }
       html body table.tteach tr.teachre.dou td.tright {
         padding: 5px 145px 30px 0px; }
       html body table.tteach tr.teachre.dou td.tleft {
@@ -2201,7 +2205,12 @@ html body {
           margin-left: 120px; }
       html body table.tinn tr td {
         border: none;
-        font-size: 15px; }
+        font-size: 15px;
+        padding: 10px 0px; }
+        html body table.tinn tr td:first-child {
+          padding-left: 8px; }
+        html body table.tinn tr td:last-child {
+          padding-right: 8px; }
         html body table.tinn tr td button {
           width: 98%;
           background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
@@ -3640,6 +3649,38 @@ html body {
         html body .middle .innertopfix ul li.active {
           border-color: #6272cc;
           color: #6272cc; }
+    html body .middle .newold {
+      height: 0px;
+      position: fixed;
+      margin: 40px 0px 0px 775px;
+      z-index: 6;
+      background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+      background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
+      padding: 10px 10px 5px 10px;
+      border-radius: 0px 0px 5px 5px;
+      -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+      box-shadow: 0 0 6px 1px #bcc2dc;
+      overflow: hidden;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      html body .middle .newold.open {
+        height: 80px;
+        margin-top: 55px; }
+      html body .middle .newold li {
+        display: block;
+        border-bottom: solid 3px transparent;
+        padding: 10px;
+        font-size: 15px;
+        color: #4d515d;
+        cursor: pointer; }
+        html body .middle .newold li:first-child {
+          margin-left: 0px; }
+        html body .middle .newold li:hover, html body .middle .newold li:active, html body .middle .newold li.active {
+          color: #293eb0;
+          border-color: #293eb0; }
     html body .middle .hideboard {
       width: 100%;
       min-width: 1460px;
@@ -3682,7 +3723,7 @@ html body {
       height: 50px;
       position: fixed;
       margin: 0px 0px 0px 250px;
-      bottom: 2px;
+      bottom: 0px;
       background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
       background: -webkit-linear-gradient(top, #eb0004 0%, #850004 100%);
       background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
@@ -3699,7 +3740,7 @@ html body {
         height: 11px;
         position: absolute;
         background: url("../images/arrow_w.png");
-        right: 50px;
+        right: 40px;
         top: 20px;
         -webkit-transform: rotate(90deg);
         -ms-transform: rotate(90deg);
@@ -3719,7 +3760,7 @@ html body {
         height: 24px;
         background: #fff;
         border-radius: 5px;
-        margin: 13px 0px 0px 15px;
+        margin: 13px 0px 0px 40px;
         line-height: 28px;
         font-size: 17px;
         color: #850004;
@@ -3736,8 +3777,8 @@ html body {
         height: 0px;
         background: #fff;
         border: solid 2px #e01821;
+        border-bottom-width: 0px;
         border-top-width: 0px;
-        border-radius: 0px 0px 15px 15px;
         overflow: hidden;
         cursor: default;
         -webkit-transition: 0.5s all;
@@ -3779,7 +3820,7 @@ html body {
               border: none; }
         html body .middle .bettingbar .bettingbox .bettingend {
           width: 100%;
-          height: 195px;
+          height: 197px;
           background: #f8f8f8; }
           html body .middle .bettingbar .bettingbox .bettingend p {
             margin: 20px 200px 25px 15px;
@@ -3820,7 +3861,8 @@ html body {
               position: relative; }
               html body .middle .bettingbar .bettingbox .bettingend .endbox div .inputname {
                 float: left;
-                margin: 10px 0px 0px 15px; }
+                margin: 12px 0px 0px 15px;
+                font-size: 14px; }
               html body .middle .bettingbar .bettingbox .bettingend .endbox div .dollar {
                 position: absolute;
                 top: 10px;
@@ -3864,7 +3906,7 @@ html body {
                   background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
                   background: linear-gradient(to top, #ec0004 0%, #850004 100%); }
         html body .middle .bettingbar .bettingbox.open {
-          height: 500px; }
+          height: 502px; }
     html body .middle .bettingch {
       display: none;
       width: 580px;
