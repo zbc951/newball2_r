@@ -3429,7 +3429,12 @@ html body {
         width: 115px;
         height: 30px;
         float: left;
-        margin-top: 10px; }
+        margin-top: 10px;
+        /*for FireFox*/ }
+        @media screen and (min--moz-device-pixel-ratio: 0) {
+          html body .middle .topfix .turnbut {
+            width: 125px;
+            margin: 10px 0px 0px 15px; } }
         html body .middle .topfix .turnbut button {
           display: block;
           float: left;
@@ -4317,7 +4322,7 @@ html body {
     z-index: 6; }
     html body .fixside .search {
       width: 304px;
-      height: 60px;
+      height: 64px;
       background: #eaedf4;
       border-radius: 12px 0px 0px 12px;
       position: absolute;
@@ -4332,7 +4337,7 @@ html body {
         left: -240px; }
       html body .fixside .search .searchbut {
         width: 64px;
-        height: 60px;
+        height: 64px;
         cursor: pointer;
         border-radius: 12px 0px 0px 12px;
         float: left;
@@ -4363,7 +4368,7 @@ html body {
           background: url("../images/fixside_ic.png");
           background-size: 800%;
           float: left;
-          margin: 5px 15px 5px 17px; }
+          margin: 7px 15px 5px 17px; }
       html body .fixside .search input {
         width: 140px;
         height: 30px;
@@ -4550,34 +4555,72 @@ html body {
             background-position-x: -210px; }
   html body .fixside_rwd {
     display: none;
-    width: 35px;
-    height: 490px;
+    width: 64px;
+    height: 520px;
     position: fixed;
     right: 0px;
     top: 180px;
     z-index: 6; }
     html body .fixside_rwd .search {
-      width: 300px;
-      height: 35px;
+      width: 304px;
+      height: 64px;
       background: #eaedf4;
-      border-radius: 8px 0px 0px 8px;
       position: absolute;
       top: 0px;
-      left: 0px;
-      -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
-      box-shadow: 0 0 5px 1px #b6bcdd;
-      -webkit-transition: 0.5s left;
-      -o-transition: 0.5s left;
-      transition: 0.5s left; }
+      left: 64px;
+      -webkit-transition: 0.3s left;
+      -o-transition: 0.3s left;
+      transition: 0.3s left; }
       html body .fixside_rwd .search.open {
-        left: -240px; }
+        left: -240px;
+        -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+        box-shadow: 0 0 5px 1px #b6bcdd;
+        border-radius: 12px 0px 0px 12px; }
+        html body .fixside_rwd .search.open .searchbut {
+          width: 64px;
+          height: 64px;
+          position: unset;
+          border-radius: 12px 0px 0px 12px;
+          float: left;
+          text-align: center; }
+          html body .fixside_rwd .search.open .searchbut:hover, html body .fixside_rwd .search.open .searchbut:active {
+            background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+            background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+            background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+            background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+            html body .fixside_rwd .search.open .searchbut:hover span, html body .fixside_rwd .search.open .searchbut:active span {
+              color: #fff; }
+            html body .fixside_rwd .search.open .searchbut:hover .fixsideimg, html body .fixside_rwd .search.open .searchbut:active .fixsideimg {
+              background-position-y: -30px; }
+          html body .fixside_rwd .search.open .searchbut.active {
+            background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+            background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+            background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+            background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+            html body .fixside_rwd .search.open .searchbut.active span {
+              color: #fff; }
+            html body .fixside_rwd .search.open .searchbut.active .fixsideimg {
+              background-position-y: -30px; }
+          html body .fixside_rwd .search.open .searchbut span {
+            display: inline;
+            font-size: 12px; }
+          html body .fixside_rwd .search.open .searchbut .fixsideimg {
+            width: 30px;
+            height: 30px;
+            background: url("../images/fixside_ic.png");
+            background-size: 800%;
+            float: left;
+            margin: 7px 15px 5px 17px; }
       html body .fixside_rwd .search .searchbut {
         width: 35px;
         height: 35px;
         cursor: pointer;
-        border-radius: 8px 0px 0px 8px;
-        float: left;
-        text-align: center; }
+        background: #eaedf4;
+        border-radius: 6px 0px 0px 6px;
+        -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+        box-shadow: 0 0 5px 1px #b6bcdd;
+        position: absolute;
+        left: -35px; }
         html body .fixside_rwd .search .searchbut:hover, html body .fixside_rwd .search .searchbut:active {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
@@ -4586,26 +4629,18 @@ html body {
           html body .fixside_rwd .search .searchbut:hover span, html body .fixside_rwd .search .searchbut:active span {
             color: #fff; }
           html body .fixside_rwd .search .searchbut:hover .fixsideimg, html body .fixside_rwd .search .searchbut:active .fixsideimg {
-            background-position-y: -20px; }
-        html body .fixside_rwd .search .searchbut.active {
-          background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
-          background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
-          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
-          html body .fixside_rwd .search .searchbut.active span {
-            color: #fff; }
-          html body .fixside_rwd .search .searchbut.active .fixsideimg {
-            background-position-y: -20px; }
+            background-position-y: -24px; }
+        html body .fixside_rwd .search .searchbut span {
+          display: none; }
         html body .fixside_rwd .search .searchbut .fixsideimg {
-          width: 20px;
-          height: 20px;
+          width: 24px;
+          height: 24px;
           background: url("../images/fixside_ic.png");
           background-size: 800%;
-          float: left;
-          margin: 8px 15px 0px 8px; }
+          margin: 5px auto 0px; }
       html body .fixside_rwd .search input {
         width: 140px;
-        height: 25px;
+        height: 30px;
         font-size: 16px;
         padding-left: 10px;
         -webkit-box-shadow: inset 0 0 2px 2px #c6cae0;
@@ -4613,7 +4648,7 @@ html body {
         border: none;
         border-radius: 15px;
         float: left;
-        margin: 4px 0px 0px 10px; }
+        margin: 15px 0px 0px 10px; }
         html body .fixside_rwd .search input::-webkit-input-placeholder {
           font-weight: bold;
           color: #c7c7c7;
@@ -4632,7 +4667,7 @@ html body {
           font-size: 14px; }
       html body .fixside_rwd .search button {
         width: 50px;
-        height: 24px;
+        height: 28px;
         background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
         background: -webkit-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
         background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
@@ -4640,22 +4675,24 @@ html body {
         color: #fff;
         float: left;
         border-radius: 5px;
-        font-size: 15px;
-        margin: 6px 0px 0px 15px; }
+        font-size: 16px;
+        margin: 16px 0px 16px 15px; }
         html body .fixside_rwd .search button:hover, html body .fixside_rwd .search button:active {
           background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2f45b7));
           background: -webkit-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
           background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
           background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%); }
       html body .fixside_rwd .search .searchbox {
-        width: 240px;
+        width: 244px;
         height: auto;
         float: left;
-        margin-left: 35px;
+        margin-left: 64px;
         overflow: hidden;
         border-radius: 0px 0px 0px 12px;
         -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
-        box-shadow: 0 0 5px 1px #b6bcdd; }
+        box-shadow: 0 0 5px 1px #b6bcdd;
+        position: relative;
+        z-index: 6; }
         html body .fixside_rwd .search .searchbox li {
           width: 100%;
           height: 50px;
@@ -4729,22 +4766,64 @@ html body {
               float: right;
               margin: 0px 20px 0px 0px; }
     html body .fixside_rwd .fun {
-      width: 35px;
+      width: 64px;
       height: auto;
       margin-top: 70px;
       border-radius: 12px 0px 0px 12px;
-      overflow: hidden;
-      -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
-      box-shadow: 0 0 5px 1px #b6bcdd; }
+      position: relative;
+      left: 64px;
+      -webkit-transition: all 0.3s;
+      -o-transition: all 0.3s;
+      transition: all 0.3s; }
+      html body .fixside_rwd .fun.open {
+        left: 0px;
+        -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+        box-shadow: 0 0 5px 1px #b6bcdd;
+        overflow: hidden; }
+        html body .fixside_rwd .fun.open .rwd_hambut {
+          background: transparent;
+          -webkit-box-shadow: none;
+          box-shadow: none; }
+          html body .fixside_rwd .fun.open .rwd_hambut span {
+            background: transparent; }
+      html body .fixside_rwd .fun .rwd_hambut {
+        width: 35px;
+        height: 35px;
+        position: absolute;
+        top: 0px;
+        left: -35px;
+        border-radius: 6px 0px 0px 6px;
+        -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+        box-shadow: 0 0 5px 1px #b6bcdd;
+        background: #eaedf4;
+        padding: 0px; }
+        html body .fixside_rwd .fun .rwd_hambut:hover, html body .fixside_rwd .fun .rwd_hambut:active {
+          background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+          background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+          background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
+          background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%); }
+          html body .fixside_rwd .fun .rwd_hambut:hover span, html body .fixside_rwd .fun .rwd_hambut:active span {
+            background: #fff; }
+        html body .fixside_rwd .fun .rwd_hambut span {
+          display: block;
+          width: 55%;
+          height: 4px;
+          background: #c0926b;
+          margin: 0px 0px 0px 9px;
+          border-radius: 5px; }
+          html body .fixside_rwd .fun .rwd_hambut span:first-child {
+            margin-bottom: 3px; }
+          html body .fixside_rwd .fun .rwd_hambut span:last-child {
+            margin-top: 3px; }
       html body .fixside_rwd .fun a {
         display: block;
         width: 100%;
-        height: 64px;
+        height: 70px;
         background: #eaedf4;
         text-align: center;
         cursor: pointer; }
         html body .fixside_rwd .fun a:last-child {
-          padding-bottom: 3px; }
+          height: 75px; }
         html body .fixside_rwd .fun a:hover, html body .fixside_rwd .fun a:active {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
@@ -4753,7 +4832,7 @@ html body {
           html body .fixside_rwd .fun a:hover span, html body .fixside_rwd .fun a:active span {
             color: #fff; }
           html body .fixside_rwd .fun a:hover .fixsideimg, html body .fixside_rwd .fun a:active .fixsideimg {
-            background-position-y: -20px; }
+            background-position-y: -30px; }
         html body .fixside_rwd .fun a.active {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
@@ -4762,33 +4841,31 @@ html body {
           html body .fixside_rwd .fun a.active span {
             color: #fff; }
           html body .fixside_rwd .fun a.active .fixsideimg {
-            background-position-y: -20px; }
+            background-position-y: -30px; }
         html body .fixside_rwd .fun a span {
-          font-size: 13px;
+          font-size: 12px;
           color: #000; }
         html body .fixside_rwd .fun a .fixsideimg {
-          width: 20px;
-          height: 20px;
+          width: 30px;
+          height: 30px;
           background: url("../images/fixside_ic.png");
           background-size: 800%;
           float: left;
-          margin: 6px 15px 2px 8px; }
+          margin: 13px 15px 3px 17px; }
           html body .fixside_rwd .fun a .fixsideimg.img2 {
-            background-position-x: -20px;
-            margin-top: 14px; }
+            background-position-x: -30px; }
           html body .fixside_rwd .fun a .fixsideimg.img3 {
-            background-position-x: -40px;
-            margin-top: 13px; }
-          html body .fixside_rwd .fun a .fixsideimg.img4 {
             background-position-x: -60px; }
+          html body .fixside_rwd .fun a .fixsideimg.img4 {
+            background-position-x: -90px; }
           html body .fixside_rwd .fun a .fixsideimg.img5 {
-            background-position-x: -80px; }
-          html body .fixside_rwd .fun a .fixsideimg.img6 {
-            background-position-x: -100px; }
-          html body .fixside_rwd .fun a .fixsideimg.img7 {
             background-position-x: -120px; }
+          html body .fixside_rwd .fun a .fixsideimg.img6 {
+            background-position-x: -150px; }
+          html body .fixside_rwd .fun a .fixsideimg.img7 {
+            background-position-x: -180px; }
           html body .fixside_rwd .fun a .fixsideimg.img8 {
-            background-position-x: -140px; }
+            background-position-x: -210px; }
   @media only screen and (max-width: 1460px) {
     html body .fixside {
       display: none; }

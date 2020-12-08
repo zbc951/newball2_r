@@ -271,6 +271,13 @@ $(function(){
         $('.sbox5').toggleClass('open');
         $('.sbox5').siblings().removeClass('open active');
     });
+
+    $('.rwd_hambut').focus(function(){
+        $('.fun').addClass('open');
+    })
+    $('.rwd_hambut').blur(function(){
+        $('.fun').removeClass('open');
+    })
 });
 //比賽結果
 $(function(){

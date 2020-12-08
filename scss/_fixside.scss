@@ -8,7 +8,7 @@
     //搜尋列
     .search {
         width: 304px;
-        height: 60px;
+        height: 64px;
         background: #eaedf4;
         border-radius: 12px 0px 0px 12px;
         position: absolute;
@@ -21,7 +21,7 @@
         }
         .searchbut {
             width: 64px;
-            height: 60px;
+            height: 64px;
             cursor: pointer;
             border-radius: 12px 0px 0px 12px;
             float: left;
@@ -53,7 +53,7 @@
                 background: url('../images/fixside_ic.png');
                 background-size: 800%;
                 float: left;
-                margin: 5px 15px 5px 17px;
+                margin: 7px 15px 5px 17px;
             }
         }
         input {
@@ -244,70 +244,103 @@
 }
 .fixside_rwd {
     display: none;
-    width: 35px;
-    height: 490px;
+    width: 64px;
+    height: 520px;
     position: fixed;
     right: 0px;
     top: 180px;
     z-index: 6;
     //搜尋列
     .search {
-        width: 300px;
-        height: 35px;
+        width: 304px;
+        height: 64px;
         background: #eaedf4;
-        border-radius: 8px 0px 0px 8px;
         position: absolute;
         top: 0px;
-        left: 0px;
-        box-shadow: 0 0 5px 1px #b6bcdd;
-        transition: 0.5s left;
+        left: 64px;
+        transition: 0.3s left;
         &.open {
             left: -240px;
+            box-shadow: 0 0 5px 1px #b6bcdd;
+            border-radius: 12px 0px 0px 12px;
+            .searchbut {
+                width: 64px;
+                height: 64px;
+                position: unset;
+                border-radius: 12px 0px 0px 12px;
+                float: left;
+                text-align: center;
+                &:hover,&:active {
+                    background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+                    span {
+                        color: #fff;
+                    }
+                    .fixsideimg {
+                        background-position-y: -30px;
+                    }
+                }
+                &.active {
+                    background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+                    span {
+                        color: #fff;
+                    }
+                    .fixsideimg {
+                        background-position-y: -30px;
+                    }
+                }
+                span {
+                    display: inline;
+                    font-size: 12px;
+                }
+                .fixsideimg {
+                    width: 30px;
+                    height: 30px;
+                    background: url('../images/fixside_ic.png');
+                    background-size: 800%;
+                    float: left;
+                    margin: 7px 15px 5px 17px;
+                }
+            }
         }
         .searchbut {
             width: 35px;
             height: 35px;
             cursor: pointer;
-            border-radius: 8px 0px 0px 8px;
-            float: left;
-            text-align: center;
+            background: #eaedf4;
+            border-radius: 6px 0px 0px 6px;
+            box-shadow: 0 0 5px 1px #b6bcdd;
+            position: absolute;
+            left: -35px;
             &:hover,&:active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 span {
                     color: #fff;
                 }
                 .fixsideimg {
-                    background-position-y: -20px;
+                    background-position-y: -24px;
                 }
             }
-            &.active {
-                background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                span {
-                    color: #fff;
-                }
-                .fixsideimg {
-                    background-position-y: -20px;
-                }
+            span {
+                display: none;
             }
             .fixsideimg {
-                width: 20px;
-                height: 20px;
+                width: 24px;
+                height: 24px;
                 background: url('../images/fixside_ic.png');
                 background-size: 800%;
-                float: left;
-                margin: 8px 15px 0px 8px;
+                margin: 5px auto 0px;
             }
         }
         input {
             width: 140px;
-            height: 25px;
+            height: 30px;
             font-size: 16px;
             padding-left: 10px;
             box-shadow: inset 0 0 2px 2px #c6cae0;
             border: none;
             border-radius: 15px;
             float: left;
-            margin: 4px 0px 0px 10px;
+            margin: 15px 0px 0px 10px;
             &::placeholder {
                 font-weight: bold;
                 color: #c7c7c7;
@@ -316,26 +349,28 @@
         }
         button {
             width: 50px;
-            height: 24px;
+            height: 28px;
             background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
             color: #fff;
             float: left;
             border-radius: 5px;
-            font-size: 15px;
-            margin: 6px 0px 0px 15px;
+            font-size: 16px;
+            margin: 16px 0px 16px 15px;
             &:hover,&:active {
                 background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
             }
         }
         //隊伍內容
         .searchbox {
-            width: 240px;
+            width: 244px;
             height: auto;
             float: left;
-            margin-left: 35px;
+            margin-left: 64px;
             overflow: hidden;
             border-radius: 0px 0px 0px 12px;
             box-shadow: 0 0 5px 1px #b6bcdd;
+            position: relative;
+            z-index: 6;
             li {
                 width: 100%;
                 height: 50px;
@@ -414,21 +449,65 @@
     }
     //功能列
     .fun {
-        width: 35px;
+        width: 64px;
         height: auto;
         margin-top: 70px;
         border-radius: 12px 0px 0px 12px;
-        overflow: hidden;
-        box-shadow: 0 0 5px 1px #b6bcdd;
+        position: relative;
+        left: 64px;
+        transition: all 0.3s;
+        &.open {
+            left: 0px;
+            box-shadow: 0 0 5px 1px #b6bcdd;
+            overflow: hidden;
+            .rwd_hambut {
+                background: transparent;
+                box-shadow: none;
+                span {
+                    background: transparent;
+                }
+            }
+        }
+        .rwd_hambut {
+            width: 35px;
+            height: 35px;
+            position: absolute;
+            top: 0px;
+            left: -35px;
+            border-radius: 6px 0px 0px 6px;
+            box-shadow: 0 0 5px 1px #b6bcdd;
+            background: #eaedf4;
+            padding: 0px;
+            &:hover,&:active {
+                background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
+                span {
+                    background: #fff;
+                }
+            }
+            span {
+                display: block;
+                width: 55%;
+                height: 4px;
+                background: #c0926b;
+                margin:0px 0px 0px 9px;
+                border-radius: 5px;
+                &:first-child {
+                    margin-bottom: 3px;
+                }
+                &:last-child {
+                    margin-top: 3px;
+                }
+            }
+        }
         a {
             display: block;
             width: 100%;
-            height: 64px;
+            height: 70px;
             background: #eaedf4;
             text-align: center;
             cursor: pointer;
             &:last-child {
-                padding-bottom: 3px;
+                height: 75px;
             }
             &:hover,&:active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
@@ -436,7 +515,7 @@
                     color: #fff;
                 }
                 .fixsideimg {
-                    background-position-y: -20px;
+                    background-position-y: -30px;
                 }
             }
             &.active {
@@ -445,42 +524,40 @@
                     color: #fff;
                 }
                 .fixsideimg {
-                    background-position-y: -20px;
+                    background-position-y: -30px;
                 }
             }
             span {
-                font-size: 13px;
+                font-size: 12px;
                 color: #000;
             }
             .fixsideimg {
-                width: 20px;
-                height: 20px;
+                width: 30px;
+                height: 30px;
                 background: url('../images/fixside_ic.png');
                 background-size: 800%;
                 float: left;
-                margin: 6px 15px 2px 8px;
+                margin: 13px 15px 3px 17px;
                 &.img2 {
-                    background-position-x: -20px;
-                    margin-top: 14px;
+                    background-position-x: -30px;
                 }
                 &.img3 {
-                    background-position-x: -40px;
-                    margin-top: 13px;
-                }
-                &.img4 {
                     background-position-x: -60px;
                 }
+                &.img4 {
+                    background-position-x: -90px;
+                }
                 &.img5 {
-                    background-position-x: -80px;
-                }
-                &.img6 {
-                    background-position-x: -100px;
-                }
-                &.img7 {
                     background-position-x: -120px;
                 }
+                &.img6 {
+                    background-position-x: -150px;
+                }
+                &.img7 {
+                    background-position-x: -180px;
+                }
                 &.img8 {
-                    background-position-x: -140px;
+                    background-position-x: -210px;
                 }
             }
         }
