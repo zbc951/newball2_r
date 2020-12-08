@@ -10,6 +10,7 @@
     overflow: hidden;
     position: relative;
     z-index: 6;
+    scrollbar-width: thin;
     &::-webkit-scrollbar {
         width: 8px;
         background-color: transparent;
@@ -64,6 +65,10 @@
             color: #4d515d;
             /*for IE 9*/
             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                padding: 5px;
+            }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                 padding: 5px;
             }
             &::before {
@@ -143,6 +148,7 @@
             position: relative;
             overflow-y: auto;
             overflow-x: hidden;
+            scrollbar-width: thin;
             &::-webkit-scrollbar {
                 width: 5px;
                 background-color: transparent;
@@ -339,6 +345,10 @@
                                 @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                                     padding: 5px 8px;
                                 }
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    padding: 5px 8px;
+                                }
                                 &:hover,&:active {
                                     background: #3654ff;
                                     color: #fff;
@@ -371,6 +381,7 @@
             position: relative;
             overflow-y: auto;
             overflow-x: hidden;
+            scrollbar-width: thin;
             &::-webkit-scrollbar {
                 width: 4px;
                 background-color: transparent;
@@ -412,6 +423,7 @@
                 text-align: center;
                 overflow-y: auto;
                 overflow-x: hidden;
+                scrollbar-width: thin;
                 &::-webkit-scrollbar {
                     width: 5px;
                     background-color: transparent;
@@ -447,6 +459,10 @@
                         text-align: right;
                         /*for IE 9*/
                         @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                            padding-top: 3px;
+                        }
+                        /*for IE*/
+                        @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                             padding-top: 3px;
                         }
                         &.username {

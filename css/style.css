@@ -187,8 +187,13 @@ html body {
           font-weight: bold;
           border-radius: 5px;
           margin: -3px 0px 0px 10px;
-          padding: 3px 5px 0px 0px; }
+          padding: 3px 5px 0px 0px;
+          /*for IE 9*/
+          /*for IE*/ }
           @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body header article .lobbyact span {
+              padding: 1px 5px 0px 0px; } }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             html body header article .lobbyact span {
               padding: 1px 5px 0px 0px; } }
           html body header article .lobbyact span::before {
@@ -358,7 +363,8 @@ html body {
             background: transparent;
             color: #000;
             padding-top: 10px;
-            /*for IE 9*/ }
+            /*for IE 9*/
+            /*for IE*/ }
             html body .left.mine .minewindow .threebut a:hover, html body .left.mine .minewindow .threebut a:active {
               background: #3654ff;
               color: #fff; }
@@ -372,6 +378,9 @@ html body {
             html body .left.mine .minewindow .threebut a:first-child {
               margin-left: 18px; }
             @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .left.mine .minewindow .threebut a:first-child {
+                margin-left: 10px; } }
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
               html body .left.mine .minewindow .threebut a:first-child {
                 margin-left: 10px; } }
             html body .left.mine .minewindow .threebut a span {
@@ -532,7 +541,8 @@ html body {
     box-shadow: 0 0 3px 2px #c1c7e6;
     overflow: hidden;
     position: relative;
-    z-index: 6; }
+    z-index: 6;
+    scrollbar-width: thin; }
     html body .right::-webkit-scrollbar {
       width: 8px;
       background-color: transparent; }
@@ -576,8 +586,12 @@ html body {
         margin: 12px 35px 0px 0px;
         position: relative;
         color: #4d515d;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .right .righttop .liveteach {
+            padding: 5px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body .right .righttop .liveteach {
             padding: 5px; } }
         html body .right .righttop .liveteach::before {
@@ -644,7 +658,8 @@ html body {
         height: 535px;
         position: relative;
         overflow-y: auto;
-        overflow-x: hidden; }
+        overflow-x: hidden;
+        scrollbar-width: thin; }
         html body .right .room .livelist::-webkit-scrollbar {
           width: 5px;
           background-color: transparent; }
@@ -809,8 +824,12 @@ html body {
                 border-radius: 10px;
                 float: right;
                 margin: 15px 5px 0px 0px;
-                /*for IE 9*/ }
+                /*for IE 9*/
+                /*for IE*/ }
                 @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+                  html body .right .room .livelist ul div a div button {
+                    padding: 5px 8px; } }
+                @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                   html body .right .room .livelist ul div a div button {
                     padding: 5px 8px; } }
                 html body .right .room .livelist ul div a div button:hover, html body .right .room .livelist ul div a div button:active {
@@ -832,7 +851,8 @@ html body {
         height: 500px;
         position: relative;
         overflow-y: auto;
-        overflow-x: hidden; }
+        overflow-x: hidden;
+        scrollbar-width: thin; }
         html body .right .room .chatroom::-webkit-scrollbar {
           width: 4px;
           background-color: transparent; }
@@ -868,7 +888,8 @@ html body {
           color: #8a8c93;
           text-align: center;
           overflow-y: auto;
-          overflow-x: hidden; }
+          overflow-x: hidden;
+          scrollbar-width: thin; }
           html body .right .room .chatroom .chatwindow::-webkit-scrollbar {
             width: 5px;
             background-color: transparent; }
@@ -898,8 +919,12 @@ html body {
               position: relative;
               margin: 20px 10px 10px;
               text-align: right;
-              /*for IE 9*/ }
+              /*for IE 9*/
+              /*for IE*/ }
               @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+                html body .right .room .chatroom .chatwindow div span {
+                  padding-top: 3px; } }
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 html body .right .room .chatroom .chatwindow div span {
                   padding-top: 3px; } }
               html body .right .room .chatroom .chatwindow div span.username {
@@ -1515,7 +1540,8 @@ html body {
       background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
       background: -webkit-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
       background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
-      background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%); }
+      background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+      background-color: #ebecf7; }
     html body table.tpub tr td:nth-child(1) {
       width: 8%; }
     html body table.tpub tr td:nth-child(2) {
@@ -1682,8 +1708,12 @@ html body {
         margin: 2px 5px;
         font-weight: bold;
         padding: 1px 0px 0px;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
+            margin: 2px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
             margin: 2px; } }
       html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
@@ -1695,8 +1725,12 @@ html body {
         -webkit-transform: translateY(-50%);
         -ms-transform: translateY(-50%);
         transform: translateY(-50%);
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
+            font-size: 13px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
             font-size: 13px; } }
     html body table.tsp .smallbut_2 button {
@@ -2086,8 +2120,12 @@ html body {
       -webkit-box-shadow: none;
       box-shadow: none;
       background: transparent;
-      /*for IE 9*/ }
+      /*for IE 9*/
+      /*for IE*/ }
       @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+        html body table.tch {
+          margin-bottom: 20px; } }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         html body table.tch {
           margin-bottom: 20px; } }
       html body table.tch tr {
@@ -2107,8 +2145,12 @@ html body {
       -webkit-box-shadow: none;
       box-shadow: none;
       background: transparent;
-      /*for IE 9*/ }
+      /*for IE 9*/
+      /*for IE*/ }
       @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+        html body table.tch2 {
+          margin-bottom: 20px; } }
+      @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
         html body table.tch2 {
           margin-bottom: 20px; } }
       html body table.tch2 tr {
@@ -2267,8 +2309,12 @@ html body {
           background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
           background-color: #ebecf7;
           font-size: 15px;
-          /*for IE 9*/ }
+          /*for IE 9*/
+          /*for IE*/ }
           @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body table.tinn tr td button {
+              padding: 5px 0px; } }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             html body table.tinn tr td button {
               padding: 5px 0px; } }
           html body table.tinn tr td button:hover, html body table.tinn tr td button:active {
@@ -2298,8 +2344,12 @@ html body {
         right: 20px;
         top: 4px;
         color: #4d515d;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body table.tperson.money tr th .re {
+            padding-left: 20px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body table.tperson.money tr th .re {
             padding-left: 20px; } }
         html body table.tperson.money tr th .re.notbut {
@@ -2315,8 +2365,13 @@ html body {
           background-size: 100%;
           left: -12px;
           top: 5px;
-          /*for IE 9*/ }
+          /*for IE 9*/
+          /*for IE*/ }
           @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body table.tperson.money tr th .re::before {
+              top: 3px;
+              left: 3px; } }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             html body table.tperson.money tr th .re::before {
               top: 3px;
               left: 3px; } }
@@ -2492,29 +2547,13 @@ html body {
       html body table.tperson.contactus tr td .innerlist {
         float: left;
         height: 34px; }
-        html body table.tperson.contactus tr td .innerlist ul {
+        html body table.tperson.contactus tr td .innerlist select {
           width: 220px;
           height: 34px;
           border: 1px solid #b9bfdc;
           border-radius: 5px;
-          text-align: left;
-          overflow: hidden; }
-          html body table.tperson.contactus tr td .innerlist ul.open {
-            height: auto; }
-          html body table.tperson.contactus tr td .innerlist ul button {
-            float: right;
-            width: 34px;
-            height: 34px;
-            border: none;
-            background: url("../images/arrow_b.png") no-repeat center;
-            -webkit-transform: rotate(90deg);
-            -ms-transform: rotate(90deg);
-            transform: rotate(90deg); }
-          html body table.tperson.contactus tr td .innerlist ul li {
-            line-height: 34px;
-            padding-left: 15px;
-            font-size: 15px;
-            color: #8c93a6; }
+          padding-left: 10px;
+          outline: none; }
       html body table.tperson.contactus tr td .sword {
         font-size: 15px;
         color: #8c93a6; }
@@ -3131,8 +3170,13 @@ html body {
               color: #fff;
               float: right;
               margin: -3px 10px 0px 0px;
-              /*for IE 9*/ }
+              /*for IE 9*/
+              /*for IE*/ }
               @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+                html body table.tperson tr td .tbox .norword button {
+                  padding: 3px 10px;
+                  margin-top: 0px; } }
+              @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
                 html body table.tperson tr td .tbox .norword button {
                   padding: 3px 10px;
                   margin-top: 0px; } }
@@ -3676,8 +3720,12 @@ html body {
             float: left;
             margin-top: 15px;
             border: none;
-            /*for IE 9*/ }
+            /*for IE 9*/
+            /*for IE*/ }
             @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .middle .topfix .sort .timesearch .date, html body .middle .topfix .resultsearch .timesearch .date {
+                padding: 0px; } }
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
               html body .middle .topfix .sort .timesearch .date, html body .middle .topfix .resultsearch .timesearch .date {
                 padding: 0px; } }
           html body .middle .topfix .sort .timesearch span, html body .middle .topfix .resultsearch .timesearch span {
@@ -3700,8 +3748,13 @@ html body {
             border: 1px solid #3145b2;
             height: auto;
             color: #3145b2;
-            /*for IE 9*/ }
+            /*for IE 9*/
+            /*for IE*/ }
             @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+              html body .middle .topfix .sort .timesearch .timesearchbut, html body .middle .topfix .resultsearch .timesearch .timesearchbut {
+                padding: 5px;
+                margin-left: 8px; } }
+            @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
               html body .middle .topfix .sort .timesearch .timesearchbut, html body .middle .topfix .resultsearch .timesearch .timesearchbut {
                 padding: 5px;
                 margin-left: 8px; } }
@@ -3836,7 +3889,15 @@ html body {
         top: 0px;
         -webkit-transform: translateX(-20px);
         -ms-transform: translateX(-20px);
-        transform: translateX(-20px); }
+        transform: translateX(-20px);
+        /*for IE*/
+        /*for IE 9*/ }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+          html body .middle .title::before {
+            left: 380px; } }
+        @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .middle .title::before {
+            left: 380px; } }
       html body .middle .title.ing {
         color: #cf813a;
         margin-top: 85px; }
@@ -3897,8 +3958,12 @@ html body {
         font-size: 17px;
         color: #850004;
         position: relative;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .middle .bettingbar .barnum {
+            line-height: 24px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body .middle .bettingbar .barnum {
             line-height: 24px; } }
       html body .middle .bettingbar .opbut {
@@ -3924,7 +3989,8 @@ html body {
           width: 100%;
           height: 260px;
           overflow-y: auto;
-          overflow-x: hidden; }
+          overflow-x: hidden;
+          scrollbar-width: thin; }
           html body .middle .bettingbar .bettingbox .bettingwindow::-webkit-scrollbar {
             width: 5px;
             background-color: transparent; }
@@ -4072,8 +4138,12 @@ html body {
         font-size: 17px;
         color: #850004;
         position: relative;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .middle .bettingch .barnum {
+            line-height: 24px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body .middle .bettingch .barnum {
             line-height: 24px; } }
       html body .middle .bettingch .barword {
@@ -4123,7 +4193,8 @@ html body {
           width: 100%;
           height: 260px;
           overflow-y: auto;
-          overflow-x: hidden; }
+          overflow-x: hidden;
+          scrollbar-width: thin; }
           html body .middle .bettingch .bettingbox .bettingwindow::-webkit-scrollbar {
             width: 5px;
             background-color: transparent; }
@@ -4215,7 +4286,8 @@ html body {
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
-      background-color: #fafbff; }
+      background-color: #fafbff;
+      scrollbar-width: thin; }
       html body .middle .chleague::-webkit-scrollbar {
         width: 5px;
         background-color: transparent; }
@@ -4248,7 +4320,8 @@ html body {
       background: -webkit-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
       background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
-      background-color: #fafbff; }
+      background-color: #fafbff;
+      scrollbar-width: thin; }
       html body .middle .chballs::-webkit-scrollbar {
         width: 5px;
         background-color: transparent; }
@@ -4799,8 +4872,12 @@ html body {
         border-radius: 15px;
         float: left;
         margin: 15px 0px 0px 10px;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .fixside_rwd .search input {
+            margin: 15px 0px 0px 60px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body .fixside_rwd .search input {
             margin: 15px 0px 0px 60px; } }
         html body .fixside_rwd .search input::-webkit-input-placeholder {
@@ -4848,8 +4925,13 @@ html body {
         box-shadow: 0 0 5px 1px #b6bcdd;
         position: relative;
         z-index: 6;
-        /*for IE 9*/ }
+        /*for IE 9*/
+        /*for IE*/ }
         @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+          html body .fixside_rwd .search .searchbox {
+            width: 275px;
+            margin: 5px 0px 0px 30px; } }
+        @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
           html body .fixside_rwd .search .searchbox {
             width: 275px;
             margin: 5px 0px 0px 30px; } }
@@ -5041,7 +5123,8 @@ html body {
     overflow-x: hidden;
     overflow-y: auto;
     position: relative;
-    text-align: center; }
+    text-align: center;
+    scrollbar-width: thin; }
     html body .discount::-webkit-scrollbar {
       width: 5px;
       background-color: transparent; }
@@ -5192,7 +5275,8 @@ html body {
     overflow-y: auto;
     position: relative;
     text-align: center;
-    padding-top: 140px; }
+    padding-top: 140px;
+    scrollbar-width: thin; }
     html body .myself::-webkit-scrollbar {
       width: 5px;
       background-color: transparent; }
@@ -5323,8 +5407,12 @@ html body {
           border-radius: 5px;
           font-size: 15px;
           margin: 8px 10px 0px 0px;
-          /*for IE 9*/ }
+          /*for IE 9*/
+          /*for IE*/ }
           @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
+            html body .myself .minetopfix .fixbar button {
+              padding: 6px 5px; } }
+          @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
             html body .myself .minetopfix .fixbar button {
               padding: 6px 5px; } }
           html body .myself .minetopfix .fixbar button:hover, html body .myself .minetopfix .fixbar button:active {
@@ -5704,7 +5792,8 @@ html body {
         background: #fafafa;
         border-bottom: 1px solid #e0e1e3;
         overflow-x: hidden;
-        overflow-y: auto; }
+        overflow-y: auto;
+        scrollbar-width: thin; }
         html body .myself .onlineroom .chatwindow::-webkit-scrollbar {
           width: 5px;
           background-color: transparent; }
@@ -6495,62 +6584,26 @@ html body {
           font-size: 17px;
           padding: 3px 0px 3px 10px;
           float: right;
-          margin: 7px 50px 0px 0px;
+          margin: 7px 30px 0px 0px;
           border: 1px solid #b9bfdc;
           border-radius: 4px; }
-        html body .cardadd .cardaddbox div ul {
-          width: 245px;
-          height: 34px;
+        html body .cardadd .cardaddbox div select {
           float: right;
-          margin: 7px 50px 0px 0px;
+          width: 245px;
+          height: 36px;
+          margin: 7px 30px 0px 0px;
           border: 1px solid #b9bfdc;
           border-radius: 4px;
-          background: #fff;
-          overflow: hidden;
-          position: relative;
-          z-index: 1; }
-          html body .cardadd .cardaddbox div ul.open {
-            height: auto; }
-          html body .cardadd .cardaddbox div ul.county {
-            width: 105px;
-            margin-right: 20px; }
-          html body .cardadd .cardaddbox div ul.city {
+          font-family: "my_font";
+          padding-left: 10px;
+          outline: none;
+          font-size: 15px; }
+          html body .cardadd .cardaddbox div select.short {
             width: 105px; }
-          html body .cardadd .cardaddbox div ul li {
-            line-height: 34px;
-            padding-left: 10px;
-            font-size: 14px;
-            color: #4d515d;
-            cursor: pointer; }
-            html body .cardadd .cardaddbox div ul li:hover, html body .cardadd .cardaddbox div ul li:active {
-              background: #b9bfdc; }
-            html body .cardadd .cardaddbox div ul li:nth-of-type(1):hover, html body .cardadd .cardaddbox div ul li:nth-of-type(1):active {
-              background: transparent;
-              cursor: default; }
-          html body .cardadd .cardaddbox div ul button {
-            width: 34px;
-            height: 34px;
-            border: none;
-            background: transparent;
-            float: right;
-            position: relative; }
-            html body .cardadd .cardaddbox div ul button::before {
-              content: "";
-              position: absolute;
-              width: 6px;
-              height: 8px;
-              background: url("../images/arrow_b.png") no-repeat center;
-              -webkit-transform: rotate(90deg);
-              -ms-transform: rotate(90deg);
-              transform: rotate(90deg);
-              left: 13px;
-              top: 12px; }
-            html body .cardadd .cardaddbox div ul button:hover, html body .cardadd .cardaddbox div ul button:active {
-              background: transparent; }
         html body .cardadd .cardaddbox div span {
           line-height: 50px;
           color: #4d515d;
-          padding-left: 15px; }
+          padding-left: 30px; }
         html body .cardadd .cardaddbox div button {
           width: 220px;
           height: 36px;

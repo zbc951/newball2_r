@@ -8,6 +8,7 @@
     position: relative;
     text-align: center;
     padding-top: 140px;
+    scrollbar-width: thin;
     &::-webkit-scrollbar {
         width: 5px;
         background-color: transparent;
@@ -179,6 +180,10 @@
                 margin: 8px 10px 0px 0px;
                 /*for IE 9*/
                 @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                    padding: 6px 5px;
+                }
+                /*for IE*/
+                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                     padding: 6px 5px;
                 }
                 &:hover,&:active {
@@ -631,6 +636,7 @@
             border-bottom: 1px solid #e0e1e3;
             overflow-x: hidden;
             overflow-y: auto;
+            scrollbar-width: thin;
             &::-webkit-scrollbar {
                 width: 5px;
                 background-color: transparent;

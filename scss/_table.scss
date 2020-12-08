@@ -866,7 +866,8 @@ table {
           width: 90px;
           height: 28px;
           margin-left: 3px;
-          background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+		  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
+		  background-color:  #ebecf7;
         }
       }
     }
@@ -1120,6 +1121,10 @@ table {
 				@media all and (min-width:0\0) and (min-resolution:.001dpcm){
 					margin: 2px;
 				}
+				/*for IE*/
+				@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+					margin: 2px;
+				}
 			}
 			.smallsp {
 				font-size: 14px;
@@ -1130,6 +1135,10 @@ table {
 				transform: translateY(-50%);
 				/*for IE 9*/
 				@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+					font-size: 13px;
+				}
+				/*for IE*/
+				@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 					font-size: 13px;
 				}
 			}
@@ -1730,6 +1739,10 @@ table {
 		@media all and (min-width:0\0) and (min-resolution:.001dpcm){
 			margin-bottom: 20px;
 		}
+		/*for IE*/
+		@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+			margin-bottom: 20px;
+		}
 		tr {
 			text-align: left;
 			td {
@@ -1751,6 +1764,10 @@ table {
 		background: transparent;
 		/*for IE 9*/
 		@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+			margin-bottom: 20px;
+		}
+		/*for IE*/
+		@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 			margin-bottom: 20px;
 		}
 		tr {
@@ -1806,8 +1823,6 @@ table {
 						position: absolute;
 						left: 50%;
 						transform: translateY(-38%) translateX(-50%);
-						@media all and (min-width:0\0) and (min-resolution:.001dpcm){
-						}
 						p {
 							width: 100%;
 							margin: 0px;
@@ -1974,6 +1989,10 @@ table {
 					@media all and (min-width:0\0) and (min-resolution:.001dpcm){
 						padding: 5px 0px;
 					}
+					/*for IE*/
+					@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+						padding: 5px 0px;
+					}
 					&:hover,&:active {
 						background: #3654ff;
 					}
@@ -2026,6 +2045,10 @@ table {
 						@media all and (min-width:0\0) and (min-resolution:.001dpcm){
 							padding-left: 20px;
 						}
+						/*for IE*/
+						@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+							padding-left: 20px;
+						}
 						&.notbut {
 							cursor: default;
 							&::before {
@@ -2043,6 +2066,11 @@ table {
 							top: 5px;
 							/*for IE 9*/
 							@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+								top: 3px;
+								left: 3px;
+							}
+							/*for IE*/
+							@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 								top: 3px;
 								left: 3px;
 							}
@@ -2257,30 +2285,13 @@ table {
 					.innerlist {
 						float: left;
 						height: 34px;
-						ul {
+						select {
 							width: 220px;
 							height: 34px;
 							border: 1px solid #b9bfdc;
 							border-radius: 5px;
-							text-align: left;
-							overflow: hidden;
-							&.open {
-								height: auto;
-							}
-							button {
-								float: right;
-								width: 34px;
-								height: 34px;
-								border: none;
-								background: url('../images/arrow_b.png') no-repeat center;
-								transform: rotate(90deg);
-							}
-							li {
-								line-height: 34px;
-								padding-left: 15px;
-								font-size: 15px;
-								color: #8c93a6;
-							}
+							padding-left: 10px;
+							outline: none;
 						}
 					}
 					//小灰字
@@ -3033,6 +3044,11 @@ table {
 							margin: -3px 10px 0px 0px;
 							/*for IE 9*/
 							@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+								padding: 3px 10px;
+								margin-top: 0px;
+							}
+							/*for IE*/
+							@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 								padding: 3px 10px;
 								margin-top: 0px;
 							}

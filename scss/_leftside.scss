@@ -153,6 +153,12 @@
                             margin-left: 10px;
                         }
                     }
+                    /*for IE*/
+                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                        &:first-child {
+                            margin-left: 10px;
+                        }
+                    }
                     //按鈕圖
                     span {
                         display: block;

@@ -239,6 +239,10 @@
                     @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                         padding: 0px;
                     }
+                    /*for IE*/
+                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                        padding: 0px;
+                    }
                 }
                 span {
                     float: left;
@@ -264,6 +268,11 @@
                     color: #3145b2;
                     /*for IE 9*/
                     @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                        padding: 5px;
+                        margin-left: 8px;
+                    }
+                    /*for IE*/
+                    @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                         padding: 5px;
                         margin-left: 8px;
                     }
@@ -408,6 +417,14 @@
             background: url('../images/statust.png');
             top: 0px;
             transform: translateX(-20px);
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                left: 380px;
+            }
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                left: 380px;
+            }
         }
         //進行中比賽
         &.ing {
@@ -479,6 +496,10 @@
             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                 line-height: 24px;
             }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                line-height: 24px;
+            }
         }
         //觸發按鈕
         .opbut {
@@ -507,6 +528,7 @@
                 height: 260px;
                 overflow-y: auto;
                 overflow-x: hidden;
+                scrollbar-width: thin;
                 &::-webkit-scrollbar {
                     width: 5px;
                     background-color: transparent;
@@ -656,6 +678,10 @@
             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                 line-height: 24px;
             }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                line-height: 24px;
+            }
         }
         .barword {
             color: #fff;
@@ -707,6 +733,7 @@
                 height: 260px;
                 overflow-y: auto;
                 overflow-x: hidden;
+                scrollbar-width: thin;
                 &::-webkit-scrollbar {
                     width: 5px;
                     background-color: transparent;
@@ -814,6 +841,7 @@
         z-index: 6;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         background-color: #fafbff;
+        scrollbar-width: thin;
         &::-webkit-scrollbar {
             width: 5px;
             background-color: transparent;
@@ -853,6 +881,7 @@
         box-shadow: 0 0 6px 1px #bcc2dc;
         background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
         background-color: #fafbff;
+        scrollbar-width: thin;
         &::-webkit-scrollbar {
             width: 5px;
             background-color: transparent;

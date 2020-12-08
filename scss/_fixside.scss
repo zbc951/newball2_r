@@ -352,6 +352,10 @@
             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                 margin: 15px 0px 0px 60px;
             }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                margin: 15px 0px 0px 60px;
+            }
             &::placeholder {
                 font-weight: bold;
                 color: #c7c7c7;
@@ -385,6 +389,11 @@
             z-index: 6;
             /*for IE 9*/
             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                width: 275px;
+                margin: 5px 0px 0px 30px;
+            }
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                 width: 275px;
                 margin: 5px 0px 0px 30px;
             }

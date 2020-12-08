@@ -148,6 +148,7 @@ html {
                             @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                                 color: #4d515d;
                             }
+                            
                             &:hover,&:active {
                                 background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
                             }
@@ -574,73 +575,29 @@ html {
                         font-size: 17px;
                         padding: 3px 0px 3px 10px;
                         float: right;
-                        margin: 7px 50px 0px 0px;
+                        margin: 7px 30px 0px 0px;
                         border: 1px solid #b9bfdc;
                         border-radius: 4px;
                     }
-                    ul {
-                        width: 245px;
-                        height: 34px;
+                    select {
                         float: right;
-                        margin: 7px 50px 0px 0px;
+                        width: 245px;
+                        height: 36px;
+                        margin: 7px 30px 0px 0px;
                         border: 1px solid #b9bfdc;
                         border-radius: 4px;
-                        background: #fff;
-                        overflow: hidden;
-                        position: relative;
-                        z-index: 1;
-                        &.open {
-                            height: auto;
-                        }
-                        &.county {
+                        font-family: "my_font";
+                        padding-left: 10px;
+                        outline: none;
+                        font-size: 15px;
+                        &.short {
                             width: 105px;
-                            margin-right: 20px;
-                        }
-                        &.city {
-                            width: 105px;
-                        }
-                        li {
-                            line-height: 34px;
-                            padding-left: 10px;
-                            font-size: 14px;
-                            color: #4d515d;
-                            cursor: pointer;
-                            &:hover,&:active {
-                                background: #b9bfdc;
-                            }
-                            &:nth-of-type(1) {
-                                &:hover,&:active {
-                                    background: transparent;
-                                    cursor: default;
-                                }
-                            }
-                        }
-                        button {
-                            width: 34px;
-                            height: 34px;
-                            border: none;
-                            background: transparent;
-                            float: right;
-                            position: relative;
-                            &::before {
-                                content: "";
-                                position: absolute;
-                                width: 6px;
-                                height: 8px;
-                                background: url('../images/arrow_b.png') no-repeat center;
-                                transform: rotate(90deg);
-                                left: 13px;
-                                top: 12px;
-                            }
-                            &:hover,&:active {
-                                background: transparent;
-                            }
                         }
                     }
                     span {
                         line-height: 50px;
                         color: #4d515d;
-                        padding-left: 15px;
+                        padding-left: 30px;
                     }
                     button {
                         width: 220px;
