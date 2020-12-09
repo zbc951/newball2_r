@@ -50,7 +50,7 @@ $(function(){
         $('.oldbut').addClass('un');
         $('.newbut').removeClass('un');
         $('.new').addClass('display');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
         $('.turnnew').addClass('active')
         $('.turnold').removeClass('active')
         $('.old,.let,.bgsm,.bettingbar').removeClass('display');
@@ -60,7 +60,7 @@ $(function(){
         $('.newbut').addClass('un');
         $('.oldbut').removeClass('un');
         $('.old').addClass('display');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
         $('.turnold').addClass('active')
         $('.turnnew').removeClass('active')
         $('.new,.let,.bgsm,.bettingbar').removeClass('display');
@@ -72,12 +72,12 @@ $(function(){
     $('.chballsbut').click(function(){
         $('.chballsbut').toggleClass('active');
         $('.chballs').toggleClass('display');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
     });
     $('.chleaguebut').click(function(){
         $('.chleaguebut').toggleClass('active');
         $('.chleague').toggleClass('display');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
     });
 });
 //串關投注
@@ -103,7 +103,7 @@ $(function(){
         $('.oldbut').removeClass('un');
         $('.turnold').addClass('active')
         $('.turnnew').removeClass('active')
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
     });
 });
 //cube
@@ -283,7 +283,7 @@ $(function(){
 $(function(){
     $('.resultbut').click(function(){
         $(this).addClass('active');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
         $('.bettingbut,.allgame').removeClass('active');
         $('.sort,.resultsearch,.result').addClass('display');
         $('.new,.old,.sort,.let,.bgsm,.bettingbar,.teachbut,.complex').removeClass('display');
@@ -298,7 +298,7 @@ $(function(){
         $('.bgsm,.bettingbar,.new,.old').removeClass('display');
         $('.newbut').removeClass('un');
         $('.oldbut').addClass('un');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
         $('.turnnew').addClass('active');
         $('.turnold').removeClass('active');
     });
@@ -321,7 +321,7 @@ $(function(){
         $('.topfix,.new,.old,.bettingbar,.chleague,.complex').removeClass('display');
         $('.innertopfix,.inner').addClass('display');
         $('.hideboard').addClass('innerboard');
-        $('.newold').removeClass('open')
+        $('.newold,.timesort').removeClass('open')
     });
     $('.back').click(function(){
         $('.topfix,.new,.complex').addClass('display');
@@ -342,7 +342,7 @@ $(function(){
         $(this).siblings().removeClass('active');
         $('.newbut').removeClass('un');
         $('.oldbut').addClass('un');
-        $('.newold').removeClass('open');
+        $('.newold,.timesort').removeClass('open');
         $('.turnnew').addClass('active');
         $('.turnold').removeClass('active');
     });
@@ -693,6 +693,25 @@ $(function(){
     $('.discount .window button').click(function(){
         $($(this).closest('div')).next().toggleClass('open');
         $($(this).closest('div')).next().siblings().removeClass('open');
+    })
+})
+//時間排序
+$(function(){
+    $('.timesortbut,.leaguesortbut').click(function(){
+        $('.timesort').toggleClass('open')
+    })
+    $('.timesort li').click(function(){
+        $(this).addClass('active');
+        $(this).siblings().removeClass('active');
+        $('.timesort').removeClass('open')
+    })
+    $('.timebut').click(function(){
+        $('.timesortbut').removeClass('un');
+        $('.leaguesortbut').addClass('un');
+    })
+    $('.leaguebut').click(function(){
+        $('.leaguesortbut').removeClass('un');
+        $('.timesortbut').addClass('un');
     })
 })
 //共用
