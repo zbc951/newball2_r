@@ -3519,7 +3519,7 @@ html body {
     html body .new.display, html body .old.display, html body .result.display, html body .complex.display {
       display: block; }
   html body .middle {
-    width: 880px;
+    width: 900px;
     height: 850px;
     float: left;
     overflow-x: hidden;
@@ -3527,6 +3527,8 @@ html body {
     position: relative;
     text-align: center;
     scrollbar-width: thin; }
+    html body .middle.index {
+      width: 905px; }
     html body .middle::-webkit-scrollbar {
       width: 5px;
       background-color: transparent; }
@@ -3538,7 +3540,7 @@ html body {
       border-radius: 10px; }
     html body .middle .topfix {
       display: none;
-      width: 850px;
+      width: 886px;
       height: 50px;
       border-radius: 5px;
       -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
@@ -3551,6 +3553,8 @@ html body {
       position: fixed;
       margin: 10px 0px 0px 13px;
       z-index: 10; }
+      html body .middle .topfix.index {
+        width: 891px; }
       html body .middle .topfix.other {
         margin-left: 13px; }
       html body .middle .topfix.display {

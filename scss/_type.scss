@@ -1,6 +1,6 @@
 //市場列表用
 .middle {
-    width: 880px;
+    width: 900px;
     height: 850px;
     float: left;
     overflow-x: hidden;
@@ -8,6 +8,9 @@
     position: relative;
     text-align: center;
     scrollbar-width: thin;
+    &.index {
+        width: 905px;
+    }
     &::-webkit-scrollbar {
         width: 5px;
         background-color: transparent;
@@ -23,7 +26,7 @@
     //懸浮列
     .topfix {
         display: none;
-        width: 850px;
+        width: 886px;
         height: 50px;
         border-radius: 5px;
         box-shadow: 0 0 6px 1px #bcc2dc;
@@ -32,6 +35,9 @@
         position: fixed;
         margin: 10px 0px 0px 13px;
         z-index: 10;
+        &.index {
+            width: 891px;
+        }
         //市場列表以外所有介面
         &.other {
             margin-left: 13px;
