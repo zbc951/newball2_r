@@ -50,6 +50,9 @@ button {
   cursor: pointer;
   padding: 0px; }
 
+select {
+  font-family: "my_font"; }
+
 input {
   outline: none; }
 
