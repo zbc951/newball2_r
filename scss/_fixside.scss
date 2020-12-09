@@ -250,7 +250,7 @@
 .fixside_rwd {
     display: none;
     width: 64px;
-    height: 520px;
+    height: 110px;
     position: fixed;
     right: 0px;
     top: 180px;
@@ -486,13 +486,8 @@
         &.open {
             left: 0px;
             box-shadow: 0 0 5px 1px #b6bcdd;
-            overflow: hidden;
             .rwd_hambut {
-                background: transparent;
                 box-shadow: none;
-                span {
-                    background: transparent;
-                }
             }
         }
         .rwd_hambut {
@@ -536,6 +531,7 @@
             cursor: pointer;
             &:last-child {
                 height: 75px;
+                border-radius: 0px 0px 0px 12px;
             }
             &:hover,&:active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);

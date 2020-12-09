@@ -47,7 +47,8 @@ button {
   font-family: "my_font";
   border: none;
   outline: none;
-  cursor: pointer; }
+  cursor: pointer;
+  padding: 0px; }
 
 input {
   outline: none; }
@@ -638,20 +639,24 @@ html body {
           height: 100%;
           float: left;
           border-radius: 15px 15px 0px 0px;
-          background: transparent;
+          background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
+          background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+          background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
+          background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
+          background-color: #ebecf7;
+          -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
+          box-shadow: 0px 0px 2px 2px #dae2ff;
           font-size: 15px; }
-          html body .right .room .twobut button.active {
-            color: #2d43b6;
-            -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
-            box-shadow: 0px 0px 2px 2px #dae2ff;
+          html body .right .room .twobut button:hover, html body .right .room .twobut button:active, html body .right .room .twobut button.active {
             border-width: 1px 1px 0px 1px;
             border-style: solid;
             border-color: #fff;
-            background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
-            background: -webkit-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-            background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
-            background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
-            background-color: #ebecf7; }
+            background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
+            background: -webkit-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
+            background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
+            background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+            background-color: #1b2c86;
+            color: #fff; }
       html body .right .room .livelist {
         display: none;
         width: 100%;
@@ -821,9 +826,10 @@ html body {
                 background: transparent;
                 border: solid 1px #3654ff;
                 color: #3654ff;
-                border-radius: 10px;
+                border-radius: 15px;
                 float: right;
                 margin: 15px 5px 0px 0px;
+                padding: 3px 5px;
                 /*for IE 9*/
                 /*for IE*/ }
                 @media all and (min-width: 0\0) and (min-resolution: 0.001dpcm) {
@@ -1977,20 +1983,19 @@ html body {
         html body table.tbet tr th span {
           margin-top: 3px; }
           html body table.tbet tr th span.arrow {
-            background: url("../images/arrow.png") no-repeat center;
+            width: 13px;
+            height: 13px;
+            background: url("../images/arrow.png") no-repeat;
             -webkit-transform: rotate(90deg);
             -ms-transform: rotate(90deg);
             transform: rotate(90deg);
-            margin: 2px 0px 0px 15px;
-            background-size: 100%; }
+            background-size: 100%;
+            margin: 2px 0px 0px 15px; }
             html body table.tbet tr th span.arrow.un {
-              background: url("../images/arrow.png") no-repeat center;
-              background-size: 100%;
+              background-position: 0px -13px;
               -webkit-transform: rotate(-90deg);
               -ms-transform: rotate(-90deg);
-              transform: rotate(-90deg);
-              -webkit-filter: brightness(2.5);
-              filter: brightness(2.5); }
+              transform: rotate(-90deg); }
         html body table.tbet tr th .topline {
           width: 1px;
           height: 20px;
@@ -2296,7 +2301,7 @@ html body {
       html body table.tinn tr td {
         border: none;
         font-size: 15px;
-        padding: 10px 0px; }
+        padding: 5px 0px; }
         html body table.tinn tr td:first-child {
           padding-left: 8px; }
         html body table.tinn tr td:last-child {
@@ -3683,14 +3688,15 @@ html body {
             color: #293eb0;
             border-color: #293eb0; }
           html body .middle .topfix .sort button.arrow, html body .middle .topfix .resultsearch button.arrow {
-            margin-right: 20px; }
+            margin: 0px 10px;
+            padding-right: 20px; }
             html body .middle .topfix .sort button.arrow::before, html body .middle .topfix .resultsearch button.arrow::before {
               content: "";
               position: absolute;
               width: 6px;
               height: 8px;
               background: url("../images/arrow_b.png");
-              right: -10px;
+              right: 5px;
               top: 21px;
               -webkit-transform: rotate(90deg);
               -ms-transform: rotate(90deg);
@@ -3771,7 +3777,7 @@ html body {
               color: #fff; }
     html body .middle .innertopfix {
       display: none;
-      width: 855px;
+      width: 885px;
       height: 50px;
       border-radius: 5px;
       -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
@@ -4415,7 +4421,7 @@ html body {
       html body .middle .inner.display {
         display: block; }
       html body .middle .inner .topimg {
-        width: 855px;
+        width: 885px;
         height: 130px;
         background: url("../images/inn_soc.png") no-repeat;
         background-size: 100%;
@@ -4816,7 +4822,7 @@ html body {
   html body .fixside_rwd {
     display: none;
     width: 64px;
-    height: 520px;
+    height: 110px;
     position: fixed;
     right: 0px;
     top: 180px;
@@ -5060,14 +5066,10 @@ html body {
       html body .fixside_rwd .fun.open {
         left: 0px;
         -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
-        box-shadow: 0 0 5px 1px #b6bcdd;
-        overflow: hidden; }
+        box-shadow: 0 0 5px 1px #b6bcdd; }
         html body .fixside_rwd .fun.open .rwd_hambut {
-          background: transparent;
           -webkit-box-shadow: none;
           box-shadow: none; }
-          html body .fixside_rwd .fun.open .rwd_hambut span {
-            background: transparent; }
       html body .fixside_rwd .fun .rwd_hambut {
         width: 35px;
         height: 35px;
@@ -5106,7 +5108,8 @@ html body {
         text-align: center;
         cursor: pointer; }
         html body .fixside_rwd .fun a:last-child {
-          height: 75px; }
+          height: 75px;
+          border-radius: 0px 0px 0px 12px; }
         html body .fixside_rwd .fun a:hover, html body .fixside_rwd .fun a:active {
           background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
           background: -webkit-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);

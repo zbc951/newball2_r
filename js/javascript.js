@@ -272,11 +272,11 @@ $(function(){
         $('.sbox5').siblings().removeClass('open active');
     });
 
-    $('.rwd_hambut').focus(function(){
-        $('.fun').addClass('open');
-    })
     $('.rwd_hambut').blur(function(){
         $('.fun').removeClass('open');
+    })
+    $('.rwd_hambut').click(function(){
+        $('.fun').toggleClass('open');
     })
 });
 //比賽結果

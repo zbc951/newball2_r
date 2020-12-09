@@ -127,16 +127,17 @@
                 height: 100%;
                 float: left;
                 border-radius: 15px 15px 0px 0px;
-                background: transparent;
+                background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
+                background-color: #ebecf7;
+                box-shadow: 0px 0px 2px 2px #dae2ff;
                 font-size: 15px;
-                &.active {
-                    color: #2d43b6;
-                    box-shadow: 0px 0px 2px 2px #dae2ff;
+                &:hover,&:active,&.active {
                     border-width: 1px 1px 0px 1px;
                     border-style: solid;
                     border-color: #fff;
-                    background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
-                    background-color: #ebecf7;
+                    background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
+                    background-color: #1b2c86;
+                    color: #fff;
                 }
             }
         }
@@ -338,9 +339,10 @@
                                 background: transparent;
                                 border: solid 1px #3654ff;
                                 color: #3654ff;
-                                border-radius: 10px;
+                                border-radius: 15px;
                                 float: right;
                                 margin: 15px 5px 0px 0px;
+                                padding: 3px 5px;
                                 /*for IE 9*/
                                 @media all and (min-width:0\0) and (min-resolution:.001dpcm){
                                     padding: 5px 8px;
