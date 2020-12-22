@@ -906,6 +906,18 @@
                 width: 29%;
                 position: relative;
                 padding: 8px 0px 8px 35px;
+                /*for IE 9*/
+                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                    &:nth-last-of-type(1) {
+                        margin-bottom: 20px;
+                    }
+                }
+                /*for IE*/
+                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                    &:nth-last-of-type(1) {
+                        margin-bottom: 20px;
+                    }
+                }
                 &:nth-of-type(1) {
                     width: 100%;
                 }
