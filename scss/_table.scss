@@ -1728,60 +1728,6 @@ table {
 			}
 		}
 	}
-	//選擇版面
-	&.tch {
-		width: 100%;
-		border-radius: 0px;
-		margin: 0px;
-		box-shadow: none;
-		background: transparent;
-		/*for IE 9*/
-		@media all and (min-width:0\0) and (min-resolution:.001dpcm){
-			margin-bottom: 20px;
-		}
-		/*for IE*/
-		@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-			margin-bottom: 20px;
-		}
-		tr {
-			text-align: left;
-			td {
-				width: 12.5%;
-				height: 30px;
-				font-size: 15px;
-				position: relative;
-				border: none;
-				padding: 0px 0px 0px 35px;
-				font-size: 14px;
-			}
-		}
-	}
-	&.tch2 {
-		width: 100%;
-		border-radius: 0px;
-		margin: 0px;
-		box-shadow: none;
-		background: transparent;
-		/*for IE 9*/
-		@media all and (min-width:0\0) and (min-resolution:.001dpcm){
-			margin-bottom: 20px;
-		}
-		/*for IE*/
-		@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
-			margin-bottom: 20px;
-		}
-		tr {
-			text-align: left;
-			td {
-				width: 33%;
-				height: 30px;
-				font-size: 15px;
-				position: relative;
-				border: none;
-				padding: 0px 30px 0px 50px;
-			}
-		}
-	}
 	//盤口教程
 	&.tteach {
 		width: 100%;
