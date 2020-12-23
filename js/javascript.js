@@ -106,6 +106,29 @@ $(function(){
         $('.newold,.timesort').removeClass('open')
     });
 });
+//一般投注
+$(function(){
+    $('.new table button').click(function(){
+        $('.norbetting').addClass('display')
+        $('.filter').addClass('on')
+    })
+    $('.graybut button').click(function(){
+        $('.norbetting').removeClass('display')
+        $('.filter').removeClass('on')
+    })
+    $('.norcancelbtn').click(function(){
+        $('.norbetting').removeClass('display')
+        $('.filter').removeClass('on')
+    })
+    $('.nor_cur').click(function(){
+        $('.norbettingch').addClass('display')
+        $('.norbetting').removeClass('display')
+    })
+    $('.nor_chbut').click(function(){
+        $('.norbettingch').removeClass('display')
+        $('.filter').removeClass('on')
+    })
+})
 //cube
 $(function(){
     $('.cube').click(function(){
