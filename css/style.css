@@ -4740,6 +4740,7 @@ html body .middle .bettingbar::before {
   right: 40px;
   top: 20px;
   transform: rotate(90deg);
+  pointer-events: none;
 }
 html body .middle .bettingbar.display {
   display: block;
@@ -4783,6 +4784,14 @@ html body .middle .bettingbar .opbut span {
   float: left;
   margin: 18px 0px 0px 10px;
   color: #fff;
+}
+html body .middle .bettingbar .calbtn {
+  width: 22px;
+  height: 30px;
+  position: absolute;
+  right: 100px;
+  top: 10px;
+  background: url("../images/calculator.png") no-repeat;
 }
 html body .middle .bettingbar .bettingbox {
   width: 576px;
@@ -5089,299 +5098,6 @@ html body .middle .bettingch .bettingbox .bettingend .endbox span {
   margin-left: 10px;
 }
 html body .middle .bettingch.display {
-  display: block;
-}
-html body .middle .norbetting {
-  display: none;
-  width: 580px;
-  height: 50px;
-  position: fixed;
-  left: 50%;
-  top: 10%;
-  transform: translateX(-50%);
-  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
-  background-color: #2f45b7;
-  border-radius: 15px 15px 0px 0px;
-  z-index: 16;
-  text-align: left;
-}
-html body .middle .norbetting.display {
-  display: block;
-}
-html body .middle .norbetting .barname {
-  line-height: 50px;
-  color: #fff;
-  padding-left: 20px;
-}
-html body .middle .norbetting .norcancelbtn {
-  width: 20px;
-  height: 20px;
-  float: right;
-  margin: 15px 25px 0px 0px;
-  background: transparent;
-  position: relative;
-}
-html body .middle .norbetting .norcancelbtn::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  top: 0px;
-  left: 10px;
-  transform: rotate(-45deg);
-  background: #fff;
-}
-html body .middle .norbetting .norcancelbtn::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  top: 0px;
-  right: 9px;
-  transform: rotate(45deg);
-  background: #fff;
-}
-html body .middle .norbetting .nor_bettingbox {
-  width: 576px;
-  height: 295px;
-  background: #fff;
-  border: solid 2px #384dbb;
-  border-radius: 0px 0px 15px 15px;
-  border-top-width: 0px;
-  overflow: hidden;
-}
-html body .middle .norbetting .nor_bettingbox .bettingwindow {
-  width: 100%;
-  height: 95px;
-  overflow: hidden;
-}
-html body .middle .norbetting .nor_bettingbox .bettingwindow table {
-  margin: 0px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingtotal {
-  width: 100%;
-  height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-  background: #e2e4ed;
-}
-html body .middle .norbetting .nor_bettingbox .bettingtotal div {
-  display: block;
-  width: 180px;
-  height: 100%;
-  border-right: solid 1px #c7c7c7;
-  float: left;
-  line-height: 45px;
-  font-size: 14px;
-  text-align: left;
-  padding-left: 10px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingtotal div:last-child {
-  border: none;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend {
-  width: 100%;
-  height: 140px;
-  background: #f8f8f8;
-  padding-top: 15px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox {
-  width: 50%;
-  text-align: right;
-  float: left;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox input {
-  width: 150px;
-  height: 31px;
-  margin: 0px 5px 10px 0px;
-  border-radius: 5px;
-  border: solid 1px #8593d8;
-  font-size: 16px;
-  padding-left: 5px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
-  font-weight: bold;
-  color: #c7c7c7;
-  font-size: 15px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox input:last-child {
-  color: #ff0000;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox div {
-  position: relative;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox div .inputname {
-  float: left;
-  margin: 12px 0px 0px 15px;
-  font-size: 14px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox div .dollar {
-  position: absolute;
-  top: 10px;
-  right: 20px;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox button {
-  width: 85px;
-  height: 35px;
-  float: left;
-  margin: 0px 3px 10px 3px;
-  border: solid 1px #495cc5;
-  border-radius: 5px;
-  font-size: 17px;
-  color: #4d515d;
-  font-weight: bold;
-  line-height: 35px;
-  background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
-  background-color: #d5d9ef;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox button:hover {
-  background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox button:active {
-  background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
-  background-color: #2e44b7;
-  color: #fff;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur {
-  width: 176px;
-  color: #fff;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
-  background-color: #2e44b7;
-}
-html body .middle .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur:hover {
-  background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
-}
-html body .middle .norbettingch {
-  display: none;
-  width: 580px;
-  height: 50px;
-  position: fixed;
-  z-index: 20;
-  left: 35%;
-  top: 150px;
-  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
-  background-color: #2f45b7;
-  border-radius: 15px 15px 0px 0px;
-}
-html body .middle .norbettingch .barword {
-  color: #fff;
-  float: left;
-  margin: 18px 0px 0px 20px;
-}
-html body .middle .norbettingch .nor_chbut {
-  width: 22px;
-  height: 22px;
-  position: absolute;
-  background: transparent;
-  right: 30px;
-  top: 15px;
-}
-html body .middle .norbettingch .nor_chbut::before {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  top: 0px;
-  left: 11px;
-  transform: rotate(45deg);
-}
-html body .middle .norbettingch .nor_chbut::after {
-  content: "";
-  position: absolute;
-  width: 1px;
-  height: 20px;
-  background: #fff;
-  top: 0px;
-  left: 11px;
-  transform: rotate(135deg);
-}
-html body .middle .norbettingch .bettingbox {
-  width: 576px;
-  height: 230px;
-  margin-top: 50px;
-  background: #fff;
-  border: solid 2px #384dbb;
-  border-top-width: 0px;
-  border-radius: 0px 0px 15px 15px;
-  overflow: hidden;
-}
-html body .middle .norbettingch .bettingbox .bettingwindow {
-  width: 100%;
-  height: 95px;
-  overflow: hidden;
-}
-html body .middle .norbettingch .bettingbox .bettingwindow table {
-  margin: 0px;
-}
-html body .middle .norbettingch .bettingbox .bettingtotal {
-  width: 100%;
-  height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
-  background: #e2e4ed;
-}
-html body .middle .norbettingch .bettingbox .bettingtotal div {
-  display: block;
-  width: 180px;
-  height: 100%;
-  border-right: solid 1px #8a8a8a;
-  float: left;
-  line-height: 45px;
-  font-size: 14px;
-  text-align: left;
-  padding-left: 10px;
-}
-html body .middle .norbettingch .bettingbox .bettingtotal div:last-child {
-  border: none;
-}
-html body .middle .norbettingch .bettingbox .bettingend {
-  width: 100%;
-  height: 90px;
-  background: #f8f8f8;
-}
-html body .middle .norbettingch .bettingbox .bettingend .endbox {
-  width: 287px;
-  height: 48px;
-  text-align: left;
-  float: left;
-  margin-top: 20px;
-}
-html body .middle .norbettingch .bettingbox .bettingend .endbox:last-child {
-  border-left: solid 1px #c7c7c7;
-}
-html body .middle .norbettingch .bettingbox .bettingend .endbox p {
-  margin: 0px 0px 0px 40px;
-  line-height: 48px;
-  color: #556de7;
-  font-size: 14px;
-  position: relative;
-}
-html body .middle .norbettingch .bettingbox .bettingend .endbox p::before {
-  content: "";
-  position: absolute;
-  width: 20px;
-  height: 20px;
-  background: #354ecf;
-  border-radius: 12px;
-  left: -25px;
-  top: 14px;
-}
-html body .middle .norbettingch .bettingbox .bettingend .endbox p::after {
-  content: "";
-  position: absolute;
-  width: 4px;
-  height: 8px;
-  border: solid 3px #fff;
-  border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
-  top: 18px;
-  left: -18px;
-}
-html body .middle .norbettingch .bettingbox .bettingend .endbox span {
-  font-size: 13px;
-  line-height: 24px;
-  margin-left: 10px;
-}
-html body .middle .norbettingch.display {
   display: block;
 }
 html body .middle .chleague {
@@ -5714,6 +5430,501 @@ html body .middle .inner .topimg .topteam div span.team6 {
 }
 html body .middle .inner table:nth-of-type(1) {
   margin-top: 160px;
+}
+html body .norbetting {
+  display: none;
+  width: 580px;
+  height: 50px;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+  background-color: #2f45b7;
+  border-radius: 15px 15px 0px 0px;
+  z-index: 16;
+  text-align: left;
+}
+html body .norbetting.display {
+  display: block;
+}
+html body .norbetting .barname {
+  line-height: 50px;
+  color: #fff;
+  padding-left: 20px;
+}
+html body .norbetting .norcancelbtn {
+  width: 20px;
+  height: 20px;
+  float: right;
+  margin: 15px 25px 0px 0px;
+  background: transparent;
+  position: relative;
+}
+html body .norbetting .norcancelbtn::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  top: 0px;
+  left: 10px;
+  transform: rotate(-45deg);
+  background: #fff;
+}
+html body .norbetting .norcancelbtn::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  top: 0px;
+  right: 9px;
+  transform: rotate(45deg);
+  background: #fff;
+}
+html body .norbetting .nor_bettingbox {
+  width: 576px;
+  height: 295px;
+  background: #fff;
+  border: solid 2px #384dbb;
+  border-radius: 0px 0px 15px 15px;
+  border-top-width: 0px;
+  overflow: hidden;
+}
+html body .norbetting .nor_bettingbox .bettingwindow {
+  width: 100%;
+  height: 95px;
+  overflow: hidden;
+}
+html body .norbetting .nor_bettingbox .bettingwindow table {
+  margin: 0px;
+}
+html body .norbetting .nor_bettingbox .bettingtotal {
+  width: 100%;
+  height: 45px;
+  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  background: #e2e4ed;
+}
+html body .norbetting .nor_bettingbox .bettingtotal div {
+  display: block;
+  width: 180px;
+  height: 100%;
+  border-right: solid 1px #c7c7c7;
+  float: left;
+  line-height: 45px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+}
+html body .norbetting .nor_bettingbox .bettingtotal div:last-child {
+  border: none;
+}
+html body .norbetting .nor_bettingbox .bettingend {
+  width: 100%;
+  height: 140px;
+  background: #f8f8f8;
+  padding-top: 15px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox {
+  width: 50%;
+  text-align: right;
+  float: left;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox input {
+  width: 150px;
+  height: 31px;
+  margin: 0px 5px 10px 0px;
+  border-radius: 5px;
+  border: solid 1px #8593d8;
+  font-size: 16px;
+  padding-left: 5px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox input:last-child {
+  color: #ff0000;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox div {
+  position: relative;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox div .inputname {
+  float: left;
+  margin: 12px 0px 0px 15px;
+  font-size: 14px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox div .dollar {
+  position: absolute;
+  top: 10px;
+  right: 20px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox button {
+  width: 85px;
+  height: 35px;
+  float: left;
+  margin: 0px 3px 10px 3px;
+  border: solid 1px #495cc5;
+  border-radius: 5px;
+  font-size: 17px;
+  color: #4d515d;
+  font-weight: bold;
+  line-height: 35px;
+  background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
+  background-color: #d5d9ef;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox button:hover {
+  background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox button:active {
+  background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+  background-color: #2e44b7;
+  color: #fff;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur {
+  width: 176px;
+  color: #fff;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
+  background-color: #2e44b7;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur:hover {
+  background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
+}
+html body .norbettingch {
+  display: none;
+  width: 580px;
+  height: 50px;
+  position: fixed;
+  z-index: 20;
+  left: 35%;
+  top: 150px;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+  background-color: #2f45b7;
+  border-radius: 15px 15px 0px 0px;
+}
+html body .norbettingch .barword {
+  color: #fff;
+  float: left;
+  margin: 18px 0px 0px 20px;
+}
+html body .norbettingch .nor_chbut {
+  width: 22px;
+  height: 22px;
+  position: absolute;
+  background: transparent;
+  right: 30px;
+  top: 15px;
+}
+html body .norbettingch .nor_chbut::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: #fff;
+  top: 0px;
+  left: 11px;
+  transform: rotate(45deg);
+}
+html body .norbettingch .nor_chbut::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 20px;
+  background: #fff;
+  top: 0px;
+  left: 11px;
+  transform: rotate(135deg);
+}
+html body .norbettingch .bettingbox {
+  width: 576px;
+  height: 230px;
+  margin-top: 50px;
+  background: #fff;
+  border: solid 2px #384dbb;
+  border-top-width: 0px;
+  border-radius: 0px 0px 15px 15px;
+  overflow: hidden;
+}
+html body .norbettingch .bettingbox .bettingwindow {
+  width: 100%;
+  height: 95px;
+  overflow: hidden;
+}
+html body .norbettingch .bettingbox .bettingwindow table {
+  margin: 0px;
+}
+html body .norbettingch .bettingbox .bettingtotal {
+  width: 100%;
+  height: 45px;
+  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  background: #e2e4ed;
+}
+html body .norbettingch .bettingbox .bettingtotal div {
+  display: block;
+  width: 180px;
+  height: 100%;
+  border-right: solid 1px #8a8a8a;
+  float: left;
+  line-height: 45px;
+  font-size: 14px;
+  text-align: left;
+  padding-left: 10px;
+}
+html body .norbettingch .bettingbox .bettingtotal div:last-child {
+  border: none;
+}
+html body .norbettingch .bettingbox .bettingend {
+  width: 100%;
+  height: 90px;
+  background: #f8f8f8;
+}
+html body .norbettingch .bettingbox .bettingend .endbox {
+  width: 287px;
+  height: 48px;
+  text-align: left;
+  float: left;
+  margin-top: 20px;
+}
+html body .norbettingch .bettingbox .bettingend .endbox:last-child {
+  border-left: solid 1px #c7c7c7;
+}
+html body .norbettingch .bettingbox .bettingend .endbox p {
+  margin: 0px 0px 0px 40px;
+  line-height: 48px;
+  color: #556de7;
+  font-size: 14px;
+  position: relative;
+}
+html body .norbettingch .bettingbox .bettingend .endbox p::before {
+  content: "";
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background: #354ecf;
+  border-radius: 12px;
+  left: -25px;
+  top: 14px;
+}
+html body .norbettingch .bettingbox .bettingend .endbox p::after {
+  content: "";
+  position: absolute;
+  width: 4px;
+  height: 8px;
+  border: solid 3px #fff;
+  border-width: 0px 2px 2px 0px;
+  transform: rotate(45deg);
+  top: 18px;
+  left: -18px;
+}
+html body .norbettingch .bettingbox .bettingend .endbox span {
+  font-size: 13px;
+  line-height: 24px;
+  margin-left: 10px;
+}
+html body .norbettingch.display {
+  display: block;
+}
+html body .calculator {
+  display: none;
+  width: 340px;
+  height: 600px;
+  position: fixed;
+  left: 50%;
+  top: 10%;
+  transform: translateX(-50%);
+  z-index: 20;
+}
+html body .calculator.display {
+  display: block;
+}
+html body .calculator .calbar {
+  width: 100%;
+  height: 40px;
+  border-radius: 15px 15px 0px 0px;
+  background: #959dc4;
+  position: relative;
+  text-align: center;
+  line-height: 44px;
+  color: #fff;
+  font-size: 17px;
+}
+html body .calculator .calbar button {
+  width: 35px;
+  height: 35px;
+  position: absolute;
+  right: -40px;
+  top: -40px;
+  border-radius: 20px;
+  border: solid 2px #fff;
+  background: transparent;
+}
+html body .calculator .calbar button::before {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background: #fff;
+  transform: rotate(45deg);
+  top: 3px;
+  right: 14px;
+}
+html body .calculator .calbar button::after {
+  content: "";
+  position: absolute;
+  width: 2px;
+  height: 25px;
+  background: #fff;
+  transform: rotate(-45deg);
+  top: 3px;
+  left: 14px;
+}
+html body .calculator .calbox {
+  width: calc(100% - 20px);
+  height: 540px;
+  background: #f7f7f7;
+  border-radius: 0px 0px 15px 15px;
+  position: relative;
+  overflow: hidden;
+  padding: 0px 10px 20px;
+}
+html body .calculator .calbox .top {
+  padding: 5px 0px;
+}
+html body .calculator .calbox .top .inputbox input {
+  width: 80px;
+  padding-left: 5px;
+  border: solid 1px #9ba1c5;
+  margin: 0px 10px 0px 5px;
+}
+html body .calculator .calbox .top .inputbox button {
+  width: 60px;
+  height: 22px;
+  color: #fff;
+  background: #556de7;
+  font-size: 15px;
+  border-radius: 3px;
+}
+html body .calculator .calbox .mid {
+  width: 100%;
+  height: 314px;
+  border: solid 1px #9ba1c5;
+  border-radius: 10px;
+  overflow: hidden;
+}
+html body .calculator .calbox .mid table {
+  width: 100%;
+  box-shadow: none;
+  margin: 0px;
+  border-radius: 0px;
+}
+html body .calculator .calbox .mid table tr:nth-child(odd) {
+  background: #f7f8fc;
+}
+html body .calculator .calbox .mid table tr th {
+  border-bottom-width: 0px;
+  font-size: 14px;
+}
+html body .calculator .calbox .mid table tr td {
+  border-top-width: 0px;
+  padding: 3px 5px;
+}
+html body .calculator .calbox .mid table tr td:nth-of-type(1) {
+  width: 20%;
+}
+html body .calculator .calbox .mid table tr td:nth-of-type(2) {
+  width: 25%;
+}
+html body .calculator .calbox .mid table tr td:nth-of-type(3) {
+  width: 55%;
+}
+html body .calculator .calbox .mid table tr td .odds {
+  width: 50px;
+  padding-left: 5px;
+  border: solid 1px #9ba1c5;
+  border-radius: 3px;
+}
+html body .calculator .calbox .mid table tr td .selectbox {
+  position: relative;
+  font-size: 14px;
+}
+html body .calculator .calbox .mid table tr td .selectbox::before {
+  content: "";
+  position: absolute;
+  width: 0px;
+  height: 0px;
+  border-style: solid;
+  border-width: 5px 3px 0px 3px;
+  border-color: #687abc transparent transparent transparent;
+  top: 9px;
+  left: 81px;
+  pointer-events: none;
+}
+html body .calculator .calbox .mid table tr td .selectbox select {
+  color: #687abc;
+  appearance: none;
+  -moz-appearance: none;
+  -webkit-appearance: none;
+  width: 55px;
+  height: 22px;
+  border: solid 1px #9ba1c5;
+  border-radius: 3px;
+  padding-left: 5px;
+  line-height: 22px;
+  font-size: 14px;
+  margin: 0px 3px;
+}
+html body .calculator .calbox .mid table tr td .selectbox input {
+  background: #d7d7d7;
+  border-radius: 3px;
+  width: 35px;
+  height: 20px;
+  border: none;
+  text-align: center;
+  color: #585858;
+  font-weight: bold;
+  font-size: 15px;
+}
+html body .calculator .calbox .mid table tr td .selectbox span {
+  font-size: 15px;
+  padding-left: 5px;
+}
+html body .calculator .calbox .bottom {
+  width: 100%;
+  height: auto;
+  text-align: center;
+}
+html body .calculator .calbox .bottom .inputbox {
+  margin: 10px 0px;
+  text-align: center;
+}
+html body .calculator .calbox .bottom .inputbox input {
+  width: 80px;
+  padding-left: 5px;
+  border: solid 1px #9ba1c5;
+  border-radius: 3px;
+  margin-left: 5px;
+}
+html body .calculator .calbox .bottom button {
+  width: 260px;
+  height: 40px;
+  background: linear-gradient(to right, #9ca8e4, #495cc5);
+  background-color: #495cc5;
+  border-radius: 3px;
+  color: #fff;
+  font-size: 16px;
+}
+html body .calculator .calbox .bottom .remind {
+  margin-top: 10px;
+  width: calc(100% - 20px);
+  border-radius: 10px;
+  background: #fff;
+  text-align: left;
+  border: solid 1px #9ba1c5;
+  padding: 10px;
+}
+html body .calculator .calbox .bottom .remind p {
+  font-size: 13px;
+  line-height: 18px;
 }
 html body .fixside {
   width: 64px;

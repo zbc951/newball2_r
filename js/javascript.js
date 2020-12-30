@@ -737,6 +737,17 @@ $(function(){
         $('.timesortbut').addClass('un');
     })
 })
+//串關計算機
+$(function(){
+    $('.calbtn').click(function(){
+        $('.calculator').addClass('display');
+        $('.filter').addClass('on');
+    })
+    $('.calbar button').click(function(){
+        $('.calculator').removeClass('display');
+        $('.filter').removeClass('on');
+    })
+})
 //共用
 
 //修改密碼窗
