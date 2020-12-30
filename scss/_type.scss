@@ -1538,8 +1538,8 @@
 //串關計算機
 .calculator {
     display: none;
-    width: 340px;
-    height: 600px;
+    width: 360px;
+    height: 610px;
     position: fixed;
     left: 50%;
     top: 10%;
@@ -1590,15 +1590,15 @@
         }
     }
     .calbox {
-        width: calc(100% - 20px);
-        height: 540px;
+        width: calc(100% - 60px);
+        height: 545px;
         background: #f7f7f7;
         border-radius: 0px 0px 15px 15px;
         position: relative;
         overflow: hidden;
-        padding: 0px 10px 20px;
+        padding: 0px 30px 20px;
         .top {
-            padding: 5px 0px;
+            padding: 10px 0px;
             .inputbox {
                 input {
                     width: 80px;
@@ -1621,7 +1621,9 @@
             height: 314px;
             border: solid 1px #9ba1c5;
             border-radius: 10px;
-            overflow: hidden;
+            overflow-x: hidden;
+            overflow-y: auto;
+            scrollbar-width: thin;
             table {
                 width: 100%;
                 box-shadow: none;
@@ -1637,13 +1639,13 @@
                     }
                     td {
                         &:nth-of-type(1) {
-                            width: 20%;
+                            width: 15%;
                         }
                         &:nth-of-type(2) {
                             width: 25%;
                         }
                         &:nth-of-type(3) {
-                            width: 55%;
+                            width: 60%;
                         }
                         border-top-width: 0px;
                         padding: 3px 5px;
@@ -1657,6 +1659,25 @@
                         .selectbox {
                             position: relative;
                             font-size: 14px;
+                            /*for IE*/
+                            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            /*for IE 9*/
+                            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                &::before {
+                                    display: none;
+                                }
+                            }
+                            /*for FireFox*/
+                            @media screen and (min--moz-device-pixel-ratio:0){
+                                &::before {
+                                    top: 10px;
+                                    left: 87px;
+                                }
+                            }
                             &::before {
                                 content: "";
                                 position: absolute;
@@ -1682,7 +1703,18 @@
                                 line-height: 22px;
                                 font-size: 14px;
                                 margin: 0px 3px;
-
+                                /*for IE*/
+                                @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                                    width: 60px;
+                                }
+                                /*for IE 9*/
+                                @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                                    width: 60px;
+                                }
+                                /*for FireFox*/
+                                @media screen and (min--moz-device-pixel-ratio:0){
+                                    width: 60px;
+                                }
                             }
                             input {
                                 background: #d7d7d7;
@@ -1722,7 +1754,7 @@
             button {
                 width: 260px;
                 height: 40px;
-                background: linear-gradient(to right,#9ca8e4,#495cc5);
+                background: linear-gradient(to left,#9ca8e4,#495cc5);
                 background-color: #495cc5;
                 border-radius: 3px;
                 color: #fff;
