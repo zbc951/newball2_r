@@ -13,7 +13,7 @@
 
 <body>
     <!--filter-->
-    <div class="filter"></div>
+    <div class="filter on"></div>
     <!--header-->
     <header>
         <!--上時間列-->
@@ -1508,6 +1508,9 @@
                                 <th>關數</th>
                                 <th>賠率</th>
                                 <th>分盤狀況</th>
+                                <th>關數</th>
+                                <th>賠率</th>
+                                <th>分盤狀況</th>
                             </tr>
                             <tr>
                                 <td>1</td>
@@ -1524,8 +1527,6 @@
                                         <span>%</span>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>2</td>
                                 <td><input type="text" class="odds"></td>
                                 <td>
@@ -1556,8 +1557,6 @@
                                         <span>%</span>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>4</td>
                                 <td><input type="text" class="odds"></td>
                                 <td>
@@ -1588,8 +1587,6 @@
                                         <span>%</span>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>6</td>
                                 <td><input type="text" class="odds"></td>
                                 <td>
@@ -1620,8 +1617,6 @@
                                         <span>%</span>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>8</td>
                                 <td><input type="text" class="odds"></td>
                                 <td>
@@ -1652,8 +1647,6 @@
                                         <span>%</span>
                                     </div>
                                 </td>
-                            </tr>
-                            <tr>
                                 <td>10</td>
                                 <td><input type="text" class="odds"></td>
                                 <td>
@@ -1675,13 +1668,12 @@
                         <div class="inputbox">
                             可贏金額:
                             <input type="text">
+                            <button>開始計算</button>
                         </div>
-                        <button>開始計算</button>
                         <div class="remind">
-                            <p>註：中洞需自行輸球球類</p>
-                            <p>例：洋基1+80紅襪，比賽結束2:1</p>
-                            <p>下注洋基：選擇 ( + ) ，填入80</p>
-                            <p>下注紅襪：選擇 ( - ) ，填入80</p>
+                            <p class="retitle wd_red">註：中洞需自行輸球球類</p>
+                            <p class="extitle">例：洋基1+80紅襪，比賽結束<span class="wd_red">2:1</span></p>
+                            <p>下注洋基：選擇 ( <span class="wd_red">+</span> ) ，填入80。下注紅襪：選擇 ( <span class="wd_red">-</span> ) ，填入80。</p>
                         </div>
                     </div>
                 </div>

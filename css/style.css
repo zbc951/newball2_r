@@ -5725,9 +5725,8 @@ html body .norbettingch.display {
   display: block;
 }
 html body .calculator {
-  display: none;
-  width: 360px;
-  height: 610px;
+  width: 715px;
+  height: 435px;
   position: fixed;
   left: 50%;
   top: 10%;
@@ -5780,7 +5779,7 @@ html body .calculator .calbar button::after {
 }
 html body .calculator .calbox {
   width: calc(100% - 60px);
-  height: 545px;
+  height: 375px;
   background: #f7f7f7;
   border-radius: 0px 0px 15px 15px;
   position: relative;
@@ -5806,7 +5805,7 @@ html body .calculator .calbox .top .inputbox button {
 }
 html body .calculator .calbox .mid {
   width: 100%;
-  height: 314px;
+  height: 170px;
   border: solid 1px #9ba1c5;
   border-radius: 10px;
   overflow-x: hidden;
@@ -5830,14 +5829,8 @@ html body .calculator .calbox .mid table tr td {
   border-top-width: 0px;
   padding: 3px 5px;
 }
-html body .calculator .calbox .mid table tr td:nth-of-type(1) {
-  width: 15%;
-}
-html body .calculator .calbox .mid table tr td:nth-of-type(2) {
-  width: 25%;
-}
-html body .calculator .calbox .mid table tr td:nth-of-type(3) {
-  width: 60%;
+html body .calculator .calbox .mid table tr td:nth-of-type(1), html body .calculator .calbox .mid table tr td:nth-of-type(4) {
+  width: 10%;
 }
 html body .calculator .calbox .mid table tr td .odds {
   width: 50px;
@@ -5877,7 +5870,7 @@ html body .calculator .calbox .mid table tr td .selectbox::before {
   border-width: 5px 3px 0px 3px;
   border-color: #687abc transparent transparent transparent;
   top: 9px;
-  left: 81px;
+  left: 84px;
   pointer-events: none;
 }
 html body .calculator .calbox .mid table tr td .selectbox select {
@@ -5935,15 +5928,17 @@ html body .calculator .calbox .bottom {
 html body .calculator .calbox .bottom .inputbox {
   margin: 10px 0px;
   text-align: center;
+  font-size: 17px;
 }
 html body .calculator .calbox .bottom .inputbox input {
-  width: 80px;
-  padding-left: 5px;
+  width: 100px;
+  height: 28px;
+  padding-left: 10px;
   border: solid 1px #9ba1c5;
   border-radius: 3px;
   margin-left: 5px;
 }
-html body .calculator .calbox .bottom button {
+html body .calculator .calbox .bottom .inputbox button {
   width: 260px;
   height: 40px;
   background: linear-gradient(to left, #9ca8e4, #495cc5);
@@ -5951,6 +5946,7 @@ html body .calculator .calbox .bottom button {
   border-radius: 3px;
   color: #fff;
   font-size: 16px;
+  margin-left: 50px;
 }
 html body .calculator .calbox .bottom .remind {
   margin-top: 10px;
@@ -5962,8 +5958,16 @@ html body .calculator .calbox .bottom .remind {
   padding: 10px;
 }
 html body .calculator .calbox .bottom .remind p {
-  font-size: 13px;
-  line-height: 18px;
+  font-size: 14px;
+  line-height: 20px;
+}
+html body .calculator .calbox .bottom .remind p.retitle {
+  text-align: center;
+  border-bottom: solid 1px #e0e1e3;
+  padding-bottom: 7px;
+}
+html body .calculator .calbox .bottom .remind p.extitle {
+  padding-top: 10px;
 }
 html body .fixside {
   width: 64px;
