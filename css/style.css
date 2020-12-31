@@ -5727,7 +5727,7 @@ html body .norbettingch.display {
 html body .calculator {
   display: none;
   width: 715px;
-  height: 435px;
+  height: auto;
   position: fixed;
   left: 50%;
   top: 10%;
@@ -5741,7 +5741,8 @@ html body .calculator .calbar {
   width: 100%;
   height: 40px;
   border-radius: 15px 15px 0px 0px;
-  background: #959dc4;
+  background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
+  background-color: #2f45b7;
   position: relative;
   text-align: center;
   line-height: 44px;
@@ -5780,7 +5781,7 @@ html body .calculator .calbar button::after {
 }
 html body .calculator .calbox {
   width: calc(100% - 60px);
-  height: 375px;
+  height: 385px;
   background: #f7f7f7;
   border-radius: 0px 0px 15px 15px;
   position: relative;
@@ -5792,17 +5793,24 @@ html body .calculator .calbox .top {
 }
 html body .calculator .calbox .top .inputbox input {
   width: 80px;
-  padding-left: 5px;
+  height: 24px;
+  padding-left: 7px;
   border: solid 1px #9ba1c5;
   margin: 0px 10px 0px 5px;
+  font-size: 15px;
+  font-weight: bold;
+  color: #2539a0;
 }
 html body .calculator .calbox .top .inputbox button {
   width: 60px;
-  height: 22px;
+  height: 28px;
   color: #fff;
   background: #556de7;
   font-size: 15px;
   border-radius: 3px;
+}
+html body .calculator .calbox .top .inputbox button:hover, html body .calculator .calbox .top .inputbox button:active, html body .calculator .calbox .top .inputbox button.active {
+  background: #2539a0;
 }
 html body .calculator .calbox .mid {
   width: 100%;
@@ -5938,6 +5946,9 @@ html body .calculator .calbox .bottom .inputbox input {
   border: solid 1px #9ba1c5;
   border-radius: 3px;
   margin-left: 5px;
+  color: #e60012;
+  font-size: 16px;
+  font-weight: bold;
 }
 html body .calculator .calbox .bottom .inputbox button {
   width: 260px;
@@ -5948,6 +5959,9 @@ html body .calculator .calbox .bottom .inputbox button {
   color: #fff;
   font-size: 16px;
   margin-left: 50px;
+}
+html body .calculator .calbox .bottom .inputbox button:hover, html body .calculator .calbox .bottom .inputbox button:active, html body .calculator .calbox .bottom .inputbox button.active {
+  background: #2539a0;
 }
 html body .calculator .calbox .bottom .remind {
   margin-top: 10px;
