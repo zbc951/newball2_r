@@ -5725,6 +5725,7 @@ html body .norbettingch.display {
   display: block;
 }
 html body .calculator {
+  display: none;
   width: 715px;
   height: 435px;
   position: fixed;
