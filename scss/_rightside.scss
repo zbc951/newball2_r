@@ -48,7 +48,7 @@
                 top: 13px;
                 left: 12px;
             }
-            &:hover {
+            &:hover,&:active,&.active {
                 color: #d57f32;
             }
         }
@@ -80,7 +80,7 @@
                 right: -25px;
                 top: 2px;
             }
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: #4d515d;
                 color: #fff;
             }
@@ -177,7 +177,7 @@
                     position: relative;
                     font-size: 15px;
                     overflow: hidden;
-                    &:hover,&.active {
+                    &:hover,&:active {
                         background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%);
                         cursor: pointer;
                     }
@@ -285,7 +285,7 @@
                         &:last-child {
                             border-radius: 0px 0px 15px 15px;
                         }
-                        &:hover,&:active {
+                        &:hover,&:active,&.active {
                             background: #fff0e2;
                         }
                         span {
@@ -351,7 +351,7 @@
                                 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                                     padding: 5px 8px;
                                 }
-                                &:hover,&:active {
+                                &:hover,&:active,&.active {
                                     background: #3654ff;
                                     color: #fff;
                                 }
@@ -361,7 +361,7 @@
                                 &.live {
                                     border-color: #d57f32;
                                     color: #d57f32;
-                                    &:hover,&:active {
+                                    &:hover,&:active,&.active {
                                         background: #d57f32;
                                         color: #fff;
                                     }
@@ -546,7 +546,7 @@
                         color: #fff;
                         background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%);
                         background: #3d50bb;
-                        &:hover,&:active{
+                        &:hover,&:active,&.active {
                             background: linear-gradient(to bottom, #3d50bb 0%,  #8593d8 100%);
                         }
                     }
@@ -554,7 +554,7 @@
                         border: 1px solid #afafaf;
                         color: #afafaf;
                         background: #fff;
-                        &:hover,&:active {
+                        &:hover,&:active,&.active {
                             color: #fff;
                             background: #afafaf;
                         }

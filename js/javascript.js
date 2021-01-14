@@ -109,6 +109,7 @@ $(function(){
 //一般投注
 $(function(){
     $('.new table button').click(function(){
+        $(this).toggleClass('active')
         $('.norbetting').addClass('display')
         $('.filter').addClass('on')
     })
@@ -117,6 +118,7 @@ $(function(){
         $('.filter').removeClass('on')
     })
     $('.norcancelbtn').click(function(){
+        $('.new table button').removeClass('active')
         $('.norbetting').removeClass('display')
         $('.filter').removeClass('on')
     })
@@ -127,6 +129,9 @@ $(function(){
     $('.nor_chbut').click(function(){
         $('.norbettingch').removeClass('display')
         $('.filter').removeClass('on')
+    })
+    $('.old table button').click(function(){
+        $(this).toggleClass('active')
     })
 })
 //cube

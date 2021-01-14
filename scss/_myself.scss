@@ -26,7 +26,7 @@
     }
     //懸浮列
     .minetopfix {
-        width: 830px;
+        width: 850px;
         height: 125px;
         background: url('../images/minetop_bg.png') no-repeat top center;
         margin: -140px 0px 0px 17px;
@@ -39,7 +39,7 @@
         //懸浮列假bar
         .fixbar {
             position: absolute;
-            width: 830px;
+            width: 850px;
             height: 45px;
             border-radius: 5px;
             box-shadow: 0px 0px 6px 1px #bcc2dc;
@@ -186,7 +186,7 @@
                 @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
                     padding: 6px 5px;
                 }
-                &:hover,&:active {
+                &:hover,&:active,&.active {
                     background: linear-gradient(to bottom, #1b2c86 0%, #7e8bd1 100%);
                     background-color: #1b2c86;
                     color: #fff;
@@ -206,11 +206,7 @@
                     &:first-child {
                         margin-left: 15px;
                     }
-                    &:hover,&:active {
-                        color: #293eb0;
-                        border-color: #293eb0;
-                    }
-                    &.active {
+                    &:hover,&:active,&.active {
                         color: #293eb0;
                         border-color: #293eb0;
                     }
@@ -219,7 +215,7 @@
         }
         //投注紀錄標題字
         .recordname {
-            width: 830px;
+            width: 850px;
             height: 35px;
             background: #404b87;
             border-radius: 0px 0px 8px 8px;
@@ -338,7 +334,7 @@
     }
     //投注紀錄
     .recordbar {
-        width: 830px;
+        width: 850px;
         height: 35px;
         background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
         background-color: #d6d9ee;
@@ -391,7 +387,7 @@
     }
     .recordbox {
         display: none;
-        width: 830px;
+        width: 850px;
         height: auto;
         background: #000;
         margin: -20px 0px 15px 17px;
@@ -407,7 +403,7 @@
     }
     //幫助中心/消息中心
     .helpbar {
-        width: 830px;
+        width: 850px;
         height: 45px;
         background: #ffffff;
         border-radius: 12px;
@@ -496,7 +492,7 @@
     }
     .helpbox {
         display: none;
-        width: 830px;
+        width: 850px;
         height: auto;
         margin: -20px 0px 15px 17px;
         background: #fff;
@@ -599,12 +595,7 @@
             line-height: 0px;
             padding: 0px;
             margin: 0px 10px 15px 0px;
-            &:hover,&:active {
-                background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-                border-color: #444f8b;
-                background-color: #434e8a;
-            }
-            &.active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
                 border-color: #444f8b;
                 background-color: #434e8a;
@@ -622,7 +613,7 @@
         }
     }
     .onlineroom {
-        width: 830px;
+        width: 850px;
         height: 725px;
         margin: -15px 0px 0px 17px;
         background: #fff;
@@ -692,7 +683,7 @@
                         display: block;
                         width: 60%;
                         padding: 3px 0px;
-                        &:hover,&:active {
+                        &:hover,&:active,&.active {
                             background: #2D43B6;
                             color: #fff;
                         }
@@ -727,7 +718,7 @@
                     &:first-child {
                         margin-left: 15px;
                     }
-                    &:hover,&:active {
+                    &:hover,&:active,&.active {
                         width: 16px;
                         height: 16px;
                         background: url('../images/windowface.png') no-repeat;
@@ -760,7 +751,7 @@
                 border-radius: 5px;
                 color: #fff;
                 font-size: 15px;
-                &:hover,&:active {
+                &:hover,&:active,&.active {
                     background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
                 }
             }
@@ -775,7 +766,7 @@
     }
     .aboutlink {
         div {
-            width: 830px;
+            width: 850px;
             height: auto;
             margin-left: 17px;
             a {
@@ -787,7 +778,7 @@
                 text-align: left;
                 box-shadow: 0 0 6px 1px #d7dced;
                 margin: 0px 10px 10px 0px;
-                &:hover,&:active {
+                &:hover,&:active,&.active {
                     text-decoration: underline;
                 }
                 &.nmar {

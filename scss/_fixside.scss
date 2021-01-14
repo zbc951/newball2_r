@@ -26,17 +26,7 @@
             border-radius: 12px 0px 0px 12px;
             float: left;
             text-align: center;
-            &:hover,&:active {
-                background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                background-color: #1a2b84;
-                span {
-                    color: #fff;
-                }
-                .fixsideimg {
-                    background-position-y: -30px;
-                }
-            }
-            &.active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 background-color: #1a2b84;
                 span {
@@ -84,7 +74,7 @@
             border-radius: 5px;
             font-size: 16px;
             margin: 16px 0px 16px 15px;
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
             }
         }
@@ -148,7 +138,7 @@
                     &:last-child {
                         border: none;
                     }
-                    &:hover {
+                    &:hover,&:active,&.active {
                         text-decoration: underline;
                     }
                     .team {
@@ -192,18 +182,9 @@
             &:last-child {
                 height: 75px;
             }
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 background-color: #1a2b84;
-                span {
-                    color: #fff;
-                }
-                .fixsideimg {
-                    background-position-y: -30px;
-                }
-            }
-            &.active {
-                background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 span {
                     color: #fff;
                 }
@@ -275,18 +256,8 @@
                 border-radius: 12px 0px 0px 12px;
                 float: left;
                 text-align: center;
-                &:hover,&:active {
+                &:hover,&:active,&.active {
                     background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                    span {
-                        color: #fff;
-                    }
-                    .fixsideimg {
-                        background-position-y: -30px;
-                    }
-                }
-                &.active {
-                    background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-                    background-color:  #1a2b84;
                     span {
                         color: #fff;
                     }
@@ -317,7 +288,7 @@
             box-shadow: 0 0 5px 1px #b6bcdd;
             position: absolute;
             left: -35px;
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 background-color: #1a2b84;
                 span {
@@ -372,7 +343,7 @@
             border-radius: 5px;
             font-size: 16px;
             margin: 16px 0px 16px 15px;
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
             }
         }
@@ -448,7 +419,7 @@
                     &:last-child {
                         border: none;
                     }
-                    &:hover {
+                    &:hover,&:active,&.active {
                         text-decoration: underline;
                     }
                     .team {
@@ -500,7 +471,7 @@
             box-shadow: 0 0 5px 1px #b6bcdd;
             background: #eaedf4;
             padding: 0px;
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 background-color: #1a2b84;
                 span {
@@ -533,18 +504,9 @@
                 height: 75px;
                 border-radius: 0px 0px 0px 12px;
             }
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 background-color: #1a2b84;
-                span {
-                    color: #fff;
-                }
-                .fixsideimg {
-                    background-position-y: -30px;
-                }
-            }
-            &.active {
-                background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
                 span {
                     color: #fff;
                 }

@@ -30,12 +30,7 @@
         background: #fff;
         ul {
             li {
-                &:hover {
-                    span {
-                        background-position-y: -19px;
-                    }
-                }
-                &.active {
+                &:hover,&:active,&.active {
                     span {
                         background-position-y: -19px;
                     }
@@ -130,14 +125,7 @@
                     background: transparent;
                     color: #000;
                     padding-top: 10px;
-                    &:hover,&:active {
-                        background: #3654ff;
-                        color: #fff;
-                        span {
-                            background-position-y: -30px;
-                        }
-                    }
-                    &.active {
+                    &:hover,&:active,&.active {
                         background: #3654ff;
                         color: #fff;
                         span {

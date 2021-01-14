@@ -69,9 +69,12 @@ input {
 html {
   font-family: "my_font";
   background: white;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   margin: 0px auto;
   -webkit-user-select: none;
+     -moz-user-select: none;
+      -ms-user-select: none;
           user-select: none;
 }
 
@@ -94,7 +97,8 @@ html body header {
   min-width: 1460px;
   height: 110px;
   background: #fff;
-  box-shadow: 0px 1px 3px 0px #cdd2e5;
+  -webkit-box-shadow: 0px 1px 3px 0px #cdd2e5;
+          box-shadow: 0px 1px 3px 0px #cdd2e5;
   position: relative;
   z-index: 10;
 }
@@ -217,6 +221,8 @@ html body header article .lobbyact span {
   width: 40px;
   height: 17px;
   float: right;
+  background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
+  background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
   background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
   background-color: #2e44b6;
   position: relative;
@@ -229,7 +235,7 @@ html body header article .lobbyact span {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body header article .lobbyact span {
     padding: 1px 5px 0px 0px;
   }
@@ -253,6 +259,8 @@ html body header article .lobbyact button {
   height: 23px;
   float: right;
   margin: -3px 0px 0px 5px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ddb692), to(#b78a61));
+  background: -o-linear-gradient(top, #ddb692 0%, #b78a61 100%);
   background: linear-gradient(to bottom, #ddb692 0%, #b78a61 100%);
   background-color: #b78a61;
   border-radius: 5px;
@@ -260,7 +268,9 @@ html body header article .lobbyact button {
   font-size: 15px;
   color: #fff;
 }
-html body header article .lobbyact button:hover {
+html body header article .lobbyact button:hover, html body header article .lobbyact button:active, html body header article .lobbyact button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ddb692), to(#b78a61));
+  background: -o-linear-gradient(bottom, #ddb692 0%, #b78a61 100%);
   background: linear-gradient(to top, #ddb692 0%, #b78a61 100%);
 }
 html body header article .lobbyact button.ques {
@@ -315,7 +325,8 @@ html body .left {
   height: 850px;
   background: #f6f9ff;
   border-radius: 0px 0px 10px 10px;
-  box-shadow: 0 0 5px 3px #d3d8ea;
+  -webkit-box-shadow: 0 0 5px 3px #d3d8ea;
+          box-shadow: 0 0 5px 3px #d3d8ea;
   margin: 0px 0px 0px 5px;
   float: left;
   overflow-x: hidden;
@@ -341,10 +352,7 @@ html body .left.dis {
   height: 275px;
   background: #fff;
 }
-html body .left.dis ul li:hover span {
-  background-position-y: -19px;
-}
-html body .left.dis ul li.active span {
+html body .left.dis ul li:hover span, html body .left.dis ul li:active span, html body .left.dis ul li.active span {
   background-position-y: -19px;
 }
 html body .left.dis span {
@@ -394,6 +402,8 @@ html body .left.mine .minewindow .avater p span {
   display: inline-block;
   width: 40px;
   height: 17px;
+  background: -webkit-gradient(linear, left top, right top, from(#8e9bdc), to(#2e44b6));
+  background: -o-linear-gradient(left, #8e9bdc 0%, #2e44b6 100%);
   background: linear-gradient(to right, #8e9bdc 0%, #2e44b6 100%);
   background-color: #2e44b6;
   position: relative;
@@ -432,24 +442,17 @@ html body .left.mine .minewindow .threebut a {
   /*for IE 9*/
   /*for IE*/
 }
-html body .left.mine .minewindow .threebut a:hover, html body .left.mine .minewindow .threebut a:active {
+html body .left.mine .minewindow .threebut a:hover, html body .left.mine .minewindow .threebut a:active, html body .left.mine .minewindow .threebut a.active {
   background: #3654ff;
   color: #fff;
 }
-html body .left.mine .minewindow .threebut a:hover span, html body .left.mine .minewindow .threebut a:active span {
-  background-position-y: -30px;
-}
-html body .left.mine .minewindow .threebut a.active {
-  background: #3654ff;
-  color: #fff;
-}
-html body .left.mine .minewindow .threebut a.active span {
+html body .left.mine .minewindow .threebut a:hover span, html body .left.mine .minewindow .threebut a:active span, html body .left.mine .minewindow .threebut a.active span {
   background-position-y: -30px;
 }
 html body .left.mine .minewindow .threebut a:first-child {
   margin-left: 18px;
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .left.mine .minewindow .threebut a:first-child {
     margin-left: 10px;
   }
@@ -522,6 +525,8 @@ html body .left.mine ul li a div {
   right: 30px;
 }
 html body .left ul li.active a {
+  background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
+  background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
   background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
   background-color: #1b2c86;
   color: #ffffff;
@@ -543,6 +548,8 @@ html body .left ul li a {
   position: relative;
 }
 html body .left ul li a:hover, html body .left ul li a:active {
+  background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
+  background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
   background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
   background-color: #1b2c86;
   color: #ffffff;
@@ -555,6 +562,8 @@ html body .left ul li a:hover div, html body .left ul li a:active div {
   background: #ffffff;
 }
 html body .left ul li a.active {
+  background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
+  background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
   background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
   color: #ffffff;
   background-color: #1b2c86;
@@ -652,7 +661,8 @@ html body .right {
   margin-left: 5px;
   border-radius: 0px 0px 10px 10px;
   float: left;
-  box-shadow: 0 0 3px 2px #c1c7e6;
+  -webkit-box-shadow: 0 0 3px 2px #c1c7e6;
+          box-shadow: 0 0 3px 2px #c1c7e6;
   overflow: hidden;
   position: relative;
   z-index: 6;
@@ -695,7 +705,7 @@ html body .right .righttop a::before {
   top: 13px;
   left: 12px;
 }
-html body .right .righttop a:hover {
+html body .right .righttop a:hover, html body .right .righttop a:active, html body .right .righttop a.active {
   color: #d57f32;
 }
 html body .right .righttop .liveteach {
@@ -711,7 +721,7 @@ html body .right .righttop .liveteach {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .right .righttop .liveteach {
     padding: 5px;
   }
@@ -730,7 +740,7 @@ html body .right .righttop .liveteach::before {
   right: -25px;
   top: 2px;
 }
-html body .right .righttop .liveteach:hover, html body .right .righttop .liveteach:active {
+html body .right .righttop .liveteach:hover, html body .right .righttop .liveteach:active, html body .right .righttop .liveteach.active {
   background: #4d515d;
   color: #fff;
 }
@@ -774,15 +784,20 @@ html body .right .room .twobut button {
   height: 100%;
   float: left;
   border-radius: 15px 15px 0px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), to(#ebecf7));
+  background: -o-linear-gradient(top, #fefeff 0%, #ebecf7 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #ebecf7 100%);
   background-color: #ebecf7;
-  box-shadow: 0px 0px 2px 2px #dae2ff;
+  -webkit-box-shadow: 0px 0px 2px 2px #dae2ff;
+          box-shadow: 0px 0px 2px 2px #dae2ff;
   font-size: 15px;
 }
 html body .right .room .twobut button:hover, html body .right .room .twobut button:active, html body .right .room .twobut button.active {
   border-width: 1px 1px 0px 1px;
   border-style: solid;
   border-color: #fff;
+  background: -webkit-gradient(linear, left top, right top, from(#1b2c86), to(#7e8bd1));
+  background: -o-linear-gradient(left, #1b2c86 0%, #7e8bd1 100%);
   background: linear-gradient(to right, #1b2c86 0%, #7e8bd1 100%);
   background-color: #1b2c86;
   color: #fff;
@@ -822,7 +837,9 @@ html body .right .room .livelist ul li {
   font-size: 15px;
   overflow: hidden;
 }
-html body .right .room .livelist ul li:hover, html body .right .room .livelist ul li.active {
+html body .right .room .livelist ul li:hover, html body .right .room .livelist ul li:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
+  background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%);
   cursor: pointer;
 }
@@ -834,18 +851,26 @@ html body .right .room .livelist ul li::before {
   background: url("../images/arrow_b.png");
   right: 50px;
   top: 21px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 html body .right .room .livelist ul li:hover:before, html body .right .room .livelist ul li:active:before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .right .room .livelist ul li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
+  background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%);
   cursor: pointer;
   color: #004eff;
 }
 html body .right .room .livelist ul li.active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .right .room .livelist ul li.active::after {
   color: #004eff;
@@ -928,7 +953,7 @@ html body .right .room .livelist ul div a {
 html body .right .room .livelist ul div a:last-child {
   border-radius: 0px 0px 15px 15px;
 }
-html body .right .room .livelist ul div a:hover, html body .right .room .livelist ul div a:active {
+html body .right .room .livelist ul div a:hover, html body .right .room .livelist ul div a:active, html body .right .room .livelist ul div a.active {
   background: #fff0e2;
 }
 html body .right .room .livelist ul div a span {
@@ -990,7 +1015,7 @@ html body .right .room .livelist ul div a div button {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .right .room .livelist ul div a div button {
     padding: 5px 8px;
   }
@@ -1000,7 +1025,7 @@ html body .right .room .livelist ul div a div button {
     padding: 5px 8px;
   }
 }
-html body .right .room .livelist ul div a div button:hover, html body .right .room .livelist ul div a div button:active {
+html body .right .room .livelist ul div a div button:hover, html body .right .room .livelist ul div a div button:active, html body .right .room .livelist ul div a div button.active {
   background: #3654ff;
   color: #fff;
 }
@@ -1011,7 +1036,7 @@ html body .right .room .livelist ul div a div button.live {
   border-color: #d57f32;
   color: #d57f32;
 }
-html body .right .room .livelist ul div a div button.live:hover, html body .right .room .livelist ul div a div button.live:active {
+html body .right .room .livelist ul div a div button.live:hover, html body .right .room .livelist ul div a div button.live:active, html body .right .room .livelist ul div a div button.live.active {
   background: #d57f32;
   color: #fff;
 }
@@ -1045,6 +1070,8 @@ html body .right .room .chatroom.open {
 html body .right .room .chatroom .topbar {
   width: 100%;
   height: 30px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#eaecf7));
+  background: -o-linear-gradient(top, #ffffff 0%, #eaecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #eaecf7 100%);
   background-color: #eaecf7;
   position: relative;
@@ -1105,7 +1132,7 @@ html body .right .room .chatroom .chatwindow div span {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .right .room .chatroom .chatwindow div span {
     padding-top: 3px;
   }
@@ -1188,10 +1215,14 @@ html body .right .room .chatroom .chatbut button:first-child {
   margin-right: 15px;
   border: 1px solid #8593d8;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8593d8), to(#3d50bb));
+  background: -o-linear-gradient(top, #8593d8 0%, #3d50bb 100%);
   background: linear-gradient(to bottom, #8593d8 0%, #3d50bb 100%);
   background: #3d50bb;
 }
-html body .right .room .chatroom .chatbut button:first-child:hover, html body .right .room .chatroom .chatbut button:first-child:active {
+html body .right .room .chatroom .chatbut button:first-child:hover, html body .right .room .chatroom .chatbut button:first-child:active, html body .right .room .chatroom .chatbut button:first-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3d50bb), to(#8593d8));
+  background: -o-linear-gradient(top, #3d50bb 0%, #8593d8 100%);
   background: linear-gradient(to bottom, #3d50bb 0%, #8593d8 100%);
 }
 html body .right .room .chatroom .chatbut button:last-child {
@@ -1199,7 +1230,7 @@ html body .right .room .chatroom .chatbut button:last-child {
   color: #afafaf;
   background: #fff;
 }
-html body .right .room .chatroom .chatbut button:last-child:hover, html body .right .room .chatroom .chatbut button:last-child:active {
+html body .right .room .chatroom .chatbut button:last-child:hover, html body .right .room .chatroom .chatbut button:last-child:active, html body .right .room .chatroom .chatbut button:last-child.active {
   color: #fff;
   background: #afafaf;
 }
@@ -1210,38 +1241,77 @@ html body table {
   background: #ffffff;
   overflow: hidden;
   border-radius: 18px;
-  box-shadow: 0 0 4px 2px #bac0db;
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+          box-shadow: 0 0 4px 2px #bac0db;
   margin: 0px auto 25px;
 }
 html body table.turn {
   display: none;
 }
-html body table tr {
-  text-align: center;
+html body table.redbut tr td button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ffe9da));
+  background: -o-linear-gradient(top, #ffffff 0%, #ffe9da 100%);
+  background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
+  background-color: #ffe9da;
 }
-html body table tr.graybut td button {
+html body table.redbut tr td button span {
+  color: #ff0000;
+}
+html body table.redbut tr td button:hover, html body table.redbut tr td button:active, html body table.redbut tr td button.active {
+  background: #c52020;
+  color: #fff;
+}
+html body table.redbut tr td button:hover span, html body table.redbut tr td button:active span, html body table.redbut tr td button.active span {
+  color: #fff;
+}
+html body table.redbut tr td button.disable {
+  pointer-events: none;
   background: #eeeded;
   border: none;
-  cursor: default;
 }
-html body table tr.graybut td button:hover {
-  background: #eeeded;
+html body table.redbut tr td button.disable span {
   color: #000;
 }
-html body table tr.graybut td button:hover span {
-  color: #000;
+html body table.redbut tr .smallbut_1 button, html body table.redbut tr .smallbut_2 button {
+  color: #ff0000;
 }
-html body table tr.bluebut td button {
-  color: #005aff;
+html body table.bluebut tr td button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+  background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
   background-color: #ebecf7;
 }
-html body table tr.bluebut td button:hover {
-  color: #fff;
-  background: #3654ff;
+html body table.bluebut tr td button span {
+  color: #005aff;
 }
-html body table tr.redbut td button {
-  color: #ff0000;
+html body table.bluebut tr td button:hover, html body table.bluebut tr td button:active, html body table.bluebut tr td button.active {
+  background: #3654ff;
+  color: #fff;
+}
+html body table.bluebut tr td button:hover span, html body table.bluebut tr td button:active span, html body table.bluebut tr td button.active span {
+  color: #fff;
+}
+html body table.bluebut tr td button.disable {
+  pointer-events: none;
+  background: #eeeded;
+  border: none;
+}
+html body table.bluebut tr td button.disable span {
+  color: #000;
+}
+html body table.bluebut tr .smallbut_1 button, html body table.bluebut tr .smallbut_2 button {
+  color: #005aff;
+}
+html body table.graybut tr td button {
+  pointer-events: none;
+  background: #eeeded;
+  border: none;
+}
+html body table.graybut tr td button span {
+  color: #000;
+}
+html body table tr {
+  text-align: center;
 }
 html body table tr th {
   color: #4d515d;
@@ -1393,13 +1463,19 @@ html body table tr td a.tbimg1::before {
   position: absolute;
   width: 20px;
   height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#ffffff), to(transparent));
+  background: -o-linear-gradient(left, transparent, #ffffff, transparent);
   background: linear-gradient(to right, transparent, #ffffff, transparent);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
   left: -25px;
   top: -10px;
 }
 html body table tr td a.tbimg1:hover:before {
   left: 50px;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 html body table tr td a.tbimg2 {
@@ -1408,7 +1484,7 @@ html body table tr td a.tbimg2 {
   background: url("../images/heart.png") no-repeat;
   background-size: 200%;
 }
-html body table tr td a.tbimg2:hover {
+html body table tr td a.tbimg2:hover, html body table tr td a.tbimg2:active, html body table tr td a.tbimg2.active {
   background-position: -20px 0px;
 }
 html body table tr td a.tbimg3 {
@@ -1422,20 +1498,12 @@ html body table tr td button {
   border: 1px solid #b9bfdc;
   border-radius: 5px;
   padding: 3px 0px 0px 0px;
-  background: linear-gradient(to bottom, #ffffff 0%, #ffe9da 100%);
-  background-color: #ffe9da;
-}
-html body table tr td button:hover {
-  background: #3654ff;
-  color: white;
-}
-html body table tr td button:hover span {
-  color: white;
 }
 html body table tr td button:first-child {
   margin: 0px;
 }
 html body table tr td button span {
+  color: #000;
   font-weight: bold;
   font-size: 17px;
 }
@@ -1932,8 +2000,6 @@ html body table.tsocin2 tr button {
   width: 90px;
   height: 28px;
   margin-left: 3px;
-  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
-  background-color: #ebecf7;
 }
 html body table.tpub tr td:nth-child(1) {
   width: 8%;
@@ -1975,8 +2041,6 @@ html body table.tpub2 tr button {
   width: 140px;
   height: 28px;
   margin-left: 3px;
-  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
-  background-color: #ebecf7;
   font-size: 15px;
 }
 html body table.trh tr td:nth-child(1) {
@@ -2003,7 +2067,9 @@ html body table.trh tr td.smallbut_rh {
 html body table.trh tr td.smallbut_rh .smallsp {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 15px;
 }
 html body table.trh tr td.smallbut_rh button {
@@ -2044,7 +2110,9 @@ html body table.trh2 tr td.smallbut_rh {
 html body table.trh2 tr td.smallbut_rh .smallsp {
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   left: 15px;
 }
 html body table.trh2 tr td.smallbut_rh button {
@@ -2057,7 +2125,6 @@ html body table.trh2 tr button {
   width: 110px;
   height: 34px;
   margin: 5px 3px;
-  background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
 }
 html body table.trh2 tr button span {
   font-size: 14px;
@@ -2106,7 +2173,9 @@ html body table.tsp .rowup td.unsetsp span.smallsp {
   position: absolute;
   left: 10px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 html body table.tsp .rowup td:nth-child(1) {
   width: 7%;
@@ -2145,11 +2214,12 @@ html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
   float: right;
   margin: 2px 5px;
   font-weight: bold;
+  font-size: 15px;
   padding: 1px 0px 0px;
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
     margin: 2px;
   }
@@ -2159,17 +2229,24 @@ html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
     margin: 2px;
   }
 }
+html body table.tsp .smallbut_1 button span, html body table.tsp .smallbut_2 button span {
+  padding-right: 10px;
+  color: #000;
+  font-size: 13px;
+}
 html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
   font-size: 14px;
   font-weight: normal;
   position: absolute;
   left: 5px;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body table.tsp .smallbut_1 .smallsp, html body table.tsp .smallbut_2 .smallsp {
     font-size: 13px;
   }
@@ -2183,6 +2260,7 @@ html body table.tsp .smallbut_2 button {
   padding-top: 4px;
   width: 69px;
   height: 32px;
+  font-size: 17px;
 }
 html body table.tsocre:first-child {
   margin-top: 85px;
@@ -2489,7 +2567,7 @@ html body table.ticeballre .rowup td:nth-child(11) {
 }
 html body table.tbet {
   display: none;
-  width: 830px;
+  width: 850px;
   margin-left: 17px;
   cursor: pointer;
 }
@@ -2539,13 +2617,17 @@ html body table.tbet tr th span.arrow {
   width: 13px;
   height: 13px;
   background: url("../images/arrow.png") no-repeat;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   background-size: 100%;
   margin: 2px 0px 0px 15px;
 }
 html body table.tbet tr th span.arrow.un {
   background-position: 0px -13px;
-  transform: rotate(-90deg);
+  -webkit-transform: rotate(-90deg);
+      -ms-transform: rotate(-90deg);
+          transform: rotate(-90deg);
 }
 html body table.tbet tr th .topline {
   width: 1px;
@@ -2586,7 +2668,8 @@ html body table.tbet tr td.tleft {
 }
 html body table.tbet2 {
   width: 96%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   border-radius: 12px;
   margin: 0px auto 25px;
 }
@@ -2639,7 +2722,8 @@ html body table.tbetting {
   border-radius: 0px;
   margin: 0px;
   position: relative;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 html body table.tbetting tr th {
   border-width: 1px;
@@ -2661,7 +2745,9 @@ html body table.tbetting tr th button::before {
   background: #000;
   top: 0px;
   left: 8px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body table.tbetting tr th button::after {
   content: "";
@@ -2671,7 +2757,9 @@ html body table.tbetting tr th button::after {
   background: #000;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body table.tbetting tr td {
   height: 50px;
@@ -2708,7 +2796,9 @@ html body table.tteach tr.teachre.dou td.tleft {
   padding: 5px 0px 30px 145px;
 }
 html body table.tteach tr.teachre.dou td .rebody {
-  transform: translateY(-70%) translateX(-50%);
+  -webkit-transform: translateY(-70%) translateX(-50%);
+      -ms-transform: translateY(-70%) translateX(-50%);
+          transform: translateY(-70%) translateX(-50%);
 }
 html body table.tteach tr.teachre td {
   border: none;
@@ -2722,12 +2812,16 @@ html body table.tteach tr.teachre td.tleft {
 html body table.tteach tr.teachre td .rebody {
   width: 320px;
   height: 80px;
+  background: -webkit-gradient(linear, left top, right top, from(#e7eefd), color-stop(40%, #effbff), color-stop(60%, #effbff), to(#e7eefd));
+  background: -o-linear-gradient(left, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
   background: linear-gradient(to right, #e7eefd 0%, #effbff 40%, #effbff 60%, #e7eefd 100%);
   background-color: #effbff;
   border-radius: 40px;
   position: absolute;
   left: 50%;
-  transform: translateY(-38%) translateX(-50%);
+  -webkit-transform: translateY(-38%) translateX(-50%);
+      -ms-transform: translateY(-38%) translateX(-50%);
+          transform: translateY(-38%) translateX(-50%);
 }
 html body table.tteach tr.teachre td .rebody p {
   width: 100%;
@@ -2754,7 +2848,9 @@ html body table.tteach tr.teachre td .rebody .remid {
   position: absolute;
   left: 50%;
   top: 50%;
-  transform: translateY(-50%) translateX(-50%);
+  -webkit-transform: translateY(-50%) translateX(-50%);
+      -ms-transform: translateY(-50%) translateX(-50%);
+          transform: translateY(-50%) translateX(-50%);
   background: #e9f5ff;
   border-radius: 50%;
 }
@@ -2789,7 +2885,9 @@ html body table.tteach tr td .teamimg {
   background-size: 200%;
   position: absolute;
   top: 50%;
-  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+      -ms-transform: translateY(-50%);
+          transform: translateY(-50%);
 }
 html body table.tteach tr td .teamimg.fr {
   right: 0px;
@@ -2805,7 +2903,9 @@ html body table.tteach tr td .capital {
   padding: 5px 10px;
   bottom: -20px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   border: solid 1px #b9c0d2;
   border-radius: 30px;
   color: #4a5ec5;
@@ -2861,13 +2961,15 @@ html body table.tinn tr td:last-child {
 }
 html body table.tinn tr td button {
   width: 98%;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#ebecf7));
+  background: -o-linear-gradient(top, #ffffff 0%, #ebecf7 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #ebecf7 100%);
   background-color: #ebecf7;
   font-size: 15px;
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body table.tinn tr td button {
     padding: 5px 0px;
   }
@@ -2877,11 +2979,23 @@ html body table.tinn tr td button {
     padding: 5px 0px;
   }
 }
-html body table.tinn tr td button:hover, html body table.tinn tr td button:active {
+html body table.tinn tr td button:hover, html body table.tinn tr td button:active, html body table.tinn tr td button.active {
   background: #3654ff;
+  color: #fff;
+}
+html body table.tinn tr td button:hover span, html body table.tinn tr td button:active span, html body table.tinn tr td button.active span {
+  color: #fff;
+}
+html body table.tinn tr td button.disable {
+  pointer-events: none;
+  background: #eeeded;
+  border: none;
+}
+html body table.tinn tr td button.disable span {
+  color: #000;
 }
 html body table.tperson {
-  width: 830px;
+  width: 850px;
   position: relative;
   margin-left: 17px;
 }
@@ -2911,7 +3025,7 @@ html body table.tperson.money tr th .re {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body table.tperson.money tr th .re {
     padding-left: 20px;
   }
@@ -2939,7 +3053,7 @@ html body table.tperson.money tr th .re::before {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body table.tperson.money tr th .re::before {
     top: 3px;
     left: 3px;
@@ -2951,8 +3065,9 @@ html body table.tperson.money tr th .re::before {
     left: 3px;
   }
 }
-html body table.tperson.money tr th .re:hover:before {
-  animation: reset 1s ease-in-out 0s infinite;
+html body table.tperson.money tr th .re:hover, html body table.tperson.money tr th .re:active, html body table.tperson.money tr th .re.active:before {
+  -webkit-animation: reset 1s ease-in-out 0s infinite;
+          animation: reset 1s ease-in-out 0s infinite;
 }
 html body table.tperson.money tr td .creditcard {
   width: 250px;
@@ -2962,6 +3077,8 @@ html body table.tperson.money tr td .creditcard {
   float: left;
   margin-right: 20px;
   border: none;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
   position: relative;
 }
@@ -2985,7 +3102,9 @@ html body table.tperson.money tr td .creditcard.c1.click::after, html body table
   height: 16px;
   border: solid 5px #fff;
   border-width: 0px 5px 5px 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 0px;
   right: 5px;
 }
@@ -3015,11 +3134,16 @@ html body table.tperson.money tr td .creditcard.c1 p.cardnum, html body table.tp
   font-weight: bold;
 }
 html body table.tperson.money tr td .creditcard.c1 {
+  background: -webkit-gradient(linear, right top, left top, from(#6589c6), to(#a3c3f4));
+  background: -o-linear-gradient(right, #6589c6 0%, #a3c3f4 100%);
   background: linear-gradient(to left, #6589c6 0%, #a3c3f4 100%);
   background-color: #6589c6;
 }
-html body table.tperson.money tr td .creditcard.c1:hover, html body table.tperson.money tr td .creditcard.c1:active {
-  box-shadow: none;
+html body table.tperson.money tr td .creditcard.c1:hover, html body table.tperson.money tr td .creditcard.c1:active, html body table.tperson.money tr td .creditcard.c1.active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, from(#6589c6), to(#a3c3f4));
+  background: -o-linear-gradient(left, #6589c6 0%, #a3c3f4 100%);
   background: linear-gradient(to right, #6589c6 0%, #a3c3f4 100%);
   background-color: #6589c6;
 }
@@ -3027,14 +3151,20 @@ html body table.tperson.money tr td .creditcard.c1.click:before {
   background: #6589c6;
 }
 html body table.tperson.money tr td .creditcard.c1::before {
-  box-shadow: 0 0 6px 1px #6689c6;
+  -webkit-box-shadow: 0 0 6px 1px #6689c6;
+          box-shadow: 0 0 6px 1px #6689c6;
 }
 html body table.tperson.money tr td .creditcard.c2 {
+  background: -webkit-gradient(linear, right top, left top, from(#31a8b1), to(#60d6ce));
+  background: -o-linear-gradient(right, #31a8b1 0%, #60d6ce 100%);
   background: linear-gradient(to left, #31a8b1 0%, #60d6ce 100%);
   background-color: #31a8b1;
 }
-html body table.tperson.money tr td .creditcard.c2:hover, html body table.tperson.money tr td .creditcard.c2:active {
-  box-shadow: none;
+html body table.tperson.money tr td .creditcard.c2:hover, html body table.tperson.money tr td .creditcard.c2:active, html body table.tperson.money tr td .creditcard.c2.active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, from(#31a8b1), to(#60d6ce));
+  background: -o-linear-gradient(left, #31a8b1 0%, #60d6ce 100%);
   background: linear-gradient(to right, #31a8b1 0%, #60d6ce 100%);
   background-color: #31a8b1;
 }
@@ -3042,17 +3172,23 @@ html body table.tperson.money tr td .creditcard.c2.click:before {
   background: #31a8b1;
 }
 html body table.tperson.money tr td .creditcard.c2::before {
-  box-shadow: 0 0 6px 1px #32a9b2;
+  -webkit-box-shadow: 0 0 6px 1px #32a9b2;
+          box-shadow: 0 0 6px 1px #32a9b2;
 }
 html body table.tperson.money tr td .creditcard.c2 div {
   background-position-x: -35px;
 }
 html body table.tperson.money tr td .creditcard.c3 {
+  background: -webkit-gradient(linear, right top, left top, from(#d7767a), to(#ffadba));
+  background: -o-linear-gradient(right, #d7767a 0%, #ffadba 100%);
   background: linear-gradient(to left, #d7767a 0%, #ffadba 100%);
   background-color: #d7767a;
 }
-html body table.tperson.money tr td .creditcard.c3:hover, html body table.tperson.money tr td .creditcard.c3:active {
-  box-shadow: none;
+html body table.tperson.money tr td .creditcard.c3:hover, html body table.tperson.money tr td .creditcard.c3:active, html body table.tperson.money tr td .creditcard.c3.active {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+  background: -webkit-gradient(linear, left top, right top, from(#d7767a), to(#ffadba));
+  background: -o-linear-gradient(left, #d7767a 0%, #ffadba 100%);
   background: linear-gradient(to right, #d7767a 0%, #ffadba 100%);
   background-color: #d7767a;
 }
@@ -3060,7 +3196,8 @@ html body table.tperson.money tr td .creditcard.c3.click::before {
   background: #d7767a;
 }
 html body table.tperson.money tr td .creditcard.c3::before {
-  box-shadow: 0 0 6px 1px #d8767a;
+  -webkit-box-shadow: 0 0 6px 1px #d8767a;
+          box-shadow: 0 0 6px 1px #d8767a;
 }
 html body table.tperson.money tr td .creditcard.c3 div {
   background-position-x: -70px;
@@ -3068,8 +3205,9 @@ html body table.tperson.money tr td .creditcard.c3 div {
 html body table.tperson.money tr td .creditcard:last-child {
   margin: 0px;
 }
-html body table.tperson.money tr td .creditcard:hover, html body table.tperson.money tr td .creditcard:active {
-  box-shadow: 0 0 4px 1px #bac0db;
+html body table.tperson.money tr td .creditcard:hover, html body table.tperson.money tr td .creditcard:active, html body table.tperson.money tr td .creditcard.active {
+  -webkit-box-shadow: 0 0 4px 1px #bac0db;
+          box-shadow: 0 0 4px 1px #bac0db;
   background: #fff;
 }
 html body table.tperson.money tr td .creditcard .card_ic {
@@ -3107,7 +3245,7 @@ html body table.tperson.money tr td .smallbox .charge {
   top: 10px;
   right: 5px;
 }
-html body table.tperson.money tr td .smallbox .charge:hover, html body table.tperson.money tr td .smallbox .charge:active {
+html body table.tperson.money tr td .smallbox .charge:hover, html body table.tperson.money tr td .smallbox .charge:active, html body table.tperson.money tr td .smallbox .charge.active {
   background: transparent;
   color: #d7af8a;
 }
@@ -3154,10 +3292,13 @@ html body table.tperson.contactus tr td .upimg {
   background: transparent;
   padding-top: 20px;
   position: relative;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
-html body table.tperson.contactus tr td .upimg:hover, html body table.tperson.contactus tr td .upimg:active {
-  box-shadow: 0 0 8px 1px #d7ddf1;
+html body table.tperson.contactus tr td .upimg:hover, html body table.tperson.contactus tr td .upimg:active, html body table.tperson.contactus tr td .upimg.active {
+  -webkit-box-shadow: 0 0 8px 1px #d7ddf1;
+          box-shadow: 0 0 8px 1px #d7ddf1;
   color: #000;
 }
 html body table.tperson.contactus tr td .upimg span {
@@ -3181,12 +3322,16 @@ html body table.tperson.contactus tr td .upimgbut {
   color: #fff;
   font-size: 16px;
   float: right;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3247b8));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3247b8 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3247b8 100%);
   background-color: #3247b8;
   border-radius: 5px;
   padding: 0px;
 }
-html body table.tperson.contactus tr td .upimgbut:hover, html body table.tperson.contactus tr td .upimgbut:active {
+html body table.tperson.contactus tr td .upimgbut:hover, html body table.tperson.contactus tr td .upimgbut:active, html body table.tperson.contactus tr td .upimgbut.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#3247b8));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #3247b8 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #3247b8 100%);
 }
 html body table.tperson.control .midC {
@@ -3208,14 +3353,16 @@ html body table.tperson.control .midC .rowbut.lside span:last-child {
   color: #fff;
 }
 html body table.tperson.control .midC .rowbut.lside .innbut {
-  animation: rowbut 0.3s ease-out 0s;
+  -webkit-animation: rowbut 0.3s ease-out 0s;
+          animation: rowbut 0.3s ease-out 0s;
 }
 html body table.tperson.control .midC .rowbut.rside span:nth-of-type(1) {
   color: #fff;
 }
 html body table.tperson.control .midC .rowbut.rside .innbut {
   left: 53%;
-  animation: rowbut2 0.3s ease-out 0s;
+  -webkit-animation: rowbut2 0.3s ease-out 0s;
+          animation: rowbut2 0.3s ease-out 0s;
 }
 html body table.tperson.control .midC .rowbut span {
   margin-right: 22px;
@@ -3293,6 +3440,26 @@ html body table.tperson.withdrawl tr td input {
   border-radius: 5px;
   border: 1px solid #b9c0d2;
 }
+html body table.tperson.withdrawl tr td input::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+html body table.tperson.withdrawl tr td input::-moz-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+html body table.tperson.withdrawl tr td input:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+html body table.tperson.withdrawl tr td input::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
 html body table.tperson.withdrawl tr td input::placeholder {
   font-weight: bold;
   font-size: 13px;
@@ -3326,11 +3493,15 @@ html body table.tperson.withdrawl tr td .withbut {
   cursor: default;
 }
 html body table.tperson.withdrawl tr td .withbut.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
   cursor: pointer;
 }
-html body table.tperson.withdrawl tr td .withbut.focus:hover, html body table.tperson.withdrawl tr td .withbut.focus:active {
+html body table.tperson.withdrawl tr td .withbut.focus:hover, html body table.tperson.withdrawl tr td .withbut.focus:active, html body table.tperson.withdrawl tr td .withbut.focus.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
 }
@@ -3395,6 +3566,22 @@ html body table.tperson.transpoint tr td .inputmoney {
   padding-left: 10px;
   margin: 15px 0px;
 }
+html body table.tperson.transpoint tr td .inputmoney::-webkit-input-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+html body table.tperson.transpoint tr td .inputmoney::-moz-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+html body table.tperson.transpoint tr td .inputmoney:-ms-input-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
+html body table.tperson.transpoint tr td .inputmoney::-ms-input-placeholder {
+  color: #c7c7c7;
+  font-weight: bold;
+}
 html body table.tperson.transpoint tr td .inputmoney::placeholder {
   color: #c7c7c7;
   font-weight: bold;
@@ -3417,11 +3604,15 @@ html body table.tperson.transpoint tr td .transbut {
   cursor: default;
 }
 html body table.tperson.transpoint tr td .transbut.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
   cursor: pointer;
 }
-html body table.tperson.transpoint tr td .transbut.focus:hover, html body table.tperson.transpoint tr td .transbut.focus:active {
+html body table.tperson.transpoint tr td .transbut.focus:hover, html body table.tperson.transpoint tr td .transbut.focus:active, html body table.tperson.transpoint tr td .transbut.focus.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
 }
@@ -3630,7 +3821,7 @@ html body table.tperson.deposit tr td .numbox .copy {
   color: #b9c0d2;
   background-color: #ffffff;
 }
-html body table.tperson.deposit tr td .numbox .copy:hover, html body table.tperson.deposit tr td .numbox .copy:active {
+html body table.tperson.deposit tr td .numbox .copy:hover, html body table.tperson.deposit tr td .numbox .copy:active, html body table.tperson.deposit tr td .numbox .copy.active {
   background: #b9c0d2;
   color: #fff;
 }
@@ -3642,6 +3833,26 @@ html body table.tperson.deposit tr td .depositmoney {
   margin: 10px 0px;
   border-radius: 5px;
   border: 1px solid #b9c0d2;
+}
+html body table.tperson.deposit tr td .depositmoney::-webkit-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+html body table.tperson.deposit tr td .depositmoney::-moz-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+html body table.tperson.deposit tr td .depositmoney:-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
+}
+html body table.tperson.deposit tr td .depositmoney::-ms-input-placeholder {
+  font-weight: bold;
+  font-size: 13px;
+  color: #c7c7c7;
 }
 html body table.tperson.deposit tr td .depositmoney::placeholder {
   font-weight: bold;
@@ -3676,11 +3887,15 @@ html body table.tperson.deposit tr td .withbut {
   cursor: default;
 }
 html body table.tperson.deposit tr td .withbut.focus {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
   cursor: pointer;
 }
-html body table.tperson.deposit tr td .withbut.focus:hover, html body table.tperson.deposit tr td .withbut.focus:active {
+html body table.tperson.deposit tr td .withbut.focus:hover, html body table.tperson.deposit tr td .withbut.focus:active, html body table.tperson.deposit tr td .withbut.focus.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3046b7);
   background: linear-gradient(to top, #8e9bdc 0%, #3046b7);
   background-color: #3046b7;
 }
@@ -3813,7 +4028,7 @@ html body table.tperson tr td .tbox .norword button {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body table.tperson tr td .tbox .norword button {
     padding: 3px 10px;
     margin-top: 0px;
@@ -3825,7 +4040,7 @@ html body table.tperson tr td .tbox .norword button {
     margin-top: 0px;
   }
 }
-html body table.tperson tr td .tbox .norword button:hover, html body table.tperson tr td .tbox .norword button:active {
+html body table.tperson tr td .tbox .norword button:hover, html body table.tperson tr td .tbox .norword button:active, html body table.tperson tr td .tbox .norword button.active {
   color: #8892c9;
   background: transparent;
 }
@@ -3850,6 +4065,8 @@ html body table.tperson tr td .tbox .half.lite .rowbut {
   right: 0px;
   top: 18px;
   border-radius: 15px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
   cursor: pointer;
 }
@@ -3867,6 +4084,8 @@ html body table.tperson tr td .tbox .half.lite .rowbut div {
   top: 10%;
   left: 10%;
   border-radius: 30px;
+  -webkit-transition: 0.3s all;
+  -o-transition: 0.3s all;
   transition: 0.3s all;
 }
 html body table.tperson tr td .tbox .half.lite .wallet_ic {
@@ -3944,11 +4163,13 @@ html body table.tperson tr td .tbox .half .charge {
   margin-right: 20px;
   border: solid 1px #d7af8a;
 }
-html body table.tperson tr td .tbox .half .charge:hover, html body table.tperson tr td .tbox .half .charge:active {
+html body table.tperson tr td .tbox .half .charge:hover, html body table.tperson tr td .tbox .half .charge:active, html body table.tperson tr td .tbox .half .charge.active {
   background: transparent;
   color: #d7af8a;
 }
 html body table.tperson tr td .tbox .half .copy {
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5daef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5daef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5daef 100%);
   background-color: #ffffff;
   border-radius: 5px;
@@ -3957,7 +4178,9 @@ html body table.tperson tr td .tbox .half .copy {
   margin: 13px 20px 0px 0px;
   padding: 6px 20px;
 }
-html body table.tperson tr td .tbox .half .copy:hover, html body table.tperson tr td .tbox .half .copy:active {
+html body table.tperson tr td .tbox .half .copy:hover, html body table.tperson tr td .tbox .half .copy:active, html body table.tperson tr td .tbox .half .copy.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5daef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5daef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5daef 100%);
   background-color: #d5daef;
   color: #000;
@@ -4048,7 +4271,7 @@ html body table.tperson tr td .remind a {
 }
 html body table.tsmall {
   float: left;
-  width: 410px;
+  width: 419px;
   margin: 0px 0px 15px 17px;
 }
 html body table.tsmall.un {
@@ -4113,6 +4336,8 @@ html body table.tsmall tr td .tbox .qrcode {
 }
 html body table.tsmall tr td .tbox .appbut {
   border: 1px solid #495cc5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
   background-color: #d5daef;
   width: 80px;
@@ -4121,7 +4346,9 @@ html body table.tsmall tr td .tbox .appbut {
   font-weight: bold;
   padding: 5px 0px;
 }
-html body table.tsmall tr td .tbox .appbut:hover, html body table.tsmall tr td .tbox .appbut:active {
+html body table.tsmall tr td .tbox .appbut:hover, html body table.tsmall tr td .tbox .appbut:active, html body table.tsmall tr td .tbox .appbut.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(bottom, #fff 0%, #d5daef 100%);
   background: linear-gradient(to top, #fff 0%, #d5daef 100%);
   color: #000;
 }
@@ -4145,16 +4372,20 @@ html body table.tsmall tr td .tbox .bowserbut {
   float: right;
   margin: 3px 30px 0px 0px;
   border: 1px solid #495cc5;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(top, #fff 0%, #d5daef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5daef 100%);
   background-color: #d5daef;
 }
-html body table.tsmall tr td .tbox .bowserbut:hover, html body table.tsmall tr td .tbox .bowserbut:active {
+html body table.tsmall tr td .tbox .bowserbut:hover, html body table.tsmall tr td .tbox .bowserbut:active, html body table.tsmall tr td .tbox .bowserbut.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5daef));
+  background: -o-linear-gradient(bottom, #fff 0%, #d5daef 100%);
   background: linear-gradient(to top, #fff 0%, #d5daef 100%);
   color: #000;
 }
 html body table.tdeal {
   display: none;
-  width: 830px;
+  width: 850px;
   margin-left: 17px;
 }
 html body table.tdeal.display {
@@ -4190,9 +4421,11 @@ html body table.tdeal tr td:nth-child(6) {
 }
 html body table.tsportP {
   display: none;
-  width: 830px;
+  width: 850px;
   margin: 0px 0px 20px 17px;
-  transform: translateY(130px);
+  -webkit-transform: translateY(130px);
+      -ms-transform: translateY(130px);
+          transform: translateY(130px);
 }
 html body table.tsportP.display {
   display: table;
@@ -4220,7 +4453,7 @@ html body table.tmes tr td:first-child {
 }
 html body .new, html body .old, html body .result, html body .complex {
   display: none;
-  height: 820px;
+  height: 950px;
 }
 html body .new.display, html body .old.display, html body .result.display, html body .complex.display {
   display: block;
@@ -4255,7 +4488,10 @@ html body .middle .topfix {
   width: 886px;
   height: 50px;
   border-radius: 5px;
-  box-shadow: 0 0 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+          box-shadow: 0 0 6px 1px #bcc2dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   position: fixed;
@@ -4292,7 +4528,7 @@ html body .middle .topfix .turnbut {
     margin: 10px 0px 0px 15px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .topfix .turnbut {
     width: 125px;
     margin: 10px 0px 0px 15px;
@@ -4323,7 +4559,9 @@ html body .middle .topfix .turnbut button.turnright::before {
   border-color: transparent transparent transparent #cda37d;
 }
 html body .middle .topfix .turnbut button:hover:before, html body .middle .topfix .turnbut button:active:after {
-  transform: scale(1.3);
+  -webkit-transform: scale(1.3);
+      -ms-transform: scale(1.3);
+          transform: scale(1.3);
 }
 html body .middle .topfix .turnbut .turn {
   width: 50px;
@@ -4364,7 +4602,9 @@ html body .middle .topfix ul li a {
   border-radius: 5px;
   color: #3145b2;
 }
-html body .middle .topfix ul li a:hover, html body .middle .topfix ul li a:active {
+html body .middle .topfix ul li a:hover, html body .middle .topfix ul li a:active, html body .middle .topfix ul li a.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#354ab9), to(#8b98da));
+  background: -o-linear-gradient(top, #354ab9 0%, #8b98da 100%);
   background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
   background-color: #354ab9;
   color: #fff;
@@ -4384,11 +4624,7 @@ html body .middle .topfix ul.other li {
   color: #4d515d;
   cursor: pointer;
 }
-html body .middle .topfix ul.other li:hover, html body .middle .topfix ul.other li:active {
-  color: #293eb0;
-  border-color: #293eb0;
-}
-html body .middle .topfix ul.other li.active {
+html body .middle .topfix ul.other li:hover, html body .middle .topfix ul.other li:active, html body .middle .topfix ul.other li.active {
   color: #293eb0;
   border-color: #293eb0;
 }
@@ -4413,7 +4649,7 @@ html body .middle .topfix .sort button, html body .middle .topfix .resultsearch 
   /*for IE*/
   /*for IE 9*/
 }
-html body .middle .topfix .sort button:hover, html body .middle .topfix .sort button:active, html body .middle .topfix .resultsearch button:hover, html body .middle .topfix .resultsearch button:active {
+html body .middle .topfix .sort button:hover, html body .middle .topfix .sort button:active, html body .middle .topfix .sort button.active, html body .middle .topfix .resultsearch button:hover, html body .middle .topfix .resultsearch button:active, html body .middle .topfix .resultsearch button.active {
   color: #293eb0;
   border-color: #293eb0;
 }
@@ -4429,7 +4665,9 @@ html body .middle .topfix .sort button.arrow::before, html body .middle .topfix 
   background: url("../images/arrow_b.png");
   right: 5px;
   top: 21px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
   html body .middle .topfix .sort button, html body .middle .topfix .resultsearch button {
@@ -4442,7 +4680,7 @@ html body .middle .topfix .sort button.arrow::before, html body .middle .topfix 
     right: 4px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .topfix .sort button, html body .middle .topfix .resultsearch button {
     padding: 0px 20px 0px 10px;
   }
@@ -4474,7 +4712,7 @@ html body .middle .topfix .sort .timesearch .date, html body .middle .topfix .re
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .topfix .sort .timesearch .date, html body .middle .topfix .resultsearch .timesearch .date {
     padding: 0px;
   }
@@ -4509,7 +4747,7 @@ html body .middle .topfix .sort .timesearch .timesearchbut, html body .middle .t
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .topfix .sort .timesearch .timesearchbut, html body .middle .topfix .resultsearch .timesearch .timesearchbut {
     padding: 5px;
     margin-left: 8px;
@@ -4521,7 +4759,9 @@ html body .middle .topfix .sort .timesearch .timesearchbut, html body .middle .t
     margin-left: 8px;
   }
 }
-html body .middle .topfix .sort .timesearch .timesearchbut:hover, html body .middle .topfix .sort .timesearch .timesearchbut:active, html body .middle .topfix .resultsearch .timesearch .timesearchbut:hover, html body .middle .topfix .resultsearch .timesearch .timesearchbut:active {
+html body .middle .topfix .sort .timesearch .timesearchbut:hover, html body .middle .topfix .sort .timesearch .timesearchbut:active, html body .middle .topfix .sort .timesearch .timesearchbut.active, html body .middle .topfix .resultsearch .timesearch .timesearchbut:hover, html body .middle .topfix .resultsearch .timesearch .timesearchbut:active, html body .middle .topfix .resultsearch .timesearch .timesearchbut.active {
+  background: -webkit-gradient(linear, right top, left top, from(#8e9bdc), to(#2e44b6));
+  background: -o-linear-gradient(right, #8e9bdc 0%, #2e44b6 100%);
   background: linear-gradient(to left, #8e9bdc 0%, #2e44b6 100%);
   background-color: #2e44b6;
   color: #fff;
@@ -4531,7 +4771,10 @@ html body .middle .innertopfix {
   width: 885px;
   height: 50px;
   border-radius: 5px;
-  box-shadow: 0 0 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+          box-shadow: 0 0 6px 1px #bcc2dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #e4e7f6;
   position: fixed;
@@ -4547,6 +4790,8 @@ html body .middle .innertopfix .back {
   float: left;
   margin: 14px 0px 0px 15px;
   padding-left: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   border-radius: 5px;
@@ -4555,7 +4800,9 @@ html body .middle .innertopfix .back {
   line-height: 20px;
   position: relative;
 }
-html body .middle .innertopfix .back:hover, html body .middle .innertopfix .back:active {
+html body .middle .innertopfix .back:hover, html body .middle .innertopfix .back:active, html body .middle .innertopfix .back.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
 }
 html body .middle .innertopfix .back::before {
@@ -4584,11 +4831,7 @@ html body .middle .innertopfix ul li {
   color: #4d515d;
   font-size: 15px;
 }
-html body .middle .innertopfix ul li:hover, html body .middle .innertopfix ul li:active {
-  border-color: #6272cc;
-  color: #6272cc;
-}
-html body .middle .innertopfix ul li.active {
+html body .middle .innertopfix ul li:hover, html body .middle .innertopfix ul li:active, html body .middle .innertopfix ul li.active {
   border-color: #6272cc;
   color: #6272cc;
 }
@@ -4599,8 +4842,11 @@ html body .middle .newold {
   z-index: 6;
   border-radius: 0px 0px 5px 5px;
   overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
-  box-shadow: 0 0 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+          box-shadow: 0 0 6px 1px #bcc2dc;
 }
 html body .middle .newold.open {
   height: 95px;
@@ -4611,6 +4857,8 @@ html body .middle .newold li {
   padding: 20px 20px 15px 20px;
   font-size: 15px;
   color: #4d515d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   cursor: pointer;
@@ -4632,8 +4880,11 @@ html body .middle .timesort {
   z-index: 6;
   border-radius: 0px 0px 5px 5px;
   overflow: hidden;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
-  box-shadow: 0 0 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+          box-shadow: 0 0 6px 1px #bcc2dc;
 }
 html body .middle .timesort.open {
   height: 95px;
@@ -4647,6 +4898,8 @@ html body .middle .timesort li {
   padding: 20px 20px 15px 20px;
   font-size: 15px;
   color: #4d515d;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   cursor: pointer;
@@ -4687,7 +4940,9 @@ html body .middle .title::before {
   height: 15px;
   background: url("../images/statust.png");
   top: 0px;
-  transform: translateX(-20px);
+  -webkit-transform: translateX(-20px);
+      -ms-transform: translateX(-20px);
+          transform: translateX(-20px);
   /*for IE*/
   /*for IE 9*/
 }
@@ -4696,7 +4951,7 @@ html body .middle .title::before {
     left: 380px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .title::before {
     left: 380px;
   }
@@ -4724,11 +4979,15 @@ html body .middle .bettingbar {
   position: fixed;
   margin: 0px 0px 0px 250px;
   bottom: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
+  background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
   background-color: #850004;
   border-radius: 15px 15px 0px 0px;
   z-index: 10;
   cursor: pointer;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 html body .middle .bettingbar::before {
@@ -4739,7 +4998,9 @@ html body .middle .bettingbar::before {
   background: url("../images/arrow_w.png");
   right: 40px;
   top: 20px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
   pointer-events: none;
 }
 html body .middle .bettingbar.display {
@@ -4749,7 +5010,9 @@ html body .middle .bettingbar.open {
   bottom: 502px;
 }
 html body .middle .bettingbar.open::before {
-  transform: rotate(270deg);
+  -webkit-transform: rotate(270deg);
+      -ms-transform: rotate(270deg);
+          transform: rotate(270deg);
 }
 html body .middle .bettingbar .barnum {
   display: block;
@@ -4766,7 +5029,7 @@ html body .middle .bettingbar .barnum {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .bettingbar .barnum {
     line-height: 24px;
   }
@@ -4802,6 +5065,8 @@ html body .middle .bettingbar .bettingbox {
   border-top-width: 0px;
   overflow: hidden;
   cursor: default;
+  -webkit-transition: 0.5s all;
+  -o-transition: 0.5s all;
   transition: 0.5s all;
 }
 html body .middle .bettingbar .bettingbox .bettingwindow {
@@ -4829,7 +5094,8 @@ html body .middle .bettingbar .bettingbox .bettingwindow table {
 html body .middle .bettingbar .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 html body .middle .bettingbar .bettingbox .bettingtotal div {
@@ -4871,6 +5137,26 @@ html body .middle .bettingbar .bettingbox .bettingend .endbox input {
   font-size: 16px;
   padding-left: 5px;
 }
+html body .middle .bettingbar .bettingbox .bettingend .endbox input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .middle .bettingbar .bettingbox .bettingend .endbox input::-moz-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .middle .bettingbar .bettingbox .bettingend .endbox input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .middle .bettingbar .bettingbox .bettingend .endbox input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
 html body .middle .bettingbar .bettingbox .bettingend .endbox input::placeholder {
   font-weight: bold;
   color: #c7c7c7;
@@ -4903,13 +5189,19 @@ html body .middle .bettingbar .bettingbox .bettingend .endbox button {
   color: #4d515d;
   font-weight: bold;
   line-height: 35px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#efd5d5), to(#fff));
+  background: -o-linear-gradient(bottom, #efd5d5 0%, #fff 100%);
   background: linear-gradient(to top, #efd5d5 0%, #fff 100%);
   background-color: #efd5d5;
 }
 html body .middle .bettingbar .bettingbox .bettingend .endbox button:hover {
+  background: -webkit-gradient(linear, left top, left bottom, from(#efd5d5), to(#fff));
+  background: -o-linear-gradient(top, #efd5d5 0%, #fff 100%);
   background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
 }
-html body .middle .bettingbar .bettingbox .bettingend .endbox button:active {
+html body .middle .bettingbar .bettingbox .bettingend .endbox button:active, html body .middle .bettingbar .bettingbox .bettingend .endbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
+  background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
   background: linear-gradient(to top, #ec0004 0%, #850004 100%);
   background-color: #850004;
   color: #fff;
@@ -4917,10 +5209,14 @@ html body .middle .bettingbar .bettingbox .bettingend .endbox button:active {
 html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur {
   width: 176px;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ec0004), to(#850004));
+  background: -o-linear-gradient(top, #ec0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
   background-color: #850004;
 }
-html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur:hover {
+html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur:hover, html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur:active, html body .middle .bettingbar .bettingbox .bettingend .endbox button.cur.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ec0004), to(#850004));
+  background: -o-linear-gradient(bottom, #ec0004 0%, #850004 100%);
   background: linear-gradient(to top, #ec0004 0%, #850004 100%);
 }
 html body .middle .bettingbar .bettingbox.open {
@@ -4934,6 +5230,8 @@ html body .middle .bettingch {
   z-index: 20;
   left: 35%;
   top: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#eb0004), to(#850004));
+  background: -o-linear-gradient(top, #eb0004 0%, #850004 100%);
   background: linear-gradient(to bottom, #eb0004 0%, #850004 100%);
   background-color: #850004;
   border-radius: 15px 15px 0px 0px;
@@ -4953,7 +5251,7 @@ html body .middle .bettingch .barnum {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .bettingch .barnum {
     line-height: 24px;
   }
@@ -4984,7 +5282,9 @@ html body .middle .bettingch .chbut::before {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .middle .bettingch .chbut::after {
   content: "";
@@ -4994,7 +5294,9 @@ html body .middle .bettingch .chbut::after {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .middle .bettingch .bettingbox {
   width: 576px;
@@ -5032,7 +5334,8 @@ html body .middle .bettingch .bettingbox .bettingwindow table {
 html body .middle .bettingch .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 html body .middle .bettingch .bettingbox .bettingtotal div {
@@ -5088,7 +5391,9 @@ html body .middle .bettingch .bettingbox .bettingend .endbox p::after {
   height: 8px;
   border: solid 3px #fff;
   border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 30px;
   left: -18px;
 }
@@ -5107,11 +5412,14 @@ html body .middle .chleague {
   margin: 55px 0px 0px 8px;
   padding: 20px 0px;
   overflow: hidden;
-  box-shadow: 0 0 10px 4px #9ea6c5;
+  -webkit-box-shadow: 0 0 10px 4px #9ea6c5;
+          box-shadow: 0 0 10px 4px #9ea6c5;
   border-radius: 0px 0px 5px 5px;
   overflow-y: auto;
   position: fixed;
   z-index: 6;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   scrollbar-width: thin;
@@ -5139,7 +5447,7 @@ html body .middle .chleague ul li {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .middle .chleague ul li:nth-last-of-type(1) {
     margin-bottom: 20px;
   }
@@ -5155,6 +5463,25 @@ html body .middle .chleague ul li:nth-of-type(1) {
 html body .middle .chleague span.cube {
   left: 17px;
   top: 8px;
+}
+html body .middle .chleague button {
+  width: 160px;
+  height: 36px;
+  background-color: #d5d9ef;
+  border: 1px solid #495cc5;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  color: #fff;
+  margin-top: 15px;
+}
+html body .middle .chleague button:hover, html body .middle .chleague button:active, html body .middle .chleague button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .middle .chleague.display {
   display: block;
@@ -5172,7 +5499,10 @@ html body .middle .chballs {
   overflow: hidden;
   overflow-y: auto;
   border-radius: 0px 0px 5px 5px;
-  box-shadow: 0 0 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0 0 6px 1px #bcc2dc;
+          box-shadow: 0 0 6px 1px #bcc2dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   scrollbar-width: thin;
@@ -5204,9 +5534,28 @@ html body .middle .chballs span.cube {
   left: 17px;
   top: 8px;
 }
+html body .middle .chballs button {
+  width: 160px;
+  height: 36px;
+  background-color: #d5d9ef;
+  border: 1px solid #495cc5;
+  border-radius: 5px;
+  font-size: 16px;
+  font-weight: bold;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+  color: #fff;
+  margin-top: 15px;
+}
+html body .middle .chballs button:hover, html body .middle .chballs button:active, html body .middle .chballs button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
+  background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+}
 html body .middle .chballs.display {
   display: block;
-  height: 110px;
+  height: 170px;
 }
 html body .middle .teach {
   display: none;
@@ -5224,16 +5573,22 @@ html body .middle .teach button {
   color: white;
   float: left;
   margin: 0px 5px 20px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b6885f));
+  background: -o-linear-gradient(top, #dfb995, #b6885f);
   background: linear-gradient(to bottom, #dfb995, #b6885f);
   background: #b6885f;
   border: 1px solid #b78960;
   font-size: 15px;
 }
 html body .middle .teach button:hover, html body .middle .teach button:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#444f8b), to(#6a75b2));
+  background: -o-linear-gradient(top, #444f8b, #6a75b2);
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   border: 1px solid #444f8b;
 }
 html body .middle .teach button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#444f8b), to(#6a75b2));
+  background: -o-linear-gradient(top, #444f8b, #6a75b2);
   background: linear-gradient(to bottom, #444f8b, #6a75b2);
   background-color: #6a75b2;
   border: 1px solid #444f8b;
@@ -5347,13 +5702,19 @@ html body .middle .inner .topimg .topword button::before, html body .middle .inn
   position: absolute;
   width: 20px;
   height: 60px;
+  background: -webkit-gradient(linear, left top, right top, from(transparent), color-stop(#fff), to(transparent));
+  background: -o-linear-gradient(left, transparent, #fff, transparent);
   background: linear-gradient(to right, transparent, #fff, transparent);
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
   top: -15px;
   left: -40px;
 }
-html body .middle .inner .topimg .topword button:hover:before, html body .middle .inner .topimg .toplink button:hover:before {
+html body .middle .inner .topimg .topword button:hover, html body .middle .inner .topimg .topword button:active, html body .middle .inner .topimg .topword button.active:before, html body .middle .inner .topimg .toplink button:hover, html body .middle .inner .topimg .toplink button:active, html body .middle .inner .topimg .toplink button.active:before {
   left: 50px;
+  -webkit-transition: 0.3s left;
+  -o-transition: 0.3s left;
   transition: 0.3s left;
 }
 html body .middle .inner .topimg .topteam {
@@ -5438,7 +5799,11 @@ html body .norbetting {
   position: fixed;
   left: 50%;
   top: 10%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   border-radius: 15px 15px 0px 0px;
@@ -5468,7 +5833,9 @@ html body .norbetting .norcancelbtn::before {
   height: 20px;
   top: 0px;
   left: 10px;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   background: #fff;
 }
 html body .norbetting .norcancelbtn::after {
@@ -5478,12 +5845,14 @@ html body .norbetting .norcancelbtn::after {
   height: 20px;
   top: 0px;
   right: 9px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   background: #fff;
 }
 html body .norbetting .nor_bettingbox {
   width: 576px;
-  height: 295px;
+  height: auto;
   background: #fff;
   border: solid 2px #384dbb;
   border-radius: 0px 0px 15px 15px;
@@ -5492,7 +5861,7 @@ html body .norbetting .nor_bettingbox {
 }
 html body .norbetting .nor_bettingbox .bettingwindow {
   width: 100%;
-  height: 95px;
+  height: auto;
   overflow: hidden;
 }
 html body .norbetting .nor_bettingbox .bettingwindow table {
@@ -5501,7 +5870,8 @@ html body .norbetting .nor_bettingbox .bettingwindow table {
 html body .norbetting .nor_bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 html body .norbetting .nor_bettingbox .bettingtotal div {
@@ -5538,6 +5908,26 @@ html body .norbetting .nor_bettingbox .bettingend .endbox input {
   font-size: 16px;
   padding-left: 5px;
 }
+html body .norbetting .nor_bettingbox .bettingend .endbox input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox input::-moz-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
+html body .norbetting .nor_bettingbox .bettingend .endbox input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 15px;
+}
 html body .norbetting .nor_bettingbox .bettingend .endbox input::placeholder {
   font-weight: bold;
   color: #c7c7c7;
@@ -5570,13 +5960,19 @@ html body .norbetting .nor_bettingbox .bettingend .endbox button {
   color: #4d515d;
   font-weight: bold;
   line-height: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #fff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #fff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
 }
 html body .norbetting .nor_bettingbox .bettingend .endbox button:hover {
+  background: -webkit-gradient(linear, left bottom, left top, from(#fff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #fff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
 }
-html body .norbetting .nor_bettingbox .bettingend .endbox button:active {
+html body .norbetting .nor_bettingbox .bettingend .endbox button:active, html body .norbetting .nor_bettingbox .bettingend .endbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2e44b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
   background-color: #2e44b7;
   color: #fff;
@@ -5584,10 +5980,14 @@ html body .norbetting .nor_bettingbox .bettingend .endbox button:active {
 html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur {
   width: 176px;
   color: #fff;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2e44b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
   background-color: #2e44b7;
 }
-html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur:hover {
+html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur:hover, html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur:active, html body .norbetting .nor_bettingbox .bettingend .endbox button.nor_cur.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2e44b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2e44b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
 }
 html body .norbettingch {
@@ -5598,6 +5998,8 @@ html body .norbettingch {
   z-index: 20;
   left: 35%;
   top: 150px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   border-radius: 15px 15px 0px 0px;
@@ -5623,7 +6025,9 @@ html body .norbettingch .nor_chbut::before {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .norbettingch .nor_chbut::after {
   content: "";
@@ -5633,7 +6037,9 @@ html body .norbettingch .nor_chbut::after {
   background: #fff;
   top: 0px;
   left: 11px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .norbettingch .bettingbox {
   width: 576px;
@@ -5656,7 +6062,8 @@ html body .norbettingch .bettingbox .bettingwindow table {
 html body .norbettingch .bettingbox .bettingtotal {
   width: 100%;
   height: 45px;
-  box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+  -webkit-box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
+          box-shadow: inset 0px 3px 3px 0px #cacee1, inset 0px -1px 4px 0px #cacee1;
   background: #e2e4ed;
 }
 html body .norbettingch .bettingbox .bettingtotal div {
@@ -5712,7 +6119,9 @@ html body .norbettingch .bettingbox .bettingend .endbox p::after {
   height: 8px;
   border: solid 3px #fff;
   border-width: 0px 2px 2px 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 18px;
   left: -18px;
 }
@@ -5731,7 +6140,9 @@ html body .calculator {
   position: fixed;
   left: 50%;
   top: 10%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   z-index: 20;
 }
 html body .calculator.display {
@@ -5741,6 +6152,8 @@ html body .calculator .calbar {
   width: 100%;
   height: 40px;
   border-radius: 15px 15px 0px 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   position: relative;
@@ -5765,7 +6178,9 @@ html body .calculator .calbar button::before {
   width: 2px;
   height: 25px;
   background: #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   top: 3px;
   right: 14px;
 }
@@ -5775,7 +6190,9 @@ html body .calculator .calbar button::after {
   width: 2px;
   height: 25px;
   background: #fff;
-  transform: rotate(-45deg);
+  -webkit-transform: rotate(-45deg);
+      -ms-transform: rotate(-45deg);
+          transform: rotate(-45deg);
   top: 3px;
   left: 14px;
 }
@@ -5823,7 +6240,8 @@ html body .calculator .calbox .mid {
 }
 html body .calculator .calbox .mid table {
   width: 100%;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
   margin: 0px;
   border-radius: 0px;
 }
@@ -5859,7 +6277,7 @@ html body .calculator .calbox .mid table tr td .selectbox {
     display: none;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .calculator .calbox .mid table tr td .selectbox::before {
     display: none;
   }
@@ -5904,7 +6322,7 @@ html body .calculator .calbox .mid table tr td .selectbox select {
     width: 60px;
   }
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .calculator .calbox .mid table tr td .selectbox select {
     width: 60px;
   }
@@ -5953,6 +6371,8 @@ html body .calculator .calbox .bottom .inputbox input {
 html body .calculator .calbox .bottom .inputbox button {
   width: 260px;
   height: 40px;
+  background: -webkit-gradient(linear, right top, left top, from(#9ca8e4), to(#495cc5));
+  background: -o-linear-gradient(right, #9ca8e4, #495cc5);
   background: linear-gradient(to left, #9ca8e4, #495cc5);
   background-color: #495cc5;
   border-radius: 3px;
@@ -6000,7 +6420,10 @@ html body .fixside .search {
   position: absolute;
   top: 0px;
   left: 0px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-transition: 0.5s left;
+  -o-transition: 0.5s left;
   transition: 0.5s left;
 }
 html body .fixside .search.open {
@@ -6014,24 +6437,16 @@ html body .fixside .search .searchbut {
   float: left;
   text-align: center;
 }
-html body .fixside .search .searchbut:hover, html body .fixside .search .searchbut:active {
+html body .fixside .search .searchbut:hover, html body .fixside .search .searchbut:active, html body .fixside .search .searchbut.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
-html body .fixside .search .searchbut:hover span, html body .fixside .search .searchbut:active span {
+html body .fixside .search .searchbut:hover span, html body .fixside .search .searchbut:active span, html body .fixside .search .searchbut.active span {
   color: #fff;
 }
-html body .fixside .search .searchbut:hover .fixsideimg, html body .fixside .search .searchbut:active .fixsideimg {
-  background-position-y: -30px;
-}
-html body .fixside .search .searchbut.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-  background-color: #1a2b84;
-}
-html body .fixside .search .searchbut.active span {
-  color: #fff;
-}
-html body .fixside .search .searchbut.active .fixsideimg {
+html body .fixside .search .searchbut:hover .fixsideimg, html body .fixside .search .searchbut:active .fixsideimg, html body .fixside .search .searchbut.active .fixsideimg {
   background-position-y: -30px;
 }
 html body .fixside .search .searchbut span {
@@ -6050,11 +6465,32 @@ html body .fixside .search input {
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  box-shadow: inset 0 0 2px 2px #c6cae0;
+  -webkit-box-shadow: inset 0 0 2px 2px #c6cae0;
+          box-shadow: inset 0 0 2px 2px #c6cae0;
   border: none;
   border-radius: 15px;
   float: left;
   margin: 15px 0px 0px 10px;
+}
+html body .fixside .search input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+html body .fixside .search input::-moz-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+html body .fixside .search input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+html body .fixside .search input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
 }
 html body .fixside .search input::placeholder {
   font-weight: bold;
@@ -6064,6 +6500,8 @@ html body .fixside .search input::placeholder {
 html body .fixside .search button {
   width: 50px;
   height: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   color: #fff;
@@ -6072,7 +6510,9 @@ html body .fixside .search button {
   font-size: 16px;
   margin: 16px 0px 16px 15px;
 }
-html body .fixside .search button:hover, html body .fixside .search button:active {
+html body .fixside .search button:hover, html body .fixside .search button:active, html body .fixside .search button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
 }
 html body .fixside .search .searchbox {
@@ -6082,7 +6522,8 @@ html body .fixside .search .searchbox {
   margin-left: 64px;
   overflow: hidden;
   border-radius: 0px 0px 0px 12px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
 }
 html body .fixside .search .searchbox li {
   width: 100%;
@@ -6091,11 +6532,15 @@ html body .fixside .search .searchbox li {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
+  background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
   background-color: #e2e6f5;
   cursor: pointer;
 }
 html body .fixside .search .searchbox li:hover, html body .fixside .search .searchbox li:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+  background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
 }
 html body .fixside .search .searchbox li::before {
@@ -6108,13 +6553,19 @@ html body .fixside .search .searchbox li::before {
   top: 21px;
 }
 html body .fixside .search .searchbox li:hover:before, html body .fixside .search .searchbox li:active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .fixside .search .searchbox li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+  background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
 }
 html body .fixside .search .searchbox li.active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .fixside .search .searchbox div {
   background: #fff;
@@ -6137,7 +6588,7 @@ html body .fixside .search .searchbox div a {
 html body .fixside .search .searchbox div a:last-child {
   border: none;
 }
-html body .fixside .search .searchbox div a:hover {
+html body .fixside .search .searchbox div a:hover, html body .fixside .search .searchbox div a:active, html body .fixside .search .searchbox div a.active {
   text-decoration: underline;
 }
 html body .fixside .search .searchbox div a .team {
@@ -6165,7 +6616,8 @@ html body .fixside .fun {
   margin-top: 100px;
   border-radius: 12px 0px 0px 12px;
   overflow: hidden;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
 }
 html body .fixside .fun a {
   display: block;
@@ -6178,23 +6630,16 @@ html body .fixside .fun a {
 html body .fixside .fun a:last-child {
   height: 75px;
 }
-html body .fixside .fun a:hover, html body .fixside .fun a:active {
+html body .fixside .fun a:hover, html body .fixside .fun a:active, html body .fixside .fun a.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
-html body .fixside .fun a:hover span, html body .fixside .fun a:active span {
+html body .fixside .fun a:hover span, html body .fixside .fun a:active span, html body .fixside .fun a.active span {
   color: #fff;
 }
-html body .fixside .fun a:hover .fixsideimg, html body .fixside .fun a:active .fixsideimg {
-  background-position-y: -30px;
-}
-html body .fixside .fun a.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-}
-html body .fixside .fun a.active span {
-  color: #fff;
-}
-html body .fixside .fun a.active .fixsideimg {
+html body .fixside .fun a:hover .fixsideimg, html body .fixside .fun a:active .fixsideimg, html body .fixside .fun a.active .fixsideimg {
   background-position-y: -30px;
 }
 html body .fixside .fun a span {
@@ -6246,11 +6691,14 @@ html body .fixside_rwd .search {
   position: absolute;
   top: 0px;
   left: 64px;
+  -webkit-transition: 0.3s left;
+  -o-transition: 0.3s left;
   transition: 0.3s left;
 }
 html body .fixside_rwd .search.open {
   left: -240px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
   border-radius: 12px 0px 0px 12px;
 }
 html body .fixside_rwd .search.open .searchbut {
@@ -6261,23 +6709,15 @@ html body .fixside_rwd .search.open .searchbut {
   float: left;
   text-align: center;
 }
-html body .fixside_rwd .search.open .searchbut:hover, html body .fixside_rwd .search.open .searchbut:active {
+html body .fixside_rwd .search.open .searchbut:hover, html body .fixside_rwd .search.open .searchbut:active, html body .fixside_rwd .search.open .searchbut.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
 }
-html body .fixside_rwd .search.open .searchbut:hover span, html body .fixside_rwd .search.open .searchbut:active span {
+html body .fixside_rwd .search.open .searchbut:hover span, html body .fixside_rwd .search.open .searchbut:active span, html body .fixside_rwd .search.open .searchbut.active span {
   color: #fff;
 }
-html body .fixside_rwd .search.open .searchbut:hover .fixsideimg, html body .fixside_rwd .search.open .searchbut:active .fixsideimg {
-  background-position-y: -30px;
-}
-html body .fixside_rwd .search.open .searchbut.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-  background-color: #1a2b84;
-}
-html body .fixside_rwd .search.open .searchbut.active span {
-  color: #fff;
-}
-html body .fixside_rwd .search.open .searchbut.active .fixsideimg {
+html body .fixside_rwd .search.open .searchbut:hover .fixsideimg, html body .fixside_rwd .search.open .searchbut:active .fixsideimg, html body .fixside_rwd .search.open .searchbut.active .fixsideimg {
   background-position-y: -30px;
 }
 html body .fixside_rwd .search.open .searchbut span {
@@ -6298,18 +6738,21 @@ html body .fixside_rwd .search .searchbut {
   cursor: pointer;
   background: #eaedf4;
   border-radius: 6px 0px 0px 6px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
   position: absolute;
   left: -35px;
 }
-html body .fixside_rwd .search .searchbut:hover, html body .fixside_rwd .search .searchbut:active {
+html body .fixside_rwd .search .searchbut:hover, html body .fixside_rwd .search .searchbut:active, html body .fixside_rwd .search .searchbut.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
-html body .fixside_rwd .search .searchbut:hover span, html body .fixside_rwd .search .searchbut:active span {
+html body .fixside_rwd .search .searchbut:hover span, html body .fixside_rwd .search .searchbut:active span, html body .fixside_rwd .search .searchbut.active span {
   color: #fff;
 }
-html body .fixside_rwd .search .searchbut:hover .fixsideimg, html body .fixside_rwd .search .searchbut:active .fixsideimg {
+html body .fixside_rwd .search .searchbut:hover .fixsideimg, html body .fixside_rwd .search .searchbut:active .fixsideimg, html body .fixside_rwd .search .searchbut.active .fixsideimg {
   background-position-y: -24px;
 }
 html body .fixside_rwd .search .searchbut span {
@@ -6327,7 +6770,8 @@ html body .fixside_rwd .search input {
   height: 30px;
   font-size: 16px;
   padding-left: 10px;
-  box-shadow: inset 0 0 2px 2px #c6cae0;
+  -webkit-box-shadow: inset 0 0 2px 2px #c6cae0;
+          box-shadow: inset 0 0 2px 2px #c6cae0;
   border: none;
   border-radius: 15px;
   float: left;
@@ -6335,7 +6779,7 @@ html body .fixside_rwd .search input {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .fixside_rwd .search input {
     margin: 15px 0px 0px 60px;
   }
@@ -6345,6 +6789,26 @@ html body .fixside_rwd .search input {
     margin: 15px 0px 0px 60px;
   }
 }
+html body .fixside_rwd .search input::-webkit-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+html body .fixside_rwd .search input::-moz-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+html body .fixside_rwd .search input:-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
+html body .fixside_rwd .search input::-ms-input-placeholder {
+  font-weight: bold;
+  color: #c7c7c7;
+  font-size: 14px;
+}
 html body .fixside_rwd .search input::placeholder {
   font-weight: bold;
   color: #c7c7c7;
@@ -6353,6 +6817,8 @@ html body .fixside_rwd .search input::placeholder {
 html body .fixside_rwd .search button {
   width: 50px;
   height: 28px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #2f45b7 100%);
   background-color: #2f45b7;
   color: #fff;
@@ -6361,7 +6827,9 @@ html body .fixside_rwd .search button {
   font-size: 16px;
   margin: 16px 0px 16px 15px;
 }
-html body .fixside_rwd .search button:hover, html body .fixside_rwd .search button:active {
+html body .fixside_rwd .search button:hover, html body .fixside_rwd .search button:active, html body .fixside_rwd .search button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8f9cdc), to(#2f45b7));
+  background: -o-linear-gradient(bottom, #8f9cdc 0%, #2f45b7 100%);
   background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
 }
 html body .fixside_rwd .search .searchbox {
@@ -6371,13 +6839,14 @@ html body .fixside_rwd .search .searchbox {
   margin-left: 64px;
   overflow: hidden;
   border-radius: 0px 0px 0px 12px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
   position: relative;
   z-index: 6;
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .fixside_rwd .search .searchbox {
     width: 275px;
     margin: 5px 0px 0px 30px;
@@ -6396,11 +6865,15 @@ html body .fixside_rwd .search .searchbox li {
   padding-left: 20px;
   position: relative;
   font-size: 14px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#e2e6f5));
+  background: -o-linear-gradient(top, #fafbff 0%, #e2e6f5 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #e2e6f5 100%);
   background: #e2e6f5;
   cursor: pointer;
 }
 html body .fixside_rwd .search .searchbox li:hover, html body .fixside_rwd .search .searchbox li:active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+  background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
 }
 html body .fixside_rwd .search .searchbox li::before {
@@ -6413,13 +6886,19 @@ html body .fixside_rwd .search .searchbox li::before {
   top: 21px;
 }
 html body .fixside_rwd .search .searchbox li:hover:before, html body .fixside_rwd .search .searchbox li:active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .fixside_rwd .search .searchbox li.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), to(#abe6ec));
+  background: -o-linear-gradient(top, #fafbff 0%, #abe6ec 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #abe6ec 100%);
 }
 html body .fixside_rwd .search .searchbox li.active::before {
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .fixside_rwd .search .searchbox div {
   background: #fff;
@@ -6442,7 +6921,7 @@ html body .fixside_rwd .search .searchbox div a {
 html body .fixside_rwd .search .searchbox div a:last-child {
   border: none;
 }
-html body .fixside_rwd .search .searchbox div a:hover {
+html body .fixside_rwd .search .searchbox div a:hover, html body .fixside_rwd .search .searchbox div a:active, html body .fixside_rwd .search .searchbox div a.active {
   text-decoration: underline;
 }
 html body .fixside_rwd .search .searchbox div a .team {
@@ -6471,14 +6950,18 @@ html body .fixside_rwd .fun {
   border-radius: 12px 0px 0px 12px;
   position: relative;
   left: 64px;
+  -webkit-transition: all 0.3s;
+  -o-transition: all 0.3s;
   transition: all 0.3s;
 }
 html body .fixside_rwd .fun.open {
   left: 0px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
 }
 html body .fixside_rwd .fun.open .rwd_hambut {
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 html body .fixside_rwd .fun .rwd_hambut {
   width: 35px;
@@ -6487,15 +6970,18 @@ html body .fixside_rwd .fun .rwd_hambut {
   top: 0px;
   left: -35px;
   border-radius: 6px 0px 0px 6px;
-  box-shadow: 0 0 5px 1px #b6bcdd;
+  -webkit-box-shadow: 0 0 5px 1px #b6bcdd;
+          box-shadow: 0 0 5px 1px #b6bcdd;
   background: #eaedf4;
   padding: 0px;
 }
-html body .fixside_rwd .fun .rwd_hambut:hover, html body .fixside_rwd .fun .rwd_hambut:active {
+html body .fixside_rwd .fun .rwd_hambut:hover, html body .fixside_rwd .fun .rwd_hambut:active, html body .fixside_rwd .fun .rwd_hambut.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
-html body .fixside_rwd .fun .rwd_hambut:hover span, html body .fixside_rwd .fun .rwd_hambut:active span {
+html body .fixside_rwd .fun .rwd_hambut:hover span, html body .fixside_rwd .fun .rwd_hambut:active span, html body .fixside_rwd .fun .rwd_hambut.active span {
   background: #fff;
 }
 html body .fixside_rwd .fun .rwd_hambut span {
@@ -6524,23 +7010,16 @@ html body .fixside_rwd .fun a:last-child {
   height: 75px;
   border-radius: 0px 0px 0px 12px;
 }
-html body .fixside_rwd .fun a:hover, html body .fixside_rwd .fun a:active {
+html body .fixside_rwd .fun a:hover, html body .fixside_rwd .fun a:active, html body .fixside_rwd .fun a.active {
+  background: -webkit-gradient(linear, left top, right top, from(#7f8cd1), to(#1a2b84));
+  background: -o-linear-gradient(left, #7f8cd1 0%, #1a2b84 100%);
   background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
   background-color: #1a2b84;
 }
-html body .fixside_rwd .fun a:hover span, html body .fixside_rwd .fun a:active span {
+html body .fixside_rwd .fun a:hover span, html body .fixside_rwd .fun a:active span, html body .fixside_rwd .fun a.active span {
   color: #fff;
 }
-html body .fixside_rwd .fun a:hover .fixsideimg, html body .fixside_rwd .fun a:active .fixsideimg {
-  background-position-y: -30px;
-}
-html body .fixside_rwd .fun a.active {
-  background: linear-gradient(to right, #7f8cd1 0%, #1a2b84 100%);
-}
-html body .fixside_rwd .fun a.active span {
-  color: #fff;
-}
-html body .fixside_rwd .fun a.active .fixsideimg {
+html body .fixside_rwd .fun a:hover .fixsideimg, html body .fixside_rwd .fun a:active .fixsideimg, html body .fixside_rwd .fun a.active .fixsideimg {
   background-position-y: -30px;
 }
 html body .fixside_rwd .fun a span {
@@ -6609,12 +7088,15 @@ html body .discount::-webkit-scrollbar-thumb {
 html body .discount .window {
   width: 93%;
   height: 180px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
+  background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
   margin: 15px 0px 0px 5%;
   border-radius: 20px;
   border: 1px solid #8581b4;
-  box-shadow: 0 0 4px 2px #bac0db;
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+          box-shadow: 0 0 4px 2px #bac0db;
   position: relative;
 }
 html body .discount .window p {
@@ -6646,7 +7128,9 @@ html body .discount .window p span {
   background: url("../images/discountleft_ic.png");
   background-size: 500%;
   background-position-y: -20px;
-  transform: translateY(4px);
+  -webkit-transform: translateY(4px);
+      -ms-transform: translateY(4px);
+          transform: translateY(4px);
 }
 html body .discount .window p span.limit {
   background-position-x: -20px;
@@ -6702,6 +7186,8 @@ html body .discount .window div.disimg3 {
   background: url("../images/disimg_3.png") no-repeat;
 }
 html body .discount .window button {
+  background: -webkit-gradient(linear, left top, left bottom, from(#8e9bdc), to(#3349b8));
+  background: -o-linear-gradient(top, #8e9bdc 0%, #3349b8 100%);
   background: linear-gradient(to bottom, #8e9bdc 0%, #3349b8 100%);
   background: #3349b8;
   border: solid 1px #1e2f8e;
@@ -6715,17 +7201,24 @@ html body .discount .window button {
   border-radius: 5px;
 }
 html body .discount .window button:hover, html body .discount .window button:active, html body .discount .window button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8e9bdc), to(#3349b8));
+  background: -o-linear-gradient(bottom, #8e9bdc 0%, #3349b8 100%);
   background: linear-gradient(to top, #8e9bdc 0%, #3349b8 100%);
 }
 html body .discount .activebox {
   width: 93%;
   height: 0px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fefeff), color-stop(80%, #eff1fb), to(#cfd3e9));
+  background: -o-linear-gradient(top, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background: linear-gradient(to bottom, #fefeff 0%, #eff1fb 80%, #cfd3e9 100%);
   background-color: #fafbff;
   margin: 0px 0px 0px 5%;
   border-radius: 0px 0px 20px 20px;
-  box-shadow: 0 0 4px 2px #bac0db;
-  transform: translateY(-20px);
+  -webkit-box-shadow: 0 0 4px 2px #bac0db;
+          box-shadow: 0 0 4px 2px #bac0db;
+  -webkit-transform: translateY(-20px);
+      -ms-transform: translateY(-20px);
+          transform: translateY(-20px);
   position: relative;
   z-index: -1;
   overflow: hidden;
@@ -6773,7 +7266,7 @@ html body .myself.forrecord {
   padding-top: 170px;
 }
 html body .myself .minetopfix {
-  width: 830px;
+  width: 850px;
   height: 125px;
   background: url("../images/minetop_bg.png") no-repeat top center;
   margin: -140px 0px 0px 17px;
@@ -6786,10 +7279,13 @@ html body .myself .minetopfix.forrecord {
 }
 html body .myself .minetopfix .fixbar {
   position: absolute;
-  width: 830px;
+  width: 850px;
   height: 45px;
   border-radius: 5px;
-  box-shadow: 0px 0px 6px 1px #bcc2dc;
+  -webkit-box-shadow: 0px 0px 6px 1px #bcc2dc;
+          box-shadow: 0px 0px 6px 1px #bcc2dc;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fafbff), color-stop(65%, #fafbff), to(#e4e7f6));
+  background: -o-linear-gradient(top, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background: linear-gradient(to bottom, #fafbff 0%, #fafbff 65%, #e4e7f6 100%);
   background-color: #fafbff;
   bottom: 0px;
@@ -6874,14 +7370,16 @@ html body .myself .minetopfix .fixbar .mes_rowbut.lside span:last-child {
   color: #fff;
 }
 html body .myself .minetopfix .fixbar .mes_rowbut.lside .innbut {
-  animation: rowbut 0.3s ease-out 0s;
+  -webkit-animation: rowbut 0.3s ease-out 0s;
+          animation: rowbut 0.3s ease-out 0s;
 }
 html body .myself .minetopfix .fixbar .mes_rowbut.rside span:nth-of-type(1) {
   color: #fff;
 }
 html body .myself .minetopfix .fixbar .mes_rowbut.rside .innbut {
   left: 53%;
-  animation: rowbut2 0.3s ease-out 0s;
+  -webkit-animation: rowbut2 0.3s ease-out 0s;
+          animation: rowbut2 0.3s ease-out 0s;
 }
 html body .myself .minetopfix .fixbar .mes_rowbut span {
   margin-right: 20px;
@@ -6912,7 +7410,7 @@ html body .myself .minetopfix .fixbar button {
   /*for IE 9*/
   /*for IE*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .myself .minetopfix .fixbar button {
     padding: 6px 5px;
   }
@@ -6922,7 +7420,9 @@ html body .myself .minetopfix .fixbar button {
     padding: 6px 5px;
   }
 }
-html body .myself .minetopfix .fixbar button:hover, html body .myself .minetopfix .fixbar button:active {
+html body .myself .minetopfix .fixbar button:hover, html body .myself .minetopfix .fixbar button:active, html body .myself .minetopfix .fixbar button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#1b2c86), to(#7e8bd1));
+  background: -o-linear-gradient(top, #1b2c86 0%, #7e8bd1 100%);
   background: linear-gradient(to bottom, #1b2c86 0%, #7e8bd1 100%);
   background-color: #1b2c86;
   color: #fff;
@@ -6941,16 +7441,12 @@ html body .myself .minetopfix .fixbar ul li {
 html body .myself .minetopfix .fixbar ul li:first-child {
   margin-left: 15px;
 }
-html body .myself .minetopfix .fixbar ul li:hover, html body .myself .minetopfix .fixbar ul li:active {
-  color: #293eb0;
-  border-color: #293eb0;
-}
-html body .myself .minetopfix .fixbar ul li.active {
+html body .myself .minetopfix .fixbar ul li:hover, html body .myself .minetopfix .fixbar ul li:active, html body .myself .minetopfix .fixbar ul li.active {
   color: #293eb0;
   border-color: #293eb0;
 }
 html body .myself .minetopfix .recordname {
-  width: 830px;
+  width: 850px;
   height: 35px;
   background: #404b87;
   border-radius: 0px 0px 8px 8px;
@@ -7056,8 +7552,10 @@ html body .myself .hideboard.recordboard {
   height: 160px;
 }
 html body .myself .recordbar {
-  width: 830px;
+  width: 850px;
   height: 35px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#edeef5));
+  background: -o-linear-gradient(top, #ffffff 0%, #edeef5 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #edeef5 100%);
   background-color: #d6d9ee;
   border-radius: 5px;
@@ -7067,6 +7565,8 @@ html body .myself .recordbar {
   z-index: 1;
 }
 html body .myself .recordbar.open {
+  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d8a77b));
+  background: -o-linear-gradient(top, #fedab8 0%, #d8a77b 100%);
   background: linear-gradient(to bottom, #fedab8 0%, #d8a77b 100%);
   background-color: #d8a77b;
 }
@@ -7105,7 +7605,7 @@ html body .myself .recordbar .recordbox {
 }
 html body .myself .recordbox {
   display: none;
-  width: 830px;
+  width: 850px;
   height: auto;
   background: #000;
   margin: -20px 0px 15px 17px;
@@ -7120,11 +7620,12 @@ html body .myself .recordbox.display {
   display: block;
 }
 html body .myself .helpbar {
-  width: 830px;
+  width: 850px;
   height: 45px;
   background: #ffffff;
   border-radius: 12px;
-  box-shadow: 0 0 6px 3px #ccd0ec;
+  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
+          box-shadow: 0 0 6px 3px #ccd0ec;
   position: relative;
   z-index: 1;
   margin: 0px 0px 15px 17px;
@@ -7138,9 +7639,13 @@ html body .myself .helpbar::before {
   background: url("../images/arrow_b.png") no-repeat;
   right: 20px;
   top: 18px;
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .myself .helpbar.open {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
+  background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
   background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
   background-color: #424d89;
 }
@@ -7148,7 +7653,9 @@ html body .myself .helpbar.open::before {
   width: 8px;
   height: 11px;
   background: url("../images/arrow_w.png");
-  transform: rotate(90deg);
+  -webkit-transform: rotate(90deg);
+      -ms-transform: rotate(90deg);
+          transform: rotate(90deg);
 }
 html body .myself .helpbar.open p {
   color: #fff;
@@ -7171,6 +7678,8 @@ html body .myself .helpbar.edit p, html body .myself .helpbar.edit span {
   color: #000;
 }
 html body .myself .helpbar.nb {
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#424d89));
+  background: -o-linear-gradient(top, #6b76b4 0%, #424d89 100%);
   background: linear-gradient(to bottom, #6b76b4 0%, #424d89 100%);
   background-color: #424d89;
 }
@@ -7207,14 +7716,15 @@ html body .myself .helpbar input {
 }
 html body .myself .helpbox {
   display: none;
-  width: 830px;
+  width: 850px;
   height: auto;
   margin: -20px 0px 15px 17px;
   background: #fff;
   padding-top: 20px;
   border-radius: 0px 0px 12px 12px;
   color: #4d515d;
-  box-shadow: 0 0 6px 3px #ccd0ec;
+  -webkit-box-shadow: 0 0 6px 3px #ccd0ec;
+          box-shadow: 0 0 6px 3px #ccd0ec;
   text-align: left;
 }
 html body .myself .helpbox.display {
@@ -7239,7 +7749,8 @@ html body .myself .helpbox .innerbox {
   height: auto;
   border-radius: 12px;
   border: 1px solid #6b76b4;
-  box-shadow: 0 0 7px 1px #e2e4f3;
+  -webkit-box-shadow: 0 0 7px 1px #e2e4f3;
+          box-shadow: 0 0 7px 1px #e2e4f3;
   margin: 0px auto 20px;
   padding: 15px;
 }
@@ -7292,7 +7803,8 @@ html body .myself .sportbar {
   position: fixed;
   margin-left: 17px;
   border-radius: 10px;
-  box-shadow: 0 0 5px 1px #d9dbef;
+  -webkit-box-shadow: 0 0 5px 1px #d9dbef;
+          box-shadow: 0 0 5px 1px #d9dbef;
   z-index: 1;
 }
 html body .myself .sportbar button {
@@ -7300,6 +7812,8 @@ html body .myself .sportbar button {
   width: 80px;
   height: 32px;
   border: 1px solid #b78960;
+  background: -webkit-gradient(linear, left top, left bottom, from(#dfb995), to(#b78960));
+  background: -o-linear-gradient(top, #dfb995 0%, #b78960 100%);
   background: linear-gradient(to bottom, #dfb995 0%, #b78960 100%);
   background-color: #b78960;
   border-radius: 5px;
@@ -7309,12 +7823,9 @@ html body .myself .sportbar button {
   padding: 0px;
   margin: 0px 10px 15px 0px;
 }
-html body .myself .sportbar button:hover, html body .myself .sportbar button:active {
-  background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
-  border-color: #444f8b;
-  background-color: #434e8a;
-}
-html body .myself .sportbar button.active {
+html body .myself .sportbar button:hover, html body .myself .sportbar button:active, html body .myself .sportbar button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#434e8a), to(#6974b2));
+  background: -o-linear-gradient(top, #434e8a 0%, #6974b2 100%);
   background: linear-gradient(to bottom, #434e8a 0%, #6974b2 100%);
   border-color: #444f8b;
   background-color: #434e8a;
@@ -7329,7 +7840,7 @@ html body .myself .contact.display, html body .myself .suggest.display, html bod
   display: block;
 }
 html body .myself .onlineroom {
-  width: 830px;
+  width: 850px;
   height: 725px;
   margin: -15px 0px 0px 17px;
   background: #fff;
@@ -7390,7 +7901,8 @@ html body .myself .onlineroom .chatwindow .chat span.user {
 html body .myself .onlineroom .chatwindow .chat .gmchat {
   float: left;
   border: 1px solid #c2c5ff;
-  box-shadow: 0 0 8px 1px #dfe1ec;
+  -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
+          box-shadow: 0 0 8px 1px #dfe1ec;
   border-radius: 0px 15px 15px 15px;
   font-size: 14px;
   padding: 12px;
@@ -7401,7 +7913,7 @@ html body .myself .onlineroom .chatwindow .chat .gmchat a {
   width: 60%;
   padding: 3px 0px;
 }
-html body .myself .onlineroom .chatwindow .chat .gmchat a:hover, html body .myself .onlineroom .chatwindow .chat .gmchat a:active {
+html body .myself .onlineroom .chatwindow .chat .gmchat a:hover, html body .myself .onlineroom .chatwindow .chat .gmchat a:active, html body .myself .onlineroom .chatwindow .chat .gmchat a.active {
   background: #2D43B6;
   color: #fff;
 }
@@ -7409,7 +7921,8 @@ html body .myself .onlineroom .chatwindow .chat .userchat {
   float: right;
   background: #273aa1;
   color: #fff;
-  box-shadow: 0 0 8px 1px #dfe1ec;
+  -webkit-box-shadow: 0 0 8px 1px #dfe1ec;
+          box-shadow: 0 0 8px 1px #dfe1ec;
   border-radius: 15px 0px 15px 15px;
   font-size: 14px;
   padding: 12px;
@@ -7434,7 +7947,7 @@ html body .myself .onlineroom .chatarea .face button {
 html body .myself .onlineroom .chatarea .face button:first-child {
   margin-left: 15px;
 }
-html body .myself .onlineroom .chatarea .face button:hover, html body .myself .onlineroom .chatarea .face button:active {
+html body .myself .onlineroom .chatarea .face button:hover, html body .myself .onlineroom .chatarea .face button:active, html body .myself .onlineroom .chatarea .face button.active {
   width: 16px;
   height: 16px;
   background: url("../images/windowface.png") no-repeat;
@@ -7451,6 +7964,26 @@ html body .myself .onlineroom .chatarea textarea {
   outline: none;
   resize: none;
 }
+html body .myself .onlineroom .chatarea textarea::-webkit-input-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .myself .onlineroom .chatarea textarea::-moz-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .myself .onlineroom .chatarea textarea:-ms-input-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
+html body .myself .onlineroom .chatarea textarea::-ms-input-placeholder {
+  color: #e0dede;
+  font-size: 14px;
+  font-weight: bold;
+}
 html body .myself .onlineroom .chatarea textarea::placeholder {
   color: #e0dede;
   font-size: 14px;
@@ -7460,13 +7993,17 @@ html body .myself .onlineroom .chatarea button {
   width: 90px;
   height: 36px;
   margin-right: 20px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8996da), to(#3046b7));
+  background: -o-linear-gradient(top, #8996da 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8996da 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 5px;
   color: #fff;
   font-size: 15px;
 }
-html body .myself .onlineroom .chatarea button:hover, html body .myself .onlineroom .chatarea button:active {
+html body .myself .onlineroom .chatarea button:hover, html body .myself .onlineroom .chatarea button:active, html body .myself .onlineroom .chatarea button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#8996da), to(#3046b7));
+  background: -o-linear-gradient(bottom, #8996da 0%, #3046b7 100%);
   background: linear-gradient(to top, #8996da 0%, #3046b7 100%);
 }
 html body .myself .aboutus, html body .myself .aboutlink {
@@ -7476,7 +8013,7 @@ html body .myself .aboutus.display, html body .myself .aboutlink.display {
   display: block;
 }
 html body .myself .aboutlink div {
-  width: 830px;
+  width: 850px;
   height: auto;
   margin-left: 17px;
 }
@@ -7487,10 +8024,11 @@ html body .myself .aboutlink div a {
   border-radius: 5px;
   overflow: hidden;
   text-align: left;
-  box-shadow: 0 0 6px 1px #d7dced;
+  -webkit-box-shadow: 0 0 6px 1px #d7dced;
+          box-shadow: 0 0 6px 1px #d7dced;
   margin: 0px 10px 10px 0px;
 }
-html body .myself .aboutlink div a:hover, html body .myself .aboutlink div a:active {
+html body .myself .aboutlink div a:hover, html body .myself .aboutlink div a:active, html body .myself .aboutlink div a.active {
   text-decoration: underline;
 }
 html body .myself .aboutlink div a.nmar {
@@ -7534,34 +8072,80 @@ html body .myself .aboutlink div a p {
   font-size: 15px;
   color: #4d515d;
 }
-@keyframes reset {
+@-webkit-keyframes reset {
   0% {
-    transform: rotate(0deg);
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
   }
   100% {
-    transform: rotate(-360deg);
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@keyframes reset {
+  0% {
+    -webkit-transform: rotate(0deg);
+            transform: rotate(0deg);
+  }
+  100% {
+    -webkit-transform: rotate(-360deg);
+            transform: rotate(-360deg);
+  }
+}
+@-webkit-keyframes rowbut {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes rowbut {
   0% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
+  }
+}
+@-webkit-keyframes rowbut2 {
+  0% {
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
+  }
+  50% {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 @keyframes rowbut2 {
   0% {
-    transform: scale(0.9);
+    -webkit-transform: scale(0.9);
+            transform: scale(0.9);
   }
   50% {
-    transform: scale(1.1);
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
   }
   100% {
-    transform: scale(1);
+    -webkit-transform: scale(1);
+            transform: scale(1);
   }
 }
 html body .on {
@@ -7578,13 +8162,17 @@ html body .login {
   width: 400px;
   height: 300px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
 html body .login .loginbar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -7612,7 +8200,9 @@ html body .login .loginbar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .login .loginbar button::after {
   content: "";
@@ -7622,7 +8212,9 @@ html body .login .loginbar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .login .loginbox {
   width: 100%;
@@ -7669,6 +8261,8 @@ html body .login .loginbox div button {
   height: 36px;
   float: left;
   margin-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
   border: 1px solid #495cc5;
@@ -7678,21 +8272,27 @@ html body .login .loginbox div button {
   font-weight: bold;
   color: #4d515d;
 }
-html body .login .loginbox div button:hover, html body .login .loginbox div button:active {
+html body .login .loginbox div button:hover, html body .login .loginbox div button:active, html body .login .loginbox div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 html body .login .loginbox div button:last-child {
   margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   color: #fff;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .login .loginbox div button:last-child {
     color: #4d515d;
   }
 }
-html body .login .loginbox div button:last-child:hover, html body .login .loginbox div button:last-child:active {
+html body .login .loginbox div button:last-child:hover, html body .login .loginbox div button:last-child:active, html body .login .loginbox div button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .login.display {
@@ -7704,13 +8304,17 @@ html body .signup {
   width: 800px;
   height: 360px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
 html body .signup .signupbar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -7738,7 +8342,9 @@ html body .signup .signupbar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .signup .signupbar button::after {
   content: "";
@@ -7748,7 +8354,9 @@ html body .signup .signupbar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .signup .signupbox {
   width: 100%;
@@ -7766,7 +8374,9 @@ html body .signup .signupbox div {
 html body .signup .signupbox div:last-child {
   width: 500px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -7789,6 +8399,8 @@ html body .signup .signupbox div button {
   width: 180px;
   height: 36px;
   margin-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
   border: 1px solid #495cc5;
@@ -7798,21 +8410,27 @@ html body .signup .signupbox div button {
   font-weight: bold;
   color: #4d515d;
 }
-html body .signup .signupbox div button:hover, html body .signup .signupbox div button:active {
+html body .signup .signupbox div button:hover, html body .signup .signupbox div button:active, html body .signup .signupbox div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 html body .signup .signupbox div button:last-child {
   margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   color: #fff;
   /*for IE 9*/
 }
-@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+@media all and (min-width: 0\0 ) and (-webkit-min-device-pixel-ratio: 0), all and (min-width: 0\0 ) and (-o-min-device-pixel-ratio: 0/1), all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
   html body .signup .signupbox div button:last-child {
     color: #4d515d;
   }
 }
-html body .signup .signupbox div button:last-child:hover, html body .signup .signupbox div button:last-child:active {
+html body .signup .signupbox div button:last-child:hover, html body .signup .signupbox div button:last-child:active, html body .signup .signupbox div button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .signup.display {
@@ -7824,13 +8442,17 @@ html body .cardremind {
   width: 500px;
   height: 200px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 200px;
   z-index: 20;
 }
 html body .cardremind .remindbar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -7858,7 +8480,9 @@ html body .cardremind .remindbar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .cardremind .remindbar button::after {
   content: "";
@@ -7868,7 +8492,9 @@ html body .cardremind .remindbar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .cardremind .remindbox {
   width: 100%;
@@ -7885,6 +8511,8 @@ html body .cardremind .remindbox p {
 html body .cardremind .remindbox button {
   width: 160px;
   height: 36px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -7894,15 +8522,21 @@ html body .cardremind .remindbox button {
   font-weight: bold;
   color: #4d515d;
 }
-html body .cardremind .remindbox button:hover, html body .cardremind .remindbox button:active {
+html body .cardremind .remindbox button:hover, html body .cardremind .remindbox button:active, html body .cardremind .remindbox button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 html body .cardremind .remindbox button:last-child {
   margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   color: #fff;
 }
-html body .cardremind .remindbox button:last-child:hover, html body .cardremind .remindbox button:last-child:active {
+html body .cardremind .remindbox button:last-child:hover, html body .cardremind .remindbox button:last-child:active, html body .cardremind .remindbox button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .cardremind.display {
@@ -7914,13 +8548,17 @@ html body .passwordchange {
   width: 350px;
   height: 360px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 100px;
   z-index: 20;
 }
 html body .passwordchange .changebar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -7948,7 +8586,9 @@ html body .passwordchange .changebar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .passwordchange .changebar button::after {
   content: "";
@@ -7958,7 +8598,9 @@ html body .passwordchange .changebar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .passwordchange .changebox {
   width: 100%;
@@ -7976,7 +8618,9 @@ html body .passwordchange .changebox div {
 html body .passwordchange .changebox div:last-child {
   width: 500px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -7998,6 +8642,8 @@ html body .passwordchange .changebox div button {
   width: 152px;
   height: 36px;
   margin-right: 10px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(top, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to bottom, #ffffff 0%, #d5d9ef 100%);
   background-color: #d5d9ef;
   border: 1px solid #495cc5;
@@ -8007,16 +8653,22 @@ html body .passwordchange .changebox div button {
   font-weight: bold;
   color: #4d515d;
 }
-html body .passwordchange .changebox div button:hover, html body .passwordchange .changebox div button:active {
+html body .passwordchange .changebox div button:hover, html body .passwordchange .changebox div button:active, html body .passwordchange .changebox div button.active {
+  background: -webkit-gradient(linear, left bottom, left top, from(#ffffff), to(#d5d9ef));
+  background: -o-linear-gradient(bottom, #ffffff 0%, #d5d9ef 100%);
   background: linear-gradient(to top, #ffffff 0%, #d5d9ef 100%);
 }
 html body .passwordchange .changebox div button:last-child {
   margin: 0px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   color: #fff;
 }
-html body .passwordchange .changebox div button:last-child:hover, html body .passwordchange .changebox div button:last-child:active {
+html body .passwordchange .changebox div button:last-child:hover, html body .passwordchange .changebox div button:last-child:active, html body .passwordchange .changebox div button:last-child.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .passwordchange.display {
@@ -8028,13 +8680,17 @@ html body .cardadd {
   width: 800px;
   height: 360px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   top: 110px;
   z-index: 20;
 }
 html body .cardadd .cardaddbar {
   width: 100%;
   height: 50px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#8f9cdc), to(#3046b7));
+  background: -o-linear-gradient(top, #8f9cdc 0%, #3046b7 100%);
   background: linear-gradient(to bottom, #8f9cdc 0%, #3046b7 100%);
   background-color: #3046b7;
   border-radius: 12px 12px 0px 0px;
@@ -8062,7 +8718,9 @@ html body .cardadd .cardaddbar button::before {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
 }
 html body .cardadd .cardaddbar button::after {
   content: "";
@@ -8072,7 +8730,9 @@ html body .cardadd .cardaddbar button::after {
   position: absolute;
   left: 8px;
   top: 0px;
-  transform: rotate(135deg);
+  -webkit-transform: rotate(135deg);
+      -ms-transform: rotate(135deg);
+          transform: rotate(135deg);
 }
 html body .cardadd .cardaddbox {
   width: 100%;
@@ -8090,7 +8750,9 @@ html body .cardadd .cardaddbox div {
 html body .cardadd .cardaddbox div:last-child {
   width: 500px;
   left: 50%;
-  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+      -ms-transform: translateX(-50%);
+          transform: translateX(-50%);
   margin-top: 20px;
   text-align: center;
 }
@@ -8127,6 +8789,8 @@ html body .cardadd .cardaddbox div span {
 html body .cardadd .cardaddbox div button {
   width: 220px;
   height: 36px;
+  background: -webkit-gradient(linear, left bottom, left top, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(bottom, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
   background-color: #3247b8;
   border: 1px solid #495cc5;
@@ -8135,7 +8799,9 @@ html body .cardadd .cardaddbox div button {
   font-size: 16px;
   font-weight: bold;
 }
-html body .cardadd .cardaddbox div button:hover, html body .cardadd .cardaddbox div button:active {
+html body .cardadd .cardaddbox div button:hover, html body .cardadd .cardaddbox div button:active, html body .cardadd .cardaddbox div button.active {
+  background: -webkit-gradient(linear, left top, left bottom, from(#3247b8), to(#8e9bdc));
+  background: -o-linear-gradient(top, #3247b8 0%, #8e9bdc 100%);
   background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
 }
 html body .cardadd.display {
@@ -8144,6 +8810,8 @@ html body .cardadd.display {
 
 .bg_gold {
   background-color: #fedab8;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fedab8), to(#d9a87c));
+  background: -o-linear-gradient(top, #fedab8 0%, #d9a87c 100%);
   background: linear-gradient(to bottom, #fedab8 0%, #d9a87c 100%);
   color: #6c2600;
   font-size: 14px;
@@ -8151,6 +8819,8 @@ html body .cardadd.display {
 
 .bg_gray {
   background-color: #f0f0f0;
+  background: -webkit-gradient(linear, left top, left bottom, from(#fff), to(#f0f0f0));
+  background: -o-linear-gradient(top, #fff 0%, #f0f0f0 100%);
   background: linear-gradient(to bottom, #fff 0%, #f0f0f0 100%);
   color: #4d515d;
   font-size: 14px;
@@ -8158,6 +8828,8 @@ html body .cardadd.display {
 
 .bg_darkpurple {
   background-color: #414c88;
+  background: -webkit-gradient(linear, left top, left bottom, from(#6b76b4), to(#414c88));
+  background: -o-linear-gradient(top, #6b76b4 0%, #414c88 100%);
   background: linear-gradient(to bottom, #6b76b4 0%, #414c88 100%);
   color: #ffffff;
   font-size: 14px;
@@ -8247,6 +8919,8 @@ html body .cardadd.display {
   display: block;
   width: 12px;
   height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#cbd0e9), to(#ffffff));
+  background: -o-linear-gradient(top, #cbd0e9 0%, #ffffff 100%);
   background: linear-gradient(to bottom, #cbd0e9 0%, #ffffff 100%);
   background-color: #cbd0e9;
   border: 1px solid #b2afcf;
@@ -8258,6 +8932,8 @@ html body .cardadd.display {
 .cube.active {
   width: 12px;
   height: 12px;
+  background: -webkit-gradient(linear, left top, left bottom, from(#3449b9), to(#8694d8));
+  background: -o-linear-gradient(top, #3449b9 0%, #8694d8 100%);
   background: linear-gradient(to bottom, #3449b9 0%, #8694d8 100%);
   background-color: #3449b9;
   position: absolute;
@@ -8270,7 +8946,9 @@ html body .cardadd.display {
   width: 3px;
   height: 8px;
   border: solid 1px #fff;
-  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotate(45deg);
   border-width: 0px 2px 2px 0px;
 }
 
@@ -8281,4 +8959,15 @@ html body .cardadd.display {
   border-radius: 20px;
   background: #00b8ee;
   margin: 3px 0px 0px 0px;
+}
+
+.pitcher {
+  color: #005aff;
+  padding-left: 7px;
+  font-size: 14px;
+  line-height: 22px;
+}
+.pitcher.pro {
+  padding: 0px;
+  line-height: 0px;
 }

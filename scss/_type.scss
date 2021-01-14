@@ -136,7 +136,7 @@
                     padding: 5px;
                     border-radius: 5px;
                     color: #3145b2;
-                    &:hover,&:active {
+                    &:hover,&:active,&.active {
                         background: linear-gradient(to bottom, #354ab9 0%, #8b98da 100%);
                         background-color: #354ab9;
                         color: #fff;
@@ -157,13 +157,9 @@
                     border-bottom: solid 3px transparent;
                     color: #4d515d;
                     cursor: pointer;
-                    &:hover,&:active {
+                    &:hover,&:active,&.active {
                     color: #293eb0;
                     border-color: #293eb0;
-                    }
-                    &.active {
-                        color: #293eb0;
-                        border-color: #293eb0;
                     }
                 }
             }
@@ -186,7 +182,7 @@
                 float: left;
                 color: #4d515d;
                 position: relative;
-                &:hover,&:active {
+                &:hover,&:active,&.active {
                     color: #293eb0;
                     border-color: #293eb0;
                 }
@@ -283,7 +279,7 @@
                         padding: 5px;
                         margin-left: 8px;
                     }
-                    &:hover,&:active {
+                    &:hover,&:active,&.active {
                         background: linear-gradient(to left, #8e9bdc 0%, #2e44b6 100%);
                         background-color:#2e44b6;
                         color: #fff;
@@ -319,7 +315,7 @@
             font-size: 15px;
             line-height: 20px;
             position: relative;
-            &:hover,&:active {
+            &:hover,&:active,&.active {
                 background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
             }
             &::before {
@@ -351,11 +347,7 @@
                 line-height: 50px;
                 color: #4d515d;
                 font-size: 15px;
-                &:hover,&:active {
-                    border-color: #6272cc;
-                    color: #6272cc;
-                }
-                &.active {
+                &:hover,&:active,&.active {
                     border-color: #6272cc;
                     color: #6272cc;
                 }
@@ -682,7 +674,7 @@
                         &:hover {
                             background: linear-gradient(to bottom, #efd5d5 0%, #fff 100%);
                         }
-                        &:active {
+                        &:active,&.active {
                             background: linear-gradient(to top, #ec0004 0%, #850004 100%);
                             background-color: #850004;
                             color: #fff;
@@ -692,7 +684,7 @@
                             color: #fff;
                             background: linear-gradient(to bottom, #ec0004 0%, #850004 100%);
                             background-color: #850004;
-                            &:hover {
+                            &:hover,&:active,&.active {
                                 background: linear-gradient(to top, #ec0004 0%, #850004 100%);
                             }
                         }
@@ -939,6 +931,21 @@
                 top: 8px;
             }
         }
+        button {
+            width: 160px;
+            height: 36px;
+            background-color: #d5d9ef;
+            border: 1px solid #495cc5;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+            color: #fff;
+            margin-top: 15px;
+            &:hover,&:active,&.active {
+                background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+            }
+        }
         //選擇球種/聯盟
         &.display {
             display: block;
@@ -991,10 +998,25 @@
                 top: 8px;
             }
         }
+        button {
+            width: 160px;
+            height: 36px;
+            background-color: #d5d9ef;
+            border: 1px solid #495cc5;
+            border-radius: 5px;
+            font-size: 16px;
+            font-weight: bold;
+            background: linear-gradient(to top, #3247b8 0%, #8e9bdc 100%);
+            color: #fff;
+            margin-top: 15px;
+            &:hover,&:active,&.active {
+                background: linear-gradient(to bottom, #3247b8 0%, #8e9bdc 100%);
+            }
+        }
         //選擇球種/聯盟
         &.display {
             display: block;
-            height: 110px;
+            height: 170px;
         }
     }
     //盤口教程
@@ -1141,7 +1163,7 @@
                         top: -15px;
                         left: -40px;
                     }
-                    &:hover:before {
+                    &:hover,&:active,&.active:before {
                         left: 50px;
                         transition: 0.3s left;
                     }
@@ -1284,7 +1306,7 @@
     }
     .nor_bettingbox {
         width: 576px;
-        height: 295px;
+        height: auto;
         background: #fff;
         border: solid 2px #384dbb;
         border-radius: 0px 0px 15px 15px;
@@ -1293,7 +1315,7 @@
         //table視窗
         .bettingwindow {
             width: 100%;
-            height: 95px;
+            height: auto;
             overflow: hidden;
             table {
                 margin: 0px;
@@ -1376,7 +1398,7 @@
                     &:hover {
                         background: linear-gradient(to top, #fff 0%, #d5d9ef 100%);
                     }
-                    &:active {
+                    &:active,&.active {
                         background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
                         background-color: #2e44b7;
                         color: #fff;
@@ -1386,7 +1408,7 @@
                         color: #fff;
                         background: linear-gradient(to bottom, #8f9cdc 0%, #2e44b7 100%);
                         background-color: #2e44b7;
-                        &:hover {
+                        &:hover,&:active,&.active {
                             background: linear-gradient(to top, #8f9cdc 0%, #2e44b7 100%);
                         }
                     }

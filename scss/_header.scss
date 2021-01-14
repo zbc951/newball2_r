@@ -172,7 +172,7 @@ header {
                 padding: 0px;
                 font-size: 15px;
                 color: #fff;
-                &:hover {
+                &:hover,&:active,&.active {
                     background: linear-gradient(to top, #ddb692 0%, #b78a61 100%);
                 }
                 &.ques {
