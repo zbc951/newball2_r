@@ -117,7 +117,7 @@ $(function(){
         $('.norbetting').removeClass('display')
         $('.filter').removeClass('on')
     })
-    $('.norcancelbtn').click(function(){
+    $('.norcancelbtn,.nor_chbut').click(function(){
         $('.new table button').removeClass('active')
         $('.norbetting').removeClass('display')
         $('.filter').removeClass('on')

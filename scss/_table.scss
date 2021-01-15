@@ -300,6 +300,9 @@ table {
 				&:first-child {
 					margin: 0px;
 				}
+				&:hover,&:active,&.active {
+					border: 0px;
+				}
 				span {
 					color: #000;
 					font-weight: bold;
