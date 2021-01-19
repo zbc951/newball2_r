@@ -4582,6 +4582,19 @@ html body .middle .innertopfix .back {
   font-size: 15px;
   line-height: 20px;
   position: relative;
+  padding: 1px 0px 0px 10px;
+  /*for IE*/
+  /*for IE 9*/
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body .middle .innertopfix .back {
+    padding-top: 0px;
+  }
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body .middle .innertopfix .back {
+    padding-top: 0px;
+  }
 }
 html body .middle .innertopfix .back:hover, html body .middle .innertopfix .back:active, html body .middle .innertopfix .back.active {
   background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);

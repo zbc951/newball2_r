@@ -316,6 +316,15 @@
             font-size: 15px;
             line-height: 20px;
             position: relative;
+            padding: 1px 0px 0px 10px;
+            /*for IE*/
+            @media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+                padding-top: 0px;
+            }
+            /*for IE 9*/
+            @media all and (min-width:0\0) and (min-resolution:.001dpcm){
+                padding-top: 0px;
+            }
             &:hover,&:active,&.active {
                 background: linear-gradient(to top, #8f9cdc 0%, #2f45b7 100%);
             }
@@ -327,7 +336,6 @@
                 background: url('../images/arrow_w.png') no-repeat;
                 left: 5px;
                 top: 4px;
-
             }
         }
         //線
