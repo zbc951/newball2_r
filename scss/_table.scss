@@ -1180,6 +1180,22 @@ table {
 				@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
 					font-size: 13px;
 				}
+				//字對位(專業版/串關
+				&.topH {
+					top: 31%;
+				}
+				&.topM {
+					top: 50%;
+				}
+				&.topL {
+					top: 74%;
+				}
+				// &.REtopH {
+				//     top: 40% !important;
+				// }
+				// &.REtopC {
+				//     top: 66% !important;
+				// }
 			}
 		  }
 		.smallbut_2 {
