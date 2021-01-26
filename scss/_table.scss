@@ -2144,8 +2144,8 @@ table {
 							height: 14px;
 							background: url('../images/reset.png') no-repeat;
 							background-size: 100%;
-							left: -12px;
-							top: 5px;
+							left: -17px;
+							top: 4px;
 							/*for IE 9*/
 							@media all and (min-width:0\0) and (min-resolution:.001dpcm){
 								top: 3px;
@@ -2157,8 +2157,10 @@ table {
 								left: 3px;
 							}
 						}
-						&:hover,&:active,&.active:before {
-							animation: reset 1s ease-in-out 0s infinite;
+						&:hover,&:active,&.active {
+							&::before {
+								animation: reset 1s linear 0s infinite;
+							}
 						}
 					}
 				}
@@ -2733,8 +2735,8 @@ table {
 							height: 15px;
 							background: url('../images/infor.png') no-repeat;
 							background-size: 100%;
-							left: -12px;
-							top: 4px;
+							left: -17px;
+							top: 3px;
 						}
 					}
 				}
@@ -2752,7 +2754,7 @@ table {
 							position: relative;
 							&:hover,&:active,&.active {
 								color: #4d515d;
-								border-color: #3046b7;
+								border: solid 1px #1b2f92;
 								&::before {
 									content: "";
 									position: absolute;

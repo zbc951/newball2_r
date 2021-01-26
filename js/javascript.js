@@ -108,7 +108,7 @@ $(function(){
 });
 //一般投注
 $(function(){
-    $('.new table button').click(function(){
+    $('.new table button,.complex table button').click(function(){
         $(this).toggleClass('active')
         $('.norbetting').addClass('display')
         $('.filter').addClass('on')
@@ -118,7 +118,7 @@ $(function(){
         $('.filter').removeClass('on')
     })
     $('.norcancelbtn,.nor_chbut').click(function(){
-        $('.new table button').removeClass('active')
+        $('.new table button,.complex table button').removeClass('active')
         $('.norbetting').removeClass('display')
         $('.filter').removeClass('on')
     })

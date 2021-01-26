@@ -3027,8 +3027,8 @@ html body table.tperson.money tr th .re::before {
   height: 14px;
   background: url("../images/reset.png") no-repeat;
   background-size: 100%;
-  left: -12px;
-  top: 5px;
+  left: -17px;
+  top: 4px;
   /*for IE 9*/
   /*for IE*/
 }
@@ -3044,8 +3044,8 @@ html body table.tperson.money tr th .re::before {
     left: 3px;
   }
 }
-html body table.tperson.money tr th .re:hover, html body table.tperson.money tr th .re:active, html body table.tperson.money tr th .re.active:before {
-  animation: reset 1s ease-in-out 0s infinite;
+html body table.tperson.money tr th .re:hover::before, html body table.tperson.money tr th .re:active::before, html body table.tperson.money tr th .re.active::before {
+  animation: reset 1s linear 0s infinite;
 }
 html body table.tperson.money tr td .creditcard {
   width: 250px;
@@ -3539,8 +3539,8 @@ html body table.tperson.deposit tr th .teach::before {
   height: 15px;
   background: url("../images/infor.png") no-repeat;
   background-size: 100%;
-  left: -12px;
-  top: 4px;
+  left: -17px;
+  top: 3px;
 }
 html body table.tperson.deposit tr td button.paybut {
   width: 100px;
@@ -3554,7 +3554,7 @@ html body table.tperson.deposit tr td button.paybut {
 }
 html body table.tperson.deposit tr td button.paybut:hover, html body table.tperson.deposit tr td button.paybut:active, html body table.tperson.deposit tr td button.paybut.active {
   color: #4d515d;
-  border-color: #3046b7;
+  border: solid 1px #1b2f92;
 }
 html body table.tperson.deposit tr td button.paybut:hover::before, html body table.tperson.deposit tr td button.paybut:active::before, html body table.tperson.deposit tr td button.paybut.active::before {
   content: "";
