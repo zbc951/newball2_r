@@ -43,7 +43,7 @@
                 width: 30px;
                 height: 30px;
                 background: url('../images/fixside_ic.png');
-                background-size: 800%;
+                background-size: 900%;
                 float: left;
                 margin: 7px 15px 5px 17px;
             }
@@ -200,7 +200,7 @@
                 width: 30px;
                 height: 30px;
                 background: url('../images/fixside_ic.png');
-                background-size: 800%;
+                background-size: 900%;
                 float: left;
                 margin: 13px 15px 3px 17px;
                 &.img2 {
@@ -223,6 +223,9 @@
                 }
                 &.img8 {
                     background-position-x: -210px;
+                }
+                &.img9 {
+                    background-position-x: -240px;
                 }
             }
         }
@@ -273,7 +276,7 @@
                     width: 30px;
                     height: 30px;
                     background: url('../images/fixside_ic.png');
-                    background-size: 800%;
+                    background-size: 900%;
                     float: left;
                     margin: 7px 15px 5px 17px;
                 }
@@ -305,7 +308,7 @@
                 width: 24px;
                 height: 24px;
                 background: url('../images/fixside_ic.png');
-                background-size: 800%;
+                background-size: 900%;
                 margin: 5px auto 0px;
             }
         }
@@ -522,7 +525,7 @@
                 width: 30px;
                 height: 30px;
                 background: url('../images/fixside_ic.png');
-                background-size: 800%;
+                background-size: 900%;
                 float: left;
                 margin: 13px 15px 3px 17px;
                 &.img2 {
@@ -545,6 +548,9 @@
                 }
                 &.img8 {
                     background-position-x: -210px;
+                }
+                &.img9 {
+                    background-position-x: -240px;
                 }
             }
         }

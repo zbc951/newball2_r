@@ -2224,7 +2224,7 @@ html body table.tsp .smallbut_1 button, html body table.tsp .smallbut_2 button {
   }
 }
 html body table.tsp .smallbut_1 button span, html body table.tsp .smallbut_2 button span {
-  padding-right: 10px;
+  padding-right: 8px;
   color: #000;
   font-size: 13px;
   font-weight: normal;
@@ -6160,7 +6160,7 @@ html body .fixside .search .searchbut .fixsideimg {
   width: 30px;
   height: 30px;
   background: url("../images/fixside_ic.png");
-  background-size: 800%;
+  background-size: 900%;
   float: left;
   margin: 7px 15px 5px 17px;
 }
@@ -6315,7 +6315,7 @@ html body .fixside .fun a .fixsideimg {
   width: 30px;
   height: 30px;
   background: url("../images/fixside_ic.png");
-  background-size: 800%;
+  background-size: 900%;
   float: left;
   margin: 13px 15px 3px 17px;
 }
@@ -6339,6 +6339,9 @@ html body .fixside .fun a .fixsideimg.img7 {
 }
 html body .fixside .fun a .fixsideimg.img8 {
   background-position-x: -210px;
+}
+html body .fixside .fun a .fixsideimg.img9 {
+  background-position-x: -240px;
 }
 html body .fixside_rwd {
   display: none;
@@ -6388,7 +6391,7 @@ html body .fixside_rwd .search.open .searchbut .fixsideimg {
   width: 30px;
   height: 30px;
   background: url("../images/fixside_ic.png");
-  background-size: 800%;
+  background-size: 900%;
   float: left;
   margin: 7px 15px 5px 17px;
 }
@@ -6419,7 +6422,7 @@ html body .fixside_rwd .search .searchbut .fixsideimg {
   width: 24px;
   height: 24px;
   background: url("../images/fixside_ic.png");
-  background-size: 800%;
+  background-size: 900%;
   margin: 5px auto 0px;
 }
 html body .fixside_rwd .search input {
@@ -6642,7 +6645,7 @@ html body .fixside_rwd .fun a .fixsideimg {
   width: 30px;
   height: 30px;
   background: url("../images/fixside_ic.png");
-  background-size: 800%;
+  background-size: 900%;
   float: left;
   margin: 13px 15px 3px 17px;
 }
@@ -6666,6 +6669,9 @@ html body .fixside_rwd .fun a .fixsideimg.img7 {
 }
 html body .fixside_rwd .fun a .fixsideimg.img8 {
   background-position-x: -210px;
+}
+html body .fixside_rwd .fun a .fixsideimg.img9 {
+  background-position-x: -240px;
 }
 @media only screen and (max-width: 1460px) {
   html body .fixside {
