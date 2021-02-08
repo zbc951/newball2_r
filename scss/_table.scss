@@ -1272,6 +1272,16 @@ table {
 				width: 69px;
 				height: 32px;
 				font-size: 17px;
+				/*for IE 9*/
+				@media all and (min-width:0\0) and (min-resolution:.001dpcm){
+					padding-top: 0px;
+					font-size: 16px;
+				}
+				/*for IE*/
+				@media screen and (-ms-high-contrast: active),(-ms-high-contrast: none){
+					padding-top: 0px;
+					font-size: 16px;
+				}
 			}
       	}
     }

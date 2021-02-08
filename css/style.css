@@ -2264,6 +2264,20 @@ html body table.tsp .smallbut_2 button {
   width: 69px;
   height: 32px;
   font-size: 17px;
+  /*for IE 9*/
+  /*for IE*/
+}
+@media all and (min-width: 0\0 ) and (min-resolution: 0.001dpcm) {
+  html body table.tsp .smallbut_2 button {
+    padding-top: 0px;
+    font-size: 16px;
+  }
+}
+@media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {
+  html body table.tsp .smallbut_2 button {
+    padding-top: 0px;
+    font-size: 16px;
+  }
 }
 html body table.tsocre:first-child {
   margin-top: 85px;
